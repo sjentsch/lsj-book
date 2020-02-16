@@ -1,15 +1,15 @@
-% !TEX root = ../pdf/lsr.tex
-% [There are multiple lsr.tex files, but the one in ../pdf is the usual one]
+% !TEX root = ../pdf/lsj.tex
+% [There are multiple lsj.tex files, but the one in ../pdf is the usual one]
 
-\PRELUDETITLE{Prelude to Part IV}
+\chapter*{Prelude to Part IV}
 
 \noindent
 Part IV of the book is by far the most theoretical, focusing as it does on the theory of statistical inference. Over the next three chapters my goal is to give you an introduction to probability theory (Chapter~\ref{ch:probability}), sampling and estimation (Chapter~\ref{ch:estimation}) and statistical hypothesis testing (Chapter~\ref{ch:hypothesistesting}). Before we get started though, I want to say something about the big picture. Statistical inference is primarily about {\it learning from data}. The goal is no longer merely to describe our data but to use the data to draw conclusions about the world. To motivate the discussion I want to spend a bit of time talking about a philosophical puzzle known as the {\it riddle of induction}, because it speaks to an issue that will pop up over and over again throughout the book: statistical inference relies on {\it assumptions}. This sounds like a bad thing. In everyday life people say things like ``you should never make assumptions'', and psychology classes often talk about assumptions and biases as bad things that we should try to avoid. From bitter personal experience I have learned never to say such things around philosophers! 
 
-\PRELUDEHEADER{On the limits of logical reasoning}
-\begin{quote}
-{\it The whole art of war consists in getting at what is on the other side of the hill, or, in other words, in learning what we do not know from what we do.}
+\section*{On the limits of logical reasoning}
 
+\begin{quote}
+{\it The whole art of war consists in getting at what is on the other side of the hill, or, in other words, in learning what we do not know from what we do.} \\
 \hspace*{2cm} -- Arthur Wellesley, 1st Duke of Wellington
 \end{quote}
 
@@ -89,7 +89,7 @@ and the conversation continues:
 \end{dialogue}
 \end{quote}
 
-\PRELUDEHEADER{Learning without making assumptions is a myth}
+\section*{Learning without making assumptions is a myth}
 
 There are lots of different ways in which we could dissect this dialogue, but since this is a statistics book pitched at psychologists and not an introduction to the philosophy and psychology of reasoning, I'll keep it brief. What I've described above is sometimes referred to as the riddle of induction. It seems entirely {\it reasonable} to think that a 12-0 winning record by Wellesley is pretty strong evidence that he will win the 13th game, but it is not easy to provide a proper logical justification for this belief. On the contrary, despite the {\it obviousness} of the answer, it's not actually possible to justify betting on Wellesley without relying on some assumption that you don't have any logical justification for. 
 
@@ -97,4 +97,4 @@ The riddle of induction is most associated with the philosophical work of David 
 
 That sounds perfectly sensible on its own terms. In fact, it even sounds like the hallmark of good deductive reasoning. Like Sherlock Holmes, my approach was to rule out that which is impossible in the hope that what would be left is the truth. Yet as we saw, ruling out the impossible {\it never} led me to make a prediction. On its own terms everything I said in my half of the dialogue was entirely correct. An inability to make any predictions is the logical consequence of making ``no assumptions''. In the end I lost our game because you did make some assumptions and those assumptions turned out to be right. Skill is a real thing, and because you believed in the existence of skill you were able to learn that Wellesley had more of it than Croker. Had you relied on a less sensible assumption to drive your learning you might not have won the game. 
 
-Ultimately there are two things you should take away from this. First, as I've said, you cannot avoid making assumptions if you want to learn anything from your data. But second, once you realise that assumptions are necessary it becomes important to make sure you {\it make the right ones!} A data analysis that relies on few assumptions is not necessarily better than one that makes many assumptions, it all depends on whether those assumptions are good ones for your data. As we go through the rest of this book I'll often point out the assumptions that underpin a particular statistical technique, and how you can check whether those assumptions are sensible. 
+Ultimately there are two things you should take away from this. First, as I've said, you cannot avoid making assumptions if you want to learn anything from your data. But second, once you realise that assumptions are necessary it becomes important to make sure you {\it make the right ones!} A data analysis that relies on few assumptions is not necessarily better than one that makes many assumptions, it all depends on whether those assumptions are good ones for your data. As we go through the rest of this book I'll often point out the assumptions that underpin a particular statistical technique, and how you can check whether those assumptions are sensible.

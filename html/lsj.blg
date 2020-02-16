@@ -1,0 +1,15 @@
+[1] Config.pm:302> INFO - This is Biber 2.9
+[2] Config.pm:305> INFO - Logfile is 'lsj.blg'
+[103] biber:313> INFO - === to. jan.  2, 2020, 16:10:18
+[188] Biber.pm:371> INFO - Reading 'lsj.bcf'
+[405] Biber.pm:857> INFO - Found 70 citekeys in bib section 0
+[455] Biber.pm:3981> INFO - Processing section 0
+[500] Biber.pm:4154> INFO - Looking for bibtex format file '../tex/refs.bib' for section 0
+[509] bibtex.pm:1468> INFO - LaTeX decoding ...
+[803] bibtex.pm:1294> INFO - Found BibTeX data source '../tex/refs.bib'
+[1882] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1882] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1882] Biber.pm:3809> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1883] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[2086] bbl.pm:617> INFO - Writing 'lsj.bbl' with encoding 'UTF-8'
+[2178] bbl.pm:720> INFO - Output to lsj.bbl

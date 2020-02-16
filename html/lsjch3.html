@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding=""utf-8"" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title>3 Getting started with jamovi</title> 
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8"" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- 2,html,xhtml,NoFonts,ext=htm,charset="utf-8" --> 
+<meta name="src" content="lsj.tex" /> 
+<link rel="stylesheet" type="text/css" href="lsj.css" /> 
+</head><body 
+>
+   <!--l. 6--><div class="crosslinks"><p class="noindent">[<a 
+href="#taillsjch3.html">tail</a>] [<a 
+href="lsjpa2.html#lsjch3.html" >up</a>] </p></div>
+   <h2 class="chapterHead"><span class="titlemark">Chapter 3</span><br /><a 
+ id="x20-470003"></a>Getting started with jamovi</h2>
+      <div class="quote">
+      <!--l. 9--><p class="noindent" >Robots are nice to work with. <br 
+class="newline" />                   – Roger Zelazny<span class="footnote-mark"><a 
+href="lsj21.html#fn1x4"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x20-47001f1"></a> </p></div>
+<!--l. 13--><p class="noindent" >In this chapter I’ll discuss how to get started in jamovi. I’ll brieﬂy talk about how to download
+and install jamovi, but most of the chapter will be focused on getting you started with
+ﬁnding your way around the jamovi GUI. Our goal in this chapter is not to learn any
+statistical concepts: we’re just trying to learn the basics of how jamovi works and get
+comfortable interacting with the system. To do this we’ll spend a bit of time looking at
+datasets and variables. In doing so, you’ll get a bit of a feel for what it’s like to work in
+jamovi.
+</p><!--l. 16--><p class="indent" >   However, before going into any of the speciﬁcs, it’s worth talking a little about why you might
+want to use jamovi at all. Given that you’re reading this you’ve probably got your own reasons.
+However, if those reasons are “because that’s what my stats class uses”, it might be worth
+explaining a little why your lecturer has chosen to use jamovi for the class. Of course, I don’t
+really know why other people choose jamovi so I’m really talking about why I use it.
+</p>
+      <ul class="itemize1">
+      <li class="itemize">It’s sort of obvious but worth saying anyway: doing your statistics on a computer is
+      faster, easier and more powerful than doing statistics by hand. Computers excel at
+                                                                                          
+
+                                                                                          
+      mindless repetitive tasks, and a lot of statistical calculations are both mindless and
+      repetitive. For most people the only reason to ever do statistical calculations with pencil
+      and paper is for learning purposes. In my class I do occasionally suggest doing some
+      calculations that way, but the only real value to it is pedagogical. It does help you to
+      get a “feel” for statistics to do some calculations yourself, so it’s worth doing it once.
+      But only once!
+      </li>
+      <li class="itemize">Doing statistics in a conventional spreadsheet (e.g., Microsoft Excel) is generally a
+      bad idea in the long run. Although many people likely feel more familiar with them,
+      spreadsheets are very limited in terms of what analyses they allow you do. If you get
+      into the habit of trying to do your real life data analysis using spreadsheets then you’ve
+      dug yourself into a very deep hole.
+      </li>
+      <li class="itemize">Avoiding  proprietary  software  is  a  very  good  idea.  There  are  a  lot  of  commercial
+      packages out there that you can buy, some of which I like and some of which I don’t.
+      They’re usually very glossy in their appearance and generally very powerful (much
+      more powerful than spreadsheets). However, they’re also very expensive. Usually, the
+      company sells “student versions” (crippled versions of the real thing) very cheaply, and
+      then they they sell full powered “educational versions” at a price that makes me wince.
+      They will also sell commercial licences with a staggeringly high price tag. The business
+      model here is to suck you in during your student days and then leave you dependent
+      on their tools when you go out into the real world. It’s hard to blame them for trying,
+      but personally I’m not in favour of shelling out thousands of dollars if I can avoid it.
+      And you can avoid it. If you make use of packages like jamovi that are open source and
+      free you never get trapped having to pay exorbitant licensing fees.
+      </li>
+      <li class="itemize">Something that you might not appreciate now, but will love later on if you do anything
+      involving data analysis, is the fact that jamovi is basically a sophisticated front end for
+      the free R statistical programming language. When you download and install R you
+      get all the basic “packages” and those are very powerful on their own. However, because
+      R is so open and so widely used, it’s become something of a standard tool in statistics
+      and so lots of people write their own packages that extend the system. And these are
+      freely available too. One of the consequences of this, I’ve noticed, is that if you look at
+      recent advanced data analysis textbooks then a lot of them use R.</li></ul>
+<!--l. 23--><p class="noindent" >Those are the main reasons I use jamovi. It’s not without its ﬂaws, though. It’s relatively
+                                                                                          
+
+                                                                                          
+new<span class="footnote-mark"><a 
+href="lsj22.html#fn2x4"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x20-47002f2"></a>  so
+there is not a huge set of textbooks and other resources to support it, and it has a few
+annoying quirks that we’re all pretty much stuck with, but on the whole I think the
+strengths outweigh the weakness; more so than any other option I’ve encountered so
+far.
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.1   </span> <a 
+ id="x20-480003.1"></a>Installing jamovi </h3>
+<!--l. 28--><p class="noindent" >Okay, enough with the sales pitch. Let’s get started. Just as with any piece of software, jamovi
+needs to be installed on a “computer”, which is a magical box that does cool things and delivers
+free ponies. Or something along those lines; I may be confusing computers with the iPad marketing
+campaigns. Anyway, jamovi is freely distributed online and you can download it from the jamovi
+homepage, which is:
+      </p><div class="quote">
+      <!--l. 30--><p class="noindent" ><a 
+href="https://www.jamovi.org/" class="url" >https://www.jamovi.org/</a></p></div>
+<!--l. 32--><p class="noindent" >At the top of the page, under the heading “Download”, you’ll see separate links for Windows users,
+Mac users, and Linux users. If you follow the relevant link you’ll see that the online
+instructions are pretty self-explanatory. As of this writing, the current version of jamovi is
+0.9, but they usually issue updates every few months, so you’ll probably have a newer
+version.<span class="footnote-mark"><a 
+href="lsj23.html#fn3x4"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x20-48001f3"></a> 
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.1.1   </span> <a 
+ id="x20-490003.1.1"></a>Starting up jamovi</h4>
+<!--l. 36--><p class="noindent" >One way or another, regardless of what operating system you’re using, it’s time to open jamovi and
+get started. When ﬁrst starting jamovi you will be presented with a user interface which looks
+something like Figure <a 
+href="#x20-490011">3.1<!--tex4ht:ref: fig:startingjamovi --></a>.
+</p>
+                                                                                          
+
+                                                                                          
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x20-490011"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 39--><p class="noindent" >
+
+</p><!--l. 40--><p class="noindent" ><img 
+src="../img/introj/startingjamovi.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 3.1: </span><span  
+class="content">jamovi looks like this when you start it.</span></div><!--tex4ht:label?: x20-490011 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 47--><p class="indent" >   To the left is the spreadsheet view, and to the right is where the results of statistical tests
+appear. Down the middle is a bar separating these two regions and this can be dragged to the left
+or the right to change their sizes.
+</p><!--l. 49--><p class="indent" >   It is possible to simply begin typing values into the jamovi spreadsheet as you would in any
+other spreadsheet software. Alternatively, existing data sets in the CSV (.csv) ﬁle format can be
+opened in jamovi. Additionally, you can easily import SPSS, SAS, Stata and JASP ﬁles
+directly into jamovi. To open a ﬁle select the File tab (three horizontal lines signify this
+tab) at the top left hand corner, select ‘Open’ and then choose from the ﬁles listed on
+’Browse’ depending on whether you want to open an example or a ﬁle stored on your
+computer.
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.2   </span> <a 
+ id="x20-500003.2"></a>Analyses</h3>
+<!--l. 54--><p class="noindent" >Analyses can be selected from the analysis ribbon or menu along the top. Selecting an analysis will
+present an ‘options panel’ for that particular analysis, allowing you to assign diﬀerent variables to
+diﬀerent parts of the analysis, and select diﬀerent options. At the same time, the results for the
+analysis will appear in the right ‘Results panel’ and will update in real-time as you make changes to
+the options.
+</p><!--l. 56--><p class="indent" >   When you have the analysis set up correctly you can dismiss the analysis options by clicking the
+arrow to the top right of the optional panel. If you wish to return to these options, you can click on
+the results that were produced. In this way, you can return to any analysis that you (or say, a
+colleague) created earlier.
+</p><!--l. 58--><p class="indent" >   If you decide you no longer need a particular analysis, you can remove it with the results
+context menu. Right-clicking on the analysis results will bring up a menu and by selecting
+‘Analysis’ and then ‘Remove’ the analysis can be removed. But more on this later. First, let’s take
+a more detailed look at the spreadsheet view.
+</p><!--l. 61--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.3   </span> <a 
+ id="x20-510003.3"></a>The spreadsheet</h3>
+<!--l. 63--><p class="noindent" >In jamovi data is represented in a spreadsheet with each column representing a ‘variable’ and each
+row representing a ‘case’ or ‘participant’.
+                                                                                          
+
+                                                                                          
+</p><!--l. 65--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.3.1   </span> <a 
+ id="x20-520003.3.1"></a>Variables</h4>
+<!--l. 67--><p class="noindent" >The most commonly used variables in jamovi are ‘Data Variables’, these variables simply contain
+data either loaded from a data ﬁle, or ‘typed in’ by the user. Data variables can be one of three
+measurement levels:
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+                                                                                          
+
+                                                                                          
+
+<!--l. 70--><p class="noindent" ><img 
+src="../img/introj/measurementlevels.png" alt="PIC"  
+ />
+                                                                                          
+
+                                                                                          
+</p>
+   </div><hr class="endfigure" />
+<!--l. 73--><p class="indent" >   These levels are designated by the symbol in the header of the variable’s column.
+</p><!--l. 75--><p class="indent" >   The ID variable type is unique to jamovi. It’s intended for variables that contain identiﬁers that
+you would almost never want to analyse. For example, a persons name, or a participant ID.
+Specifying an ID variable type can improve performance when interacting with very large data
+sets.
+</p><!--l. 77--><p class="indent" >   Nominal variables are for categorical variables which are text labels, for example a column
+called Gender with the values Male and Female would be nominal. So would a person’s name.
+Nominal variable values can also have a numeric value. These variables are used most often
+when importing data which codes values with numbers rather than text. For example, a
+column in a dataset may contain the values 1 for males, and 2 for females. It is possible to
+add nice ‘human-readable’ labels to these values with the variable editor (more on this
+later).
+</p><!--l. 79--><p class="indent" >   Ordinal variables are like Nominal variables, except the values have a speciﬁc order. An example
+is a Likert scale with 3 being ‘strongly agree’ and -3 being ‘strongly disagree’.
+</p><!--l. 81--><p class="indent" >   Continuous variables are variables which exist on a continuous scale. Examples might be height
+or weight. This is also referred to as ‘Interval’ or ‘Ratio scale’.
+</p><!--l. 83--><p class="indent" >   In addition, you can also specify diﬀerent data types: variables have a data type of either ‘Text’,
+‘Integer’ or ‘Decimal’.
+</p><!--l. 85--><p class="indent" >   When starting with a blank spreadsheet and typing values in the variable type will change
+automatically depending on the data you enter. This is a good way to get a feel for which variable
+types go with which sorts of data. Similarly, when opening a data ﬁle jamovi will try and guess the
+variable type from the data in each column. In both cases this automatic approach may not be
+correct, and it may be necessary to manually specify the variable type with the variable
+editor.
+</p><!--l. 87--><p class="indent" >   The variable editor can be opened by selecting ‘Setup’ from the data tab or by double-clicking
+on the variable column header. The variable editor allows you to change the name of the variable
+and, for data variables, the variable type, the order of the levels, and the label displayed for each
+level. Changes can be applied by clicking the ‘tick’ to the top right. The variable editor can be
+dismissed by clicking the ‘Hide’ arrow.
+</p><!--l. 89--><p class="indent" >   New variables can be inserted or appended to the data set using the ‘add’ button from the data
+ribbon. The ‘add’ button also allows the addition of computed variables.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.3.2   </span> <a 
+ id="x20-530003.3.2"></a>Computed variables</h4>
+<!--l. 93--><p class="noindent" >Computed Variables are those which take their value by performing a computation on other
+                                                                                          
+
+                                                                                          
+variables. Computed Variables can be used for a range of purposes, including log transforms,
+z-scores, sum-scores, negative scoring and means.
+</p><!--l. 95--><p class="indent" >   Computed variables can be added to the data set with the ‘add’ button available on the data
+tab. This will produce a formula box where you can specify the formula. The usual arithmetic
+operators are available. Some examples of formulas are:
+</p><!--l. 97--><p class="indent" >   A + B
+</p><!--l. 99--><p class="indent" >   LOG10(len)
+</p><!--l. 101--><p class="indent" >   MEAN(A, B)
+</p><!--l. 103--><p class="indent" >   (dose - VMEAN(dose)) / VSTDEV(dose)
+</p><!--l. 105--><p class="indent" >   In order, these are the sum of A and B, a log (base 10) transform of len, the mean of A and B,
+and the z-score of the variable dose. Figure <a 
+href="#x20-530012">3.2<!--tex4ht:ref: fig:computedvariable --></a> below shows the jamovi screen for the
+new variable computed as the z-score of dose (from the ‘Tooth Growth’ example data
+set).
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x20-530012"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 109--><p class="noindent" >
+
+</p><!--l. 110--><p class="noindent" ><img 
+src="../img/introj/computedvariable.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 3.2: </span><span  
+class="content">A newly computed variable, the z-score of ‘dose’.</span></div><!--tex4ht:label?: x20-530012 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 118--><p class="indent" >   V-functions
+</p><!--l. 120--><p class="indent" >   Several functions are already available in jamovi and available from the drop down box
+labelled f<sub class="textsubscript">x</sub>. A number of functions appear in pairs, one preﬁxed with a V and the other
+not. V functions perform their calculation on a variable as a whole, where as non-V
+functions perform their calculation row by row. For example, MEAN(A, B) will produce the
+mean of A and B for each row. Where as VMEAN(A) gives the mean of all the values in
+A.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.3.3   </span> <a 
+ id="x20-540003.3.3"></a>Copy and Paste</h4>
+<!--l. 124--><p class="noindent" >jamovi produces nice American Psychological Association (APA) formatted tables and attractive
+plots. It is often useful to be able to copy and paste these, perhaps into a Word document, or into
+an email to a colleague. To copy results right click on the object of interest and from the menu
+select exactly what you want to copy. The menu allows you to choose to copy only the image or the
+entire analysis. Selecting “copy” copies the content to the clipboard and this can be pasted
+into other programs in the usual way. You can practice this later on when we do some
+analyses.
+</p><!--l. 126--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.3.4   </span> <a 
+ id="x20-550003.3.4"></a>Syntax mode</h4>
+<!--l. 128--><p class="noindent" >jamovi also provides an “R Syntax Mode”. In this mode jamovi produces equivalent R code for
+each analysis. To change to syntax mode, select the Application menu to the top right of jamovi (a
+button with three vertical dots) and click the “Syntax mode” checkbox there. You can turn oﬀ
+syntax mode by clicking this a second time.
+</p><!--l. 130--><p class="indent" >   In syntax mode analyses continue to operate as before but now they produce R syntax, and
+‘ascii output’ like an R session. Like all results objects in jamovi, you can right click on these items
+(including the R syntax) and copy and paste them, for example into an R session. At
+present, the provided R syntax does not include the data import step and so this must be
+performed manually in R. There are many resources explaining how to import data into
+R and if you are interested we recommend you take a look at these; just search on the
+interweb.
+                                                                                          
+
+                                                                                          
+</p><!--l. 133--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.4   </span> <a 
+ id="x20-560003.4"></a>Loading data in jamovi</h3>
+<!--l. 135--><p class="noindent" >There are several diﬀerent types of ﬁles that are likely to be relevant to us when doing data
+analysis. There are two in particular that are especially important from the perspective of this
+book: </p>
+      <ul class="itemize1">
+      <li class="itemize">jamovi ﬁles are those with a .omv ﬁle extension. This is the standard kind of ﬁle that
+      jamovi uses to store data, and variables and analyses.
+      </li>
+      <li class="itemize">Comma separated value (csv) ﬁles are those with a .csv ﬁle extension. These are just
+      regular old text ﬁles and they can be opened with many diﬀerent software programs.
+      It’s quite typical for people to store data in csv ﬁles, precisely because they’re so simple.</li></ul>
+<!--l. 141--><p class="indent" >   There are also several other kinds of data ﬁle that you might want to import into jamovi. For
+instance, you might want to open Microsoft Excel spreadsheets (.xls ﬁles), or data ﬁles that
+have been saved in the native ﬁle formats for other statistics software, such as SPSS or
+SAS. Whichever ﬁle formats you are using, it’s a good idea to create a folder or folders
+especially for your jamovi data sets and analyses and to make sure you keep these backed up
+regularly.
+</p><!--l. 143--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.4.1   </span> <a 
+ id="x20-570003.4.1"></a>Importing data from csv ﬁles</h4>
+<!--l. 145--><p class="noindent" >One quite commonly used data format is the humble “comma separated value” ﬁle, also called a
+csv ﬁle, and usually bearing the ﬁle extension .csv. csv ﬁles are just plain old-fashioned text ﬁles
+and what they store is basically just a table of data. This is illustrated in Figure <a 
+href="#x20-570013">3.3<!--tex4ht:ref: fig:booksalescsv --></a>, which shows a
+ﬁle called booksales.csv that I’ve created. As you can see, each row represents the book sales data
+for one month. The ﬁrst row doesn’t contain actual data though, it has the names of the
+variables.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x20-570013"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 148--><p class="noindent" >
+</p><!--l. 149--><p class="noindent" ><img 
+src="lsj1x.png" alt="PIC" class="graphics" width="398" height="202"  /><!--tex4ht:graphics  
+name="lsj1x.png" src="../img/mechanics/booksalescsv.eps"  
+-->
+<br /> </p><div class="caption" 
+><span class="id">Figure 3.3: </span><span  
+class="content">The booksales.csv data ﬁle. On the left I’ve opened the ﬁle using a spreadsheet
+program (OpenOﬃce), which shows that the ﬁle is basically a table. On the right the same
+ﬁle is open in a standard text editor (the TextEdit program on a Mac), which shows how
+the ﬁle is formatted. The entries in the table are wrapped in quote marks and separated by
+commas.</span></div><!--tex4ht:label?: x20-570013 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 156--><p class="indent" >   It’s easy to open csv ﬁles in jamovi. From the top left menu (the button with three parallel
+lines) choose ‘Open’ and browse to where you have stored the csv ﬁle on your computer. If you’re
+on a Mac, it’ll look like the usual Finder window that you use to choose a ﬁle; on Windows it looks
+like an Explorer window. An example of what it looks like on a Mac is shown in Figure <a 
+href="#x20-570024">3.4<!--tex4ht:ref: fig:fileopen --></a>. I’m
+assuming that you’re familiar with your own computer, so you should have no problem ﬁnding
+the csv ﬁle that you want to import! Find the one you want, then click on the “Open”
+button.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x20-570024"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 159--><p class="noindent" >
+</p><!--l. 160--><p class="noindent" ><img 
+src="lsj2x.png" alt="PIC" class="graphics" width="398" height="206"  /><!--tex4ht:graphics  
+name="lsj2x.png" src="../img/mechanics/openscreen.eps"  
+-->
+<br /> </p><div class="caption" 
+><span class="id">Figure 3.4: </span><span  
+class="content">A dialog box on a Mac asking you to select the csv ﬁle jamovi should try to
+import. Mac users will recognise this immediately, it’s the usual way in which a Mac asks
+you to ﬁnd a ﬁle. Windows users won’t see this, instead they’ll see the usual explorer window
+that Windows always gives you when it wants you to select a ﬁle.</span></div><!--tex4ht:label?: x20-570024 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 167--><p class="indent" >   There are a few things that you can check to make sure that the data gets imported
+correctly:
+</p>
+      <ul class="itemize1">
+      <li class="itemize">Heading. Does the ﬁrst row of the ﬁle contain the names for each variable - a ‘header’
+      row? The booksales.csv ﬁle has a header, so that’s a yes.
+      </li>
+      <li class="itemize">Separator. What character is used to separate diﬀerent entries? In most csv ﬁles this
+      will be a comma (it is “comma separated” after all).
+      </li>
+      <li class="itemize">Decimal. What character is used to specify the decimal point? In English speaking
+      countries this is almost always a period (i.e., .). That’s not universally true though,
+      many European countries use a comma.
+      </li>
+      <li class="itemize">Quote. What character is used to denote a block of text? That’s usually going to be a
+      double quote mark (&#x0022;). It is for the booksales.csv ﬁle.</li></ul>
+   <h3 class="sectionHead"><span class="titlemark">3.5   </span> <a 
+ id="x20-580003.5"></a>Importing unusual data ﬁles </h3>
+<!--l. 179--><p class="noindent" >Throughout this book I’ve assumed that your data are stored as a jamovi .omv ﬁle or
+as a “properly” formatted csv ﬁle. However, in real life that’s not a terribly plausible
+assumption to make so I’d better talk about some of the other possibilities that you might run
+into.
+</p><!--l. 182--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.5.1   </span> <a 
+ id="x20-590003.5.1"></a>Loading data from text ﬁles</h4>
+<!--l. 184--><p class="noindent" >The ﬁrst thing I should point out is that if your data are saved as a text ﬁle but aren’t quite in the
+proper csv format then there’s still a pretty good chance that jamovi will be able to open it.
+You just need to try it and see if it works. Sometimes though you will need to change
+some of the formatting. The ones that I’ve often found myself needing to change are:
+</p>
+                                                                                          
+
+                                                                                          
+      <ul class="itemize1">
+      <li class="itemize">header. A lot of the time when you’re storing data as a csv ﬁle the ﬁrst row actually
+      contains the column names and not data. If that’s not true then it’s a good idea to open
+      up the csv ﬁle in a spreadsheet programme such as Open Oﬃce and add the header
+      row manually.
+      </li>
+      <li class="itemize">sep. As the name “comma separated value” indicates, the values in a row of a csv ﬁle
+      are usually separated by commas. This isn’t universal, however. In Europe the decimal
+      point is typically written as , instead of . and as a consequence it would be somewhat
+      awkward to use , as the separator. Therefore it is not unusual to use ; instead of , as
+      the separator. At other times, I’ve seen a TAB character used.
+      </li>
+      <li class="itemize">quote. It’s conventional in csv ﬁles to include a quoting character for textual data.
+      As you can see by looking at the booksales.csv ﬁle, this is usually a double quote
+      character, &#x0022;. But sometimes there is no quoting character at all, or you might see a
+      single quote mark ’ used instead.
+      </li>
+      <li class="itemize">skip. It’s actually very common to receive CSV ﬁles in which the ﬁrst few rows have
+      nothing to do with the actual data. Instead, they provide a human readable summary
+      of where the data came from, or maybe they include some technical info that doesn’t
+      relate to the data.
+      </li>
+      <li class="itemize">missing values. Often you’ll get given data with missing values. For one reason or
+      another, some entries in the table are missing. The data ﬁle needs to include a “special”
+      value to indicate that the entry is missing. By default jamovi assumes that this value is
+      99<span class="footnote-mark"><a 
+href="lsj24.html#fn4x4"><sup class="textsuperscript">4</sup></a></span><a 
+ id="x20-59001f4"></a> ,
+      for both numeric and text data, so you should make sure that, where necessary, all
+      missing values in the csv ﬁle are replaced with 99 (or -9999; whichever you choose)
+      before opening / importing the ﬁle into jamovi. Once you have opened / imported
+      the ﬁle into jamovi all the missing values are converted to blank cells in the jamovi
+      spreadsheet view.</li></ul>
+                                                                                          
+
+                                                                                          
+<!--l. 193--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.5.2   </span> <a 
+ id="x20-600003.5.2"></a>Loading data from SPSS (and other statistics packages)</h4>
+<!--l. 195--><p class="noindent" >The commands listed above are the main ones we’ll need for data ﬁles in this book. But in real life
+we have many more possibilities. For example, you might want to read data ﬁles in from other
+statistics programs. Since SPSS is probably the most widely used statistics package in psychology,
+it’s worth mentioning that jamovi can also import SPSS data ﬁles (ﬁle extension .sav). Just follow
+the instructions above for how to open a csv ﬁle, but this time navigate to the .sav ﬁle you want to
+import. For SPSS ﬁles, jamovi will regard all values as missing if they are regarded as
+“system missing” ﬁles in SPSS. The ‘Default missings’ value does not seem to work
+as expected when importing SPSS ﬁles, so be aware of this - you might need another
+step: import the SPSS ﬁle into jamovi, then export as a csv ﬁle before re-opening in
+jamovi.<span class="footnote-mark"><a 
+href="lsj25.html#fn5x4"><sup class="textsuperscript">5</sup></a></span><a 
+ id="x20-60001f5"></a> .
+</p><!--l. 197--><p class="indent" >   And that’s pretty much it, at least as far as SPSS goes. As far as other statistical software goes,
+jamovi can also directly open / import SAS and STATA ﬁles.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">3.5.3   </span> <a 
+ id="x20-610003.5.3"></a>Loading Excel ﬁles</h4>
+<!--l. 201--><p class="noindent" >A diﬀerent problem is posed by Excel ﬁles. Despite years of yelling at people for sending data to me
+encoded in a proprietary data format, I get sent a lot of Excel ﬁles. The way to handle Excel ﬁles is
+to open them up ﬁrst in Excel or another spreadsheet programme that can handle Excel
+ﬁles, and then export the data as a csv ﬁle before opening / importing the csv ﬁle into
+jamovi.
+</p><!--l. 204--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.6   </span> <a 
+ id="x20-620003.6"></a>Changing data from one level to another</h3>
+<!--l. 206--><p class="noindent" >Sometimes you want to change the variable level. This can happen for all sorts of reasons.
+Sometimes when you import data from ﬁles, it can come to you in the wrong format. Numbers
+sometimes get imported as nominal, text values. Dates may get imported as text. ParticipantID
+values can sometimes be read as continuous: nominal values can sometimes be read as ordinal or
+even continuous. There’s a good chance that sometimes you’ll want to convert a variable from one
+                                                                                          
+
+                                                                                          
+measurement level into another one. Or, to use the correct term, you want to <span id="textcolor79">coerce</span> the variable
+from one class into another.
+</p><!--l. 208--><p class="indent" >   In <a 
+href="#x20-510003.3">3.3<!--tex4ht:ref: sec:spreadsheet --></a> we saw how to specify diﬀerent variable levels, and if you want to change a
+variable’s measurement level then you can do this in the jamovi data view for that variable.
+Just click the check box for the measurement level you want - continuous, ordinal, or
+nominal.
+</p><!--l. 211--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.7   </span> <a 
+ id="x20-630003.7"></a>Installing add-on modules into jamovi </h3>
+<!--l. 213--><p class="noindent" >A really great feature of jamovi is the ability to install add-on modules from the jamovi library.
+These add-on modules have been developed by the jamovi community, i.e., jamovi users and
+developers who have created special software add-ons that do other, usually more advanced,
+analyses that go beyond the capabilities of the base jamovi program.
+</p><!--l. 215--><p class="indent" >   To install add-on modules, just click on the large “+” in the top right of the jamovi
+window, select “jamovi-library” and then browse through the various add-on
+modules that are available. Choose the one(s) you want, and then install them, as
+in Figure <a 
+href="#x20-630015">3.5<!--tex4ht:ref: fig:modules --></a>. It’s that easy. The newly installed modules can then be accessed
+from the “Analyses” button bar. Try it...useful add-on modules to install include
+”scatr” (added under “Descriptives”) and “R j”.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x20-630015"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 218--><p class="noindent" >
+
+</p><!--l. 219--><p class="noindent" ><img 
+src="../img/graphics/modules.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 3.5: </span><span  
+class="content">Installing add-on modules in jamovi</span></div><!--tex4ht:label?: x20-630015 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+   <h3 class="sectionHead"><span class="titlemark">3.8   </span> <a 
+ id="x20-640003.8"></a>Quitting jamovi </h3>
+<!--l. 229--><p class="noindent" >There’s one last thing I should cover in this chapter: how to quit jamovi. It’s not
+hard, just close the program the same way you would any other program. However,
+what you might want to do before you quit is save your work! There are two parts
+to this: saving any changes to the data set, and saving the analyses that you
+ran.
+</p><!--l. 231--><p class="indent" >   It is good practice to save any changes to the data set as a new data set. That
+way you can always go back to the original data. To save any changes in jamovi,
+select ‘Export’...‘Data’ from the main jamovi menu (button with three
+horizontal bars in the top left) and create a new ﬁle name for the changed data
+set.
+</p><!--l. 233--><p class="indent" >   Alternatively, you can save both the changed data and any analyses you have
+undertaken by saving as a jamovi ﬁle. To do this, from the main jamovi menu
+select ‘Save as’ and type in a ﬁle name for this ‘jamovi ﬁle (.omv)’. Remember to
+save the ﬁle in a location where you can ﬁnd it again later. I usually create a new
+folder for speciﬁc data sets and analyses.
+</p><!--l. 236--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.9   </span> <a 
+ id="x20-650003.9"></a>Summary</h3>
+<!--l. 238--><p class="noindent" >Every book that tries to teach a new statistical software program to novices has to
+cover roughly the same topics, and in roughly the same order. Ours is no
+exception, and so in the grand tradition of doing it just the same way everyone else
+did it, this chapter covered the following topics:
+</p>
+                                                                                          
+
+                                                                                          
+      <ul class="itemize1">
+      <li class="itemize">Section <a 
+href="#x20-480003.1">3.1<!--tex4ht:ref: sec:gettingjamovi --></a>. We downloaded and installed jamovi, and started it up.
+      </li>
+      <li class="itemize">Section <a 
+href="#x20-500003.2">3.2<!--tex4ht:ref: sec:analyses --></a>. We very brieﬂy oriented to the part of jamovi where analyses
+      are done and results appear, but then deferred this until later in the
+      book.
+      </li>
+      <li class="itemize">Section <a 
+href="#x20-510003.3">3.3<!--tex4ht:ref: sec:spreadsheet --></a>.  We  spent  more  time  looking  at  the  spreadsheet  part  of
+      jamovi, and considered diﬀerent variable types, and how to compute new
+      variables.
+      </li>
+      <li class="itemize">Section <a 
+href="#x20-560003.4">3.4<!--tex4ht:ref: sec:load --></a>. We also saw how to load data ﬁles in jamovi.
+      </li>
+      <li class="itemize">Section <a 
+href="#x20-580003.5">3.5<!--tex4ht:ref: sec:importing --></a>. Then we ﬁgured out how to open other data ﬁles, from
+      diﬀerent ﬁle types.
+      </li>
+      <li class="itemize">Section <a 
+href="#x20-620003.6">3.6<!--tex4ht:ref: sec:coercion --></a>. And saw that sometimes we need to coerce data from one
+      type to another.
+      </li>
+      <li class="itemize">Section <a 
+href="#x20-630003.7">3.7<!--tex4ht:ref: sec:jamovimodules --></a>. Installing add-on modules from the jamovi community really
+      extends jamovi capabilities.
+      </li>
+      <li class="itemize">Section <a 
+href="#x20-640003.8">3.8<!--tex4ht:ref: sec:quittingjamovi --></a>. Finally, we looked at good practice in terms of saving your
+      data set and analyses when you have ﬁnished and are about to quit
+      jamovi.</li></ul>
+<!--l. 251--><p class="noindent" >We still haven’t arrived at anything that resembles data analysis. Maybe the next
+Chapter will get us a bit closer!
+                                                                                          
+
+                                                                                          
+</p>
+   <!--l. 38--><div class="crosslinks"><p class="noindent">[<a 
+href="lsjch3.html" >front</a>] [<a 
+href="lsjpa2.html#lsjch3.html" >up</a>] </p></div>
+<!--l. 38--><p class="indent" >   <a 
+ id="taillsjch3.html"></a>  </p> 
+</body></html> 

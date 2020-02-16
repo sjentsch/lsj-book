@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding=""utf-8"" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title>V Statistical tools</title> 
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8"" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- 2,html,xhtml,NoFonts,ext=htm,charset="utf-8" --> 
+<meta name="src" content="lsj.tex" /> 
+<link rel="stylesheet" type="text/css" href="lsj.css" /> 
+</head><body 
+>
+   <!--l. 49--><div class="crosslinks"><p class="noindent">[<a 
+href="lsjpa6.html" >next</a>] [<a 
+href="lsjpa4.html" >prev</a>] [<a 
+href="lsjpa4.html#taillsjpa4.html" >prev-tail</a>] [<a 
+href="#taillsjpa5.html">tail</a>] [<a 
+href="lsj.html#lsjpa5.html" >up</a>] </p></div>
+   <h1 class="partHead"><span class="titlemark">Part V<br /></span><a 
+ id="x82-177000V"></a>Statistical tools</h1>
+                                                                                          
+
+                                                                                          
+   <div class="chapterTOCS">
+   <span class="chapterToc" >10 <a 
+href="lsjch10.html#x83-17800010">Categorical data analysis</a></span>
+<br />    <span class="sectionToc" >10.1 <a 
+href="lsjch10.html#x83-17900010.1">The χ<sup>2</sup> (chi-square) goodness-of-ﬁt test </a></span>
+<br />    <span class="sectionToc" >10.2 <a 
+href="lsjch10.html#x83-19000010.2">The χ<sup>2</sup> test of independence (or association) </a></span>
+<br />    <span class="sectionToc" >10.3 <a 
+href="lsjch10.html#x83-19400010.3">The continuity correction </a></span>
+<br />    <span class="sectionToc" >10.4 <a 
+href="lsjch10.html#x83-19500010.4">Eﬀect size </a></span>
+<br />    <span class="sectionToc" >10.5 <a 
+href="lsjch10.html#x83-19600010.5">Assumptions of the test(s) </a></span>
+<br />    <span class="sectionToc" >10.6 <a 
+href="lsjch10.html#x83-19700010.6">The Fisher exact test </a></span>
+<br />    <span class="sectionToc" >10.7 <a 
+href="lsjch10.html#x83-19800010.7">The McNemar test </a></span>
+<br />    <span class="sectionToc" >10.8 <a 
+href="lsjch10.html#x83-20000010.8">What’s the diﬀerence between McNemar and independence?</a></span>
+<br />    <span class="sectionToc" >10.9 <a 
+href="lsjch10.html#x83-20100010.9">Summary</a></span>
+<br />   <span class="chapterToc" >11 <a 
+href="lsjch11.html#x97-20200011">Comparing two means </a></span>
+<br />    <span class="sectionToc" >11.1 <a 
+href="lsjch11.html#x97-20300011.1">The one-sample z-test</a></span>
+<br />    <span class="sectionToc" >11.2 <a 
+href="lsjch11.html#x97-20800011.2">The one-sample t-test </a></span>
+<br />    <span class="sectionToc" >11.3 <a 
+href="lsjch11.html#x97-21200011.3">The independent samples t-test (Student test) </a></span>
+<br />    <span class="sectionToc" >11.4 <a 
+href="lsjch11.html#x97-22000011.4">The independent samples t-test (Welch test) </a></span>
+<br />    <span class="sectionToc" >11.5 <a 
+href="lsjch11.html#x97-22300011.5">The paired-samples t-test </a></span>
+<br />    <span class="sectionToc" >11.6 <a 
+href="lsjch11.html#x97-22700011.6">One sided tests </a></span>
+<br />    <span class="sectionToc" >11.7 <a 
+href="lsjch11.html#x97-22800011.7">Eﬀect size </a></span>
+<br />    <span class="sectionToc" >11.8 <a 
+href="lsjch11.html#x97-23200011.8">Checking the normality of a sample</a></span>
+<br />    <span class="sectionToc" >11.9 <a 
+href="lsjch11.html#x97-23600011.9">Testing non-normal data with Wilcoxon tests</a></span>
+<br />    <span class="sectionToc" >11.10 <a 
+href="lsjch11.html#x97-23900011.10">Summary</a></span>
+<br />   <span class="chapterToc" >12 <a 
+href="lsjch12.html#x114-24000012">Correlation and linear regression</a></span>
+<br />    <span class="sectionToc" >12.1 <a 
+href="lsjch12.html#x114-24100012.1">Correlations</a></span>
+<br />    <span class="sectionToc" >12.2 <a 
+href="lsjch12.html#x114-24800012.2">Scatterplots</a></span>
+<br />    <span class="sectionToc" >12.3 <a 
+href="lsjch12.html#x114-25000012.3">What is a linear regression model? </a></span>
+<br />    <span class="sectionToc" >12.4 <a 
+href="lsjch12.html#x114-25100012.4">Estimating a linear regression model </a></span>
+<br />    <span class="sectionToc" >12.5 <a 
+href="lsjch12.html#x114-25400012.5">Multiple linear regression </a></span>
+<br />    <span class="sectionToc" >12.6 <a 
+href="lsjch12.html#x114-25700012.6">Quantifying the ﬁt of the regression model </a></span>
+<br />    <span class="sectionToc" >12.7 <a 
+href="lsjch12.html#x114-26100012.7">Hypothesis tests for regression models </a></span>
+<br />    <span class="sectionToc" >12.8 <a 
+href="lsjch12.html#x114-26500012.8">Regarding regression coeﬃcients </a></span>
+<br />    <span class="sectionToc" >12.9 <a 
+href="lsjch12.html#x114-26800012.9">Assumptions of regression </a></span>
+<br />    <span class="sectionToc" >12.10 <a 
+href="lsjch12.html#x114-26900012.10">Model checking </a></span>
+<br />    <span class="sectionToc" >12.11 <a 
+href="lsjch12.html#x114-27400012.11">Model selection</a></span>
+<br />    <span class="sectionToc" >12.12 <a 
+href="lsjch12.html#x114-27900012.12">Summary</a></span>
+<br />   <span class="chapterToc" >13 <a 
+href="lsjch13.html#x131-28000013">Comparing several means (one-way ANOVA)</a></span>
+<br />    <span class="sectionToc" >13.1 <a 
+href="lsjch13.html#x131-28100013.1">An illustrative data set </a></span>
+<br />    <span class="sectionToc" >13.2 <a 
+href="lsjch13.html#x131-28200013.2">How ANOVA works </a></span>
+<br />    <span class="sectionToc" >13.3 <a 
+href="lsjch13.html#x131-28800013.3">Running an ANOVA in jamovi</a></span>
+                                                                                          
+
+                                                                                          
+<br />    <span class="sectionToc" >13.4 <a 
+href="lsjch13.html#x131-29000013.4">Eﬀect size</a></span>
+<br />    <span class="sectionToc" >13.5 <a 
+href="lsjch13.html#x131-29100013.5">Multiple comparisons and post hoc tests </a></span>
+<br />    <span class="sectionToc" >13.6 <a 
+href="lsjch13.html#x131-29700013.6">Assumptions of one-way ANOVA </a></span>
+<br />    <span class="sectionToc" >13.7 <a 
+href="lsjch13.html#x131-30200013.7">Removing the normality assumption </a></span>
+<br />    <span class="sectionToc" >13.8 <a 
+href="lsjch13.html#x131-30600013.8">Repeated measures one-way ANOVA </a></span>
+<br />    <span class="sectionToc" >13.9 <a 
+href="lsjch13.html#x131-30800013.9">The Friedman non-parametric repeated measures ANOVA test </a></span>
+<br />    <span class="sectionToc" >13.10 <a 
+href="lsjch13.html#x131-30900013.10">On the relationship between ANOVA and the Student t-test </a></span>
+<br />    <span class="sectionToc" >13.11 <a 
+href="lsjch13.html#x131-31000013.11">Summary</a></span>
+<br />   <span class="chapterToc" >14 <a 
+href="lsjch14.html#x143-31100014">Factorial ANOVA </a></span>
+<br />    <span class="sectionToc" >14.1 <a 
+href="lsjch14.html#x143-31200014.1">Factorial ANOVA 1: balanced designs, no interactions</a></span>
+<br />    <span class="sectionToc" >14.2 <a 
+href="lsjch14.html#x143-31900014.2">Factorial ANOVA 2: balanced designs, interactions allowed</a></span>
+<br />    <span class="sectionToc" >14.3 <a 
+href="lsjch14.html#x143-32500014.3">Eﬀect size </a></span>
+<br />    <span class="sectionToc" >14.4 <a 
+href="lsjch14.html#x143-32700014.4">Assumption checking </a></span>
+<br />    <span class="sectionToc" >14.5 <a 
+href="lsjch14.html#x143-33000014.5">Analysis of Covariance (ANCOVA)</a></span>
+<br />    <span class="sectionToc" >14.6 <a 
+href="lsjch14.html#x143-33200014.6">ANOVA as a linear model</a></span>
+<br />    <span class="sectionToc" >14.7 <a 
+href="lsjch14.html#x143-33800014.7">Diﬀerent ways to specify contrasts</a></span>
+<br />    <span class="sectionToc" >14.8 <a 
+href="lsjch14.html#x143-34300014.8">Post hoc tests</a></span>
+<br />    <span class="sectionToc" >14.9 <a 
+href="lsjch14.html#x143-34400014.9">The method of planned comparisons</a></span>
+<br />    <span class="sectionToc" >14.10 <a 
+href="lsjch14.html#x143-34500014.10">Factorial ANOVA 3: unbalanced designs</a></span>
+<br />    <span class="sectionToc" >14.11 <a 
+href="lsjch14.html#x143-35200014.11">Summary</a></span>
+<br />   <span class="chapterToc" >15 <a 
+href="lsjch15.html#x158-35300015">Factor Analysis </a></span>
+<br />    <span class="sectionToc" >15.1 <a 
+href="lsjch15.html#x158-35400015.1">Exploratory Factor Analysis </a></span>
+<br />    <span class="sectionToc" >15.2 <a 
+href="lsjch15.html#x158-35900015.2">Principal Component Analysis </a></span>
+<br />    <span class="sectionToc" >15.3 <a 
+href="lsjch15.html#x158-36100015.3">Conﬁrmatory Factor Analysis </a></span>
+<br />    <span class="sectionToc" >15.4 <a 
+href="lsjch15.html#x158-36400015.4">Multi-Trait Multi-Method CFA </a></span>
+<br />    <span class="sectionToc" >15.5 <a 
+href="lsjch15.html#x158-36600015.5">Internal consistency reliability analysis </a></span>
+<br />    <span class="sectionToc" >15.6 <a 
+href="lsjch15.html#x158-36800015.6">Summary</a></span>
+   </div>
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+
+                                                                                          
+   <!--l. 57--><div class="crosslinks"><p class="noindent">[<a 
+href="lsjpa6.html" >next</a>] [<a 
+href="lsjpa4.html" >prev</a>] [<a 
+href="lsjpa4.html#taillsjpa4.html" >prev-tail</a>] [<a 
+href="lsjpa5.html" >front</a>] [<a 
+href="lsj.html#lsjpa5.html" >up</a>] </p></div>
+<!--l. 57--><p class="indent" >   <a 
+ id="taillsjpa5.html"></a> </p> 
+</body></html> 

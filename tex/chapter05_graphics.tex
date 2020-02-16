@@ -6,7 +6,7 @@
 \chapter{Drawing graphs\label{ch:graphics}}
 
 \begin{quote}
-{\it Above all else show the data.}\\
+{\it Above all else show the data.} \\
 \hspace*{2cm} --Edward Tufte\FOOTNOTE{The origin of this quote is Tufte's lovely book {\it The Visual Display of Quantitative Information}.}
 \end{quote}
 
@@ -22,21 +22,21 @@ The goals in this chapter are twofold. First, to discuss several fairly standard
 \epsfig{file = ../img/graphics/snowMap.eps, clip=true,width = 14cm}
 \caption{A stylised redrawing of John Snow's original cholera map. Each small dot represents the location of a cholera case and each large circle shows the location of a well. As the plot makes clear, the cholera outbreak is centred very closely on the Broad St pump.}
 \label{fig:snowmap1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 
 \section{Histograms\label{sec:hist}}
  
-Let's begin with the humble \keyterm{histogram}. Histograms are one of the simplest and most useful ways of visualising data. They make most sense when you have an interval or ratio scale variable (e.g., the \rtext{afl.margins} data from Chapter~\ref{ch:descriptives}) and what you want to do is get an overall impression of the variable. Most of you probably know how histograms work, since they're so widely used, but for the sake of completeness I'll describe them. All you do is divide up the possible values into \keyterm{bins} and then count the number of observations that fall within each bin. This count is referred to as the frequency or density of the bin and is displayed as a vertical bar. Ihe AFL winning margins data there are 33 games in which the winning margin was less than 10 points and it is this fact that is represented by the height of the leftmost bar that we showed earlier in Chapter~\ref{ch:descriptives}, Figure~\ref{fig:histogram1}. With these earlier graphs we used an advanced plotting package in \R\ which, for now, is beyond the capability of jamovi. But jamovi gets us close, and drawing this histogram in jamovi is pretty straightforward. Open up the `plots' options under `Exploration' - `Descriptives' and click the `histogram' check box, as in Figure~\ref{fig:jamovi_histogram}. jamovi defaults to labelling the y-axis as `density' and the x-axis with the variable name. The \keyterm{bins} are selected automatically, and there is no scale, or count, information on the y-axis unlike the previous Figure~\ref{fig:histogram1}. But this does not matter too much because after all what we are really interested in is our impression of the shape of the distribution: is it normally distributed or is there a skew or kurtosis? Our first impressions of these characteristics come from drawing a \keyterm{histogram}.
+Let's begin with the humble \keyterm{histogram}. Histograms are one of the simplest and most useful ways of visualising data. They make most sense when you have an interval or ratio scale variable (e.g., the \texttt{afl.margins} data from Chapter~\ref{ch:descriptives}) and what you want to do is get an overall impression of the variable. Most of you probably know how histograms work, since they're so widely used, but for the sake of completeness I'll describe them. All you do is divide up the possible values into \keyterm{bins} and then count the number of observations that fall within each bin. This count is referred to as the frequency or density of the bin and is displayed as a vertical bar. Ihe AFL winning margins data there are 33 games in which the winning margin was less than 10 points and it is this fact that is represented by the height of the leftmost bar that we showed earlier in Chapter~\ref{ch:descriptives}, Figure~\ref{fig:histogram1}. With these earlier graphs we used an advanced plotting package in \R\ which, for now, is beyond the capability of jamovi. But jamovi gets us close, and drawing this histogram in jamovi is pretty straightforward. Open up the `plots' options under `Exploration' - `Descriptives' and click the `histogram' check box, as in Figure~\ref{fig:jamovi_histogram}. jamovi defaults to labelling the y-axis as `density' and the x-axis with the variable name. The \keyterm{bins} are selected automatically, and there is no scale, or count, information on the y-axis unlike the previous Figure~\ref{fig:histogram1}. But this does not matter too much because after all what we are really interested in is our impression of the shape of the distribution: is it normally distributed or is there a skew or kurtosis? Our first impressions of these characteristics come from drawing a \keyterm{histogram}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/graphics/jamovi_histogram.png, clip=true,width = 14cm}
 \caption{jamovi screen showing the histogram check box}
 \label{fig:jamovi_histogram}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -45,9 +45,9 @@ One additional feature that jamovi provides is the ability to plot a `Density' c
 \begin{figure}[ht]
 \begin{center}
 \epsfig{file = ../img/graphics/histogram2.pdf, clip=true,width = 10cm}
-\caption{A density plot of the \rtext{afl.margins} variable plotted in jamovi}
+\caption{A density plot of the \texttt{afl.margins} variable plotted in jamovi}
 \label{fig:histogram2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -56,42 +56,42 @@ Although this image would need a lot of cleaning up in order to make a good pres
 
 \section{Boxplots~\label{sec:boxplots}}
 
-Another alternative to histograms is a \keyterm{boxplot}, sometimes called a ``box and whiskers'' plot. Like histograms they're most suited to interval or ratio scale data. The idea behind a boxplot is to provide a simple visual depiction of the median, the interquartile range, and the range of the data. And because they do so in a fairly compact way boxplots have become a very popular statistical graphic, especially during the exploratory stage of data analysis when you're trying to understand the data yourself. Let's have a look at how they work, again using the \rtext{afl.margins} data as our example.
+Another alternative to histograms is a \keyterm{boxplot}, sometimes called a ``box and whiskers'' plot. Like histograms they're most suited to interval or ratio scale data. The idea behind a boxplot is to provide a simple visual depiction of the median, the interquartile range, and the range of the data. And because they do so in a fairly compact way boxplots have become a very popular statistical graphic, especially during the exploratory stage of data analysis when you're trying to understand the data yourself. Let's have a look at how they work, again using the \texttt{afl.margins} data as our example.
 
 \begin{figure}[!!htb]
 \begin{center}
 \epsfig{file = ../img/graphics/boxplot1.png, clip=true,width = 14cm}
-\caption{A box plot of the \rtext{afl.margins} variable plotted in jamovi}
+\caption{A box plot of the \texttt{afl.margins} variable plotted in jamovi}
 \label{fig:boxplot1}
-\HR
+%\HR
 \end{center}
 \end{figure}
  
-The easiest way to describe what a boxplot looks like is just to draw one. Click on the `Box plot' check box and you will get the plot shown on the lower right of Figure \ref{fig:boxplot1}. jamovi has drawn the most basic boxplot possible. When you look at this plot this is how you should interpret it: the thick line in the middle of the box is the median; the box itself spans the range from the 25th percentile to the 75th percentile; and the ``whiskers'' go out to the most extreme data point that doesn't exceed a certain bound. By default, this value is 1.5 times the interquartile range (IQR), calculated as \rtext{25th percentile - (1.5*IQR)} for the lower boundary, and \rtext{75th percentile + (1.5*IQR)} for the upper boundary. Any observation whose value falls outside this range is plotted as a circle or dot instead of being covered by the whiskers, and is commonly referred to as an \keyterm{outlier}. For our AFL margins data there are two observations that fall outside this range, and these observations are plotted as dots (the upper boundary is 107, and looking over the data column in the spreadsheet there are two observations with values higher than this, 108 and 116, so these are the dots). 
+The easiest way to describe what a boxplot looks like is just to draw one. Click on the `Box plot' check box and you will get the plot shown on the lower right of Figure \ref{fig:boxplot1}. jamovi has drawn the most basic boxplot possible. When you look at this plot this is how you should interpret it: the thick line in the middle of the box is the median; the box itself spans the range from the 25th percentile to the 75th percentile; and the ``whiskers'' go out to the most extreme data point that doesn't exceed a certain bound. By default, this value is 1.5 times the interquartile range (IQR), calculated as \texttt{25th percentile - (1.5*IQR)} for the lower boundary, and \texttt{75th percentile + (1.5*IQR)} for the upper boundary. Any observation whose value falls outside this range is plotted as a circle or dot instead of being covered by the whiskers, and is commonly referred to as an \keyterm{outlier}. For our AFL margins data there are two observations that fall outside this range, and these observations are plotted as dots (the upper boundary is 107, and looking over the data column in the spreadsheet there are two observations with values higher than this, 108 and 116, so these are the dots). 
 
-\SUBSECTION{Violin plots~\label{sec:violinplots}}
+\subsection{Violin plots~\label{sec:violinplots}}
 
 \begin{figure}[!!htb]
 \begin{center}
 \epsfig{file = ../img/graphics/boxplot2.pdf, clip=true,width = 8cm}
-\caption{A violin plot of the \rtext{afl.margins} variable plotted in jamovi, alsow showing a box plot and data points}
+\caption{A violin plot of the \texttt{afl.margins} variable plotted in jamovi, alsow showing a box plot and data points}
 \label{fig:boxplot2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 A variation to the traditional box plot is the violin plot. Violin plots are similar to box plots except that they also show the kernel probability density of the data at different values. Typically, violin plots will include a marker for the median of the data and a box indicating the interquartile range, as in standard box plots. In jamovi you can achieve this sort of functionality by checking both the `Violin' and the 'Box plot' check boxes. See Figure \ref{fig:boxplot2}, which also has the `Data' check box turned on to show the actual data points on the plot. This does tend to make the graph a bit too busy though, in my opinion. Clarity is simplicity, so in practice it might be better to just use a simple box plot.
 
-\SUBSECTION{Drawing multiple boxplots~\label{sec:multipleboxplots}}
+\subsection{Drawing multiple boxplots~\label{sec:multipleboxplots}}
 
-One last thing. What if you want to draw multiple boxplots at once? Suppose, for instance, I wanted separate boxplots showing the AFL margins not just for 2010 but for every year between 1987 and 2010. To do that the first thing we'll have to do is find the data. These are stored in the \filename{aflsmall2.csv} file. So let's load it into jamovi and see what is in it. You will see that it is a pretty big data set. It contains 4296 games and the variables that we're interested in. What we want to do is have jamovi draw boxplots for the \rtext{margin} variable, but plotted separately for each  \rtext{year}. The way to do this is to move the \rtext{year} variable across into the `Split by' box, as in Figure \ref{fig:splitfile1}
+One last thing. What if you want to draw multiple boxplots at once? Suppose, for instance, I wanted separate boxplots showing the AFL margins not just for 2010 but for every year between 1987 and 2010. To do that the first thing we'll have to do is find the data. These are stored in the \filename{aflsmall2.csv} file. So let's load it into jamovi and see what is in it. You will see that it is a pretty big data set. It contains 4296 games and the variables that we're interested in. What we want to do is have jamovi draw boxplots for the \texttt{margin} variable, but plotted separately for each  \texttt{year}. The way to do this is to move the \texttt{year} variable across into the `Split by' box, as in Figure \ref{fig:splitfile1}
 
 \begin{figure}[!!htb]
 \begin{center}
 \epsfig{file = ../img/graphics/splitfile1.png, clip=true,width = 10cm}
 \caption{jamovi screen shot showing the `Split by' window}
 \label{fig:splitfile1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -100,20 +100,20 @@ The result is shown in Figure~\ref{fig:boxplot3}. This version of the box plot, 
 \begin{figure}[!!htb]
 \begin{center}
 \epsfig{file = ../img/graphics/boxplot3.pdf, clip=true,width = 14cm, height = 5cm}
-\caption{Multiple boxplots plotted in jamovi, for the \rtext{margin} by \rtext{year} variables in the \rtext{aflsmall2} data set}
+\caption{Multiple boxplots plotted in jamovi, for the \texttt{margin} by \texttt{year} variables in the \texttt{aflsmall2} data set}
 \label{fig:boxplot3}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
-\SUBSECTION{Using box plots to detect outliers~\label{sec:boxplotoutliers}}
+\subsection{Using box plots to detect outliers~\label{sec:boxplotoutliers}}
 
 \begin{figure}[!!htb]
 \begin{center}
 \epsfig{file = ../img/graphics/boxplot4.pdf, clip=true,width =7cm, height = 8cm} 
 \caption{A boxplot showing two very suspicious outliers!}
 \label{fig:boxplot4}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -124,18 +124,18 @@ Because the boxplot automatically separates out those observations that lie outs
 \epsfig{file = ../img/graphics/filter1.png, clip=true,width =14cm} 
 \caption{the jamovi filter screen}
 \label{fig:filter1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
-This filter creates a new column in the spreadsheet view where only those observations that pass the filter are included. One neat way to quickly identify which observations these are is to tell jamovi to produce a `Frequency table' (in the `Exploration' - `Descriptives' window) for the ID variable (which must be a nominal variable otherwise the Frequency table is not produced). In Figure \ref{fig:filter2} you can see that the ID values for the observations where the margin was over 300 are \rtext{14} and \rtext{134}. These are suspicious cases, or observations, where you should go back to the original data source to find out what is going on.
+This filter creates a new column in the spreadsheet view where only those observations that pass the filter are included. One neat way to quickly identify which observations these are is to tell jamovi to produce a `Frequency table' (in the `Exploration' - `Descriptives' window) for the ID variable (which must be a nominal variable otherwise the Frequency table is not produced). In Figure \ref{fig:filter2} you can see that the ID values for the observations where the margin was over 300 are \texttt{14} and \texttt{134}. These are suspicious cases, or observations, where you should go back to the original data source to find out what is going on.
 
 \begin{figure}[htp]
 \begin{center}
 \epsfig{file = ../img/graphics/filter2.png, clip=true,width =14cm} 
-\caption{Frequency table for \rtext{ID} showing the ID numbers for the two suspicious outliers: \rtext{14} and \rtext{134}}
+\caption{Frequency table for \texttt{ID} showing the ID numbers for the two suspicious outliers: \texttt{14} and \texttt{134}}
 \label{fig:filter2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -146,10 +146,10 @@ For less extreme values, even if they are flagged in a a boxplot as outliers, th
 
 \section{Bar graphs\label{sec:bargraph}}
 
-Another form of graph that you often want to plot is the \keyterm{bar graph}. Let's use the \rtext{afl.finalists} data set with the \rtext{afl.finalists} variable that I introduced in Section~\ref{sec:mode}. What I want to do is draw a bar graph that displays the number of finals that each team has played in over the time spanned by the \rtext{afl.finalists} data set. There are lots of teams, but I am particularly interested in just four: Brisbane, Carlton, Fremantle and Richmond. So the first step is to set up a filter so just those four teams are included in the bar graph. This is straightforward in jamovi and you can do it by using the `Filters' function that we used previously. Open up the `Filters' screen and type in the following: 
+Another form of graph that you often want to plot is the \keyterm{bar graph}. Let's use the \texttt{afl.finalists} data set with the \texttt{afl.finalists} variable that I introduced in Section~\ref{sec:mode}. What I want to do is draw a bar graph that displays the number of finals that each team has played in over the time spanned by the \texttt{afl.finalists} data set. There are lots of teams, but I am particularly interested in just four: Brisbane, Carlton, Fremantle and Richmond. So the first step is to set up a filter so just those four teams are included in the bar graph. This is straightforward in jamovi and you can do it by using the `Filters' function that we used previously. Open up the `Filters' screen and type in the following: 
 
 %\noindent
-\rtext{afl.finalists == `Brisbane' or afl.finalists == `Carlton' \\ \indent or afl.finalists == `Fremantle' or afl.finalists == `Richmond'} \FOOTNOTE{jamovi uses the symbol ``\rtext{==}'' here to mean ``matches''.} 
+\texttt{afl.finalists == `Brisbane' or afl.finalists == `Carlton' \\ \indent or afl.finalists == `Fremantle' or afl.finalists == `Richmond'} \FOOTNOTE{jamovi uses the symbol ``\texttt{==}'' here to mean ``matches''.} 
 
 When you have done this you will see, in the `Data' view, that jamovi has filtered out all values apart from those we have specified. Next, open up the `Exploration' - `Descriptives' window and click on the `Bar plot' check box (remember to move the `afl.finalists' variable across into the `Variables' box so that jamovi knows which variable to use). You should then get a bar graph, something like that shown in Figure~\ref{fig:bar1}.
 
@@ -159,7 +159,7 @@ When you have done this you will see, in the `Data' view, that jamovi has filter
 \epsfig{file = ../img/graphics/bar1.png, clip=true,width =14cm} 
 \caption{Filtering to include just four AFL teams, and drawing a bar plot in jamovi}
 \label{fig:bar1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -178,7 +178,7 @@ Perhaps I'm a simple minded person, but I love pictures. Every time I write a ne
 \end{itemize} 
 
 %\noindent
-One final thing to point out. Whilst jamovi produces some really neat default graphics, editing the plots is currently not possible. For more advanced graphics and plotting capability the packages available in \R\ are much more powerful. One of the most popular graphics systems is provided by the \rtext{ggplot2} package (see \url{http://ggplot2.org/}), which is loosely based on ``The grammar of graphics'' \parencite{Wilkinson2006}. It's not for novices. You need to have a pretty good grasp of \R\ before you can start using it, and even then it takes a while to really get the hang of it. But when you're ready it's worth taking the time to teach yourself, because it's a much more powerful and cleaner system.
+One final thing to point out. Whilst jamovi produces some really neat default graphics, editing the plots is currently not possible. For more advanced graphics and plotting capability the packages available in \R\ are much more powerful. One of the most popular graphics systems is provided by the \texttt{ggplot2} package (see \url{http://ggplot2.org/}), which is loosely based on ``The grammar of graphics'' \parencite{Wilkinson2006}. It's not for novices. You need to have a pretty good grasp of \R\ before you can start using it, and even then it takes a while to really get the hang of it. But when you're ready it's worth taking the time to teach yourself, because it's a much more powerful and cleaner system.
 
 
 

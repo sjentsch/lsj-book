@@ -13,7 +13,7 @@ In the prelude to Part~\thepart\ I discussed the riddle of induction and highlig
 
 In almost every situation of interest what we have available to us as researchers is a \keyterm{sample} of data. We might have run experiment with some number of participants, a polling company might have phoned some number of people to ask questions about voting intentions, and so on. In this way the data set available to us is finite and incomplete. We can't possibly get every person in the  world to do our experiment, for example a polling company doesn't have the time or the money to ring up every voter in the country. In our earlier discussion of descriptive statistics (Chapter~\ref{ch:descriptives}) this sample was the only thing we were interested in. Our only goal was to find ways of describing, summarising and graphing that sample. This is about to change.
 
-\SUBSECTION{Defining a population~\label{sec:pop}}
+\subsection{Defining a population~\label{sec:pop}}
 
 A sample is a concrete thing. You can open up a data file and there's the data from your sample. A \keyterm{population}, on the other hand, is a more abstract idea. It refers to the set of all possible people, or all possible observations, that you want to draw conclusions about and is generally {\it much} bigger than the sample. In an ideal world the researcher would begin the study with a clear idea of what the population of interest is, since the process of designing a study and testing hypotheses with the data does depend on the population about which you want to make statements. 
 
@@ -37,7 +37,7 @@ Each of these defines a real group of mind-possessing entities, all of which mig
 \end{itemize}
 Again, it's not obvious what the population is.
 
-\SUBSECTION{Simple random samples}
+\subsection{Simple random samples}
 
 \begin{figure}[t]
 \begin{center}
@@ -45,7 +45,7 @@ Again, it's not obvious what the population is.
 \end{center}
 \caption{Simple random sampling without replacement from a finite population}
 \label{fig:srs1}
-\HR
+%\HR
 \end{figure}
 
 Irrespective of how I define the population, the critical point is that the sample is a subset of the population and our goal is to use our knowledge of the sample to draw inferences about the properties of the population. The relationship between the two depends on the {\it procedure} by which the sample was selected. This procedure is referred to as a \keyterm{sampling method} and it is important to understand why it matters.
@@ -61,7 +61,7 @@ To help make sure you understand the importance of the sampling procedure, consi
 \end{center}
 \caption{Biased sampling without replacement from a finite population}
 \label{fig:brs}
-\HR
+%\HR
 \end{figure}
 
 \begin{figure}[t]
@@ -71,14 +71,14 @@ To help make sure you understand the importance of the sampling procedure, consi
 \end{center}
 \caption{Simple random sampling {\it with} replacement from a finite population}
 \label{fig:srs2}
-\HR
+%\HR
 \end{figure}
 
 A third procedure is worth mentioning. This time around we close our eyes, shake the bag, and pull out a chip. This time, however, we record the observation and then put the chip back in the bag. Again we close our eyes, shake the bag, and pull out a chip. We then repeat this procedure until we have 4 chips. Data sets generated in this way are still simple random samples, but because we put the chips back in the bag immediately after drawing them it is referred to as a sample \keyterm{with replacement}. The difference between this situation and the first one is that it is possible to observe the same population member multiple times, as illustrated in Figure~\ref{fig:srs2}. 
 
 In my experience, most psychology experiments tend to be sampling without replacement, because the same person is not allowed to participate in the experiment twice. However, most statistical theory is based on the assumption that the data arise from a simple random sample {\it with} replacement. In real life this very rarely matters. If the population of interest is large (e.g., has more than 10 entities!) the difference between sampling with- and without- replacement is too small to be concerned with. The difference between simple random samples and biased samples, on the other hand, is not such an easy thing to dismiss.
 
-\SUBSECTION{Most samples are not simple random samples}
+\subsection{Most samples are not simple random samples}
 
 As you can see from looking at the list of possible populations that I showed above, it is almost impossible to obtain a simple random sample from most populations of interest. When I run experiments I'd consider it a minor miracle if my participants turned out to be a random sampling of the undergraduate psychology students at Adelaide university, even though this is by far the narrowest population that I might want to generalise to. A thorough discussion of other types of sampling schemes is beyond the scope of this book, but to give you a sense of what's out there I'll list a few of the more important ones.
 
@@ -88,7 +88,7 @@ As you can see from looking at the list of possible populations that I showed ab
 \item {\it Convenience sampling} is more or less what it sounds like. The samples are chosen in a way that is convenient to the researcher, and not selected at random from the population of interest. Snowball sampling is one type of convenience sampling, but there are many others. A common example in psychology are studies that rely on undergraduate psychology students. These samples are generally non-random in two respects. First, reliance on undergraduate psychology students automatically means that your data are restricted to a single sub-population. Second, the students usually get to pick which studies they participate in, so the sample is a self selected subset of psychology students and not a randomly selected subset. In real life most studies are convenience samples of one form or another. This is sometimes a severe limitation, but not always.
 \end{itemize}
 
-\SUBSECTION{How much does it matter if you don't have a simple random sample?}
+\subsection{How much does it matter if you don't have a simple random sample?}
 
 Okay, so real world data collection tends not to involve nice simple random samples. Does that matter? A little thought should make it clear to you that it {\it can} matter if your data are not a simple random sample. Just think about the difference between Figures~\ref{fig:srs1} and \ref{fig:brs}. However, it's not quite as bad as it sounds. Some types of biased samples are entirely unproblematic. For instance, when using a stratified sampling technique you actually {\it know} what the bias is because you created it deliberately, often to {\it increase} the effectiveness of your study, and there are statistical techniques that you can use to adjust for the biases you've introduced (not covered in this book!). So in those situations it's not a problem. 
 
@@ -96,7 +96,7 @@ More generally though, it's important to remember that random sampling is a mean
 
 There are two points hidden in this discussion. First, when designing your own studies, it's important to think about what population you care about and try hard to sample in a way that is appropriate to that population. In practice, you're usually forced to put up with a ``sample of convenience'' (e.g., psychology lecturers sample psychology students because that's the least expensive way to collect data, and our coffers aren't exactly overflowing with gold), but if so you should at least spend some time thinking about what the dangers of this practice might be. Second, if you're going to criticise someone else's study because they've used a sample of convenience rather than laboriously sampling randomly from the entire human population, at least have the courtesy to offer a specific theory as to {\it how} this might have distorted the results. 
 
-\SUBSECTION{Population parameters and sample statistics}
+\subsection{Population parameters and sample statistics}
 
 Okay. Setting aside the thorny methodological issues associated with obtaining a random sample, let's consider a slightly different issue. Up to this point we have been talking about populations the way a scientist might. To a psychologist a population might be a group of people. To an ecologist a population might be a group of bears. In most cases the populations that scientists care about are concrete things that actually exist in the real world. Statisticians, however, are a funny lot. On the one hand, they {\it are} interested in real world data and real science in the same way that scientists are. On the other hand, they also operate in the realm of pure abstraction in the way that mathematicians do. As a consequence, statistical theory tends to be a bit abstract in how a population is defined. In much the same way that psychological researchers operationalise our abstract theoretical ideas in terms of concrete measurements (Section~\ref{sec:measurement}), statisticians operationalise the concept of a ``population'' in terms of mathematical objects that they know how to work with. You've already come across these objects in Chapter~\ref{ch:probability}. They're called probability distributions.
 
@@ -105,7 +105,8 @@ The idea is quite simple. Let's say we're talking about IQ scores. To a psycholo
 \begin{figure}[t]
 \begin{center}
 \begin{tabular}{ccc}
-\hspace*{-3mm}\epsfig{file=../img/estimation/IQpopulation.eps,clip=true,width=4.5cm} &
+\hspace*{-3mm}
+\epsfig{file=../img/estimation/IQpopulation.eps,clip=true,width=4.5cm} &
 \epsfig{file=../img/estimation/IQsample100.eps,clip=true,width=4.5cm} &
 \epsfig{file=../img/estimation/IQsample10000.eps,clip=true,width=4.5cm} \\
 (a) & (b) & (c)
@@ -113,7 +114,7 @@ The idea is quite simple. Let's say we're talking about IQ scores. To a psycholo
 \end{center}
 \caption{The population distribution of IQ scores (panel a) and two samples drawn randomly from it. In panel b we have a sample of 100 observations, and panel c we have a sample of 10,000 observations.}
 \label{fig:IQdist}
-\HR
+%\HR
 \end{figure}
 
 Now suppose I run an experiment. I select 100 people at random and administer an IQ test, giving me a simple random sample from the population. My sample would consist of a collection of numbers like this:
@@ -127,7 +128,7 @@ Each of these IQ scores is sampled from a normal distribution with mean 100 and 
 
 In the previous section I showed you the results of one fictitious IQ experiment with a sample size of $N=100$. The results were somewhat encouraging as the true population mean is 100 and the sample mean of 98.5 is a pretty reasonable approximation to it. In many scientific studies that level of precision is perfectly acceptable, but in other situations you need to be a lot more precise. If we want our sample statistics to be much closer to the population parameters, what can we do about it?
 
-The obvious answer is to collect more data. Suppose that we ran a much larger experiment, this time measuring the IQs of 10,000 people. We can simulate the results of this experiment using jamovi. The \rtext{IQsim.omv} file is a jamovi data file. In this file I have generated 10,000 random numbers sampled from a normal distribution for a population with \rtext{mean = 100} and \rtext{sd = 15}. This was done by computing a new variable using the \rtext{ = NORM(100,15)} function. A histogram and density plot shows that this larger sample is a much better approximation to the true population distribution than the smaller one. This is reflected in the sample statistics. The mean IQ for the larger sample turns out to be 99.68 and the standard deviation is 14.90. These values are now very close to the true population. See Figure \ref{fig:iqsim}
+The obvious answer is to collect more data. Suppose that we ran a much larger experiment, this time measuring the IQs of 10,000 people. We can simulate the results of this experiment using jamovi. The \texttt{IQsim.omv} file is a jamovi data file. In this file I have generated 10,000 random numbers sampled from a normal distribution for a population with \texttt{mean = 100} and \texttt{sd = 15}. This was done by computing a new variable using the \texttt{ = NORM(100,15)} function. A histogram and density plot shows that this larger sample is a much better approximation to the true population distribution than the smaller one. This is reflected in the sample statistics. The mean IQ for the larger sample turns out to be 99.68 and the standard deviation is 14.90. These values are now very close to the true population. See Figure \ref{fig:iqsim}
 
 \begin{figure}[p]
 \begin{center}
@@ -135,12 +136,13 @@ The obvious answer is to collect more data. Suppose that we ran a much larger ex
 \end{center}
 \caption{A random sample drawn from a normal distribution using jamovi}
 \label{fig:iqsim}
-\HR
+%\HR
 \end{figure}
 
 I feel a bit silly saying this, but the thing I want you to take away from this is that large samples generally give you better information. I feel silly saying it because it's so bloody obvious that it shouldn't need to be said. In fact, it's such an obvious point that when Jacob Bernoulli, one of the founders of probability theory, formalised this idea back in 1713 he was kind of a jerk about it. Here's how he described the fact that we all share this intuition:
 \begin{quote}
-{\it For even the most stupid of men, by some instinct of nature, by himself and without any instruction (which is a remarkable thing), is convinced that the more observations have been made, the less danger there is of wandering from one's goal} \parencite[see][p65]{Stigler1986}
+{\it For even the most stupid of men, by some instinct of nature, by himself and without any instruction (which is a remarkable thing), is convinced that the more observations have been made, the less danger there is of wandering from one's goal}
+\parencite[see][p.~65]{Stigler1986}
 \end{quote}
 Okay, so the passage comes across as a bit condescending (not to mention sexist), but his main point is correct. It really does feel obvious that more data will give you better answers. The question is, why is this so? Not surprisingly, this intuition that we all share turns out to be correct, and statisticians refer to it as the \keyterm{law of large numbers}. The law of large numbers is a mathematical law that applies to many different sample statistics but the simplest way to think about it is as a law about averages. The sample mean is the most obvious example of a statistic that relies on averaging (because that's what the mean is... an average), so let's look at that. When applied to the sample mean what the law of large numbers states is that as the sample gets larger, the sample mean tends to get closer to the true population mean. Or, to say it a little bit more precisely, as the sample size ``approaches'' infinity (written as $N \rightarrow \infty$), the sample mean approaches the population mean ($\bar{X} \rightarrow \mu$).\FOOTNOTE{Technically, the law of large numbers pertains to any sample statistic that can be described as an average of independent quantities. That's certainly true for the sample mean. However, it's also possible to write many other sample statistics as averages of one form or another. The variance of a sample, for instance, can be rewritten as a kind of average and so is subject to the law of large numbers. The minimum value of a sample, however, cannot be written as an average of anything and is therefore not governed by the law of large numbers.} 
 
@@ -151,23 +153,24 @@ I don't intend to subject you to a proof that the law of large numbers is true, 
 
 The law of large numbers is a very powerful tool but it's not going to be good enough to answer all our questions. Among other things, all it gives us is a ``long run guarantee''. In the long run, if we were somehow able to collect an infinite amount of data, then the law of large numbers guarantees that our sample statistics will be correct. But as John Maynard Keynes famously argued in economics, a long run guarantee is of little use in real life.
 \begin{quote}
-{\it [The] long run is a misleading guide to current affairs. In the long run we are all dead. Economists set themselves too easy, too useless a task, if in tempestuous seasons they can only tell us, that when the storm is long past, the ocean is flat again.} \parencite[p.~80]{Keynes1923}
+{\it [The] long run is a misleading guide to current affairs. In the long run we are all dead. Economists set themselves too easy, too useless a task, if in tempestuous seasons they can only tell us, that when the storm is long past, the ocean is flat again.}
+\parencite[p.~80]{Keynes1923}
 \end{quote}
 As in economics, so too in psychology and statistics. It is not enough to know that we will {\it eventually} arrive at the right answer when calculating the sample mean. Knowing that an infinitely large data set will tell me the exact value of the population mean is cold comfort when my {\it actual} data set has a sample size of $N=100$. In real life, then, we must know something about the behaviour of the sample mean when it is calculated from a more modest data set!
 
-\SUBSECTION{Sampling distribution of the mean~\label{sec:samplingdists}}
+\subsection{Sampling distribution of the mean~\label{sec:samplingdists}}
 
-With this in mind, let's abandon the idea that our studies will have sample sizes of 10,000 and consider instead a very modest experiment indeed. This time around we'll sample $N=5$ people and measure their IQ scores. As before, I can simulate this experiment in jamovi \rtext{= NORM(100,15)} function, but I only need 5 participant IDs this time, not 10,000. These are the five numbers that jamovi generated:
+With this in mind, let's abandon the idea that our studies will have sample sizes of 10,000 and consider instead a very modest experiment indeed. This time around we'll sample $N=5$ people and measure their IQ scores. As before, I can simulate this experiment in jamovi \texttt{= NORM(100,15)} function, but I only need 5 participant IDs this time, not 10,000. These are the five numbers that jamovi generated:
 
-\begin{rblock1}
+\begin{verbatim}
 90 82 94 99 110
-\end{rblock1}
+\end{verbatim}
 
 The mean IQ in this sample turns out to be exactly 95. Not surprisingly, this is much less accurate than the previous experiment. Now imagine that I decided to \keyterm{replicate} the experiment. That is, I repeat the procedure as closely as possible and I randomly sample 5 new people and measure their IQ. Again, jamovi allows me to simulate the results of this procedure, and generates these five numbers:
 
-\begin{rblock1}
+\begin{verbatim}
 78 88 111 111 117
-\end{rblock1}
+\end{verbatim}
 
 This time around, the mean IQ in my sample is 101. If I repeat the experiment 10 times I obtain the results shown in Table~\ref{tab:replications}, and as you can see the sample mean varies from one replication to the next. 
 
@@ -175,23 +178,24 @@ This time around, the mean IQ in my sample is 101. If I repeat the experiment 10
 \centering
 \caption{Ten replications of the IQ experiment, each with a sample size of $N=5$.}
 \label{tab:replications}
-\begin{tabular}{l|rrrrr|r}
- \multicolumn{6}{c}{} \\
- & Person 1 & Person 2 & Person 3 & Person 4 & Person 5 & Sample Mean \\ 
-  \hline
-Replication 1 & 90 & 82 & 94 & 99 & 110 & 95.0 \\ 
-  Replication 2 & 78 & 88 & 111 & 111 & 117 & 101.0 \\ 
-  Replication 3 & 111 & 122 & 91 & 98 & 86 & 101.6 \\ 
-  Replication 4 & 98 & 96 & 119 & 99 & 107 & 103.8 \\ 
-  Replication 5 & 105 & 113 & 103 & 103 & 98 & 104.4 \\ 
-  Replication 6 & 81 & 89 & 93 & 85 & 114 & 92.4 \\ 
-  Replication 7 & 100 & 93 & 108 & 98 & 133 & 106.4 \\ 
-  Replication 8 & 107 & 100 & 105 & 117 & 85 & 102.8 \\ 
-  Replication 9 & 86 & 119 & 108 & 73 & 116 & 100.4 \\ 
-  Replication 10 & 95 & 126 & 112 & 120 & 76 & 105.8 \\ 
-  \multicolumn{6}{c}{} \\
+\begin{tabular}{lrrrrrr}
+\hline
+~              & Person 1 & Person 2 & Person 3 & Person 4 & Person 5 & Sample Mean \\ 
+\hline
+Replication  1 &       90 &       82 &       94 &       99 &      110 &        95.0 \\ 
+Replication  2 &       78 &       88 &      111 &      111 &      117 &       101.0 \\ 
+Replication  3 &      111 &      122 &       91 &       98 &       86 &       101.6 \\ 
+Replication  4 &       98 &       96 &      119 &       99 &      107 &       103.8 \\ 
+Replication  5 &      105 &      113 &      103 &      103 &       98 &       104.4 \\ 
+Replication  6 &       81 &       89 &       93 &       85 &      114 &        92.4 \\ 
+Replication  7 &      100 &       93 &      108 &       98 &      133 &       106.4 \\ 
+Replication  8 &      107 &      100 &      105 &      117 &       85 &       102.8 \\ 
+Replication  9 &       86 &      119 &      108 &       73 &      116 &       100.4 \\ 
+Replication 10 &       95 &      126 &      112 &      120 &       76 &       105.8 \\ 
+\hline
+\\
 \end{tabular}
-\HR
+%\HR
 \end{table}
 
 Now suppose that I decided to keep going in this fashion, replicating this ``five IQ scores'' experiment over and over again. Every time I replicate the experiment I write down the sample mean. Over time, I'd be amassing a new data set, in which every experiment generates a single data point. The first 10 observations from my data set are the sample means listed in Table~\ref{tab:replications}, so my data set starts out like this:
@@ -207,7 +211,7 @@ Sampling distributions are another important theoretical idea in statistics, and
 \epsfig{file=../img/estimation/samplingDist4.png,clip=true,width=7cm} 
 \caption{The sampling distribution of the mean for the ``five IQ scores experiment''. If you sample 5 people at random and calculate their {\it average} IQ you'll almost certainly get a number between 80 and 120, even though there are quite a lot of individuals who have IQs above 120 or below 80. For comparison, the black line plots the population distribution of IQ scores.}
 \label{fig:sampdistmean}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -217,12 +221,12 @@ Sampling distributions are another important theoretical idea in statistics, and
 \epsfig{file=../img/estimation/samplingDistMax.png,clip=true,width=8cm} 
 \caption{The sampling distribution of the {\it maximum} for the ``five IQ scores experiment''. If you sample 5 people at random and select the one with the highest IQ score you'll probably see someone with an IQ between 100 and 140.}
 \label{fig:sampdistmax}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 
-\SUBSECTION{Sampling distributions exist for any sample statistic!}
+\subsection{Sampling distributions exist for any sample statistic!}
 
 One thing to keep in mind when thinking about sampling distributions is that {\it any} sample statistic you might care to calculate has a sampling distribution. For example, suppose that each time I replicated the ``five IQ scores'' experiment I wrote down the largest IQ score in the experiment. This would give me a data set that started out like this:
 \begin{verbatim}
@@ -230,7 +234,7 @@ One thing to keep in mind when thinking about sampling distributions is that {\i
 \end{verbatim}
 Doing this over and over again would give me a very different sampling distribution, namely the {\it sampling distribution of the maximum}. The sampling distribution of the maximum of 5 IQ scores is shown in Figure~\ref{fig:sampdistmax}. Not surprisingly, if you pick 5 people at random and then find the person with the highest IQ score, they're going to have an above average IQ. Most of the time you'll end up with someone whose IQ is measured in the 100 to 140 range. 
 
-\SUBSECTION{The central limit theorem~\label{sec:clt}}
+\subsection{The central limit theorem~\label{sec:clt}}
 
 \begin{figure}[t]
 \begin{center}
@@ -242,7 +246,7 @@ Doing this over and over again would give me a very different sampling distribut
 \end{tabular}
 \caption{An illustration of the how sampling distribution of the mean depends on sample size. In each panel I generated 10,000 samples of IQ data and calculated the mean IQ observed within each of these data sets. The histograms in these plots show the distribution of these means (i.e., the sampling distribution of the mean). Each individual IQ score was drawn from a normal distribution with mean 100 and standard deviation 15, which is shown as the solid black line. In panel a, each data set contained only a single observation, so the mean of each sample is just one person's IQ score. As a consequence, the sampling distribution of the mean is of course identical to the population distribution of IQ scores. However, when we raise the sample size to 2 the mean of any one sample tends to be closer to the population mean than a one person's IQ score, and so the histogram (i.e., the sampling distribution) is a bit narrower than the population distribution. By the time we raise the sample size to 10 (panel c), we can see that the distribution of sample means tend to be fairly tightly clustered around the true population mean.}
 \label{fig:IQsamp}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -261,7 +265,7 @@ Okay, so that's one part of the story. However, there's something I've been glos
 (c) & (d)
 \end{tabular}
 \caption{A demonstration of the central limit theorem. In panel a, we have a non-normal population distribution, and panels b-d show the sampling distribution of the mean for samples of size 2,4 and 8 for data drawn from the distribution in panel a. As you can see, even though the original population distribution is non-normal the sampling distribution of the mean becomes pretty close to normal by the time you have a sample of even 4 observations. }
-\HR
+%\HR
 \label{fig:cltdemo}
 \end{center}
 \end{figure}
@@ -287,7 +291,7 @@ In all the IQ examples in the previous sections we actually knew the population 
 
 This is very handy, but of course almost every research project of interest involves looking at a different population of people to those used in the test norms. For instance, suppose you wanted to measure the effect of low level lead poisoning on cognitive functioning in Port Pirie, a South Australian industrial town with a lead smelter. Perhaps you decide that you want to compare IQ scores among people in Port Pirie to a comparable sample in Whyalla, a South Australian industrial town with a steel refinery.\FOOTNOTE{Please note that if you were {\it actually} interested in this question you would need to be a {\it lot} more careful than I'm being here. You {\it can't} just compare IQ scores in Whyalla to Port Pirie and assume that any differences are due to lead poisoning. Even if it were true that the only differences between the two towns corresponded to the different refineries (and it isn't, not by a long shot), you need to account for the fact that people already {\it believe} that lead pollution causes cognitive deficits. If you recall back to Chapter~\ref{ch:studydesign}, this means that there are different demand effects for the Port Pirie sample than for the Whyalla sample. In other words, you might end up with an illusory group difference in your data, caused by the fact that people {\it think} that there is a real difference. I find it pretty implausible to think that the locals wouldn't be well aware of what you were trying to do if a bunch of researchers turned up in Port Pirie with lab coats and IQ tests, and even less plausible to think that a lot of people would be pretty resentful of you for doing it. Those people won't be as co-operative in the tests. Other people in Port Pirie might be {\it more} motivated to do well because they don't want their home town to look bad. The motivational effects that would apply in Whyalla are likely to be weaker, because people don't have any concept of ``iron ore poisoning'' in the same way that they have a concept for ``lead poisoning''. Psychology is {\it hard}.} Regardless of which town you're thinking about, it doesn't make a lot of sense simply to {\it assume} that the true population mean IQ is 100. No-one has, to my knowledge, produced sensible norming data that can automatically be applied to South Australian industrial towns. We're going to have to \keyterm{estimate} the population parameters from a sample of data. So how do we do this?
 
-\SUBSECTION{Estimating the population mean}
+\subsection{Estimating the population mean}
 
 Suppose we go to Port Pirie and 100 of the locals are kind enough to sit through an IQ test. The average IQ score among these people turns out to be $\bar{X}=98.5$. So what is the true mean IQ for the entire population of Port Pirie? Obviously, we don't know the answer to that question. It could be $97.2$, but it could also be $103.5$. Our sampling isn't exhaustive so we cannot give a definitive answer. Nevertheless, if I was forced at gunpoint to give a ``best guess'' I'd have to say $98.5$. That's the essence of statistical estimation: giving a best guess. 
 
@@ -297,14 +301,17 @@ In this example estimating the unknown poulation parameter is straightforward. I
 \begin{center}
 \small 
 \begin{tabular}{clp{6cm}}
-Symbol & What is it? & Do we know what it is? \\ \hline \\[-6pt]
-$\bar{X}$ & Sample mean & Yes, calculated from the raw data \\
-$\mu$ & True population mean & Almost never known for sure \\
-$\hat{\mu}$ & Estimate of the population mean & Yes, identical to the sample mean in simple random samples
+\hline
+Symbol      & What is it?                     & Do we know what it is?                                     \\
+\hline\\[-6pt]
+$\bar{X}$   & Sample mean                     & Yes, calculated from the raw data                          \\
+$\mu$       & True population mean            & Almost never known for sure                                \\
+$\hat{\mu}$ & Estimate of the population mean & Yes, identical to the sample mean in simple random samples \\
+\hline
 \end{tabular}
 \end{center}
 
-\SUBSECTION{Estimating the population standard deviation}
+\subsection{Estimating the population standard deviation}
 
 So far, estimation seems pretty simple, and you might be wondering why I forced you to read through all that stuff about sampling theory. In the case of the mean our estimate of the population parameter (i.e. $\hat\mu$) turned out to identical to the corresponding sample statistic (i.e. $\bar{X}$). However, that's not always true. To see this, let's have a think about how to construct an \keyterm{estimate of the population standard deviation}, which we'll denote  $\hat\sigma$. What shall we use as our estimate in this case? Your first thought might be that we could do the same thing we did when estimating the mean, and just use the sample statistic as our estimate. That's almost the right thing to do, but not quite. 
 
@@ -327,7 +334,7 @@ This time around, our sample is {\it just} large enough for us to be able to obs
 \epsfig{file=../img/estimation/samplingDistSampleSD.eps,clip=true,width=12cm} 
 \caption{The sampling distribution of the sample standard deviation for a ``two IQ scores'' experiment. The true population standard deviation is 15 (dashed line), but as you can see from the histogram the vast majority of experiments will produce a much smaller sample standard deviation than this. On average, this experiment would produce a sample standard deviation of only 8.5, well below the true value! In other words, the sample standard deviation is a {\it biased} estimate of the population standard deviation.}
 \label{fig:sampdistsd}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -344,12 +351,12 @@ Now let's extend the simulation. Instead of restricting ourselves to the situati
 \end{tabular}
 \caption{An illustration of the fact that the sample mean is an unbiased estimator of the population mean (panel a), but the sample standard deviation is a biased estimator of the population standard deviation (panel b). For the figure I generated 10,000 simulated data sets with 1 observation each, 10,000 more with 2 observations, and so on up to a sample size of 10. Each data set consisted of fake IQ data, that is the data were normally distributed with a true population mean of 100 and standard deviation 15. {\it On average}, the sample means turn out to be 100, regardless of sample size (panel a). However, the sample standard deviations turn out to be systematically too small (panel b), especially for small sample sizes.} 
 \label{fig:estimatorbias}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 \vspace{0.5cm}
-\begin{mdframed}[style=MyFrame,nobreak=true]
+%\begin{mdframed}[style=MyFrame,nobreak=true]
 The fix to this systematic bias turns out to be very simple. Here's how it works. Before tackling the standard deviation let's look at the variance. If you recall from Section~\ref{sec:var}, the sample variance is defined to be the average of the squared deviations from the sample mean. That is:
 $$
 s^2 = \frac{1}{N} \sum_{i=1}^N (X_i - \bar{X})^2
@@ -363,7 +370,7 @@ $$
 \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2} 
 $$
 and when we use jamovi's built in standard deviation function, what it's doing is calculating $\hat\sigma$, not $s$.\FOOTNOTE{Okay, I'm hiding something else here. In a bizarre and counter-intuitive twist, since $\hat\sigma^2$ is an unbiased estimator of $\sigma^2$, you'd assume that taking the square root would be fine and $\hat\sigma$ would be an unbiased estimator of $\sigma$. Right? Weirdly, it's not. There's actually a subtle, tiny bias in $\hat\sigma$. This is just bizarre: $\hat\sigma^2$ is an unbiased estimate of the population variance $\sigma^2$, but when you take the square root, it turns out that $\hat\sigma$ is a biased estimator of the population standard deviation $\sigma$. Weird, weird, weird, right? So, why is $\hat\sigma$ biased? The technical answer is ``because non-linear transformations (e.g., the square root) don't commute with expectation'', but that just sounds like gibberish to everyone who hasn't taken a course in mathematical statistics. Fortunately, it doesn't matter for practical purposes. The bias is small, and in real life everyone uses $\hat\sigma$ and it works just fine. Sometimes mathematics is just annoying.} 
-\end{mdframed}
+%\end{mdframed}
 
 One final point. In practice, a lot of people tend to refer to $\hat{\sigma}$ (i.e., the formula where we divide by $N-1$) as the {\it sample} standard deviation. Technically, this is incorrect. The {\it sample} standard deviation should be equal to $s$ (i.e., the formula where we divide by $N$). These aren't the same thing, either conceptually or numerically. One is a property of the sample, the other is an estimated characteristic of the population. However, in almost every real life application what we actually care about is the estimate of the population parameter, and so people always report $\hat\sigma$ rather than $s$. This is the right number to report, of course. It's just that people tend to get a little bit imprecise about terminology when they write it up, because ``sample standard deviation'' is shorter than ``estimated population standard deviation''. It's no big deal, and in practice I do the same thing everyone else does. Nevertheless, I think it's important to keep the two {\it concepts} separate. It's never a good idea to confuse ``known properties of your sample'' with ``guesses about the population from which it came''. The moment you start thinking that $s$ and $\hat\sigma$ are the same thing, you start doing exactly that. 
 
@@ -372,22 +379,28 @@ To finish this section off, here's another couple of tables to help keep things 
 \begin{center}
 \small 
 \begin{tabular}{cll}
-Symbol & What is it? & Do we know what it is? \\ \hline \\[-6pt]
-$s$ & Sample standard deviation & Yes, calculated from the raw data \\
-$\sigma$ & Population standard deviation & Almost never known for sure \\
-$\hat{\sigma}$ & Estimate of the population  & Yes, but not the same as the  \\
- & standard deviation & sample standard deviation
+\hline
+Symbol           & What is it?                   & Do we know what it is?            \\
+\hline \\[-6pt]
+$s$              & Sample standard deviation     & Yes, calculated from the raw data \\
+$\sigma$         & Population standard deviation & Almost never known for sure       \\
+$\hat{\sigma}$   & Estimate of the population    & Yes, but not the same as the      \\
+~                & standard deviation            & sample standard deviation         \\
+\hline
 \end{tabular}
 \end{center}\vspace{0.5cm}
 
 \begin{center}
 \small 
 \begin{tabular}{cll}
-Symbol & What is it? & Do we know what it is? \\ \hline \\[-6pt]
-$s^2$ & Sample variance & Yes, calculated from the raw data \\
-$\sigma^2$ & Population variance & Almost never known for sure \\
-$\hat{\sigma}^2$ & Estimate of the population  & Yes, but not the same as the  \\
- & variance & sample variance
+\hline
+Symbol           & What is it?                   & Do we know what it is?            \\
+\hline \\[-6pt]
+$s^2$            & Sample variance               & Yes, calculated from the raw data \\
+$\sigma^2$       & Population variance           & Almost never known for sure       \\
+$\hat{\sigma}^2$ & Estimate of the population    & Yes, but not the same as the      \\
+~                & variance                      & sample variance                   \\
+\hline
 \end{tabular}
 \end{center}\vspace{0.5cm}
 
@@ -395,8 +408,7 @@ $\hat{\sigma}^2$ & Estimate of the population  & Yes, but not the same as the  \
 \section{Estimating a confidence interval\label{sec:ci}}
 
 \begin{quote}
-{\it Statistics means never having to say you're certain}
-
+{\it Statistics means never having to say you're certain} \\
 \hspace*{2cm} -- Unknown origin\FOOTNOTE{This quote appears on a great many t-shirts and websites, and even gets a mention in a few academic papers (e.g., \url{http://www.amstat.org/publications/jse/v10n3/friedman.html}, but I've never found the original source.}
 \end{quote}
 
@@ -408,7 +420,7 @@ Armed with an understanding of sampling distributions, constructing a confidence
 To be more precise, the more correct answer is that there is a 95\% chance that a normally-distributed quantity will fall within 1.96 standard deviations of the true mean. Next, recall that the standard deviation of the sampling distribution is referred to as the standard error, and the standard error of the mean is written as SEM. When we put all these pieces together, we learn that there is a 95\% probability that the sample mean $\bar{X}$ that we have actually observed lies within 1.96 standard errors of the population mean. 
 
 \vspace{0.5cm}
-\begin{mdframed}[style=MyFrame,nobreak=true]
+%\begin{mdframed}[style=MyFrame,nobreak=true]
 Mathematically, we write this as:
 $$
 \mu - \left( 1.96 \times \mbox{SEM} \right) \ \leq \  \bar{X}\  \leq \  \mu + \left( 1.96 \times \mbox{SEM} \right) 
@@ -421,17 +433,17 @@ What this is telling is is that the range of values has a 95\% probability of co
 $$
 \mbox{CI}_{95} = \bar{X} \pm \left( 1.96 \times \frac{\sigma}{\sqrt{N}} \right)
 $$
-\end{mdframed}
+%\end{mdframed}
 
 Of course, there's nothing special about the number 1.96. It just happens to be the multiplier you need to use if you want a 95\% confidence interval. If I'd wanted a 70\% confidence interval, I would have used 1.04 as the magic number rather than 1.96.
 
-\SUBSECTION{A slight mistake in the formula}
+\subsection{A slight mistake in the formula}
 
 As usual, I lied. The formula that I've given above for the 95\% confidence interval is approximately correct, but I glossed over an important detail in the discussion. Notice my formula requires you to use the standard error of the mean, SEM, which in turn requires you to use the true population standard deviation $\sigma$. Yet, in Section~\ref{sec:pointestimates} I stressed the fact that we don't actually {\it know} the true population parameters. Because we don't know the true value of $\sigma$ we have to use an estimate of the population standard deviation $\hat{\sigma}$ instead. This is pretty straightforward to do, but this has the consequence that we need to use the percentiles of the $t$-distribution rather than the normal distribution to calculate our magic number, and the answer depends on the sample size. When $N$ is very large, we get pretty much the same value using the $t$-distribution or the normal distribution: 1.96. But when $N$ is small we get a much bigger number when we use the $t$ distribution: 2.26.
 
 There's nothing too mysterious about what's happening here. Bigger values mean that the confidence interval is wider, indicating that we're more uncertain about what the true value of $\mu$ actually is. When we use the $t$ distribution instead of the normal distribution we get bigger numbers, indicating that we have more uncertainty. And why do we have that extra uncertainty? Well, because our estimate of the population standard deviation $\hat\sigma$ might be wrong! If it's wrong, it implies that we're a bit less sure about what our sampling distribution of the mean actually looks like, and this uncertainty ends up getting reflected in a wider confidence interval.  
 
-\SUBSECTION{Interpreting a confidence interval}
+\subsection{Interpreting a confidence interval}
 
 The hardest thing about confidence intervals is understanding what they {\it mean}. Whenever people first encounter confidence intervals, the first instinct is almost always to say that ``there is a 95\% probability that the true mean lies inside the confidence interval''. It's simple and it seems to capture the common sense idea of what it means to say that I am ``95\% confident''. Unfortunately, it's not quite right. The intuitive definition relies very heavily on your own personal {\it beliefs} about the value of the population mean. I say that I am 95\% confident because those are my beliefs. In everyday life that's perfectly okay, but if you remember back to Section~\ref{sec:probmeaning}, you'll notice that talking about personal belief and confidence is a Bayesian idea. However, confidence intervals are {\it not} Bayesian tools. Like everything else in this chapter, confidence intervals are {\it frequentist} tools, and if you are going to use frequentist methods then it's not appropriate to attach a Bayesian interpretation to them. If you use frequentist methods, you must adopt frequentist interpretations!
 
@@ -445,7 +457,7 @@ Okay, so if that's not the right answer, what is? Remember what we said about fr
 \end{tabular}
 \caption{95\% confidence intervals. The top (panel a) shows 50 simulated replications of an experiment in which we measure the IQs of 10 people. The dot marks the location of the sample mean and the line shows the 95\% confidence interval. In total 47 of the 50 confidence intervals do contain the true mean (i.e., 100), but the three intervals marked with asterisks do not. The lower graph (panel b) shows a similar simulation, but this time we simulate replications of an experiment that measures the IQs of 25 people.}
 \label{fig:cirep}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -454,13 +466,13 @@ The critical difference here is that the Bayesian claim makes a probability stat
 I know that this seems a little pedantic, but it does matter. It matters because the difference in interpretation leads to a difference in the mathematics. There is a Bayesian alternative to confidence intervals, known as {\it credible intervals}. In most situations credible intervals are quite similar to confidence intervals, but in other cases they are drastically different. As promised, though, I'll talk more about the Bayesian perspective in Chapter~\ref{ch:bayes}.
 
 
-\SUBSECTION{Calculating confidence intervals in jamovi}
+\subsection{Calculating confidence intervals in jamovi}
 
 As far as I can tell, jamovi does not (yet) include a simple way to  calculate confidence intervals for the mean as part of the `Descriptives' functionality. But the `Descriptives' do have a check box for the S.E. Mean, so you can use this to calculate the lower 95\% confidence interval as:
 
-\rtext{Mean - (1.96 * S.E. Mean)} , and the upper 95\% confidence interval as:
+\texttt{Mean - (1.96 * S.E. Mean)} , and the upper 95\% confidence interval as:
 
-\rtext{Mean + (1.96 * S.E. Mean)} 
+\texttt{Mean + (1.96 * S.E. Mean)} 
 
 95\% confidence intervals are the de facto standard in psychology. So, for example, if I load the \filename{IQsim.omv} file, check mean and S.E mean under `Descriptives, I can work out the confidence interval associated with the simulated mean IQ: 
 

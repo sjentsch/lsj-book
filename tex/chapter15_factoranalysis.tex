@@ -20,7 +20,7 @@ In Figure \ref{fig:fa1} each observed variable V is `caused’ to some extent by
 \epsfig{file = ../img/factoranalysis/fa1.png, clip=true,width = 12cm} 
 \caption{Latent factor underlying the relationship between several observed variables}
 \label{fig:fa1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -30,13 +30,13 @@ Here’s another example: we may not be able to directly measure statistics anxi
 
 In exploratory factor analysis (EFA), we are essentially exploring the correlations between observed variables to uncover any interesting, important underlying (latent) factors that are identified when observed variables co-vary. We can use statistical software to estimate any latent factors and to identify which of our variables have a high loading\FOOTNOTE{Quite helpfully, factor loadings can be interpreted like standardized regression coefficients} (e.g. loading $>0.5$) on each factor, suggesting they are a useful measure, or indicator, of the latent factor. Part of this process includes a step called rotation, which to be honest is a pretty weird idea but luckily we don’t have to worry about understanding it; we just need to know that it is helpful because it makes the pattern of loadings on different factors much clearer. As such, rotation helps with seeing more clearly which variables are linked substantively to each factor. We also need to decide how many factors are reasonable given our data, and helpful in this regard is something called Eigen values. We'll come back to this in a moment, after we have covered some of the main assumptions of EFA.
 
-\SUBSECTION{Checking assumptions}
+\subsection{Checking assumptions}
 
 There are a couple of assumptions that need to be checked as part of the analysis. The first assumption is \keyterm{sphericity}, which essentially checks that the variables in your dataset are correlated with each other to the extent that they can potentially be summarised with a smaller set of factors. Bartlett’s test for sphericity checks whether the observed correlation matrix diverges significantly from a zero (or null) correlation matrix. So, if Bartlett’s test is significant ($p<.05$), this indicates that the observed correlation matrix is significantly divergent from the null, and is therefore suitable for EFA. 
 
 The second assumption is \keyterm{sampling adequacy} and is checked using the Kaiser-Meyer-Olkin (KMO) Measure of Sampling Adequacy (MSA). The KMO index is a measure of the proportion of variance among observed variables that might be common variance. Using partial correlations, it checks for factors that load just two items. We seldom, if ever, want EFA producing a lot of factors loading just two items each. KMO is about sampling adequacy because partial correlations are typically seen with inadequate samples.  If the KMO index is high ($\approx$1), the EFA is efficient whereas if KMO is low ($\approx$0), the EFA is not relevant. KMO values smaller than 0.5 indicates that EFA is not suitable and a KMO value of 0.6 should be present before EFA is considered suitable. Values between 0.5 and 0.7 are considered adequate, values between 0.7 and 0.9 are good and values between 0.9 and 1.0 are excellent.
 
-\SUBSECTION{What is EFA good for?}
+\subsection{What is EFA good for?}
 
 If the EFA has provided a good solution (i.e. factor model), then we need to decide what to do with our shiny new factors. Researchers often use EFA during psychometric scale development. They will develop a pool of questionnaire items that they think relate to one or more psychological constructs, use EFA to see which items “go together” as latent factors, and then they will assess whether some items should be removed because they don't usefully or distinctly measure one of the latent factors. 
 
@@ -51,7 +51,7 @@ In the first option each item’s contribution to the combined score depends on 
 
 A more advanced statistical technique, one which is beyond the scope of this book, undertakes regression modelling where latent factors are used in prediction models of other latent factors. This is called "structural equation modelling" and there are specific software programmes and R packages dedicated to this approach. But let's not get ahead of ourselves; what we should really focus on now is how to do an EFA in jamovi.  
 
-\SUBSECTION{EFA in jamovi}
+\subsection{EFA in jamovi}
 
 First, we need some data. Twenty-five personality self-report items (see Figure \ref{fig:fa2}) taken from the International Personality Item Pool (\url{http://ipip.ori.org}) were included as part of the Synthetic Aperture Personality Assessment (SAPA) web-based personality assessment (SAPA: \url{http://sapa-project.org}) project. The 25 items are organized by five putative factors: Agreeableness, Conscientiousness, Extraversion, Neuroticism, and Openness. 
 
@@ -60,7 +60,7 @@ First, we need some data. Twenty-five personality self-report items (see Figure 
 \epsfig{file = ../img/factoranalysis/fa2.png, clip=true,width = 14cm} 
 \caption{Twenty-five observed variable items organised by five putative personality factors in the dataset \filename{bfi\_sample.csv}}
 \label{fig:fa2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -79,7 +79,7 @@ The item data were collected using a 6-point response scale:
 A sample of N=250 responses is contained in the dataset \filename{bfi\_sample.csv}. As researchers, we are interested in exploring the data to see whether there are some underlying latent factors that are measured reasonably well by the 25 observed variables in the \filename{bfi\_sample.csv} data file. Open up the dataset and check that the 25 variables are coded as continuous variables (technically they are ordinal though for EFA in jamovi it mostly doesn't matter, except if you decide to calculate weighted factor scores in which case continuous variables are needed). To perform EFA in jamovi:
 
 \begin{itemize} \itemsep -2pt
-\item Select \rtext{Factor - Exploratory Factor Analysis} from the main jamovi button bar to open the EFA analysis window (Figure \ref{fig:fa3}).
+\item Select \texttt{Factor - Exploratory Factor Analysis} from the main jamovi button bar to open the EFA analysis window (Figure \ref{fig:fa3}).
 \item Select the 25 personality questions and transfer them into the ‘Variables’ box.
 \item Check appropriate options, including ‘Assumption Checks’, but also Rotation ‘Method’, ‘Number of Factors’ to extract, and ‘Additional Output’ options. See Figure \ref{fig:fa3} for suggested options for this illustrative EFA, and please note that the Rotation ‘Method’ and ‘Number of Factors’ extracted is typically adjusted by the researcher during the analysis to find the best result, as described below.
 \end{itemize}
@@ -89,7 +89,7 @@ A sample of N=250 responses is contained in the dataset \filename{bfi\_sample.cs
 \epsfig{file = ../img/factoranalysis/fa3.png, clip=true,width = 12cm} 
 \caption{The jamovi EFA analysis window}
 \label{fig:fa3}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -98,7 +98,7 @@ A sample of N=250 responses is contained in the dataset \filename{bfi\_sample.cs
 \epsfig{file = ../img/factoranalysis/fa4.png, clip=true,width = 7cm} 
 \caption{jamovi EFA assumption checks for the personality questionnaire data}
 \label{fig:fa4}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -117,7 +117,7 @@ The next thing to check is how many factors to use (or “extract” from the da
 \epsfig{file = ../img/factoranalysis/fa5.png, clip=true,width = 14cm} 
 \caption{Scree plot of the personality data in jamovi EFA, showing a noticeable inflection and levelling off after point 5 (the “elbow”)}
 \label{fig:fa5}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -126,7 +126,7 @@ The next thing to check is how many factors to use (or “extract” from the da
 \epsfig{file = ../img/factoranalysis/fa6.png, clip=true,width = 10cm} 
 \caption{Factor summary statistics and correlations for a five factor solution in jamovi EFA}
 \label{fig:fa6}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -151,7 +151,7 @@ The other thing to note is that those variables that were denoted as “R: rever
 \epsfig{file = ../img/factoranalysis/fa7.png, clip=true,width = 14cm} 
 \caption{Factor loadings for a five factor solution in jamovi EFA}
 \label{fig:fa7}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -171,7 +171,7 @@ So, we seem to have a pretty good five factor solution, albeit accounting for a 
 \epsfig{file = ../img/factoranalysis/fa8.png, clip=true,width = 14cm} 
 \caption{Recode variable using the jamovi Transform command}
 \label{fig:fa8}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -180,48 +180,48 @@ So, we seem to have a pretty good five factor solution, albeit accounting for a 
 \epsfig{file = ../img/factoranalysis/fa9.png,clip=true,width = 12cm} 
 \caption{Compute new scale score variable using the jamovi Computed variable command}
 \label{fig:fa9}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
-Another option is to create an optimally-weighted factor score index. We can use the jamovi \rtext{Rj} editor to do this in \rtext{R}. Again, there are two steps:
+Another option is to create an optimally-weighted factor score index. We can use the jamovi \texttt{Rj} editor to do this in \texttt{R}. Again, there are two steps:
 
 \begin{enumerate} \itemsep -2pt
-\item Use the \rtext{Rj} editor to run the EFA in \rtext{R} to the same specification as the one in jamovi (i.e. five factors and oblimin rotation) and compute optimally weighted factor scores. Save the new dataset, with the factor scores, to a file. See Figure \ref{fig:fa10}.
+\item Use the \texttt{Rj} editor to run the EFA in \texttt{R} to the same specification as the one in jamovi (i.e. five factors and oblimin rotation) and compute optimally weighted factor scores. Save the new dataset, with the factor scores, to a file. See Figure \ref{fig:fa10}.
 \item Open up the new file in jamovi and check that variable types have been set correctly. Label the new factor score variables corresponding to the relevant factor names or definitions (NB it is possible that the factors will not be in the expected order, so make sure you check).
 \end{enumerate}
 
 \begin{figure}[!htp]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/fa10.png, clip=true,width = 16cm} 
-\caption{\rtext{Rj} editor commands for creating optimally weighted factor scores for the five factor solution}
+\caption{\texttt{Rj} editor commands for creating optimally weighted factor scores for the five factor solution}
 \label{fig:fa10}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 \begin{figure}[!htp]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/fa11.png, clip=true,width = 14cm} 
-\caption{The newly created data file “bfifactscores.csv” created in the \rtext{Rj} editor and containing the five factor score variables. Note that each of the new factor score variables is labelled corresponding to the order that the factors are listed in the factor loadings table}
+\caption{The newly created data file “bfifactscores.csv” created in the \texttt{Rj} editor and containing the five factor score variables. Note that each of the new factor score variables is labelled corresponding to the order that the factors are listed in the factor loadings table}
 \label{fig:fa11}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
-Now you can go ahead and undertake further analyses, using either the factor-based scores (a mean scale score approach) or using the optimally-weighted factor scores calculated via the \rtext{Rj} editor. Your choice! For example, one thing you might like to do is see whether there are any gender differences in each of our personality scales. We did this for the Agreeableness score that we calculated using the factor-based score approach, and although the plot (Figure \ref{fig:fa12}) showed that males were less agreeable than females, this was not a significant difference (Man-Whitney $U=5760.5, p=.073$).
+Now you can go ahead and undertake further analyses, using either the factor-based scores (a mean scale score approach) or using the optimally-weighted factor scores calculated via the \texttt{Rj} editor. Your choice! For example, one thing you might like to do is see whether there are any gender differences in each of our personality scales. We did this for the Agreeableness score that we calculated using the factor-based score approach, and although the plot (Figure \ref{fig:fa12}) showed that males were less agreeable than females, this was not a significant difference (Man-Whitney $U=5760.5, p=.073$).
 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/fa12.png, clip=true,width = 12cm} 
 \caption{Comparing differences in Agreeableness factor-based scores between males and females}
 \label{fig:fa12}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 
-\SUBSECTION{Writing up an EFA}
+\subsection{Writing up an EFA}
 
 Hopefully, so far we have given you some sense of EFA and how to undertake EFA in jamovi. So, once you have completed your EFA, how do you write it up? There is not a formal standard way to write up an EFA, and examples tend to vary by discipline and researcher. That said, there are some fairly standard pieces of information to include in your write-up: 
 
@@ -250,16 +250,16 @@ PCA simply produces a mathematical transformation to the original data with no a
 
 PCA has been popular in Psychology for a number of reasons, and therefore it's worth covering, although nowadays EFA is just as easy to do given the power of desktop computers and can be less susceptible to bias than PCA, especially with a small number of factors and variables. We'll use the same \filename{bfi\_sample.csv} data as before. Much of the procedure is similar to EFA, so although there are some conceptual differences, practically the steps are the same\FOOTNOTE{...and that means there is a fair bit of repetition in the PCA steps set out in the next section. Sorry about that, but hopefully it is not too bad!}, and with large samples and a sufficient number of factors and variables, the results from PCA and EFA should be fairly similar. 
 
-\SUBSECTION{Performing PCA in jamovi}
+\subsection{Performing PCA in jamovi}
 
-Once you have loaded up the \filename{bfi\_sample.csv} data, select \rtext{Factor - Principal Component Analysis} from the main jamovi button bar to open the PCA analysis window (Figure \ref{fig:pca1}). Then select the 25 personality questions and transfer them into the ‘Variables’ box. Check appropriate options, including ‘Assumption Checks’, but also Rotation ‘Method’, ‘Number of Factors to extract, and ‘Additional Output’ options. See Figure \ref{fig:pca1} for suggested options for this  PCA, and please note that the Rotation ‘Method’ and ‘Number of Factors’ extracted is typically adjusted during the analysis to find the best result, as described below.
+Once you have loaded up the \filename{bfi\_sample.csv} data, select \texttt{Factor - Principal Component Analysis} from the main jamovi button bar to open the PCA analysis window (Figure \ref{fig:pca1}). Then select the 25 personality questions and transfer them into the ‘Variables’ box. Check appropriate options, including ‘Assumption Checks’, but also Rotation ‘Method’, ‘Number of Factors to extract, and ‘Additional Output’ options. See Figure \ref{fig:pca1} for suggested options for this  PCA, and please note that the Rotation ‘Method’ and ‘Number of Factors’ extracted is typically adjusted during the analysis to find the best result, as described below.
 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/pca1.png, clip=true,width = 14cm} 
 \caption{The jamovi PCA analysis window}
 \label{fig:pca1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -270,7 +270,7 @@ First, checking the assumptions, you can see that (1) Bartlett’s test of spher
 \epsfig{file = ../img/factoranalysis/pca2.png, clip=true,width = 7.5cm} 
 \caption{jamovi PCA assumption checks for the personality item data}
 \label{fig:pca2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -289,7 +289,7 @@ The third approach is a good one according to \textcite{Fabrigar1999}, although 
 \epsfig{file = ../img/factoranalysis/pca3.png, clip=true,width = 14cm} 
 \caption{Scree plot of the personality item data in jamovi PCA, showing the levelling off point, the “elbow”, after component 5}
 \label{fig:pca3}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -300,7 +300,7 @@ At the same time, we should also consider the best way to rotate the final solut
 \epsfig{file = ../img/factoranalysis/pca4.png, clip=true,width = 12cm} 
 \caption{Component summary statistics and correlations for a five component solution in jamovi PCA}
 \label{fig:pca4}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -311,26 +311,26 @@ In Figure \ref{fig:pca4} we also have the proportion of overall variance in the 
 \epsfig{file = ../img/factoranalysis/pca5.png, clip=true,width = 14cm} 
 \caption{Component loadings for a five component solution in jamovi PCA}
 \label{fig:pca5}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 Figure \ref{fig:pca5} shows the component loadings. That's is, how the 25 different personality items load onto each of the selected components. We have hidden loadings less than 0.4 (set in the options shown in Figure \ref{fig:pca1}) as we were interested in items with a substantive loading and setting the threshold at the higher 0.4 value also provided a cleaner, clearer solution. 
 
-For components 1, 2, 3 and 4 the pattern of component loadings closely matches the putative factors specified in Figure \ref{fig:fa2}. And component 5 is pretty close, with four of the five observed variables that putatively measure “openness” loading pretty well onto the component. Variable \rtext{04} doesn’t quite seem to fit though, as the component solution in Figure \ref{fig:pca5} suggests that it loads onto component 4 (albeit with a relatively low loading) but not substantively onto component 5.
+For components 1, 2, 3 and 4 the pattern of component loadings closely matches the putative factors specified in Figure \ref{fig:fa2}. And component 5 is pretty close, with four of the five observed variables that putatively measure “openness” loading pretty well onto the component. Variable \texttt{04} doesn’t quite seem to fit though, as the component solution in Figure \ref{fig:pca5} suggests that it loads onto component 4 (albeit with a relatively low loading) but not substantively onto component 5.
 
 We can also see in Figure \ref{fig:pca5} the “uniqueness” of each variable. Uniqueness is the proportion of variance that is ‘unique’ to the variable and not explained by the components. For example, 58\% of the variance in ‘A1’ is not explained by the components in the five component solution. In contrast, ‘N1’ has relatively low variance not accounted for by the component solution (30\%). Note that the greater the ‘uniqueness’, the lower the relevance or contribution of the variable in the component model. 
 
 Hopefully, this has given you a good first idea about how to undertake PCA in jamovi, and how it is conceptually different but practically fairly similar (given the right data) to EFA.
 
-You can go on to create component scores in much the same way as in EFA. However, if you take the option to create an optimally-weighted component score index then the commands and syntax in the jamovi \rtext{Rj} editor are a little different. See Figure \ref{fig:pca6}. 
+You can go on to create component scores in much the same way as in EFA. However, if you take the option to create an optimally-weighted component score index then the commands and syntax in the jamovi \texttt{Rj} editor are a little different. See Figure \ref{fig:pca6}. 
 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/pca6.png, clip=true,width = 16cm} 
-\caption{\rtext{Rj} editor commands for creating optimally weighted component scores for the five component solution}
+\caption{\texttt{Rj} editor commands for creating optimally weighted component scores for the five component solution}
 \label{fig:pca6}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -346,7 +346,7 @@ In CFA, instead of doing an analysis where we see how the data goes together in 
 \epsfig{file = ../img/factoranalysis/cfa1.png, clip=true,width = 12.3cm} 
 \caption{Initial pre-specification of latent factor structure for the five factor personality scales, for use in CFA}
 \label{fig:cfa1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -360,17 +360,17 @@ Without any correlated error terms, the model we are testing to see how well it 
 
 Right, let’s take a look at how we set this CFA analysis up in jamovi.
 
-\SUBSECTION{CFA in jamovi}
+\subsection{CFA in jamovi}
 
 Open up the \filename{bfi\_sample2.csv} file, check that the 25 variables are coded as ordinal (or continuous; it won’t make any difference for this analysis). To perform CFA in jamovi:
 
 \begin{itemize} \itemsep -2pt
-\item Select \rtext{Factor - Confirmatory Factor Analysis} from the main jamovi button bar to open the CFA analysis window (Figure \ref{fig:cfa2}).
-\item Select the 5 \rtext{A} variables and transfer them into the ‘Factors’ box and give then the label “Agreeableness”.
-\item Create a new Factor in the ‘Factors’ box and label it “Conscientiousness”. Select the 5 \rtext{C} variables and transfer them into the ‘Factors’ box under the “Conscientiousness” label. 
-\item Create another new Factor in the ‘Factors’ box and label it “Extraversion”. Select the 5 \rtext{E} variables and transfer them into the ‘Factors’ box under the “Extraversion” label.
-\item Create another new Factor in the ‘Factors’ box and label it “Neuroticism”. Select the 5 \rtext{N} variables and transfer them into the ‘Factors’ box under the “Neuroticism” label.
-\item Create another new Factor in the ‘Factors’ box and label it “Openness”. Select the 5 \rtext{O} variables and transfer them into the ‘Factors’ box under the “Openness” label.
+\item Select \texttt{Factor - Confirmatory Factor Analysis} from the main jamovi button bar to open the CFA analysis window (Figure \ref{fig:cfa2}).
+\item Select the 5 \texttt{A} variables and transfer them into the ‘Factors’ box and give then the label “Agreeableness”.
+\item Create a new Factor in the ‘Factors’ box and label it “Conscientiousness”. Select the 5 \texttt{C} variables and transfer them into the ‘Factors’ box under the “Conscientiousness” label. 
+\item Create another new Factor in the ‘Factors’ box and label it “Extraversion”. Select the 5 \texttt{E} variables and transfer them into the ‘Factors’ box under the “Extraversion” label.
+\item Create another new Factor in the ‘Factors’ box and label it “Neuroticism”. Select the 5 \texttt{N} variables and transfer them into the ‘Factors’ box under the “Neuroticism” label.
+\item Create another new Factor in the ‘Factors’ box and label it “Openness”. Select the 5 \texttt{O} variables and transfer them into the ‘Factors’ box under the “Openness” label.
 \item Check other appropriate options, the defaults are ok for this initial work through, though you might want to check the “Path diagram” option under ‘Plots’ to see jamovi produce a (fairly) similar diagram to our Figure \ref{fig:cfa1}.
 \end{itemize}
 
@@ -379,7 +379,7 @@ Open up the \filename{bfi\_sample2.csv} file, check that the 25 variables are co
 \epsfig{file = ../img/factoranalysis/cfa2.png, clip=true,width = 14cm} 
 \caption{The jamovi CFA analysis window}
 \label{fig:cfa2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -390,7 +390,7 @@ Once we have set up the analysis we can turn our attention to the jamovi results
 \epsfig{file = ../img/factoranalysis/cfa3.png, clip=true,width = 10cm} 
 \caption{The jamovi CFA Model Fit results for our CFA model}
 \label{fig:cfa3}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -409,7 +409,7 @@ Let’s go on to look at the factor loadings and the factor covariance estimates
 \epsfig{file = ../img/factoranalysis/cfa4.png, clip=true,width = 14cm} 
 \caption{The jamovi CFA Factor Loadings table for our CFA model}
 \label{fig:cfa4}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -418,7 +418,7 @@ Let’s go on to look at the factor loadings and the factor covariance estimates
 \epsfig{file = ../img/factoranalysis/cfa5.png, clip=true,width = 14cm} 
 \caption{The jamovi CFA Factor Covariances table for our CFA model}
 \label{fig:cfa5}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -429,7 +429,7 @@ How could we improve the model? One option is to go back a few stages and think 
 \epsfig{file = ../img/factoranalysis/cfa6.png, clip=true,width = 14cm} 
 \caption{The jamovi CFA Factor Loadings Modification Indices}
 \label{fig:cfa6}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -446,7 +446,7 @@ There is also a Table of Residual Covariance Modification Indices produced by ja
 \epsfig{file = ../img/factoranalysis/cfa7.png, clip=true,width = 6.9cm} 
 \caption{The jamovi CFA Residual Covariances Modification Indices}
 \label{fig:cfa7}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -456,7 +456,7 @@ So far, we have checked out the factor structure obtained in the EFA using a sec
 
 Although we could have tweaked the CFA using modification indexes, there really were not any good reasons (that I could think of) for these suggested additional factor loadings or residual covariances to be included. However, sometimes there is a good reason for residuals to be allowed to co-vary (or correlate), and a good example of this is shown in the next section on \keyterm{Multi-Trait Multi-Method (MTMM)} CFA. Before we do that, let's cover how to report the results of a CFA.
 
-\SUBSECTION{Reporting a CFA}
+\subsection{Reporting a CFA}
 
 There is not a formal standard way to write up a CFA, and examples tend to vary by discipline and researcher. That said, there are some fairly standard pieces of information to include in your write-up: 
 
@@ -493,7 +493,7 @@ There are six hypothetical scenarios and for each scenario respondents answer a 
 \epsfig{file = ../img/factoranalysis/MTMM1.png, clip=true,width = 14cm} 
 \caption{The Attributional Style Questionnaire (ASQ) for negative events}
 \label{fig:MTMM1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -508,7 +508,7 @@ Remember that there were three dimensions measured in the ASQ: Internality, Stab
 \epsfig{file = ../img/factoranalysis/MTMM2.png, clip=true,width = 10cm} 
 \caption{Six questions on the ASQ for each of the Internality, Stability and Globality dimensions}
 \label{fig:MTMM2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -517,7 +517,7 @@ Remember that there were three dimensions measured in the ASQ: Internality, Stab
 \epsfig{file = ../img/factoranalysis/MTMM3.png, clip=true,width = 14cm} 
 \caption{Initial pre-specification of latent factor structure for the ASQ}
 \label{fig:MTMM3}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -540,11 +540,11 @@ Whilst a basic CFA model like the one shown in Figure \ref{fig:MTMM3} could be t
 \epsfig{file = ../img/factoranalysis/MTMM4.png, clip=true,width = 14cm} 
 \caption{Final pre-specification of latent factor structure for the ASQ, including latent factor correlations, and shared method error term correlations for the observed variable INT1, STAB1 and GLOB1, in a CFA MTMM model. For clarity, other pre-specified error term correlations are not shown.}
 \label{fig:MTMM4}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
-\SUBSECTION{MTMM CFA in jamovi}
+\subsection{MTMM CFA in jamovi}
 
 Open up the \filename{ASQ.csv} file and check that the 18 variables (six “Internality”, six “Stability” and six “Globality” variables) are specified as continuous variables. 
 
@@ -552,7 +552,7 @@ To perform MTMM CFA in jamovi:
 
 \begin{itemize} \itemsep -2pt
 
-\item Select \rtext{Factor - Confirmatory Factor Analysis} from the main jamovi button bar to open the CFA analysis window (Figure \ref{fig:MTMM5}).
+\item Select \texttt{Factor - Confirmatory Factor Analysis} from the main jamovi button bar to open the CFA analysis window (Figure \ref{fig:MTMM5}).
 \item Select the 6 INT variables and transfer them into the ‘Factors’ box and give them the label “Internality”.
 \item Create a new Factor in the ‘Factors’ box and label it “Stability”. Select the 6 STAB variables and transfer them into the ‘Factors’ box under the “Stability” label. 
 \item Create another new Factor in the ‘Factors’ box and label it “Globality”. Select the 6 GLOB variables and transfer them into the ‘Factors’ box under the “Globality” label.
@@ -565,7 +565,7 @@ To perform MTMM CFA in jamovi:
 \epsfig{file = ../img/factoranalysis/MTMM5.png, clip=true,width = 13cm} 
 \caption{The jamovi CFA analysis window}
 \label{fig:MTMM5}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -584,7 +584,7 @@ Overall, I think we can be satisfied that our pre-specified model is a very good
 \epsfig{file = ../img/factoranalysis/MTMM6.png, clip=true,width = 10cm} 
 \caption{The jamovi CFA Model Fit results for our CFA MTMM model}
 \label{fig:MTMM6}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -602,7 +602,7 @@ What we are looking for is the highest modification index (MI) value. We would t
 \epsfig{file = ../img/factoranalysis/MTMM7.png, clip=true,width = 14cm} 
 \caption{The jamovi CFA Factor Loadings and Covariances tables for our CFA MTMM model}
 \label{fig:MTMM7}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -615,7 +615,7 @@ If you do find yourself adding new parameters to a model using the MI then alway
 \epsfig{file = ../img/factoranalysis/MTMM8.png, clip=true,width = 9cm} 
 \caption{The jamovi CFA Factor Loadings Modification Indices}
 \label{fig:MTMM8}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -624,7 +624,7 @@ If you do find yourself adding new parameters to a model using the MI then alway
 \epsfig{file = ../img/factoranalysis/MTMM9.png, clip=true,width = 6.3cm} 
 \caption{The jamovi CFA Residual Covariances Modification Indices}
 \label{fig:MTMM9}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -647,23 +647,23 @@ Sometimes a threshold for alpha or omega is provided, suggesting a “good enoug
 
 Can alpha be too high? Probably: if you are getting an alpha coefficient above 0.95 then this indicates high inter-correlations between the items and that there might be too much overly-redundant specificity in the measurement, with a risk that the construct being measured in perhaps overly narrow. 
 
-\SUBSECTION{Reliability analysis in jamovi}
+\subsection{Reliability analysis in jamovi}
 
 \begin{figure}[!htp]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/rel1.png, clip=true,width = 11cm} 
 \caption{The jamovi Reliability Analysis window}
 \label{fig:rel1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 We have a third sample of personality data to use to undertake reliability analysis: in the \filename{bfi\_sample3.csv} file. Once again, check that the 25 personality item variables are coded as continuous. To perform reliability analysis in jamovi:
 
 \begin{itemize} \itemsep -2pt
-\item Select \rtext{Factor - Reliability Analysis} from the main jamovi button bar to open the reliability analysis window (Figure \ref{fig:rel1}).
+\item Select \texttt{Factor - Reliability Analysis} from the main jamovi button bar to open the reliability analysis window (Figure \ref{fig:rel1}).
 \item Select the 5 A variables and transfer them into the ‘Items’ box.
-\item Under the “Reverse Scaled Items” option, select variable \rtext{A1} in the “Normal Scaled Items” box and move it across to the “Reverse Scaled Items” box. 
+\item Under the “Reverse Scaled Items” option, select variable \texttt{A1} in the “Normal Scaled Items” box and move it across to the “Reverse Scaled Items” box. 
 \item Check other appropriate options, as in Figure \ref{fig:rel1}.
 \end{itemize}
 
@@ -677,7 +677,7 @@ We can also check how alpha or omega can be improved if a specific item is dropp
 \epsfig{file = ../img/factoranalysis/rel2.png, clip=true,width = 12cm} 
 \caption{The jamovi Reliability Analysis results for the Agreeableness factor}
 \label{fig:rel2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 

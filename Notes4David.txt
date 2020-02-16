@@ -1,0 +1,9 @@
+Notes for David:
+- change file extension for img/factoranalysis/fa6.PNG to small letters
+- in chapter12_regression.tex (add file extension .png)
+  \epsfig{file = ../img/regression/reg1,clip=true, width = 14cm} → \epsfig{file = ../img/regression/reg1.png, clip=true, width = 14cm}
+  \epsfig{file = ../img/regression/reg2,clip=true, width = 14cm} → \epsfig{file = ../img/regression/reg2.png, clip=true, width = 14cm}
+- in chapter16_bayes.tex: is it intended that \subsection is lowercase here (not \SUBSECTION as in the remaining document)?
+- in chapter04_descriptives.tex, there is one occurence of a lowercase subsection (\subsection{Epilogue: Good descriptive statistics are descriptive!})
+
+- I took the liberty to change the tables to APA-style, that was for several reasons: one was, that the conversion to HTML did not produce nice looking tables when using vertical rulers; the other is that I thougt it might be litle confusing if the figures with the output are in APA-style whereas the tables are not; one issue is still to solve though to have a little more space when using \hline  

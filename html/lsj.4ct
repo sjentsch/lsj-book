@@ -1,0 +1,627 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{2}{x2-1000}{QQ2-2-1}{Contents}}{12}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{2}{Q1-2-2}{}{Preface}}{xxiii}\relax 
+\doTocEntry\tocpart{I}{\csname a:TocLink\endcsname{3}{x3-2000I}{QQ2-3-3}{Background}}{4}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{4}{x4-30001}{QQ2-4-4}{Why do we learn statistics?~}}{5}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{4}{x4-40001.1}{QQ2-4-5}{On the psychology of statistics~}}{5}\relax 
+\doTocEntry\tocsubsection{1.1.1}{\csname a:TocLink\endcsname{4}{x4-50001.1.1}{QQ2-4-6}{The curse of belief bias}}{7}\relax 
+\doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{4}{x4-60001.2}{QQ2-4-7}{The cautionary tale of Simpson's paradox}}{10}\relax 
+\doTocEntry\toclof{1.1}{\csname a:TocLink\endcsname{4}{x4-60021}{}{\ignorespaces The Berkeley 1973 college admissions data.}}{figure}\relax 
+\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{4}{x4-70001.3}{QQ2-4-9}{Statistics in psychology}}{15}\relax 
+\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{4}{x4-80001.4}{QQ2-4-10}{Statistics in everyday life}}{17}\relax 
+\doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{4}{x4-90001.5}{QQ2-4-11}{There's more to research methods than statistics}}{17}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{10}{x10-100002}{QQ2-10-12}{A brief introduction to research design}}{20}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{10}{x10-110002.1}{QQ2-10-13}{Introduction to psychological measurement~}}{20}\relax 
+\doTocEntry\tocsubsection{2.1.1}{\csname a:TocLink\endcsname{10}{x10-120002.1.1}{QQ2-10-14}{Some thoughts about psychological measurement}}{20}\relax 
+\doTocEntry\tocsubsection{2.1.2}{\csname a:TocLink\endcsname{10}{x10-130002.1.2}{QQ2-10-15}{Operationalisation: defining your measurement}}{23}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{10}{x10-140002.2}{QQ2-10-16}{Scales of measurement}}{25}\relax 
+\doTocEntry\tocsubsection{2.2.1}{\csname a:TocLink\endcsname{10}{x10-150002.2.1}{QQ2-10-17}{Nominal scale}}{25}\relax 
+\doTocEntry\tocsubsection{2.2.2}{\csname a:TocLink\endcsname{10}{x10-160002.2.2}{QQ2-10-18}{Ordinal scale}}{26}\relax 
+\doTocEntry\tocsubsection{2.2.3}{\csname a:TocLink\endcsname{10}{x10-170002.2.3}{QQ2-10-19}{Interval scale}}{28}\relax 
+\doTocEntry\tocsubsection{2.2.4}{\csname a:TocLink\endcsname{10}{x10-180002.2.4}{QQ2-10-20}{Ratio scale}}{28}\relax 
+\doTocEntry\tocsubsection{2.2.5}{\csname a:TocLink\endcsname{10}{x10-190002.2.5}{QQ2-10-21}{Continuous versus discrete variables~}}{29}\relax 
+\doTocEntry\toclot{2.1}{\csname a:TocLink\endcsname{10}{x10-190011}{}{\ignorespaces The relationship between the scales of measurement and the discrete/continuity distinction. Cells with a tick mark correspond to things that are possible.}}{table}\relax 
+\doTocEntry\tocsubsection{2.2.6}{\csname a:TocLink\endcsname{10}{x10-200002.2.6}{QQ2-10-23}{Some complexities}}{33}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{10}{x10-210002.3}{QQ2-10-24}{Assessing the reliability of a measurement~}}{34}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{10}{x10-220002.4}{QQ2-10-25}{The ``role'' of variables: predictors and outcomes }}{36}\relax 
+\doTocEntry\toclot{2.2}{\csname a:TocLink\endcsname{10}{x10-220022}{}{\ignorespaces The terminology used to distinguish between different roles that a variable can play when analysing a data set. Note that this book will tend to avoid the classical terminology in favour of the newer names.}}{table}\relax 
+\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{10}{x10-230002.5}{QQ2-10-27}{Experimental and non-experimental research~}}{40}\relax 
+\doTocEntry\tocsubsection{2.5.1}{\csname a:TocLink\endcsname{10}{x10-240002.5.1}{QQ2-10-28}{Experimental research}}{40}\relax 
+\doTocEntry\tocsubsection{2.5.2}{\csname a:TocLink\endcsname{10}{x10-250002.5.2}{QQ2-10-29}{Non-experimental research}}{41}\relax 
+\doTocEntry\tocsection{2.6}{\csname a:TocLink\endcsname{10}{x10-260002.6}{QQ2-10-30}{Assessing the validity of a study~}}{42}\relax 
+\doTocEntry\tocsubsection{2.6.1}{\csname a:TocLink\endcsname{10}{x10-270002.6.1}{QQ2-10-31}{Internal validity}}{43}\relax 
+\doTocEntry\tocsubsection{2.6.2}{\csname a:TocLink\endcsname{10}{x10-280002.6.2}{QQ2-10-32}{External validity}}{43}\relax 
+\doTocEntry\tocsubsection{2.6.3}{\csname a:TocLink\endcsname{10}{x10-290002.6.3}{QQ2-10-33}{Construct validity}}{45}\relax 
+\doTocEntry\tocsubsection{2.6.4}{\csname a:TocLink\endcsname{10}{x10-300002.6.4}{QQ2-10-34}{Face validity}}{45}\relax 
+\doTocEntry\tocsubsection{2.6.5}{\csname a:TocLink\endcsname{10}{x10-310002.6.5}{QQ2-10-35}{Ecological validity}}{46}\relax 
+\doTocEntry\tocsection{2.7}{\csname a:TocLink\endcsname{10}{x10-320002.7}{QQ2-10-36}{Confounds, artefacts and other threats to validity}}{47}\relax 
+\doTocEntry\tocsubsection{2.7.1}{\csname a:TocLink\endcsname{10}{x10-330002.7.1}{QQ2-10-37}{History effects}}{48}\relax 
+\doTocEntry\tocsubsection{2.7.2}{\csname a:TocLink\endcsname{10}{x10-340002.7.2}{QQ2-10-38}{Maturation effects}}{49}\relax 
+\doTocEntry\tocsubsection{2.7.3}{\csname a:TocLink\endcsname{10}{x10-350002.7.3}{QQ2-10-39}{Repeated testing effects}}{50}\relax 
+\doTocEntry\tocsubsection{2.7.4}{\csname a:TocLink\endcsname{10}{x10-360002.7.4}{QQ2-10-40}{Selection bias}}{51}\relax 
+\doTocEntry\tocsubsection{2.7.5}{\csname a:TocLink\endcsname{10}{x10-370002.7.5}{QQ2-10-41}{Differential attrition}}{51}\relax 
+\doTocEntry\tocsubsection{2.7.6}{\csname a:TocLink\endcsname{10}{x10-380002.7.6}{QQ2-10-42}{Non-response bias}}{52}\relax 
+\doTocEntry\tocsubsection{2.7.7}{\csname a:TocLink\endcsname{10}{x10-390002.7.7}{QQ2-10-43}{Regression to the mean}}{53}\relax 
+\doTocEntry\tocsubsection{2.7.8}{\csname a:TocLink\endcsname{10}{x10-400002.7.8}{QQ2-10-44}{Experimenter bias}}{54}\relax 
+\doTocEntry\tocsubsection{2.7.9}{\csname a:TocLink\endcsname{10}{x10-410002.7.9}{QQ2-10-45}{Demand effects and reactivity}}{55}\relax 
+\doTocEntry\tocsubsection{2.7.10}{\csname a:TocLink\endcsname{10}{x10-420002.7.10}{QQ2-10-46}{Placebo effects}}{56}\relax 
+\doTocEntry\tocsubsection{2.7.11}{\csname a:TocLink\endcsname{10}{x10-430002.7.11}{QQ2-10-47}{Situation, measurement and sub-population effects}}{57}\relax 
+\doTocEntry\tocsubsection{2.7.12}{\csname a:TocLink\endcsname{10}{x10-440002.7.12}{QQ2-10-48}{Fraud, deception and self-deception}}{57}\relax 
+\doTocEntry\tocsection{2.8}{\csname a:TocLink\endcsname{10}{x10-450002.8}{QQ2-10-49}{Summary}}{60}\relax 
+\doTocEntry\tocpart{II}{\csname a:TocLink\endcsname{19}{x19-46000II}{QQ2-19-50}{An introduction to jamovi}}{65}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{20}{x20-470003}{QQ2-20-51}{Getting started with jamovi}}{66}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{20}{x20-480003.1}{QQ2-20-52}{Installing jamovi }}{68}\relax 
+\doTocEntry\tocsubsection{3.1.1}{\csname a:TocLink\endcsname{20}{x20-490003.1.1}{QQ2-20-53}{Starting up jamovi}}{68}\relax 
+\doTocEntry\toclof{3.1}{\csname a:TocLink\endcsname{20}{x20-490011}{}{\ignorespaces jamovi looks like this when you start it.}}{figure}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{20}{x20-500003.2}{QQ2-20-55}{Analyses}}{72}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{20}{x20-510003.3}{QQ2-20-56}{The spreadsheet}}{72}\relax 
+\doTocEntry\tocsubsection{3.3.1}{\csname a:TocLink\endcsname{20}{x20-520003.3.1}{QQ2-20-57}{Variables}}{73}\relax 
+\doTocEntry\tocsubsection{3.3.2}{\csname a:TocLink\endcsname{20}{x20-530003.3.2}{QQ2-20-58}{Computed variables}}{76}\relax 
+\doTocEntry\toclof{3.2}{\csname a:TocLink\endcsname{20}{x20-530012}{}{\ignorespaces A newly computed variable, the z-score of `dose'.}}{figure}\relax 
+\doTocEntry\tocsubsection{3.3.3}{\csname a:TocLink\endcsname{20}{x20-540003.3.3}{QQ2-20-60}{Copy and Paste}}{80}\relax 
+\doTocEntry\tocsubsection{3.3.4}{\csname a:TocLink\endcsname{20}{x20-550003.3.4}{QQ2-20-61}{Syntax mode}}{80}\relax 
+\doTocEntry\tocsection{3.4}{\csname a:TocLink\endcsname{20}{x20-560003.4}{QQ2-20-62}{Loading data in jamovi}}{81}\relax 
+\doTocEntry\tocsubsection{3.4.1}{\csname a:TocLink\endcsname{20}{x20-570003.4.1}{QQ2-20-63}{Importing data from csv files}}{81}\relax 
+\doTocEntry\toclof{3.3}{\csname a:TocLink\endcsname{20}{x20-570013}{}{\ignorespaces The \texttt  {booksales.csv} data file. On the left I've opened the file using a spreadsheet program (OpenOffice), which shows that the file is basically a table. On the right the same file is open in a standard text editor (the TextEdit program on a Mac), which shows how the file is formatted. The entries in the table are wrapped in quote marks and separated by commas.}}{figure}\relax 
+\doTocEntry\toclof{3.4}{\csname a:TocLink\endcsname{20}{x20-570024}{}{\ignorespaces A dialog box on a Mac asking you to select the csv file jamovi should try to import. Mac users will recognise this immediately, it's the usual way in which a Mac asks you to find a file. Windows users won't see this, instead they'll see the usual explorer window that Windows always gives you when it wants you to select a file.}}{figure}\relax 
+\doTocEntry\tocsection{3.5}{\csname a:TocLink\endcsname{20}{x20-580003.5}{QQ2-20-66}{Importing unusual data files~}}{87}\relax 
+\doTocEntry\tocsubsection{3.5.1}{\csname a:TocLink\endcsname{20}{x20-590003.5.1}{QQ2-20-67}{Loading data from text files}}{87}\relax 
+\doTocEntry\tocsubsection{3.5.2}{\csname a:TocLink\endcsname{20}{x20-600003.5.2}{QQ2-20-68}{Loading data from SPSS (and other statistics packages)}}{89}\relax 
+\doTocEntry\tocsubsection{3.5.3}{\csname a:TocLink\endcsname{20}{x20-610003.5.3}{QQ2-20-69}{Loading Excel files}}{89}\relax 
+\doTocEntry\tocsection{3.6}{\csname a:TocLink\endcsname{20}{x20-620003.6}{QQ2-20-70}{Changing data from one level to another}}{89}\relax 
+\doTocEntry\tocsection{3.7}{\csname a:TocLink\endcsname{20}{x20-630003.7}{QQ2-20-71}{Installing add-on modules into jamovi }}{90}\relax 
+\doTocEntry\toclof{3.5}{\csname a:TocLink\endcsname{20}{x20-630015}{}{\ignorespaces Installing add-on modules in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{3.8}{\csname a:TocLink\endcsname{20}{x20-640003.8}{QQ2-20-73}{Quitting jamovi }}{93}\relax 
+\doTocEntry\tocsection{3.9}{\csname a:TocLink\endcsname{20}{x20-650003.9}{QQ2-20-74}{Summary}}{93}\relax 
+\doTocEntry\tocpart{III}{\csname a:TocLink\endcsname{26}{x26-66000III}{QQ2-26-75}{Working with data}}{98}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{27}{x27-670004}{QQ2-27-76}{Descriptive statistics}}{99}\relax 
+\doTocEntry\toclof{4.1}{\csname a:TocLink\endcsname{27}{x27-670011}{}{\ignorespaces A screenshot of jamovi showing the variables stored in the \texttt  {aflsmall\_margins.csv} file}}{figure}\relax 
+\doTocEntry\toclof{4.2}{\csname a:TocLink\endcsname{27}{x27-670032}{}{\ignorespaces A histogram of the AFL 2010 winning margin data (the \texttt  {afl.margins} variable). As you might expect, the larger the winning margin the less frequently you tend to see it.}}{figure}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{27}{x27-680004.1}{QQ2-27-79}{Measures of central tendency~}}{106}\relax 
+\doTocEntry\tocsubsection{4.1.1}{\csname a:TocLink\endcsname{27}{x27-690004.1.1}{QQ2-27-80}{The mean}}{106}\relax 
+\doTocEntry\tocsubsection{4.1.2}{\csname a:TocLink\endcsname{27}{x27-700004.1.2}{QQ2-27-81}{Calculating the mean in jamovi}}{109}\relax 
+\doTocEntry\toclof{4.3}{\csname a:TocLink\endcsname{27}{x27-700013}{}{\ignorespaces Default descriptives for the AFL 2010 winning margin data (the \texttt  {afl.margins} variable). }}{figure}\relax 
+\doTocEntry\tocsubsection{4.1.3}{\csname a:TocLink\endcsname{27}{x27-710004.1.3}{QQ2-27-83}{The median}}{113}\relax 
+\doTocEntry\tocsubsection{4.1.4}{\csname a:TocLink\endcsname{27}{x27-720004.1.4}{QQ2-27-84}{Mean or median? What's the difference?}}{114}\relax 
+\doTocEntry\toclof{4.4}{\csname a:TocLink\endcsname{27}{x27-720014}{}{\ignorespaces An illustration of the difference between how the mean and the median should be interpreted. The mean is basically the ``centre of gravity'' of the data set. If you imagine that the histogram of the data is a solid object, then the point on which you could balance it (as if on a see-saw) is the mean. In contrast, the median is the middle observation, with half of the observations smaller and half of the observations larger.}}{figure}\relax 
+\doTocEntry\tocsubsection{4.1.5}{\csname a:TocLink\endcsname{27}{x27-730004.1.5}{QQ2-27-86}{A real life example~}}{118}\relax 
+\doTocEntry\tocsubsection{4.1.6}{\csname a:TocLink\endcsname{27}{x27-740004.1.6}{QQ2-27-87}{Mode}}{120}\relax 
+\doTocEntry\toclof{4.5}{\csname a:TocLink\endcsname{27}{x27-740015}{}{\ignorespaces A screenshot of jamovi showing the variables stored in the \texttt  {aflsmall\_finalists.csv} file}}{figure}\relax 
+\doTocEntry\toclof{4.6}{\csname a:TocLink\endcsname{27}{x27-740026}{}{\ignorespaces A screenshot of jamovi showing the frequency table for the \texttt  {afl.finalists} variable }}{figure}\relax 
+\doTocEntry\toclof{4.7}{\csname a:TocLink\endcsname{27}{x27-740037}{}{\ignorespaces A screenshot of jamovi showing the modal value for the \texttt  {afl.margins} variable }}{figure}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{27}{x27-750004.2}{QQ2-27-91}{Measures of variability}}{129}\relax 
+\doTocEntry\tocsubsection{4.2.1}{\csname a:TocLink\endcsname{27}{x27-760004.2.1}{QQ2-27-92}{Range}}{129}\relax 
+\doTocEntry\tocsubsection{4.2.2}{\csname a:TocLink\endcsname{27}{x27-770004.2.2}{QQ2-27-93}{Interquartile range}}{130}\relax 
+\doTocEntry\toclof{4.8}{\csname a:TocLink\endcsname{27}{x27-770018}{}{\ignorespaces A screenshot of jamovi showing the Quartiles for the \texttt  {afl.margins} variable }}{figure}\relax 
+\doTocEntry\tocsubsection{4.2.3}{\csname a:TocLink\endcsname{27}{x27-780004.2.3}{QQ2-27-95}{Mean absolute deviation~}}{133}\relax 
+\doTocEntry\tocsubsection{4.2.4}{\csname a:TocLink\endcsname{27}{x27-790004.2.4}{QQ2-27-96}{Variance}}{135}\relax 
+\doTocEntry\toclof{4.9}{\csname a:TocLink\endcsname{27}{x27-790029}{}{\ignorespaces A screenshot of jamovi showing the Variance for the first 5 values of the \texttt  {afl.margins} variable }}{figure}\relax 
+\doTocEntry\tocsubsection{4.2.5}{\csname a:TocLink\endcsname{27}{x27-800004.2.5}{QQ2-27-98}{Standard deviation}}{141}\relax 
+\doTocEntry\toclof{4.10}{\csname a:TocLink\endcsname{27}{x27-8000210}{}{\ignorespaces An illustration of the standard deviation from the AFL winning margins data. The shaded bars in the histogram show how much of the data fall within one standard deviation of the mean. In this case, 65.3\% of the data set lies within this range, which is pretty consistent with the ``approximately 68\% rule'' discussed in the main text.}}{figure}\relax 
+\doTocEntry\tocsubsection{4.2.6}{\csname a:TocLink\endcsname{27}{x27-810004.2.6}{QQ2-27-100}{Which measure to use?}}{146}\relax 
+\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{27}{x27-820004.3}{QQ2-27-101}{Skew and kurtosis }}{147}\relax 
+\doTocEntry\toclof{4.11}{\csname a:TocLink\endcsname{27}{x27-8200111}{}{\ignorespaces An illustration of skewness. On the left we have a negatively skewed data set (skewness $= -.93$), in the middle we have a data set with no skew (well, hardly any: skewness $= -.006$), and on the right we have a positively skewed data set (skewness $= .93$). }}{figure}\relax 
+\doTocEntry\toclof{4.12}{\csname a:TocLink\endcsname{27}{x27-8200212}{}{\ignorespaces An illustration of kurtosis. On the left, we have a ``platykurtic'' data set (kurtosis = $-.95$) meaning that the data set is ``too flat''. In the middle we have a ``mesokurtic'' data set (kurtosis is almost exactly 0) which means that the pointiness of the data is just about right. Finally, on the right, we have a ``leptokurtic'' data set (kurtosis $= 2.12$) indicating that the data set is ``too pointy''. Note that kurtosis is measured with respect to a normal curve (black line).}}{figure}\relax 
+\doTocEntry\tocsection{4.4}{\csname a:TocLink\endcsname{27}{x27-830004.4}{QQ2-27-104}{Descriptive statistics separately for each group~}}{155}\relax 
+\doTocEntry\toclof{4.13}{\csname a:TocLink\endcsname{27}{x27-8300113}{}{\ignorespaces A screenshot of jamovi showing the variables stored in the \texttt  {clinicaltrial.csv} file}}{figure}\relax 
+\doTocEntry\toclof{4.14}{\csname a:TocLink\endcsname{27}{x27-8300214}{}{\ignorespaces A screenshot of jamovi showing Descriptives split by therapy type}}{figure}\relax 
+\doTocEntry\tocsection{4.5}{\csname a:TocLink\endcsname{27}{x27-840004.5}{QQ2-27-107}{Standard scores~}}{161}\relax 
+\doTocEntry\tocsection{4.6}{\csname a:TocLink\endcsname{27}{x27-850004.6}{QQ2-27-108}{Summary}}{164}\relax 
+\doTocEntry\tocsubsection{4.6.1}{\csname a:TocLink\endcsname{27}{x27-860004.6.1}{QQ2-27-109}{Epilogue: Good descriptive statistics are descriptive!}}{165}\relax 
+\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{37}{x37-870005}{QQ2-37-110}{Drawing graphs}}{168}\relax 
+\doTocEntry\toclof{5.1}{\csname a:TocLink\endcsname{37}{x37-870021}{}{\ignorespaces A stylised redrawing of John Snow's original cholera map. Each small dot represents the location of a cholera case and each large circle shows the location of a well. As the plot makes clear, the cholera outbreak is centred very closely on the Broad St pump.}}{figure}\relax 
+\doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{37}{x37-880005.1}{QQ2-37-112}{Histograms}}{172}\relax 
+\doTocEntry\toclof{5.2}{\csname a:TocLink\endcsname{37}{x37-880012}{}{\ignorespaces jamovi screen showing the histogram check box}}{figure}\relax 
+\doTocEntry\toclof{5.3}{\csname a:TocLink\endcsname{37}{x37-880023}{}{\ignorespaces A density plot of the \texttt  {afl.margins} variable plotted in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{37}{x37-890005.2}{QQ2-37-115}{Boxplots~}}{178}\relax 
+\doTocEntry\toclof{5.4}{\csname a:TocLink\endcsname{37}{x37-890014}{}{\ignorespaces A box plot of the \texttt  {afl.margins} variable plotted in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{5.2.1}{\csname a:TocLink\endcsname{37}{x37-900005.2.1}{QQ2-37-117}{Violin plots~}}{181}\relax 
+\doTocEntry\toclof{5.5}{\csname a:TocLink\endcsname{37}{x37-900015}{}{\ignorespaces A violin plot of the \texttt  {afl.margins} variable plotted in jamovi, alsow showing a box plot and data points}}{figure}\relax 
+\doTocEntry\tocsubsection{5.2.2}{\csname a:TocLink\endcsname{37}{x37-910005.2.2}{QQ2-37-119}{Drawing multiple boxplots~}}{184}\relax 
+\doTocEntry\toclof{5.6}{\csname a:TocLink\endcsname{37}{x37-910016}{}{\ignorespaces jamovi screen shot showing the `Split by' window}}{figure}\relax 
+\doTocEntry\toclof{5.7}{\csname a:TocLink\endcsname{37}{x37-910027}{}{\ignorespaces Multiple boxplots plotted in jamovi, for the \texttt  {margin} by \texttt  {year} variables in the \texttt  {aflsmall2} data set}}{figure}\relax 
+\doTocEntry\tocsubsection{5.2.3}{\csname a:TocLink\endcsname{37}{x37-920005.2.3}{QQ2-37-122}{Using box plots to detect outliers~}}{190}\relax 
+\doTocEntry\toclof{5.8}{\csname a:TocLink\endcsname{37}{x37-920018}{}{\ignorespaces A boxplot showing two very suspicious outliers!}}{figure}\relax 
+\doTocEntry\toclof{5.9}{\csname a:TocLink\endcsname{37}{x37-920029}{}{\ignorespaces the jamovi filter screen}}{figure}\relax 
+\doTocEntry\toclof{5.10}{\csname a:TocLink\endcsname{37}{x37-9200310}{}{\ignorespaces Frequency table for \texttt  {ID} showing the ID numbers for the two suspicious outliers: \texttt  {14} and \texttt  {134}}}{figure}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{37}{x37-930005.3}{QQ2-37-126}{Bar graphs}}{199}\relax 
+\doTocEntry\toclof{5.11}{\csname a:TocLink\endcsname{37}{x37-9300211}{}{\ignorespaces Filtering to include just four AFL teams, and drawing a bar plot in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{5.4}{\csname a:TocLink\endcsname{37}{x37-940005.4}{QQ2-37-128}{Saving image files using jamovi~}}{202}\relax 
+\doTocEntry\tocsection{5.5}{\csname a:TocLink\endcsname{37}{x37-950005.5}{QQ2-37-129}{Summary}}{202}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{40}{x40-960006}{QQ2-40-130}{Pragmatic matters~}}{205}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{40}{x40-970006.1}{QQ2-40-131}{Tabulating and cross-tabulating data}}{206}\relax 
+\doTocEntry\tocsubsection{6.1.1}{\csname a:TocLink\endcsname{40}{x40-980006.1.1}{QQ2-40-132}{Creating tables for single variables}}{206}\relax 
+\doTocEntry\toclof{6.1}{\csname a:TocLink\endcsname{40}{x40-980011}{}{\ignorespaces Frequency table for the \texttt  {speaker} variable}}{figure}\relax 
+\doTocEntry\toclof{6.2}{\csname a:TocLink\endcsname{40}{x40-980022}{}{\ignorespaces Contingency table for the \texttt  {speaker} and \texttt  {utterances} variables}}{figure}\relax 
+\doTocEntry\tocsubsection{6.1.2}{\csname a:TocLink\endcsname{40}{x40-990006.1.2}{QQ2-40-135}{Adding percentages to a contingency table}}{212}\relax 
+\doTocEntry\toclof{6.3}{\csname a:TocLink\endcsname{40}{x40-990013}{}{\ignorespaces Contingency table for the \texttt  {speaker} and \texttt  {utterances} variables, with row percentages}}{figure}\relax 
+\doTocEntry\toclof{6.4}{\csname a:TocLink\endcsname{40}{x40-990024}{}{\ignorespaces Contingency table for the \texttt  {speaker} and \texttt  {utterances} variables, with column percentages}}{figure}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{40}{x40-1000006.2}{QQ2-40-138}{Logical expressions in jamovi}}{218}\relax 
+\doTocEntry\tocsubsection{6.2.1}{\csname a:TocLink\endcsname{40}{x40-1010006.2.1}{QQ2-40-139}{Assessing mathematical truths}}{218}\relax 
+\doTocEntry\tocsubsection{6.2.2}{\csname a:TocLink\endcsname{40}{x40-1020006.2.2}{QQ2-40-140}{Logical operations}}{220}\relax 
+\doTocEntry\toclot{6.1}{\csname a:TocLink\endcsname{40}{x40-1020011}{}{\ignorespaces Some logical operators. Technically I should be calling these ``binary relational operators'', but quite frankly I don't want to. It's my book so no-one can make me.}}{table}\relax 
+\doTocEntry\toclot{6.2}{\csname a:TocLink\endcsname{40}{x40-1020022}{}{\ignorespaces Some more logical operators.}}{table}\relax 
+\doTocEntry\tocsubsection{6.2.3}{\csname a:TocLink\endcsname{40}{x40-1030006.2.3}{QQ2-40-143}{Applying logical operation to text~}}{233}\relax 
+\doTocEntry\toclot{6.3}{\csname a:TocLink\endcsname{40}{x40-1030013}{}{\ignorespaces The ordering of various text characters used by the \texttt  {<} and \texttt  {>} operators. Not shown is the ``space'' character, which actually comes first on the list.}}{table}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{40}{x40-1040006.3}{QQ2-40-145}{Transforming and recoding a variable~}}{243}\relax 
+\doTocEntry\tocsubsection{6.3.1}{\csname a:TocLink\endcsname{40}{x40-1050006.3.1}{QQ2-40-146}{Creating a transformed variable}}{243}\relax 
+\doTocEntry\toclof{6.5}{\csname a:TocLink\endcsname{40}{x40-1050015}{}{\ignorespaces Creating a new computed variable in jamovi}}{figure}\relax 
+\doTocEntry\toclof{6.6}{\csname a:TocLink\endcsname{40}{x40-1050036}{}{\ignorespaces Using the {\it  f\textsubscript  {x}} button to select functions and variables}}{figure}\relax 
+\doTocEntry\tocsubsection{6.3.2}{\csname a:TocLink\endcsname{40}{x40-1060006.3.2}{QQ2-40-149}{Collapsing a variable into a smaller number of discrete levels or categories}}{252}\relax 
+\doTocEntry\toclof{6.7}{\csname a:TocLink\endcsname{40}{x40-1060017}{}{\ignorespaces Collapsing a variable into a smaller number of discrete levels using the jamovi `IF' function}}{figure}\relax 
+\doTocEntry\tocsubsection{6.3.3}{\csname a:TocLink\endcsname{40}{x40-1070006.3.3}{QQ2-40-151}{Creating a transformation that can be applied to multiple variables}}{256}\relax 
+\doTocEntry\toclof{6.8}{\csname a:TocLink\endcsname{40}{x40-1070018}{}{\ignorespaces Creating a new variable transformation using the jamovi `Transform' command}}{figure}\relax 
+\doTocEntry\toclof{6.9}{\csname a:TocLink\endcsname{40}{x40-1070029}{}{\ignorespaces Specifying a transformation in jamovi, to be saved as the imaginatively named `Transform 1'}}{figure}\relax 
+\doTocEntry\toclof{6.10}{\csname a:TocLink\endcsname{40}{x40-10700310}{}{\ignorespaces jamovi transformation into three age categories, using the `Add condition' button}}{figure}\relax 
+\doTocEntry\tocsection{6.4}{\csname a:TocLink\endcsname{40}{x40-1080006.4}{QQ2-40-155}{A few more mathematical functions and operations~}}{266}\relax 
+\doTocEntry\toclot{6.4}{\csname a:TocLink\endcsname{40}{x40-1080024}{}{\ignorespaces Some of the mathematical functions available in jamovi}}{table}\relax 
+\doTocEntry\tocsubsection{6.4.1}{\csname a:TocLink\endcsname{40}{x40-1090006.4.1}{QQ2-40-157}{Logarithms and exponentials}}{269}\relax 
+\doTocEntry\tocsection{6.5}{\csname a:TocLink\endcsname{40}{x40-1100006.5}{QQ2-40-158}{Extracting a subset of the data~}}{271}\relax 
+\doTocEntry\toclof{6.11}{\csname a:TocLink\endcsname{40}{x40-11000111}{}{\ignorespaces Creating a subset of the \texttt  {nightgarden} data using the jamovi `Filters' option}}{figure}\relax 
+\doTocEntry\tocsection{6.6}{\csname a:TocLink\endcsname{40}{x40-1110006.6}{QQ2-40-160}{Summary}}{276}\relax 
+\doTocEntry\tocpart{IV}{\csname a:TocLink\endcsname{50}{x50-112000IV}{QQ2-50-161}{Statistical theory}}{280}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{51}{x51-113000IV}{QQ2-51-162}{Prelude to Part IV}}{282}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{51}{x51-114000IV}{QQ2-51-163}{On the limits of logical reasoning}}{282}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{51}{x51-115000IV}{QQ2-51-164}{Learning without making assumptions is a myth}}{289}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{53}{x53-1160007}{QQ2-53-165}{Introduction to probability}}{292}\relax 
+\doTocEntry\tocsection{7.1}{\csname a:TocLink\endcsname{53}{x53-1170007.1}{QQ2-53-166}{How are probability and statistics different?~}}{293}\relax 
+\doTocEntry\tocsection{7.2}{\csname a:TocLink\endcsname{53}{x53-1180007.2}{QQ2-53-167}{What does probability mean?}}{296}\relax 
+\doTocEntry\tocsubsection{7.2.1}{\csname a:TocLink\endcsname{53}{x53-1190007.2.1}{QQ2-53-168}{The frequentist view}}{297}\relax 
+\doTocEntry\toclof{7.1}{\csname a:TocLink\endcsname{53}{x53-1190011}{}{\ignorespaces An illustration of how frequentist probability works. If you flip a fair coin over and over again the proportion of heads that you've seen eventually settles down and converges to the true probability of 0.5. Each panel shows four different simulated experiments. In each case we pretend we flipped a coin 1000 times and kept track of the proportion of flips that were heads as we went along. Although none of these sequences actually ended up with an exact value of .5, if we'd extended the experiment for an infinite number of coin flips they would have.}}{figure}\relax 
+\doTocEntry\tocsubsection{7.2.2}{\csname a:TocLink\endcsname{53}{x53-1200007.2.2}{QQ2-53-170}{The Bayesian view}}{303}\relax 
+\doTocEntry\tocsubsection{7.2.3}{\csname a:TocLink\endcsname{53}{x53-1210007.2.3}{QQ2-53-171}{What's the difference? And who is right?}}{304}\relax 
+\doTocEntry\tocsection{7.3}{\csname a:TocLink\endcsname{53}{x53-1220007.3}{QQ2-53-172}{Basic probability theory~}}{305}\relax 
+\doTocEntry\tocsubsection{7.3.1}{\csname a:TocLink\endcsname{53}{x53-1230007.3.1}{QQ2-53-173}{Introducing probability distributions}}{305}\relax 
+\doTocEntry\toclof{7.2}{\csname a:TocLink\endcsname{53}{x53-1230012}{}{\ignorespaces A visual depiction of the ``trousers'' probability distribution. There are five ``elementary events'', corresponding to the five pairs of trousers that I own. Each event has some probability of occurring: this probability is a number between 0 to 1. The sum of these probabilities is 1.}}{figure}\relax 
+\doTocEntry\toclot{7.1}{\csname a:TocLink\endcsname{53}{x53-1230021}{}{\ignorespaces Some basic rules that probabilities must satisfy. You don't really need to know these rules in order to understand the analyses that we'll talk about later in the book, but they are important if you want to understand probability theory a bit more deeply.}}{table}\relax 
+\doTocEntry\tocsection{7.4}{\csname a:TocLink\endcsname{53}{x53-1240007.4}{QQ2-53-176}{The binomial distribution}}{312}\relax 
+\doTocEntry\tocsubsection{7.4.1}{\csname a:TocLink\endcsname{53}{x53-1250007.4.1}{QQ2-53-177}{Introducing the binomial}}{312}\relax 
+\doTocEntry\toclot{7.2}{\csname a:TocLink\endcsname{53}{x53-1250012}{}{\ignorespaces Formulas for the binomial and normal distributions. We don't really use these formulas for anything in this book, but they're pretty important for more advanced work, so I thought it might be best to put them here in a table, where they can't get in the way of the text. In the equation for the binomial, $X!$ is the factorial function (i.e., multiply all whole numbers from 1 to $X$), and for the normal distribution ``exp'' refers to the exponential function, which we discussed in Chapter~\ref  {ch:datahandling}. If these equations don't make a lot of sense to you, don't worry too much about them. }}{table}\relax 
+\doTocEntry\toclof{7.3}{\csname a:TocLink\endcsname{53}{x53-1250033}{}{\ignorespaces The binomial distribution with size parameter of $N=20$ and an underlying success probability of $\theta = 1/6$. Each vertical bar depicts the probability of one specific outcome (i.e., one possible value of $X$). Because this is a probability distribution, each of the probabilities must be a number between 0 and 1, and the heights of the bars must sum to 1 as well.}}{figure}\relax 
+\doTocEntry\toclof{7.4}{\csname a:TocLink\endcsname{53}{x53-1250044}{}{\ignorespaces Two binomial distributions, involving a scenario in which I'm flipping a fair coin, so the underlying success probability is $\theta = 1/2$. In panel (a), we assume I'm flipping the coin $N=20$ times. In panel (b) we assume that the coin is flipped $N=100$ times.}}{figure}\relax 
+\doTocEntry\tocsection{7.5}{\csname a:TocLink\endcsname{53}{x53-1260007.5}{QQ2-53-181}{The normal distribution}}{324}\relax 
+\doTocEntry\toclof{7.5}{\csname a:TocLink\endcsname{53}{x53-1260015}{}{\ignorespaces The normal distribution with mean $\mu = 0$ and standard deviation $\sigma = 1$. The $x$-axis corresponds to the value of some variable, and the $y$-axis tells us something about how likely we are to observe that value. However, notice that the $y$-axis is labelled ``Probability Density'' and not ``Probability''. There is a subtle and somewhat frustrating characteristic of continuous distributions that makes the $y$ axis behave a bit oddly: the height of the curve here isn't actually the probability of observing a particular $x$ value. On the other hand, it {\it  is} true that the heights of the curve tells you which $x$ values are more likely (the higher ones!). (see Section~\ref  {sec:density} for all the annoying details)}}{figure}\relax 
+\doTocEntry\toclof{7.6}{\csname a:TocLink\endcsname{53}{x53-1260026}{}{\ignorespaces An illustration of what happens when you change the mean of a normal distribution. The solid line depicts a normal distribution with a mean of $\mu =4$. The dashed line shows a normal distribution with a mean of $\mu =7$. In both cases, the standard deviation is $\sigma =1$. Not surprisingly, the two distributions have the same shape, but the dashed line is shifted to the right.}}{figure}\relax 
+\doTocEntry\toclof{7.7}{\csname a:TocLink\endcsname{53}{x53-1260037}{}{\ignorespaces An illustration of what happens when you change the the standard deviation of a normal distribution. Both distributions plotted in this figure have a mean of $\mu = 5$, but they have different standard deviations. The solid line plots a distribution with standard deviation $\sigma =1$, and the dashed line shows a distribution with standard deviation $\sigma = 2$. As a consequence, both distributions are ``centred'' on the same spot, but the dashed line is wider than the solid one.}}{figure}\relax 
+\doTocEntry\toclof{7.8}{\csname a:TocLink\endcsname{53}{x53-1260058}{}{\ignorespaces The area under the curve tells you the probability that an observation falls within a particular range. The solid lines plot normal distributions with mean $\mu =0$ and standard deviation $\sigma =1$. The shaded areas illustrate ``areas under the curve'' for two important cases. In panel a, we can see that there is a 68.3\% chance that an observation will fall within one standard deviation of the mean. In panel b, we see that there is a 95.4\% chance that an observation will fall within two standard deviations of the mean.}}{figure}\relax 
+\doTocEntry\toclof{7.9}{\csname a:TocLink\endcsname{53}{x53-1260069}{}{\ignorespaces Two more examples of the ``area under the curve idea''. There is a 15.9\% chance that an observation is one standard deviation below the mean or smaller (panel a), and a 34.1\% chance that the observation is somewhere between one standard deviation below the mean and the mean (panel b). Notice that if you add these two numbers together you get $15.9\% + 34.1\% = 50\%$. For normally distributed data, there is a 50\% chance that an observation falls below the mean. And of course that also implies that there is a 50\% chance that it falls above the mean.}}{figure}\relax 
+\doTocEntry\tocsubsection{7.5.1}{\csname a:TocLink\endcsname{53}{x53-1270007.5.1}{QQ2-53-187}{Probability density~ }}{339}\relax 
+\doTocEntry\tocsection{7.6}{\csname a:TocLink\endcsname{53}{x53-1280007.6}{QQ2-53-188}{Other useful distributions~}}{340}\relax 
+\doTocEntry\toclof{7.10}{\csname a:TocLink\endcsname{53}{x53-12800110}{}{\ignorespaces A $t$ distribution with 3 degrees of freedom (solid line). It looks similar to a normal distribution, but it's not quite the same. For comparison purposes I've plotted a standard normal distribution as the dashed line.}}{figure}\relax 
+\doTocEntry\toclof{7.11}{\csname a:TocLink\endcsname{53}{x53-12800211}{}{\ignorespaces A $\chi ^2$ distribution with 3 degrees of freedom. Notice that the observed values must always be greater than zero, and that the distribution is pretty skewed. These are the key features of a chi-square distribution.}}{figure}\relax 
+\doTocEntry\toclof{7.12}{\csname a:TocLink\endcsname{53}{x53-12800312}{}{\ignorespaces An $F$ distribution with 3 and 5 degrees of freedom. Qualitatively speaking, it looks pretty similar to a chi-square distribution, but they're not quite the same in general.}}{figure}\relax 
+\doTocEntry\tocsection{7.7}{\csname a:TocLink\endcsname{53}{x53-1290007.7}{QQ2-53-192}{Summary}}{351}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{58}{x58-1300008}{QQ2-58-193}{Estimating unknown quantities from a sample}}{354}\relax 
+\doTocEntry\tocsection{8.1}{\csname a:TocLink\endcsname{58}{x58-1310008.1}{QQ2-58-194}{Samples, populations and sampling~}}{354}\relax 
+\doTocEntry\tocsubsection{8.1.1}{\csname a:TocLink\endcsname{58}{x58-1320008.1.1}{QQ2-58-195}{Defining a population~}}{355}\relax 
+\doTocEntry\tocsubsection{8.1.2}{\csname a:TocLink\endcsname{58}{x58-1330008.1.2}{QQ2-58-196}{Simple random samples}}{356}\relax 
+\doTocEntry\toclof{8.1}{\csname a:TocLink\endcsname{58}{x58-1330011}{}{\ignorespaces Simple random sampling without replacement from a finite population}}{figure}\relax 
+\doTocEntry\toclof{8.2}{\csname a:TocLink\endcsname{58}{x58-1330032}{}{\ignorespaces Biased sampling without replacement from a finite population}}{figure}\relax 
+\doTocEntry\toclof{8.3}{\csname a:TocLink\endcsname{58}{x58-1330043}{}{\ignorespaces Simple random sampling {\it  with} replacement from a finite population}}{figure}\relax 
+\doTocEntry\tocsubsection{8.1.3}{\csname a:TocLink\endcsname{58}{x58-1340008.1.3}{QQ2-58-200}{Most samples are not simple random samples}}{366}\relax 
+\doTocEntry\tocsubsection{8.1.4}{\csname a:TocLink\endcsname{58}{x58-1350008.1.4}{QQ2-58-201}{How much does it matter if you don't have a simple random sample?}}{368}\relax 
+\doTocEntry\tocsubsection{8.1.5}{\csname a:TocLink\endcsname{58}{x58-1360008.1.5}{QQ2-58-202}{Population parameters and sample statistics}}{369}\relax 
+\doTocEntry\toclof{8.4}{\csname a:TocLink\endcsname{58}{x58-1360014}{}{\ignorespaces The population distribution of IQ scores (panel a) and two samples drawn randomly from it. In panel b we have a sample of 100 observations, and panel c we have a sample of 10,000 observations.}}{figure}\relax 
+\doTocEntry\tocsection{8.2}{\csname a:TocLink\endcsname{58}{x58-1370008.2}{QQ2-58-204}{The law of large numbers~}}{374}\relax 
+\doTocEntry\toclof{8.5}{\csname a:TocLink\endcsname{58}{x58-1370015}{}{\ignorespaces A random sample drawn from a normal distribution using jamovi}}{figure}\relax 
+\doTocEntry\tocsection{8.3}{\csname a:TocLink\endcsname{58}{x58-1380008.3}{QQ2-58-206}{Sampling distributions and the central limit theorem~}}{379}\relax 
+\doTocEntry\tocsubsection{8.3.1}{\csname a:TocLink\endcsname{58}{x58-1390008.3.1}{QQ2-58-207}{Sampling distribution of the mean~}}{379}\relax 
+\doTocEntry\toclot{8.1}{\csname a:TocLink\endcsname{58}{x58-1390011}{}{\ignorespaces Ten replications of the IQ experiment, each with a sample size of $N=5$.}}{table}\relax 
+\doTocEntry\toclof{8.6}{\csname a:TocLink\endcsname{58}{x58-1390026}{}{\ignorespaces The sampling distribution of the mean for the ``five IQ scores experiment''. If you sample 5 people at random and calculate their {\it  average} IQ you'll almost certainly get a number between 80 and 120, even though there are quite a lot of individuals who have IQs above 120 or below 80. For comparison, the black line plots the population distribution of IQ scores.}}{figure}\relax 
+\doTocEntry\toclof{8.7}{\csname a:TocLink\endcsname{58}{x58-1390037}{}{\ignorespaces The sampling distribution of the {\it  maximum} for the ``five IQ scores experiment''. If you sample 5 people at random and select the one with the highest IQ score you'll probably see someone with an IQ between 100 and 140.}}{figure}\relax 
+\doTocEntry\tocsubsection{8.3.2}{\csname a:TocLink\endcsname{58}{x58-1400008.3.2}{QQ2-58-211}{Sampling distributions exist for any sample statistic!}}{391}\relax 
+\doTocEntry\tocsubsection{8.3.3}{\csname a:TocLink\endcsname{58}{x58-1410008.3.3}{QQ2-58-212}{The central limit theorem~}}{392}\relax 
+\doTocEntry\toclof{8.8}{\csname a:TocLink\endcsname{58}{x58-1410018}{}{\ignorespaces An illustration of the how sampling distribution of the mean depends on sample size. In each panel I generated 10,000 samples of IQ data and calculated the mean IQ observed within each of these data sets. The histograms in these plots show the distribution of these means (i.e., the sampling distribution of the mean). Each individual IQ score was drawn from a normal distribution with mean 100 and standard deviation 15, which is shown as the solid black line. In panel a, each data set contained only a single observation, so the mean of each sample is just one person's IQ score. As a consequence, the sampling distribution of the mean is of course identical to the population distribution of IQ scores. However, when we raise the sample size to 2 the mean of any one sample tends to be closer to the population mean than a one person's IQ score, and so the histogram (i.e., the sampling distribution) is a bit narrower than the population distribution. By the time we raise the sample size to 10 (panel c), we can see that the distribution of sample means tend to be fairly tightly clustered around the true population mean.}}{figure}\relax 
+\doTocEntry\toclof{8.9}{\csname a:TocLink\endcsname{58}{x58-1410029}{}{\ignorespaces A demonstration of the central limit theorem. In panel a, we have a non-normal population distribution, and panels b-d show the sampling distribution of the mean for samples of size 2,4 and 8 for data drawn from the distribution in panel a. As you can see, even though the original population distribution is non-normal the sampling distribution of the mean becomes pretty close to normal by the time you have a sample of even 4 observations. }}{figure}\relax 
+\doTocEntry\tocsection{8.4}{\csname a:TocLink\endcsname{58}{x58-1420008.4}{QQ2-58-215}{Estimating population parameters~}}{400}\relax 
+\doTocEntry\tocsubsection{8.4.1}{\csname a:TocLink\endcsname{58}{x58-1430008.4.1}{QQ2-58-216}{Estimating the population mean}}{401}\relax 
+\doTocEntry\tocsubsection{8.4.2}{\csname a:TocLink\endcsname{58}{x58-1440008.4.2}{QQ2-58-217}{Estimating the population standard deviation}}{402}\relax 
+\doTocEntry\toclof{8.10}{\csname a:TocLink\endcsname{58}{x58-14400110}{}{\ignorespaces The sampling distribution of the sample standard deviation for a ``two IQ scores'' experiment. The true population standard deviation is 15 (dashed line), but as you can see from the histogram the vast majority of experiments will produce a much smaller sample standard deviation than this. On average, this experiment would produce a sample standard deviation of only 8.5, well below the true value! In other words, the sample standard deviation is a {\it  biased} estimate of the population standard deviation.}}{figure}\relax 
+\doTocEntry\toclof{8.11}{\csname a:TocLink\endcsname{58}{x58-14400311}{}{\ignorespaces An illustration of the fact that the sample mean is an unbiased estimator of the population mean (panel a), but the sample standard deviation is a biased estimator of the population standard deviation (panel b). For the figure I generated 10,000 simulated data sets with 1 observation each, 10,000 more with 2 observations, and so on up to a sample size of 10. Each data set consisted of fake IQ data, that is the data were normally distributed with a true population mean of 100 and standard deviation 15. {\it  On average}, the sample means turn out to be 100, regardless of sample size (panel a). However, the sample standard deviations turn out to be systematically too small (panel b), especially for small sample sizes.}}{figure}\relax 
+\doTocEntry\tocsection{8.5}{\csname a:TocLink\endcsname{58}{x58-1450008.5}{QQ2-58-220}{Estimating a confidence interval}}{412}\relax 
+\doTocEntry\tocsubsection{8.5.1}{\csname a:TocLink\endcsname{58}{x58-1460008.5.1}{QQ2-58-221}{A slight mistake in the formula}}{415}\relax 
+\doTocEntry\tocsubsection{8.5.2}{\csname a:TocLink\endcsname{58}{x58-1470008.5.2}{QQ2-58-222}{Interpreting a confidence interval}}{415}\relax 
+\doTocEntry\toclof{8.12}{\csname a:TocLink\endcsname{58}{x58-14700112}{}{\ignorespaces 95\% confidence intervals. The top (panel a) shows 50 simulated replications of an experiment in which we measure the IQs of 10 people. The dot marks the location of the sample mean and the line shows the 95\% confidence interval. In total 47 of the 50 confidence intervals do contain the true mean (i.e., 100), but the three intervals marked with asterisks do not. The lower graph (panel b) shows a similar simulation, but this time we simulate replications of an experiment that measures the IQs of 25 people.}}{figure}\relax 
+\doTocEntry\tocsubsection{8.5.3}{\csname a:TocLink\endcsname{58}{x58-1480008.5.3}{QQ2-58-224}{Calculating confidence intervals in jamovi}}{419}\relax 
+\doTocEntry\tocsection{8.6}{\csname a:TocLink\endcsname{58}{x58-1490008.6}{QQ2-58-225}{Summary}}{420}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{67}{x67-1500009}{QQ2-67-226}{Hypothesis testing}}{422}\relax 
+\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{67}{x67-1510009.1}{QQ2-67-227}{A menagerie of hypotheses~}}{422}\relax 
+\doTocEntry\tocsubsection{9.1.1}{\csname a:TocLink\endcsname{67}{x67-1520009.1.1}{QQ2-67-228}{Research hypotheses versus statistical hypotheses}}{423}\relax 
+\doTocEntry\tocsubsection{9.1.2}{\csname a:TocLink\endcsname{67}{x67-1530009.1.2}{QQ2-67-229}{Null hypotheses and alternative hypotheses}}{426}\relax 
+\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{67}{x67-1540009.2}{QQ2-67-230}{Two types of errors~}}{427}\relax 
+\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{67}{x67-1550009.3}{QQ2-67-231}{Test statistics and sampling distributions~}}{430}\relax 
+\doTocEntry\toclof{9.1}{\csname a:TocLink\endcsname{67}{x67-1550011}{}{\ignorespaces The sampling distribution for our test statistic $X$ when the null hypothesis is true. For our ESP scenario this is a binomial distribution. Not surprisingly, since the null hypothesis says that the probability of a correct response is $\theta = .5$, the sampling distribution says that the most likely value is 50 (out of 100) correct responses. Most of the probability mass lies between 40 and 60.}}{figure}\relax 
+\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{67}{x67-1560009.4}{QQ2-67-233}{Making decisions~}}{433}\relax 
+\doTocEntry\tocsubsection{9.4.1}{\csname a:TocLink\endcsname{67}{x67-1570009.4.1}{QQ2-67-234}{Critical regions and critical values}}{434}\relax 
+\doTocEntry\toclof{9.2}{\csname a:TocLink\endcsname{67}{x67-1570012}{}{\ignorespaces The critical region associated with the hypothesis test for the ESP study, for a hypothesis test with a significance level of $\alpha = .05$. The plot shows the sampling distribution of $X$ under the null hypothesis (i.e., same as Figure~\ref  {fig:samplingdist}). The grey bars correspond to those values of $X$ for which we would retain the null hypothesis. The blue (darker shaded) bars show the critical region, those values of $X$ for which we would reject the null. Because the alternative hypothesis is two sided (i.e., allows both $\theta <.5$ and $\theta >.5$), the critical region covers both tails of the distribution. To ensure an $\alpha $ level of $.05$, we need to ensure that each of the two regions encompasses 2.5\% of the sampling distribution. }}{figure}\relax 
+\doTocEntry\tocsubsection{9.4.2}{\csname a:TocLink\endcsname{67}{x67-1580009.4.2}{QQ2-67-236}{A note on statistical ``significance''}}{438}\relax 
+\doTocEntry\tocsubsection{9.4.3}{\csname a:TocLink\endcsname{67}{x67-1590009.4.3}{QQ2-67-237}{The difference between one sided and two sided tests}}{439}\relax 
+\doTocEntry\toclof{9.3}{\csname a:TocLink\endcsname{67}{x67-1590013}{}{\ignorespaces The critical region for a one sided test. In this case, the alternative hypothesis is that $\theta > .5$ so we would only reject the null hypothesis for large values of $X$. As a consequence, the critical region only covers the upper tail of the sampling distribution, specifically the upper 5\% of the distribution. Contrast this to the two-sided version in Figure~\ref  {fig:crit2}. }}{figure}\relax 
+\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{67}{x67-1600009.5}{QQ2-67-239}{The $p$ value of a test~}}{443}\relax 
+\doTocEntry\tocsubsection{9.5.1}{\csname a:TocLink\endcsname{67}{x67-1610009.5.1}{QQ2-67-240}{A softer view of decision making}}{443}\relax 
+\doTocEntry\tocsubsection{9.5.2}{\csname a:TocLink\endcsname{67}{x67-1620009.5.2}{QQ2-67-241}{The probability of extreme data}}{444}\relax 
+\doTocEntry\tocsubsection{9.5.3}{\csname a:TocLink\endcsname{67}{x67-1630009.5.3}{QQ2-67-242}{A common mistake}}{445}\relax 
+\doTocEntry\tocsection{9.6}{\csname a:TocLink\endcsname{67}{x67-1640009.6}{QQ2-67-243}{Reporting the results of a hypothesis test~}}{445}\relax 
+\doTocEntry\tocsubsection{9.6.1}{\csname a:TocLink\endcsname{67}{x67-1650009.6.1}{QQ2-67-244}{The issue}}{446}\relax 
+\doTocEntry\tocsubsection{9.6.2}{\csname a:TocLink\endcsname{67}{x67-1660009.6.2}{QQ2-67-245}{Two proposed solutions}}{447}\relax 
+\doTocEntry\toclot{9.1}{\csname a:TocLink\endcsname{67}{x67-1660011}{}{\ignorespaces A commonly adopted convention for reporting $p$ values: in many places it is conventional to report one of four different things (e.g., $p<.05$) as shown below. I've included the ``significance stars'' notation (i.e., a * indicates $p<.05$) because you sometimes see this notation produced by statistical software. It's also worth noting that some people will write {\it  n.s.} (not significant) rather than $p>.05$.}}{table}\relax 
+\doTocEntry\tocsection{9.7}{\csname a:TocLink\endcsname{67}{x67-1670009.7}{QQ2-67-247}{Running the hypothesis test in practice~}}{450}\relax 
+\doTocEntry\toclof{9.4}{\csname a:TocLink\endcsname{67}{x67-1670024}{}{\ignorespaces Binomial test analysis and results in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{9.8}{\csname a:TocLink\endcsname{67}{x67-1680009.8}{QQ2-67-249}{Effect size, sample size and power }}{454}\relax 
+\doTocEntry\tocsubsection{9.8.1}{\csname a:TocLink\endcsname{67}{x67-1690009.8.1}{QQ2-67-250}{The power function}}{454}\relax 
+\doTocEntry\toclof{9.5}{\csname a:TocLink\endcsname{67}{x67-1690015}{}{\ignorespaces Sampling distribution under the {\it  alternative} hypothesis for a population parameter value of $\theta = 0.55$. A reasonable proportion of the distribution lies in the rejection region.}}{figure}\relax 
+\doTocEntry\toclof{9.6}{\csname a:TocLink\endcsname{67}{x67-1690026}{}{\ignorespaces Sampling distribution under the {\it  alternative} hypothesis for a population parameter value of $\theta = 0.70$. Almost all of the distribution lies in the rejection region.}}{figure}\relax 
+\doTocEntry\toclof{9.7}{\csname a:TocLink\endcsname{67}{x67-1690037}{}{\ignorespaces The probability that we will reject the null hypothesis, plotted as a function of the true value of $\theta $. Obviously, the test is more powerful (greater chance of correct rejection) if the true value of $\theta $ is very different from the value that the null hypothesis specifies (i.e., $\theta =.5$). Notice that when $\theta $ actually is equal to .5 (plotted as a black dot), the null hypothesis is in fact true and rejecting the null hypothesis in this instance would be a Type I error.}}{figure}\relax 
+\doTocEntry\tocsubsection{9.8.2}{\csname a:TocLink\endcsname{67}{x67-1700009.8.2}{QQ2-67-254}{Effect size}}{463}\relax 
+\doTocEntry\toclot{9.2}{\csname a:TocLink\endcsname{67}{x67-1700012}{}{\ignorespaces A crude guide to understanding the relationship between statistical significance and effect sizes. Basically, if you don't have a significant result then the effect size is pretty meaningless because you don't have any evidence that it's even real. On the other hand, if you do have a significant effect but your effect size is small then there's a pretty good chance that your result (although real) isn't all that interesting. However, this guide is very crude. It depends a lot on what exactly you're studying. Small effects can be of massive practical importance in some situations. So don't take this table too seriously. It's a rough guide at best.}}{table}\relax 
+\doTocEntry\tocsubsection{9.8.3}{\csname a:TocLink\endcsname{67}{x67-1710009.8.3}{QQ2-67-256}{Increasing the power of your study}}{466}\relax 
+\doTocEntry\toclof{9.8}{\csname a:TocLink\endcsname{67}{x67-1710028}{}{\ignorespaces The power of our test plotted as a function of the sample size $N$. In this case, the true value of $\theta $ is 0.7 but the null hypothesis is that $\theta = 0.5$. Overall, larger $N$ means greater power. (The small zig-zags in this function occur because of some odd interactions between $\theta $, $\alpha $ and the fact that the binomial distribution is discrete, it doesn't matter for any serious purpose).}}{figure}\relax 
+\doTocEntry\tocsection{9.9}{\csname a:TocLink\endcsname{67}{x67-1720009.9}{QQ2-67-258}{Some issues to consider~}}{471}\relax 
+\doTocEntry\tocsubsection{9.9.1}{\csname a:TocLink\endcsname{67}{x67-1730009.9.1}{QQ2-67-259}{Neyman versus Fisher}}{471}\relax 
+\doTocEntry\tocsubsection{9.9.2}{\csname a:TocLink\endcsname{67}{x67-1740009.9.2}{QQ2-67-260}{Bayesians versus frequentists}}{472}\relax 
+\doTocEntry\tocsubsection{9.9.3}{\csname a:TocLink\endcsname{67}{x67-1750009.9.3}{QQ2-67-261}{Traps}}{473}\relax 
+\doTocEntry\tocsection{9.10}{\csname a:TocLink\endcsname{67}{x67-1760009.10}{QQ2-67-262}{Summary}}{474}\relax 
+\doTocEntry\tocpart{V}{\csname a:TocLink\endcsname{82}{x82-177000V}{QQ2-82-263}{Statistical tools}}{479}\relax 
+\doTocEntry\tocchapter{10}{\csname a:TocLink\endcsname{83}{x83-17800010}{QQ2-83-264}{Categorical data analysis}}{481}\relax 
+\doTocEntry\tocsection{10.1}{\csname a:TocLink\endcsname{83}{x83-17900010.1}{QQ2-83-265}{The $\chi ^2$ (chi-square) goodness-of-fit test~}}{482}\relax 
+\doTocEntry\tocsubsection{10.1.1}{\csname a:TocLink\endcsname{83}{x83-18000010.1.1}{QQ2-83-266}{The cards data}}{482}\relax 
+\doTocEntry\tocsubsection{10.1.2}{\csname a:TocLink\endcsname{83}{x83-18100010.1.2}{QQ2-83-267}{The null hypothesis and the alternative hypothesis}}{485}\relax 
+\doTocEntry\tocsubsection{10.1.3}{\csname a:TocLink\endcsname{83}{x83-18200010.1.3}{QQ2-83-268}{The ``goodness-of-fit'' test statistic}}{486}\relax 
+\doTocEntry\tocsubsection{10.1.4}{\csname a:TocLink\endcsname{83}{x83-18300010.1.4}{QQ2-83-269}{The sampling distribution of the GOF statistic }}{491}\relax 
+\doTocEntry\tocsubsection{10.1.5}{\csname a:TocLink\endcsname{83}{x83-18400010.1.5}{QQ2-83-270}{Degrees of freedom}}{493}\relax 
+\doTocEntry\toclof{10.1}{\csname a:TocLink\endcsname{83}{x83-1840011}{}{\ignorespaces $\chi ^2$ (chi-square) distributions with different values for the ``degrees of freedom''.}}{figure}\relax 
+\doTocEntry\tocsubsection{10.1.6}{\csname a:TocLink\endcsname{83}{x83-18500010.1.6}{QQ2-83-272}{Testing the null hypothesis}}{497}\relax 
+\doTocEntry\toclof{10.2}{\csname a:TocLink\endcsname{83}{x83-1850012}{}{\ignorespaces Illustration of how the hypothesis testing works for the $\chi ^2$ (chi-square) goodness-of-fit test.}}{figure}\relax 
+\doTocEntry\toclof{10.3}{\csname a:TocLink\endcsname{83}{x83-1850023}{}{\ignorespaces Table of critical values for the chi-square distribution}}{figure}\relax 
+\doTocEntry\tocsubsection{10.1.7}{\csname a:TocLink\endcsname{83}{x83-18600010.1.7}{QQ2-83-275}{Doing the test in jamovi}}{503}\relax 
+\doTocEntry\toclof{10.4}{\csname a:TocLink\endcsname{83}{x83-1860014}{}{\ignorespaces A $\chi ^2$ One Sample Proportion Test in jamovi, with table showing both observed and expected frequencies and proportions.}}{figure}\relax 
+\doTocEntry\tocsubsection{10.1.8}{\csname a:TocLink\endcsname{83}{x83-18700010.1.8}{QQ2-83-277}{Specifying a different null hypothesis}}{506}\relax 
+\doTocEntry\toclof{10.5}{\csname a:TocLink\endcsname{83}{x83-1870015}{}{\ignorespaces Changing the expected proportions in the $\chi ^2$ One Sample Proportion Test in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{10.1.9}{\csname a:TocLink\endcsname{83}{x83-18800010.1.9}{QQ2-83-279}{How to report the results of the test~}}{509}\relax 
+\doTocEntry\tocsubsection{10.1.10}{\csname a:TocLink\endcsname{83}{x83-18900010.1.10}{QQ2-83-280}{A comment on statistical notation }}{511}\relax 
+\doTocEntry\tocsection{10.2}{\csname a:TocLink\endcsname{83}{x83-19000010.2}{QQ2-83-281}{The $\chi ^2$ test of independence (or association)~}}{513}\relax 
+\doTocEntry\tocsubsection{10.2.1}{\csname a:TocLink\endcsname{83}{x83-19100010.2.1}{QQ2-83-282}{Constructing our hypothesis test}}{514}\relax 
+\doTocEntry\tocsubsection{10.2.2}{\csname a:TocLink\endcsname{83}{x83-19200010.2.2}{QQ2-83-283}{Doing the test in jamovi}}{519}\relax 
+\doTocEntry\tocsubsection{10.2.3}{\csname a:TocLink\endcsname{83}{x83-19300010.2.3}{QQ2-83-284}{Postscript}}{521}\relax 
+\doTocEntry\tocsection{10.3}{\csname a:TocLink\endcsname{83}{x83-19400010.3}{QQ2-83-285}{The continuity correction~}}{521}\relax 
+\doTocEntry\tocsection{10.4}{\csname a:TocLink\endcsname{83}{x83-19500010.4}{QQ2-83-286}{Effect size~}}{522}\relax 
+\doTocEntry\tocsection{10.5}{\csname a:TocLink\endcsname{83}{x83-19600010.5}{QQ2-83-287}{Assumptions of the test(s)~}}{523}\relax 
+\doTocEntry\tocsection{10.6}{\csname a:TocLink\endcsname{83}{x83-19700010.6}{QQ2-83-288}{The Fisher exact test~}}{525}\relax 
+\doTocEntry\toclof{10.6}{\csname a:TocLink\endcsname{83}{x83-1970036}{}{\ignorespaces Fisher exact test output in jamovi. Ignore the `Value' and just refer to the $p$-value.}}{figure}\relax 
+\doTocEntry\tocsection{10.7}{\csname a:TocLink\endcsname{83}{x83-19800010.7}{QQ2-83-290}{The McNemar test~}}{530}\relax 
+\doTocEntry\tocsubsection{10.7.1}{\csname a:TocLink\endcsname{83}{x83-19900010.7.1}{QQ2-83-291}{Doing the McNemar test in jamovi}}{532}\relax 
+\doTocEntry\toclof{10.7}{\csname a:TocLink\endcsname{83}{x83-1990017}{}{\ignorespaces McNemar test output in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{10.8}{\csname a:TocLink\endcsname{83}{x83-20000010.8}{QQ2-83-293}{What's the difference between McNemar and independence?}}{536}\relax 
+\doTocEntry\toclof{10.8}{\csname a:TocLink\endcsname{83}{x83-2000018}{}{\ignorespaces Independent vs. Paired (McNemar) test output in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{10.9}{\csname a:TocLink\endcsname{83}{x83-20100010.9}{QQ2-83-295}{Summary}}{540}\relax 
+\doTocEntry\tocchapter{11}{\csname a:TocLink\endcsname{97}{x97-20200011}{QQ2-97-296}{Comparing two means }}{543}\relax 
+\doTocEntry\tocsection{11.1}{\csname a:TocLink\endcsname{97}{x97-20300011.1}{QQ2-97-297}{The one-sample $z$-test}}{543}\relax 
+\doTocEntry\tocsubsection{11.1.1}{\csname a:TocLink\endcsname{97}{x97-20400011.1.1}{QQ2-97-298}{The inference problem that the test addresses}}{544}\relax 
+\doTocEntry\toclof{11.1}{\csname a:TocLink\endcsname{97}{x97-2040021}{}{\ignorespaces The theoretical distribution (solid line) from which the psychology student grades (bars) are supposed to have been generated.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.1.2}{\csname a:TocLink\endcsname{97}{x97-20500011.1.2}{QQ2-97-300}{Constructing the hypothesis test}}{548}\relax 
+\doTocEntry\toclof{11.2}{\csname a:TocLink\endcsname{97}{x97-2050052}{}{\ignorespaces Graphical illustration of the null and alternative hypotheses assumed by the one sample $z$-test (the two sided version, that is). The null and alternative hypotheses both assume that the population distribution is normal, and additionally assumes that the population standard deviation is known (fixed at some value $\sigma _0$). The null hypothesis (left) is that the population mean $\mu $ is equal to some specified value $\mu _0$. The alternative hypothesis is that the population mean differs from this value, $\mu \neq \mu _0$.}}{figure}\relax 
+\doTocEntry\toclof{11.3}{\csname a:TocLink\endcsname{97}{x97-2050063}{}{\ignorespaces Rejection regions for the two-sided $z$-test (panel a) and the one-sided $z$-test (panel b).}}{figure}\relax 
+\doTocEntry\tocsubsection{11.1.3}{\csname a:TocLink\endcsname{97}{x97-20600011.1.3}{QQ2-97-303}{A worked example, by hand}}{557}\relax 
+\doTocEntry\tocsubsection{11.1.4}{\csname a:TocLink\endcsname{97}{x97-20700011.1.4}{QQ2-97-304}{Assumptions of the $z$-test~}}{559}\relax 
+\doTocEntry\tocsection{11.2}{\csname a:TocLink\endcsname{97}{x97-20800011.2}{QQ2-97-305}{The one-sample $t$-test~}}{560}\relax 
+\doTocEntry\toclof{11.4}{\csname a:TocLink\endcsname{97}{x97-2080014}{}{\ignorespaces Graphical illustration of the null and alternative hypotheses assumed by the (two sided) one sample $t$-test. Note the similarity to the $z$-test (Figure~\ref  {fig:ztesthyp}). The null hypothesis is that the population mean $\mu $ is equal to some specified value $\mu _0$, and the alternative hypothesis is that it is not. Like the $z$-test, we assume that the data are normally distributed, but we do not assume that the population standard deviation $\sigma $ is known in advance.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.2.1}{\csname a:TocLink\endcsname{97}{x97-20900011.2.1}{QQ2-97-307}{Introducing the $t$-test}}{564}\relax 
+\doTocEntry\toclof{11.5}{\csname a:TocLink\endcsname{97}{x97-2090025}{}{\ignorespaces The $t$ distribution with 2 degrees of freedom (left) and 10 degrees of freedom (right), with a standard normal distribution (i.e., mean 0 and std dev 1) plotted as dotted lines for comparison purposes. Notice that the $t$ distribution has heavier tails (leptokurtic: higher kurtosis) than the normal distribution; this effect is quite exaggerated when the degrees of freedom are very small, but negligible for larger values. In other words, for large $df$ the $t$ distribution is essentially identical to a normal distribution.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.2.2}{\csname a:TocLink\endcsname{97}{x97-21000011.2.2}{QQ2-97-309}{Doing the test in jamovi}}{568}\relax 
+\doTocEntry\toclof{11.6}{\csname a:TocLink\endcsname{97}{x97-2100016}{}{\ignorespaces jamovi does the one-sample t-test.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.2.3}{\csname a:TocLink\endcsname{97}{x97-21100011.2.3}{QQ2-97-311}{Assumptions of the one sample $t$-test~}}{571}\relax 
+\doTocEntry\tocsection{11.3}{\csname a:TocLink\endcsname{97}{x97-21200011.3}{QQ2-97-312}{The independent samples $t$-test (Student test)~}}{572}\relax 
+\doTocEntry\tocsubsection{11.3.1}{\csname a:TocLink\endcsname{97}{x97-21300011.3.1}{QQ2-97-313}{The data}}{573}\relax 
+\doTocEntry\toclof{11.7}{\csname a:TocLink\endcsname{97}{x97-2130017}{}{\ignorespaces Histograms showing the distribution of grades for students in Anastasia's (panel a) and in Bernadette's (panel b) classes. Visually, these suggest that students in Anastasia's class may be getting slightly better grades on average, though they also seem a bit more variable.}}{figure}\relax 
+\doTocEntry\toclof{11.8}{\csname a:TocLink\endcsname{97}{x97-2130028}{}{\ignorespaces The plots show the mean grade for students in Anastasia\IeC {\textquoteright }s and Bernadette\IeC {\textquoteright }s tutorials. Error bars depict 95\% confidence intervals around the mean. Visually, it does look like there's a real difference between the groups, though it's hard to say for sure.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.3.2}{\csname a:TocLink\endcsname{97}{x97-21400011.3.2}{QQ2-97-316}{Introducing the test}}{579}\relax 
+\doTocEntry\toclof{11.9}{\csname a:TocLink\endcsname{97}{x97-2140029}{}{\ignorespaces Graphical illustration of the null and alternative hypotheses assumed by the Student $t$-test. The null hypothesis assumes that both groups have the same mean $\mu $, whereas the alternative assumes that they have different means $\mu _1$ and $\mu _2$. Notice that it is assumed that the population distributions are normal, and that, although the alternative hypothesis allows the group to have different means, it assumes they have the same standard deviation.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.3.3}{\csname a:TocLink\endcsname{97}{x97-21500011.3.3}{QQ2-97-318}{A ``pooled estimate'' of the standard deviation}}{583}\relax 
+\doTocEntry\tocsubsection{11.3.4}{\csname a:TocLink\endcsname{97}{x97-21600011.3.4}{QQ2-97-319}{Completing the test}}{586}\relax 
+\doTocEntry\tocsubsection{11.3.5}{\csname a:TocLink\endcsname{97}{x97-21700011.3.5}{QQ2-97-320}{Doing the test in jamovi}}{587}\relax 
+\doTocEntry\toclof{11.10}{\csname a:TocLink\endcsname{97}{x97-21700110}{}{\ignorespaces Independent t-test in jamovi, with options checked for useful results}}{figure}\relax 
+\doTocEntry\tocsubsection{11.3.6}{\csname a:TocLink\endcsname{97}{x97-21800011.3.6}{QQ2-97-322}{Positive and negative $t$ values}}{592}\relax 
+\doTocEntry\tocsubsection{11.3.7}{\csname a:TocLink\endcsname{97}{x97-21900011.3.7}{QQ2-97-323}{Assumptions of the test~}}{593}\relax 
+\doTocEntry\tocsection{11.4}{\csname a:TocLink\endcsname{97}{x97-22000011.4}{QQ2-97-324}{The independent samples $t$-test (Welch test)~}}{594}\relax 
+\doTocEntry\toclof{11.11}{\csname a:TocLink\endcsname{97}{x97-22000111}{}{\ignorespaces Graphical illustration of the null and alternative hypotheses assumed by the Welch $t$-test. Like the Student test (Figure~\ref  {fig:ttesthyp}) we assume that both samples are drawn from a normal population; but the alternative hypothesis no longer requires the two populations to have equal variance.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.4.1}{\csname a:TocLink\endcsname{97}{x97-22100011.4.1}{QQ2-97-326}{Doing the Welch test in jamovi}}{599}\relax 
+\doTocEntry\toclof{11.12}{\csname a:TocLink\endcsname{97}{x97-22100112}{}{\ignorespaces Results showing the Welch test alongside the default Student's t-test in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{11.4.2}{\csname a:TocLink\endcsname{97}{x97-22200011.4.2}{QQ2-97-328}{Assumptions of the test}}{602}\relax 
+\doTocEntry\tocsection{11.5}{\csname a:TocLink\endcsname{97}{x97-22300011.5}{QQ2-97-329}{The paired-samples $t$-test~}}{602}\relax 
+\doTocEntry\tocsubsection{11.5.1}{\csname a:TocLink\endcsname{97}{x97-22400011.5.1}{QQ2-97-330}{The data}}{603}\relax 
+\doTocEntry\toclof{11.13}{\csname a:TocLink\endcsname{97}{x97-22400213}{}{\ignorespaces Descriptives for the two grade\_test variables in the \texttt  {chico} data set}}{figure}\relax 
+\doTocEntry\toclof{11.14}{\csname a:TocLink\endcsname{97}{x97-22400314}{}{\ignorespaces Mean grade for test 1 and test 2, with associated 95\% confidence intervals (panel a). Scatterplot showing the individual grades for test 1 and test 2 (panel b). Histogram showing the improvement made by each student in Dr Chico's class (panel c). In panel c, notice that almost the entire distribution is above zero: the vast majority of students did improve their performance from the first test to the second one}}{figure}\relax 
+\doTocEntry\tocsubsection{11.5.2}{\csname a:TocLink\endcsname{97}{x97-22500011.5.2}{QQ2-97-333}{What is the paired samples $t$-test?}}{610}\relax 
+\doTocEntry\tocsubsection{11.5.3}{\csname a:TocLink\endcsname{97}{x97-22600011.5.3}{QQ2-97-334}{Doing the test in jamovi}}{612}\relax 
+\doTocEntry\toclof{11.15}{\csname a:TocLink\endcsname{97}{x97-22600115}{}{\ignorespaces Results showing a one sample $t$-test on paired difference scores}}{figure}\relax 
+\doTocEntry\toclof{11.16}{\csname a:TocLink\endcsname{97}{x97-22600216}{}{\ignorespaces Results showing a paired sample t-test. Compare with Figure \ref  {fig:ttest_paired2}}}{figure}\relax 
+\doTocEntry\tocsection{11.6}{\csname a:TocLink\endcsname{97}{x97-22700011.6}{QQ2-97-337}{One sided tests~}}{618}\relax 
+\doTocEntry\toclof{11.17}{\csname a:TocLink\endcsname{97}{x97-22700117}{}{\ignorespaces jamovi results showing a `One Sample T-Test' where the actual hypothesis is one sided, i.e. that the true mean is greater than 67.5\%}}{figure}\relax 
+\doTocEntry\toclof{11.18}{\csname a:TocLink\endcsname{97}{x97-22700218}{}{\ignorespaces jamovi results showing an `Independent Samples T-Test' where the actual hypothesis is one sided, i.e. that Anastasia's students had higher grades than Bernadette's}}{figure}\relax 
+\doTocEntry\toclof{11.19}{\csname a:TocLink\endcsname{97}{x97-22700319}{}{\ignorespaces jamovi results showing a `Paired Samples T-Test' where the actual hypothesis is one sided, i.e. that \texttt  {grade\_test2} (`Measure 1') $>$ \texttt  {grade\_test1} (`Measure 2')}}{figure}\relax 
+\doTocEntry\tocsection{11.7}{\csname a:TocLink\endcsname{97}{x97-22800011.7}{QQ2-97-341}{Effect size~}}{627}\relax 
+\doTocEntry\toclot{11.1}{\csname a:TocLink\endcsname{97}{x97-2280011}{}{\ignorespaces A (very) rough guide to interpreting Cohen's $d$. My personal recommendation is to not use these blindly. The $d$ statistic has a natural interpretation in and of itself. It re-describes the difference in means as the number of standard deviations that separates those means. So it's generally a good idea to think about what that means in practical terms. In some contexts a ``small'' effect could be of big practical importance. In other situations a ``large'' effect may not be all that interesting.}}{table}\relax 
+\doTocEntry\tocsubsection{11.7.1}{\csname a:TocLink\endcsname{97}{x97-22900011.7.1}{QQ2-97-343}{Cohen's $d$ from one sample}}{630}\relax 
+\doTocEntry\tocsubsection{11.7.2}{\csname a:TocLink\endcsname{97}{x97-23000011.7.2}{QQ2-97-344}{Cohen's $d$ from a Student's $t$-test}}{630}\relax 
+\doTocEntry\tocsubsection{11.7.3}{\csname a:TocLink\endcsname{97}{x97-23100011.7.3}{QQ2-97-345}{Cohen's $d$ from a paired-samples test}}{632}\relax 
+\doTocEntry\tocsection{11.8}{\csname a:TocLink\endcsname{97}{x97-23200011.8}{QQ2-97-346}{Checking the normality of a sample}}{633}\relax 
+\doTocEntry\tocsubsection{11.8.1}{\csname a:TocLink\endcsname{97}{x97-23300011.8.1}{QQ2-97-347}{QQ plots}}{633}\relax 
+\doTocEntry\toclof{11.20}{\csname a:TocLink\endcsname{97}{x97-23300120}{}{\ignorespaces Histogram (panel a) and normal QQ plot (panel b) of \texttt  {normal.data}, a normally distributed sample with 100 observations. The Shapiro-Wilk statistic associated with these data is $W = .99$, indicating that no significant departures from normality were detected ($p = .73$).}}{figure}\relax 
+\doTocEntry\toclof{11.21}{\csname a:TocLink\endcsname{97}{x97-23300221}{}{\ignorespaces In the top row, a histogram (panel a) and normal QQ plot (panel b) of the 100 observations in a \texttt  {skewed.data} set. The skewness of the data here is 1.94, and is reflected in a QQ plot that curves upwards. As a consequence, the Shapiro-Wilk statistic is $W=.80$, reflecting a significant departure from normality ($p<.001$). The bottom row shows the same plots for a heavy tailed data set, again consisting of 100 observations. In this case the heavy tails in the data produce a high kurtosis (2.80), and cause the QQ plot to flatten in the middle, and curve away sharply on either side. The resulting Shapiro-Wilk statistic is $W = .93$, again reflecting significant non-normality ($p < .001$).}}{figure}\relax 
+\doTocEntry\tocsubsection{11.8.2}{\csname a:TocLink\endcsname{97}{x97-23400011.8.2}{QQ2-97-350}{Shapiro-Wilk tests}}{640}\relax 
+\doTocEntry\toclof{11.22}{\csname a:TocLink\endcsname{97}{x97-23400222}{}{\ignorespaces Sampling distribution of the Shapiro-Wilk $W$ statistic, under the null hypothesis that the data are normally distributed, for samples of size 10, 20 and 50. Note that {\it  small} values of $W$ indicate departure from normality.}}{figure}\relax 
+\doTocEntry\tocsubsection{11.8.3}{\csname a:TocLink\endcsname{97}{x97-23500011.8.3}{QQ2-97-352}{Example}}{644}\relax 
+\doTocEntry\tocsection{11.9}{\csname a:TocLink\endcsname{97}{x97-23600011.9}{QQ2-97-353}{Testing non-normal data with Wilcoxon tests}}{645}\relax 
+\doTocEntry\tocsubsection{11.9.1}{\csname a:TocLink\endcsname{97}{x97-23700011.9.1}{QQ2-97-354}{Two sample Mann-Whitney U test}}{646}\relax 
+\doTocEntry\tocsubsection{11.9.2}{\csname a:TocLink\endcsname{97}{x97-23800011.9.2}{QQ2-97-355}{One sample Wilcoxon test}}{647}\relax 
+\doTocEntry\toclof{11.23}{\csname a:TocLink\endcsname{97}{x97-23800123}{}{\ignorespaces jamovi screen showing results for one sample and paired sample Wilcoxon non-parametric tests}}{figure}\relax 
+\doTocEntry\tocsection{11.10}{\csname a:TocLink\endcsname{97}{x97-23900011.10}{QQ2-97-357}{Summary}}{651}\relax 
+\doTocEntry\tocchapter{12}{\csname a:TocLink\endcsname{114}{x114-24000012}{QQ2-114-358}{Correlation and linear regression}}{653}\relax 
+\doTocEntry\tocsection{12.1}{\csname a:TocLink\endcsname{114}{x114-24100012.1}{QQ2-114-359}{Correlations}}{653}\relax 
+\doTocEntry\tocsubsection{12.1.1}{\csname a:TocLink\endcsname{114}{x114-24200012.1.1}{QQ2-114-360}{The data}}{653}\relax 
+\doTocEntry\toclot{12.1}{\csname a:TocLink\endcsname{114}{x114-2420011}{}{\ignorespaces Descriptive statistics for the parenthood data.}}{table}\relax 
+\doTocEntry\toclof{12.1}{\csname a:TocLink\endcsname{114}{x114-2420041}{}{\ignorespaces Histograms for the three interesting variables in the \texttt  {parenthood} data set.}}{figure}\relax 
+\doTocEntry\tocsubsection{12.1.2}{\csname a:TocLink\endcsname{114}{x114-24300012.1.2}{QQ2-114-363}{The strength and direction of a relationship}}{659}\relax 
+\doTocEntry\toclof{12.2}{\csname a:TocLink\endcsname{114}{x114-2430012}{}{\ignorespaces Scatterplots showing the relationship between \texttt  {dan.sleep} and \texttt  {dan.grump} (left) and the relationship between \texttt  {baby.sleep} and \texttt  {dan.grump} (right).}}{figure}\relax 
+\doTocEntry\toclof{12.3}{\csname a:TocLink\endcsname{114}{x114-2430023}{}{\ignorespaces Scatterplots showing the relationship between \texttt  {baby.sleep} and \texttt  {dan.grump} (left), as compared to the relationship between \texttt  {baby.sleep} and \texttt  {dan.sleep} (right).}}{figure}\relax 
+\doTocEntry\tocsubsection{12.1.3}{\csname a:TocLink\endcsname{114}{x114-24400012.1.3}{QQ2-114-366}{The correlation coefficient}}{665}\relax 
+\doTocEntry\toclof{12.4}{\csname a:TocLink\endcsname{114}{x114-2440014}{}{\ignorespaces Illustration of the effect of varying the strength and direction of a correlation. In the left hand column, the correlations are 0, .33, .66 and 1. In the right hand column, the correlations are 0, -.33, -.66 and -1.}}{figure}\relax 
+\doTocEntry\tocsubsection{12.1.4}{\csname a:TocLink\endcsname{114}{x114-24500012.1.4}{QQ2-114-368}{Calculating correlations in jamovi}}{671}\relax 
+\doTocEntry\toclof{12.5}{\csname a:TocLink\endcsname{114}{x114-2450015}{}{\ignorespaces A jamovi screenshot showing correlations between variables in the \texttt  {parenthood.csv} file}}{figure}\relax 
+\doTocEntry\tocsubsection{12.1.5}{\csname a:TocLink\endcsname{114}{x114-24600012.1.5}{QQ2-114-370}{Interpreting a correlation~}}{675}\relax 
+\doTocEntry\toclot{12.2}{\csname a:TocLink\endcsname{114}{x114-2460012}{}{\ignorespaces A rough guide to interpreting correlations. Note that I say a {\it  rough} guide. There aren't hard and fast rules for what counts as strong or weak relationships. It depends on the context.}}{table}\relax 
+\doTocEntry\toclof{12.6}{\csname a:TocLink\endcsname{114}{x114-2460026}{}{\ignorespaces Anscombe's quartet. All four of these data sets have a Pearson correlation of $r = .816$, but they are qualitatively different from one another.}}{figure}\relax 
+\doTocEntry\tocsubsection{12.1.6}{\csname a:TocLink\endcsname{114}{x114-24700012.1.6}{QQ2-114-373}{Spearman's rank correlations}}{681}\relax 
+\doTocEntry\toclof{12.7}{\csname a:TocLink\endcsname{114}{x114-2470017}{}{\ignorespaces The relationship between hours worked and grade received for a toy data set consisting of only 10 students (each circle corresponds to one student). The dashed line through the middle shows the linear relationship between the two variables. This produces a strong Pearson correlation of $r = .91$. However, the interesting thing to note here is that there's actually a perfect monotonic relationship between the two variables. In this toy example, increasing the hours worked always increases the grade received, as illustrated by the solid line. This is reflected in a Spearman correlation of $\rho = 1$. With such a small data set, however, it's an open question as to which version better describes the actual relationship involved. }}{figure}\relax 
+\doTocEntry\tocsection{12.2}{\csname a:TocLink\endcsname{114}{x114-24800012.2}{QQ2-114-375}{Scatterplots}}{685}\relax 
+\doTocEntry\toclof{12.8}{\csname a:TocLink\endcsname{114}{x114-2480018}{}{\ignorespaces Scatterplot via the `Correlation Matrix' command in jamovi}}{figure}\relax 
+\doTocEntry\toclof{12.9}{\csname a:TocLink\endcsname{114}{x114-2480029}{}{\ignorespaces Scatterplot via the `scatr' add-on module in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{12.2.1}{\csname a:TocLink\endcsname{114}{x114-24900012.2.1}{QQ2-114-378}{More elaborate options}}{692}\relax 
+\doTocEntry\toclof{12.10}{\csname a:TocLink\endcsname{114}{x114-24900110}{}{\ignorespaces A matrix of scatterplots produced using jamovi.}}{figure}\relax 
+\doTocEntry\tocsection{12.3}{\csname a:TocLink\endcsname{114}{x114-25000012.3}{QQ2-114-380}{What is a linear regression model?~}}{696}\relax 
+\doTocEntry\toclof{12.11}{\csname a:TocLink\endcsname{114}{x114-25000111}{}{\ignorespaces Panel a shows the sleep-grumpiness scatterplot from Figure~\ref  {fig:scatterplot2} with the best fitting regression line drawn over the top. Not surprisingly, the line goes through the middle of the data. In contrast, panel b shows the same data, but with a very poor choice of regression line drawn over the top.}}{figure}\relax 
+\doTocEntry\tocsection{12.4}{\csname a:TocLink\endcsname{114}{x114-25100012.4}{QQ2-114-382}{Estimating a linear regression model~}}{701}\relax 
+\doTocEntry\toclof{12.12}{\csname a:TocLink\endcsname{114}{x114-25100112}{}{\ignorespaces A depiction of the residuals associated with the best fitting regression line (panel a), and the residuals associated with a poor regression line (panel b). The residuals are much smaller for the good regression line. Again, this is no surprise given that the good line is the one that goes right through the middle of the data.}}{figure}\relax 
+\doTocEntry\tocsubsection{12.4.1}{\csname a:TocLink\endcsname{114}{x114-25200012.4.1}{QQ2-114-384}{Linear regression in jamovi~}}{705}\relax 
+\doTocEntry\toclof{12.13}{\csname a:TocLink\endcsname{114}{x114-25200113}{}{\ignorespaces A jamovi screenshot showing a simple linear regression analysis.}}{figure}\relax 
+\doTocEntry\tocsubsection{12.4.2}{\csname a:TocLink\endcsname{114}{x114-25300012.4.2}{QQ2-114-386}{Interpreting the estimated model}}{708}\relax 
+\doTocEntry\tocsection{12.5}{\csname a:TocLink\endcsname{114}{x114-25400012.5}{QQ2-114-387}{Multiple linear regression~}}{708}\relax 
+\doTocEntry\toclof{12.14}{\csname a:TocLink\endcsname{114}{x114-25400114}{}{\ignorespaces A 3D visualisation of a multiple regression model. There are two predictors in the model, \texttt  {dan.sleep} and \texttt  {baby.sleep} and the outcome variable is \texttt  {dan.grump}. Together, these three variables form a 3D space. Each observation (dot) is a point in this space. In much the same way that a simple linear regression model forms a line in 2D space, this multiple regression model forms a plane in 3D space. When we estimate the regression coefficients what we're trying to do is find a plane that is as close to all the blue dots as possible.}}{figure}\relax 
+\doTocEntry\tocsubsection{12.5.1}{\csname a:TocLink\endcsname{114}{x114-25500012.5.1}{QQ2-114-389}{Doing it in jamovi}}{712}\relax 
+\doTocEntry\tocsubsection{12.5.2}{\csname a:TocLink\endcsname{114}{x114-25600012.5.2}{QQ2-114-390}{Formula for the general case}}{713}\relax 
+\doTocEntry\tocsection{12.6}{\csname a:TocLink\endcsname{114}{x114-25700012.6}{QQ2-114-391}{Quantifying the fit of the regression model~}}{714}\relax 
+\doTocEntry\tocsubsection{12.6.1}{\csname a:TocLink\endcsname{114}{x114-25800012.6.1}{QQ2-114-392}{The $R^2$ (R-squared) value~}}{714}\relax 
+\doTocEntry\tocsubsection{12.6.2}{\csname a:TocLink\endcsname{114}{x114-25900012.6.2}{QQ2-114-393}{The relationship between regression and correlation}}{716}\relax 
+\doTocEntry\tocsubsection{12.6.3}{\csname a:TocLink\endcsname{114}{x114-26000012.6.3}{QQ2-114-394}{The adjusted $R^2$ (R-squared) value}}{717}\relax 
+\doTocEntry\tocsection{12.7}{\csname a:TocLink\endcsname{114}{x114-26100012.7}{QQ2-114-395}{Hypothesis tests for regression models~}}{718}\relax 
+\doTocEntry\tocsubsection{12.7.1}{\csname a:TocLink\endcsname{114}{x114-26200012.7.1}{QQ2-114-396}{Testing the model as a whole}}{718}\relax 
+\doTocEntry\tocsubsection{12.7.2}{\csname a:TocLink\endcsname{114}{x114-26300012.7.2}{QQ2-114-397}{Tests for individual coefficients}}{720}\relax 
+\doTocEntry\tocsubsection{12.7.3}{\csname a:TocLink\endcsname{114}{x114-26400012.7.3}{QQ2-114-398}{Running the hypothesis tests in jamovi~}}{723}\relax 
+\doTocEntry\toclof{12.15}{\csname a:TocLink\endcsname{114}{x114-26400115}{}{\ignorespaces A jamovi screenshot showing a multiple linear regression analysis, with some useful options checked.}}{figure}\relax 
+\doTocEntry\tocsection{12.8}{\csname a:TocLink\endcsname{114}{x114-26500012.8}{QQ2-114-400}{Regarding regression coefficients~}}{726}\relax 
+\doTocEntry\tocsubsection{12.8.1}{\csname a:TocLink\endcsname{114}{x114-26600012.8.1}{QQ2-114-401}{Confidence intervals for the coefficients}}{727}\relax 
+\doTocEntry\tocsubsection{12.8.2}{\csname a:TocLink\endcsname{114}{x114-26700012.8.2}{QQ2-114-402}{Calculating standardised regression coefficients}}{727}\relax 
+\doTocEntry\toclof{12.16}{\csname a:TocLink\endcsname{114}{x114-26700216}{}{\ignorespaces Standardised coefficients, with 95\% confidence intervals, for multiple linear regression}}{figure}\relax 
+\doTocEntry\tocsection{12.9}{\csname a:TocLink\endcsname{114}{x114-26800012.9}{QQ2-114-404}{Assumptions of regression~}}{732}\relax 
+\doTocEntry\tocsection{12.10}{\csname a:TocLink\endcsname{114}{x114-26900012.10}{QQ2-114-405}{Model checking~}}{733}\relax 
+\doTocEntry\tocsubsection{12.10.1}{\csname a:TocLink\endcsname{114}{x114-27000012.10.1}{QQ2-114-406}{Three kinds of residuals}}{734}\relax 
+\doTocEntry\tocsubsection{12.10.2}{\csname a:TocLink\endcsname{114}{x114-27100012.10.2}{QQ2-114-407}{Three kinds of anomalous data~}}{736}\relax 
+\doTocEntry\toclof{12.17}{\csname a:TocLink\endcsname{114}{x114-27100117}{}{\ignorespaces An illustration of outliers. The dotted lines plot the regression line that would have been estimated without the anomalous observation included, and the corresponding residual (i.e., the Studentised residual). The solid line shows the regression line with the anomalous observation included. The outlier has an unusual value on the outcome (y axis location) but not the predictor (x axis location), and lies a long way from the regression line.}}{figure}\relax 
+\doTocEntry\toclof{12.18}{\csname a:TocLink\endcsname{114}{x114-27100218}{}{\ignorespaces An illustration of high leverage points. The anomalous observation in this case is unusual both in terms of the predictor (x axis) and the outcome (y axis), but this unusualness is highly consistent with the pattern of correlations that exists among the other observations. The observation falls very close to the regression line and does not distort it.}}{figure}\relax 
+\doTocEntry\toclof{12.19}{\csname a:TocLink\endcsname{114}{x114-27100319}{}{\ignorespaces An illustration of high influence points. In this case, the anomalous observation is highly unusual on the predictor variable (x axis), and falls a long way from the regression line. As a consequence, the regression line is highly distorted, even though (in this case) the anomalous observation is entirely typical in terms of the outcome variable (y axis).}}{figure}\relax 
+\doTocEntry\toclof{12.20}{\csname a:TocLink\endcsname{114}{x114-27100520}{}{\ignorespaces jamovi output showing the table for the Cook's distance statistics}}{figure}\relax 
+\doTocEntry\tocsubsection{12.10.3}{\csname a:TocLink\endcsname{114}{x114-27200012.10.3}{QQ2-114-412}{Checking the normality of the residuals~}}{750}\relax 
+\doTocEntry\toclof{12.21}{\csname a:TocLink\endcsname{114}{x114-27200121}{}{\ignorespaces Plot of the theoretical quantiles according to the model, against the quantiles of the standardised residuals, produced in jamovi }}{figure}\relax 
+\doTocEntry\toclof{12.22}{\csname a:TocLink\endcsname{114}{x114-27200222}{}{\ignorespaces Residuals plots produced in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{12.10.4}{\csname a:TocLink\endcsname{114}{x114-27300012.10.4}{QQ2-114-415}{Checking for collinearity~}}{756}\relax 
+\doTocEntry\toclof{12.23}{\csname a:TocLink\endcsname{114}{x114-27300123}{}{\ignorespaces Collinearity statistics for multiple regression, produced in jamovi }}{figure}\relax 
+\doTocEntry\tocsection{12.11}{\csname a:TocLink\endcsname{114}{x114-27400012.11}{QQ2-114-417}{Model selection}}{761}\relax 
+\doTocEntry\tocsubsection{12.11.1}{\csname a:TocLink\endcsname{114}{x114-27500012.11.1}{QQ2-114-418}{Backward elimination}}{762}\relax 
+\doTocEntry\tocsubsection{12.11.2}{\csname a:TocLink\endcsname{114}{x114-27600012.11.2}{QQ2-114-419}{Forward selection}}{763}\relax 
+\doTocEntry\tocsubsection{12.11.3}{\csname a:TocLink\endcsname{114}{x114-27700012.11.3}{QQ2-114-420}{A caveat}}{763}\relax 
+\doTocEntry\tocsubsection{12.11.4}{\csname a:TocLink\endcsname{114}{x114-27800012.11.4}{QQ2-114-421}{Comparing two regression models}}{764}\relax 
+\doTocEntry\toclof{12.24}{\csname a:TocLink\endcsname{114}{x114-27800324}{}{\ignorespaces Model comparison in jamovi using the `Model Builder' option}}{figure}\relax 
+\doTocEntry\tocsection{12.12}{\csname a:TocLink\endcsname{114}{x114-27900012.12}{QQ2-114-423}{Summary}}{770}\relax 
+\doTocEntry\tocchapter{13}{\csname a:TocLink\endcsname{131}{x131-28000013}{QQ2-131-424}{Comparing several means (one-way ANOVA)}}{773}\relax 
+\doTocEntry\tocsection{13.1}{\csname a:TocLink\endcsname{131}{x131-28100013.1}{QQ2-131-425}{An illustrative data set~}}{773}\relax 
+\doTocEntry\toclof{13.1}{\csname a:TocLink\endcsname{131}{x131-2810011}{}{\ignorespaces Descriptives for mood gain, and box plots by drug administered}}{figure}\relax 
+\doTocEntry\tocsection{13.2}{\csname a:TocLink\endcsname{131}{x131-28200013.2}{QQ2-131-427}{How ANOVA works }}{777}\relax 
+\doTocEntry\tocsubsection{13.2.1}{\csname a:TocLink\endcsname{131}{x131-28300013.2.1}{QQ2-131-428}{Two formulas for the variance of $Y$}}{778}\relax 
+\doTocEntry\tocsubsection{13.2.2}{\csname a:TocLink\endcsname{131}{x131-28400013.2.2}{QQ2-131-429}{From variances to sums of squares}}{780}\relax 
+\doTocEntry\toclof{13.2}{\csname a:TocLink\endcsname{131}{x131-2840022}{}{\ignorespaces Graphical illustration of ``between groups'' variation (panel a) and ``within groups'' variation (panel b). On the left the arrows show the differences in the group means. On the right the arrows highlight the variability within each group.}}{figure}\relax 
+\doTocEntry\tocsubsection{13.2.3}{\csname a:TocLink\endcsname{131}{x131-28500013.2.3}{QQ2-131-431}{From sums of squares to the $F$-test}}{785}\relax 
+\doTocEntry\toclot{13.1}{\csname a:TocLink\endcsname{131}{x131-2850011}{}{\ignorespaces All of the key quantities involved in an ANOVA organised into a ``standard'' ANOVA table. The formulas for all quantities (except the $p$-value which has a very ugly formula and would be nightmarishly hard to calculate without a computer) are shown.}}{table}\relax 
+\doTocEntry\tocsubsection{13.2.4}{\csname a:TocLink\endcsname{131}{x131-28600013.2.4}{QQ2-131-433}{The model for the data and the meaning of $F$ }}{790}\relax 
+\doTocEntry\tocsubsection{13.2.5}{\csname a:TocLink\endcsname{131}{x131-28700013.2.5}{QQ2-131-434}{A worked example }}{792}\relax 
+\doTocEntry\tocsection{13.3}{\csname a:TocLink\endcsname{131}{x131-28800013.3}{QQ2-131-435}{Running an ANOVA in jamovi}}{797}\relax 
+\doTocEntry\tocsubsection{13.3.1}{\csname a:TocLink\endcsname{131}{x131-28900013.3.1}{QQ2-131-436}{Using jamovi to specify your ANOVA}}{797}\relax 
+\doTocEntry\toclof{13.3}{\csname a:TocLink\endcsname{131}{x131-2890023}{}{\ignorespaces jamovi results table for ANOVA of mood gain by drug administered}}{figure}\relax 
+\doTocEntry\tocsection{13.4}{\csname a:TocLink\endcsname{131}{x131-29000013.4}{QQ2-131-438}{Effect size}}{800}\relax 
+\doTocEntry\tocsection{13.5}{\csname a:TocLink\endcsname{131}{x131-29100013.5}{QQ2-131-439}{Multiple comparisons and post hoc tests~}}{801}\relax 
+\doTocEntry\tocsubsection{13.5.1}{\csname a:TocLink\endcsname{131}{x131-29200013.5.1}{QQ2-131-440}{Running ``pairwise'' $t$-tests}}{802}\relax 
+\doTocEntry\toclof{13.4}{\csname a:TocLink\endcsname{131}{x131-2920014}{}{\ignorespaces Uncorrected pairwise $t$-tests as post hoc comparisons in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{13.5.2}{\csname a:TocLink\endcsname{131}{x131-29300013.5.2}{QQ2-131-442}{Corrections for multiple testing}}{806}\relax 
+\doTocEntry\tocsubsection{13.5.3}{\csname a:TocLink\endcsname{131}{x131-29400013.5.3}{QQ2-131-443}{Bonferroni corrections}}{806}\relax 
+\doTocEntry\tocsubsection{13.5.4}{\csname a:TocLink\endcsname{131}{x131-29500013.5.4}{QQ2-131-444}{Holm corrections}}{808}\relax 
+\doTocEntry\tocsubsection{13.5.5}{\csname a:TocLink\endcsname{131}{x131-29600013.5.5}{QQ2-131-445}{Writing up the post hoc test}}{809}\relax 
+\doTocEntry\tocsection{13.6}{\csname a:TocLink\endcsname{131}{x131-29700013.6}{QQ2-131-446}{Assumptions of one-way ANOVA }}{810}\relax 
+\doTocEntry\tocsubsection{13.6.1}{\csname a:TocLink\endcsname{131}{x131-29800013.6.1}{QQ2-131-447}{Checking the homogeneity of variance assumption~}}{812}\relax 
+\doTocEntry\tocsubsection{13.6.2}{\csname a:TocLink\endcsname{131}{x131-29900013.6.2}{QQ2-131-448}{Running the Levene test in jamovi}}{813}\relax 
+\doTocEntry\toclof{13.5}{\csname a:TocLink\endcsname{131}{x131-2990015}{}{\ignorespaces Levene test output for one-way ANOVA in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{13.6.3}{\csname a:TocLink\endcsname{131}{x131-30000013.6.3}{QQ2-131-450}{Removing the homogeneity of variance assumption~}}{817}\relax 
+\doTocEntry\toclof{13.6}{\csname a:TocLink\endcsname{131}{x131-3000016}{}{\ignorespaces Welch's test as part of the One Way ANOVA analysis in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{13.6.4}{\csname a:TocLink\endcsname{131}{x131-30100013.6.4}{QQ2-131-452}{Checking the normality assumption~}}{820}\relax 
+\doTocEntry\toclof{13.7}{\csname a:TocLink\endcsname{131}{x131-3010017}{}{\ignorespaces QQ plot produced from jamovi one way ANOVA options}}{figure}\relax 
+\doTocEntry\tocsection{13.7}{\csname a:TocLink\endcsname{131}{x131-30200013.7}{QQ2-131-454}{Removing the normality assumption~}}{823}\relax 
+\doTocEntry\tocsubsection{13.7.1}{\csname a:TocLink\endcsname{131}{x131-30300013.7.1}{QQ2-131-455}{The logic behind the Kruskal-Wallis test}}{823}\relax 
+\doTocEntry\tocsubsection{13.7.2}{\csname a:TocLink\endcsname{131}{x131-30400013.7.2}{QQ2-131-456}{Additional details}}{825}\relax 
+\doTocEntry\tocsubsection{13.7.3}{\csname a:TocLink\endcsname{131}{x131-30500013.7.3}{QQ2-131-457}{How to run the Kruskal-Wallis test in jamovi}}{827}\relax 
+\doTocEntry\toclof{13.8}{\csname a:TocLink\endcsname{131}{x131-3050018}{}{\ignorespaces Kruskall-Wallis one-way non-parametric ANOVA in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{13.8}{\csname a:TocLink\endcsname{131}{x131-30600013.8}{QQ2-131-459}{Repeated measures one-way ANOVA~}}{831}\relax 
+\doTocEntry\tocsubsection{13.8.1}{\csname a:TocLink\endcsname{131}{x131-30700013.8.1}{QQ2-131-460}{Repeated measures ANOVA in jamovi}}{832}\relax 
+\doTocEntry\toclot{13.2}{\csname a:TocLink\endcsname{131}{x131-3070012}{}{\ignorespaces Number of attempts successfully completed on three experimental tasks.}}{table}\relax 
+\doTocEntry\toclof{13.9}{\csname a:TocLink\endcsname{131}{x131-3070029}{}{\ignorespaces Repeated measures ANOVA dialogue box in jamovi}}{figure}\relax 
+\doTocEntry\toclof{13.10}{\csname a:TocLink\endcsname{131}{x131-30700310}{}{\ignorespaces One-way repeated measures ANOVA output: Mauchly\IeC {\textquoteright }s Test of Sphericity}}{figure}\relax 
+\doTocEntry\toclof{13.11}{\csname a:TocLink\endcsname{131}{x131-30700411}{}{\ignorespaces One-way repeated measures ANOVA output: Tests of Within-Subjects Effects}}{figure}\relax 
+\doTocEntry\toclof{13.12}{\csname a:TocLink\endcsname{131}{x131-30700512}{}{\ignorespaces Post-hoc tests in repeated measures ANOVA in jamovi}}{figure}\relax 
+\doTocEntry\toclof{13.13}{\csname a:TocLink\endcsname{131}{x131-30700613}{}{\ignorespaces One-way repeated measures ANOVA output: Descriptive Statistics}}{figure}\relax 
+\doTocEntry\tocsection{13.9}{\csname a:TocLink\endcsname{131}{x131-30800013.9}{QQ2-131-467}{The Friedman non-parametric repeated measures ANOVA test~}}{850}\relax 
+\doTocEntry\toclof{13.14}{\csname a:TocLink\endcsname{131}{x131-30800114}{}{\ignorespaces The `Repeated Measures ANOVA (Non-parametric)' dialogue box in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{13.10}{\csname a:TocLink\endcsname{131}{x131-30900013.10}{QQ2-131-469}{On the relationship between ANOVA and the Student $t$-test~}}{853}\relax 
+\doTocEntry\tocsection{13.11}{\csname a:TocLink\endcsname{131}{x131-31000013.11}{QQ2-131-470}{Summary}}{854}\relax 
+\doTocEntry\tocchapter{14}{\csname a:TocLink\endcsname{143}{x143-31100014}{QQ2-143-471}{Factorial ANOVA }}{856}\relax 
+\doTocEntry\tocsection{14.1}{\csname a:TocLink\endcsname{143}{x143-31200014.1}{QQ2-143-472}{Factorial ANOVA 1: balanced designs, no interactions}}{856}\relax 
+\doTocEntry\toclof{14.1}{\csname a:TocLink\endcsname{143}{x143-3120011}{}{\ignorespaces jamovi contingency table of \texttt  {drug} by \texttt  {therapy}}}{figure}\relax 
+\doTocEntry\tocsubsection{14.1.1}{\csname a:TocLink\endcsname{143}{x143-31300014.1.1}{QQ2-143-474}{What hypotheses are we testing?}}{860}\relax 
+\doTocEntry\tocsubsection{14.1.2}{\csname a:TocLink\endcsname{143}{x143-31400014.1.2}{QQ2-143-475}{Running the analysis in jamovi}}{864}\relax 
+\doTocEntry\toclof{14.2}{\csname a:TocLink\endcsname{143}{x143-3140012}{}{\ignorespaces jamovi one way anova of \texttt  {mood.gain} by \texttt  {drug}}}{figure}\relax 
+\doTocEntry\toclof{14.3}{\csname a:TocLink\endcsname{143}{x143-3140023}{}{\ignorespaces jamovi two way anova of \texttt  {mood.gain} by \texttt  {drug} and \texttt  {therapy}}}{figure}\relax 
+\doTocEntry\tocsubsection{14.1.3}{\csname a:TocLink\endcsname{143}{x143-31500014.1.3}{QQ2-143-478}{How are the sum of squares calculated?}}{872}\relax 
+\doTocEntry\tocsubsection{14.1.4}{\csname a:TocLink\endcsname{143}{x143-31600014.1.4}{QQ2-143-479}{What are our degrees of freedom?}}{876}\relax 
+\doTocEntry\tocsubsection{14.1.5}{\csname a:TocLink\endcsname{143}{x143-31700014.1.5}{QQ2-143-480}{Factorial ANOVA versus one-way ANOVAs}}{876}\relax 
+\doTocEntry\toclof{14.4}{\csname a:TocLink\endcsname{143}{x143-3170014}{}{\ignorespaces The four different outcomes for a $2 \times 2$ ANOVA when no interactions are present. In panel (a) we see a main effect of Factor A and no effect of Factor B. Panel (b) shows a main effect of Factor B but no effect of Factor A. Panel (c) shows main effects of both Factor A and Factor B. Finally, panel (d) shows no effect of either factor.}}{figure}\relax 
+\doTocEntry\tocsubsection{14.1.6}{\csname a:TocLink\endcsname{143}{x143-31800014.1.6}{QQ2-143-482}{What kinds of outcomes does this analysis capture?}}{881}\relax 
+\doTocEntry\tocsection{14.2}{\csname a:TocLink\endcsname{143}{x143-31900014.2}{QQ2-143-483}{Factorial ANOVA 2: balanced designs, interactions allowed}}{881}\relax 
+\doTocEntry\toclof{14.5}{\csname a:TocLink\endcsname{143}{x143-3190015}{}{\ignorespaces Qualitatively different interactions for a $2 \times 2$ ANOVA}}{figure}\relax 
+\doTocEntry\toclof{14.6}{\csname a:TocLink\endcsname{143}{x143-3190026}{}{\ignorespaces jamovi screen showing how to generate a descriptive interaction plot in ANOVA using the clinical trial data}}{figure}\relax 
+\doTocEntry\tocsubsection{14.2.1}{\csname a:TocLink\endcsname{143}{x143-32000014.2.1}{QQ2-143-486}{What exactly \relax $\o:@@underline: {\hbox {is}}\mathsurround \z@ $\relax  an interaction effect?}}{887}\relax 
+\doTocEntry\tocsubsection{14.2.2}{\csname a:TocLink\endcsname{143}{x143-32100014.2.2}{QQ2-143-487}{Calculating sums of squares for the interaction}}{889}\relax 
+\doTocEntry\tocsubsection{14.2.3}{\csname a:TocLink\endcsname{143}{x143-32200014.2.3}{QQ2-143-488}{Degrees of freedom for the interaction}}{892}\relax 
+\doTocEntry\tocsubsection{14.2.4}{\csname a:TocLink\endcsname{143}{x143-32300014.2.4}{QQ2-143-489}{Running the ANOVA in jamovi}}{892}\relax 
+\doTocEntry\toclof{14.7}{\csname a:TocLink\endcsname{143}{x143-3230027}{}{\ignorespaces Results for the full factorial model, including the interaction component \texttt  {drug*therapy}}}{figure}\relax 
+\doTocEntry\tocsubsection{14.2.5}{\csname a:TocLink\endcsname{143}{x143-32400014.2.5}{QQ2-143-491}{Interpreting the results}}{896}\relax 
+\doTocEntry\tocsection{14.3}{\csname a:TocLink\endcsname{143}{x143-32500014.3}{QQ2-143-492}{Effect size~}}{897}\relax 
+\doTocEntry\tocsubsection{14.3.1}{\csname a:TocLink\endcsname{143}{x143-32600014.3.1}{QQ2-143-493}{Estimated group means}}{901}\relax 
+\doTocEntry\toclof{14.8}{\csname a:TocLink\endcsname{143}{x143-3260018}{}{\ignorespaces jamovi screenshot showing the marginal means for the saturated model, i.e. including the interaction component, with the \texttt  {clinicaltrial} data set}}{figure}\relax 
+\doTocEntry\toclof{14.9}{\csname a:TocLink\endcsname{143}{x143-3260029}{}{\ignorespaces jamovi screenshot showing the marginal means for the unsaturated model, i.e. without the interaction component, with the \texttt  {clinicaltrial} data set}}{figure}\relax 
+\doTocEntry\tocsection{14.4}{\csname a:TocLink\endcsname{143}{x143-32700014.4}{QQ2-143-496}{Assumption checking~}}{907}\relax 
+\doTocEntry\tocsubsection{14.4.1}{\csname a:TocLink\endcsname{143}{x143-32800014.4.1}{QQ2-143-497}{Homogeneity of variance}}{907}\relax 
+\doTocEntry\tocsubsection{14.4.2}{\csname a:TocLink\endcsname{143}{x143-32900014.4.2}{QQ2-143-498}{Normality of residuals}}{908}\relax 
+\doTocEntry\toclof{14.10}{\csname a:TocLink\endcsname{143}{x143-32900110}{}{\ignorespaces Checking assumptions in an ANOVA model}}{figure}\relax 
+\doTocEntry\tocsection{14.5}{\csname a:TocLink\endcsname{143}{x143-33000014.5}{QQ2-143-500}{Analysis of Covariance (ANCOVA)}}{911}\relax 
+\doTocEntry\toclof{14.11}{\csname a:TocLink\endcsname{143}{x143-33000111}{}{\ignorespaces Plot of Statistics anxiety against age for two distinct groups}}{figure}\relax 
+\doTocEntry\tocsubsection{14.5.1}{\csname a:TocLink\endcsname{143}{x143-33100014.5.1}{QQ2-143-502}{Running ANCOVA in jamovi}}{914}\relax 
+\doTocEntry\toclof{14.12}{\csname a:TocLink\endcsname{143}{x143-33100112}{}{\ignorespaces The jamovi ANCOVA analysis window}}{figure}\relax 
+\doTocEntry\toclof{14.13}{\csname a:TocLink\endcsname{143}{x143-33100213}{}{\ignorespaces jamovi ANCOVA output for happiness as a function of stress and commuting method, with age as a covariate}}{figure}\relax 
+\doTocEntry\toclof{14.14}{\csname a:TocLink\endcsname{143}{x143-33100314}{}{\ignorespaces Table of mean happiness level as a function of stress and commuting method (adjusted for the covariate age) with 95\% confidence intervals}}{figure}\relax 
+\doTocEntry\toclof{14.15}{\csname a:TocLink\endcsname{143}{x143-33100415}{}{\ignorespaces Plot of mean happiness level as a function of stress and commuting method}}{figure}\relax 
+\doTocEntry\tocsection{14.6}{\csname a:TocLink\endcsname{143}{x143-33200014.6}{QQ2-143-507}{ANOVA as a linear model}}{926}\relax 
+\doTocEntry\tocsubsection{14.6.1}{\csname a:TocLink\endcsname{143}{x143-33300014.6.1}{QQ2-143-508}{Some data}}{927}\relax 
+\doTocEntry\toclof{14.16}{\csname a:TocLink\endcsname{143}{x143-33300116}{}{\ignorespaces jamovi descriptives for the \texttt  {rtfm} data set}}{figure}\relax 
+\doTocEntry\tocsubsection{14.6.2}{\csname a:TocLink\endcsname{143}{x143-33400014.6.2}{QQ2-143-510}{ANOVA with binary factors as a regression model}}{931}\relax 
+\doTocEntry\toclof{14.17}{\csname a:TocLink\endcsname{143}{x143-33400117}{}{\ignorespaces ANOVA of the \texttt  {rtfm.csv} data set in jamovi, without the interaction term}}{figure}\relax 
+\doTocEntry\toclof{14.18}{\csname a:TocLink\endcsname{143}{x143-33400518}{}{\ignorespaces Regression analysis of the \texttt  {rtfm.csv} data set in jamovi, without the interaction term}}{figure}\relax 
+\doTocEntry\toclof{14.19}{\csname a:TocLink\endcsname{143}{x143-33400619}{}{\ignorespaces Omnibus ANOVA Test results from the jamovi regression analysis}}{figure}\relax 
+\doTocEntry\tocsubsection{14.6.3}{\csname a:TocLink\endcsname{143}{x143-33500014.6.3}{QQ2-143-514}{How to encode non binary factors as contrasts}}{942}\relax 
+\doTocEntry\tocsubsection{14.6.4}{\csname a:TocLink\endcsname{143}{x143-33600014.6.4}{QQ2-143-515}{The equivalence between ANOVA and regression for non-binary factors}}{943}\relax 
+\doTocEntry\toclof{14.20}{\csname a:TocLink\endcsname{143}{x143-33600120}{}{\ignorespaces jamovi ANOVA results, without interaction component}}{figure}\relax 
+\doTocEntry\toclof{14.21}{\csname a:TocLink\endcsname{143}{x143-33600221}{}{\ignorespaces jamovi regression results, with contrast variables \texttt  {druganxifree} and \texttt  {drugjoyzepam}}}{figure}\relax 
+\doTocEntry\toclof{14.22}{\csname a:TocLink\endcsname{143}{x143-33600322}{}{\ignorespaces Model comparison in jamovi regression, null model 1 vs. contrasts model 2}}{figure}\relax 
+\doTocEntry\toclof{14.23}{\csname a:TocLink\endcsname{143}{x143-33600423}{}{\ignorespaces Regression analysis with factors and contrasts in jamovi, including omnibus ANOVA test results}}{figure}\relax 
+\doTocEntry\tocsubsection{14.6.5}{\csname a:TocLink\endcsname{143}{x143-33700014.6.5}{QQ2-143-520}{Degrees of freedom as parameter counting!}}{955}\relax 
+\doTocEntry\tocsection{14.7}{\csname a:TocLink\endcsname{143}{x143-33800014.7}{QQ2-143-521}{Different ways to specify contrasts}}{956}\relax 
+\doTocEntry\tocsubsection{14.7.1}{\csname a:TocLink\endcsname{143}{x143-33900014.7.1}{QQ2-143-522}{Treatment contrasts}}{957}\relax 
+\doTocEntry\tocsubsection{14.7.2}{\csname a:TocLink\endcsname{143}{x143-34000014.7.2}{QQ2-143-523}{Helmert contrasts}}{958}\relax 
+\doTocEntry\tocsubsection{14.7.3}{\csname a:TocLink\endcsname{143}{x143-34100014.7.3}{QQ2-143-524}{Sum to zero contrasts}}{959}\relax 
+\doTocEntry\tocsubsection{14.7.4}{\csname a:TocLink\endcsname{143}{x143-34200014.7.4}{QQ2-143-525}{Optional contrasts in jamovi}}{960}\relax 
+\doTocEntry\tocsection{14.8}{\csname a:TocLink\endcsname{143}{x143-34300014.8}{QQ2-143-526}{Post hoc tests}}{961}\relax 
+\doTocEntry\toclof{14.24}{\csname a:TocLink\endcsname{143}{x143-34300224}{}{\ignorespaces Tukey HSD post hoc test in jamovi factorial ANOVA, without an interaction term}}{figure}\relax 
+\doTocEntry\toclof{14.25}{\csname a:TocLink\endcsname{143}{x143-34300325}{}{\ignorespaces Tukey HSD post hoc test in jamovi factorial ANOVA with an interaction term}}{figure}\relax 
+\doTocEntry\tocsection{14.9}{\csname a:TocLink\endcsname{143}{x143-34400014.9}{QQ2-143-529}{The method of planned comparisons}}{969}\relax 
+\doTocEntry\tocsection{14.10}{\csname a:TocLink\endcsname{143}{x143-34500014.10}{QQ2-143-530}{Factorial ANOVA 3: unbalanced designs}}{969}\relax 
+\doTocEntry\tocsubsection{14.10.1}{\csname a:TocLink\endcsname{143}{x143-34600014.10.1}{QQ2-143-531}{The coffee data}}{970}\relax 
+\doTocEntry\toclof{14.26}{\csname a:TocLink\endcsname{143}{x143-34600126}{}{\ignorespaces The \texttt  {coffee.csv} data set in jamovi, with descriptive information aggregated by factor levels}}{figure}\relax 
+\doTocEntry\tocsubsection{14.10.2}{\csname a:TocLink\endcsname{143}{x143-34700014.10.2}{QQ2-143-533}{``Standard ANOVA'' does not exist for unbalanced designs}}{973}\relax 
+\doTocEntry\tocsubsection{14.10.3}{\csname a:TocLink\endcsname{143}{x143-34800014.10.3}{QQ2-143-534}{Type I sum of squares}}{974}\relax 
+\doTocEntry\toclof{14.27}{\csname a:TocLink\endcsname{143}{x143-34800127}{}{\ignorespaces ANOVA results table using Type I sum of squares in jamovi}}{figure}\relax 
+\doTocEntry\toclof{14.28}{\csname a:TocLink\endcsname{143}{x143-34800228}{}{\ignorespaces ANOVA results table using Type I sum of squares in jamovi, but with factors entered in a different order (\texttt  {milk} first)}}{figure}\relax 
+\doTocEntry\tocsubsection{14.10.4}{\csname a:TocLink\endcsname{143}{x143-34900014.10.4}{QQ2-143-537}{Type III sum of squares}}{981}\relax 
+\doTocEntry\toclof{14.29}{\csname a:TocLink\endcsname{143}{x143-34900229}{}{\ignorespaces ANOVA results table using Type III sum of squares in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{14.10.5}{\csname a:TocLink\endcsname{143}{x143-35000014.10.5}{QQ2-143-539}{Type II sum of squares}}{986}\relax 
+\doTocEntry\toclof{14.30}{\csname a:TocLink\endcsname{143}{x143-35000230}{}{\ignorespaces ANOVA results table using Type II sum of squares in jamovi}}{figure}\relax 
+\doTocEntry\tocsubsection{14.10.6}{\csname a:TocLink\endcsname{143}{x143-35100014.10.6}{QQ2-143-541}{Effect sizes (and non-additive sums of squares)}}{991}\relax 
+\doTocEntry\tocsection{14.11}{\csname a:TocLink\endcsname{143}{x143-35200014.11}{QQ2-143-542}{Summary}}{993}\relax 
+\doTocEntry\tocchapter{15}{\csname a:TocLink\endcsname{158}{x158-35300015}{QQ2-158-543}{Factor Analysis }}{995}\relax 
+\doTocEntry\tocsection{15.1}{\csname a:TocLink\endcsname{158}{x158-35400015.1}{QQ2-158-544}{Exploratory Factor Analysis~}}{995}\relax 
+\doTocEntry\toclof{15.1}{\csname a:TocLink\endcsname{158}{x158-3540011}{}{\ignorespaces Latent factor underlying the relationship between several observed variables}}{figure}\relax 
+\doTocEntry\tocsubsection{15.1.1}{\csname a:TocLink\endcsname{158}{x158-35500015.1.1}{QQ2-158-546}{Checking assumptions}}{999}\relax 
+\doTocEntry\tocsubsection{15.1.2}{\csname a:TocLink\endcsname{158}{x158-35600015.1.2}{QQ2-158-547}{What is EFA good for?}}{1000}\relax 
+\doTocEntry\tocsubsection{15.1.3}{\csname a:TocLink\endcsname{158}{x158-35700015.1.3}{QQ2-158-548}{EFA in jamovi}}{1001}\relax 
+\doTocEntry\toclof{15.2}{\csname a:TocLink\endcsname{158}{x158-3570012}{}{\ignorespaces Twenty-five observed variable items organised by five putative personality factors in the dataset \texttt  {bfi\_sample.csv}}}{figure}\relax 
+\doTocEntry\toclof{15.3}{\csname a:TocLink\endcsname{158}{x158-3570143}{}{\ignorespaces The jamovi EFA analysis window}}{figure}\relax 
+\doTocEntry\toclof{15.4}{\csname a:TocLink\endcsname{158}{x158-3570154}{}{\ignorespaces jamovi EFA assumption checks for the personality questionnaire data}}{figure}\relax 
+\doTocEntry\toclof{15.5}{\csname a:TocLink\endcsname{158}{x158-3570175}{}{\ignorespaces Scree plot of the personality data in jamovi EFA, showing a noticeable inflection and levelling off after point 5 (the \IeC {\textquotedblleft }elbow\IeC {\textquotedblright })}}{figure}\relax 
+\doTocEntry\toclof{15.6}{\csname a:TocLink\endcsname{158}{x158-3570186}{}{\ignorespaces Factor summary statistics and correlations for a five factor solution in jamovi EFA}}{figure}\relax 
+\doTocEntry\toclof{15.7}{\csname a:TocLink\endcsname{158}{x158-3570207}{}{\ignorespaces Factor loadings for a five factor solution in jamovi EFA}}{figure}\relax 
+\doTocEntry\toclof{15.8}{\csname a:TocLink\endcsname{158}{x158-3570278}{}{\ignorespaces Recode variable using the jamovi Transform command}}{figure}\relax 
+\doTocEntry\toclof{15.9}{\csname a:TocLink\endcsname{158}{x158-3570289}{}{\ignorespaces Compute new scale score variable using the jamovi Computed variable command}}{figure}\relax 
+\doTocEntry\toclof{15.10}{\csname a:TocLink\endcsname{158}{x158-35703310}{}{\ignorespaces \texttt  {Rj} editor commands for creating optimally weighted factor scores for the five factor solution}}{figure}\relax 
+\doTocEntry\toclof{15.11}{\csname a:TocLink\endcsname{158}{x158-35703411}{}{\ignorespaces The newly created data file \IeC {\textquotedblleft }bfifactscores.csv\IeC {\textquotedblright } created in the \texttt  {Rj} editor and containing the five factor score variables. Note that each of the new factor score variables is labelled corresponding to the order that the factors are listed in the factor loadings table}}{figure}\relax 
+\doTocEntry\toclof{15.12}{\csname a:TocLink\endcsname{158}{x158-35703512}{}{\ignorespaces Comparing differences in Agreeableness factor-based scores between males and females}}{figure}\relax 
+\doTocEntry\tocsubsection{15.1.4}{\csname a:TocLink\endcsname{158}{x158-35800015.1.4}{QQ2-158-560}{Writing up an EFA}}{1036}\relax 
+\doTocEntry\tocsection{15.2}{\csname a:TocLink\endcsname{158}{x158-35900015.2}{QQ2-158-561}{Principal Component Analysis~}}{1037}\relax 
+\doTocEntry\tocsubsection{15.2.1}{\csname a:TocLink\endcsname{158}{x158-36000015.2.1}{QQ2-158-562}{Performing PCA in jamovi}}{1038}\relax 
+\doTocEntry\toclof{15.13}{\csname a:TocLink\endcsname{158}{x158-36000113}{}{\ignorespaces The jamovi PCA analysis window}}{figure}\relax 
+\doTocEntry\toclof{15.14}{\csname a:TocLink\endcsname{158}{x158-36000214}{}{\ignorespaces jamovi PCA assumption checks for the personality item data}}{figure}\relax 
+\doTocEntry\toclof{15.15}{\csname a:TocLink\endcsname{158}{x158-36000315}{}{\ignorespaces Scree plot of the personality item data in jamovi PCA, showing the levelling off point, the \IeC {\textquotedblleft }elbow\IeC {\textquotedblright }, after component 5}}{figure}\relax 
+\doTocEntry\toclof{15.16}{\csname a:TocLink\endcsname{158}{x158-36000416}{}{\ignorespaces Component summary statistics and correlations for a five component solution in jamovi PCA}}{figure}\relax 
+\doTocEntry\toclof{15.17}{\csname a:TocLink\endcsname{158}{x158-36000517}{}{\ignorespaces Component loadings for a five component solution in jamovi PCA}}{figure}\relax 
+\doTocEntry\toclof{15.18}{\csname a:TocLink\endcsname{158}{x158-36000618}{}{\ignorespaces \texttt  {Rj} editor commands for creating optimally weighted component scores for the five component solution}}{figure}\relax 
+\doTocEntry\tocsection{15.3}{\csname a:TocLink\endcsname{158}{x158-36100015.3}{QQ2-158-569}{Confirmatory Factor Analysis~}}{1056}\relax 
+\doTocEntry\toclof{15.19}{\csname a:TocLink\endcsname{158}{x158-36100219}{}{\ignorespaces Initial pre-specification of latent factor structure for the five factor personality scales, for use in CFA}}{figure}\relax 
+\doTocEntry\tocsubsection{15.3.1}{\csname a:TocLink\endcsname{158}{x158-36200015.3.1}{QQ2-158-571}{CFA in jamovi}}{1059}\relax 
+\doTocEntry\toclof{15.20}{\csname a:TocLink\endcsname{158}{x158-36200120}{}{\ignorespaces The jamovi CFA analysis window}}{figure}\relax 
+\doTocEntry\toclof{15.21}{\csname a:TocLink\endcsname{158}{x158-36200221}{}{\ignorespaces The jamovi CFA Model Fit results for our CFA model}}{figure}\relax 
+\doTocEntry\toclof{15.22}{\csname a:TocLink\endcsname{158}{x158-36200322}{}{\ignorespaces The jamovi CFA Factor Loadings table for our CFA model}}{figure}\relax 
+\doTocEntry\toclof{15.23}{\csname a:TocLink\endcsname{158}{x158-36200423}{}{\ignorespaces The jamovi CFA Factor Covariances table for our CFA model}}{figure}\relax 
+\doTocEntry\toclof{15.24}{\csname a:TocLink\endcsname{158}{x158-36200524}{}{\ignorespaces The jamovi CFA Factor Loadings Modification Indices}}{figure}\relax 
+\doTocEntry\toclof{15.25}{\csname a:TocLink\endcsname{158}{x158-36200625}{}{\ignorespaces The jamovi CFA Residual Covariances Modification Indices}}{figure}\relax 
+\doTocEntry\tocsubsection{15.3.2}{\csname a:TocLink\endcsname{158}{x158-36300015.3.2}{QQ2-158-578}{Reporting a CFA}}{1078}\relax 
+\doTocEntry\tocsection{15.4}{\csname a:TocLink\endcsname{158}{x158-36400015.4}{QQ2-158-579}{Multi-Trait Multi-Method CFA~}}{1079}\relax 
+\doTocEntry\toclof{15.26}{\csname a:TocLink\endcsname{158}{x158-36400126}{}{\ignorespaces The Attributional Style Questionnaire (ASQ) for negative events}}{figure}\relax 
+\doTocEntry\toclof{15.27}{\csname a:TocLink\endcsname{158}{x158-36400227}{}{\ignorespaces Six questions on the ASQ for each of the Internality, Stability and Globality dimensions}}{figure}\relax 
+\doTocEntry\toclof{15.28}{\csname a:TocLink\endcsname{158}{x158-36400328}{}{\ignorespaces Initial pre-specification of latent factor structure for the ASQ}}{figure}\relax 
+\doTocEntry\toclof{15.29}{\csname a:TocLink\endcsname{158}{x158-36400429}{}{\ignorespaces Final pre-specification of latent factor structure for the ASQ, including latent factor correlations, and shared method error term correlations for the observed variable INT1, STAB1 and GLOB1, in a CFA MTMM model. For clarity, other pre-specified error term correlations are not shown.}}{figure}\relax 
+\doTocEntry\tocsubsection{15.4.1}{\csname a:TocLink\endcsname{158}{x158-36500015.4.1}{QQ2-158-584}{MTMM CFA in jamovi}}{1093}\relax 
+\doTocEntry\toclof{15.30}{\csname a:TocLink\endcsname{158}{x158-36500130}{}{\ignorespaces The jamovi CFA analysis window}}{figure}\relax 
+\doTocEntry\toclof{15.31}{\csname a:TocLink\endcsname{158}{x158-36500231}{}{\ignorespaces The jamovi CFA Model Fit results for our CFA MTMM model}}{figure}\relax 
+\doTocEntry\toclof{15.32}{\csname a:TocLink\endcsname{158}{x158-36500332}{}{\ignorespaces The jamovi CFA Factor Loadings and Covariances tables for our CFA MTMM model}}{figure}\relax 
+\doTocEntry\toclof{15.33}{\csname a:TocLink\endcsname{158}{x158-36500433}{}{\ignorespaces The jamovi CFA Factor Loadings Modification Indices}}{figure}\relax 
+\doTocEntry\toclof{15.34}{\csname a:TocLink\endcsname{158}{x158-36500534}{}{\ignorespaces The jamovi CFA Residual Covariances Modification Indices}}{figure}\relax 
+\doTocEntry\tocsection{15.5}{\csname a:TocLink\endcsname{158}{x158-36600015.5}{QQ2-158-590}{Internal consistency reliability analysis~}}{1108}\relax 
+\doTocEntry\tocsubsection{15.5.1}{\csname a:TocLink\endcsname{158}{x158-36700015.5.1}{QQ2-158-591}{Reliability analysis in jamovi}}{1109}\relax 
+\doTocEntry\toclof{15.35}{\csname a:TocLink\endcsname{158}{x158-36700135}{}{\ignorespaces The jamovi Reliability Analysis window}}{figure}\relax 
+\doTocEntry\toclof{15.36}{\csname a:TocLink\endcsname{158}{x158-36700236}{}{\ignorespaces The jamovi Reliability Analysis results for the Agreeableness factor}}{figure}\relax 
+\doTocEntry\tocsection{15.6}{\csname a:TocLink\endcsname{158}{x158-36800015.6}{QQ2-158-594}{Summary}}{1115}\relax 
+\doTocEntry\tocpart{VI}{\csname a:TocLink\endcsname{166}{x166-369000VI}{QQ2-166-595}{Endings, alternatives and prospects}}{1120}\relax 
+\doTocEntry\tocchapter{16}{\csname a:TocLink\endcsname{167}{x167-37000016}{QQ2-167-596}{Bayesian statistics }}{1121}\relax 
+\doTocEntry\tocsection{16.1}{\csname a:TocLink\endcsname{167}{x167-37100016.1}{QQ2-167-597}{Probabilistic reasoning by rational agents}}{1122}\relax 
+\doTocEntry\tocsubsection{16.1.1}{\csname a:TocLink\endcsname{167}{x167-37200016.1.1}{QQ2-167-598}{Priors: what you believed before}}{1122}\relax 
+\doTocEntry\tocsubsection{16.1.2}{\csname a:TocLink\endcsname{167}{x167-37300016.1.2}{QQ2-167-599}{Likelihoods: theories about the data}}{1123}\relax 
+\doTocEntry\tocsubsection{16.1.3}{\csname a:TocLink\endcsname{167}{x167-37400016.1.3}{QQ2-167-600}{The joint probability of data and hypothesis}}{1124}\relax 
+\doTocEntry\tocsubsection{16.1.4}{\csname a:TocLink\endcsname{167}{x167-37500016.1.4}{QQ2-167-601}{Updating beliefs using Bayes' rule}}{1127}\relax 
+\doTocEntry\tocsection{16.2}{\csname a:TocLink\endcsname{167}{x167-37600016.2}{QQ2-167-602}{Bayesian hypothesis tests~}}{1130}\relax 
+\doTocEntry\tocsubsection{16.2.1}{\csname a:TocLink\endcsname{167}{x167-37700016.2.1}{QQ2-167-603}{The Bayes factor}}{1131}\relax 
+\doTocEntry\tocsubsection{16.2.2}{\csname a:TocLink\endcsname{167}{x167-37800016.2.2}{QQ2-167-604}{Interpreting Bayes factors}}{1133}\relax 
+\doTocEntry\tocsection{16.3}{\csname a:TocLink\endcsname{167}{x167-37900016.3}{QQ2-167-605}{Why be a Bayesian?}}{1134}\relax 
+\doTocEntry\tocsubsection{16.3.1}{\csname a:TocLink\endcsname{167}{x167-38000016.3.1}{QQ2-167-606}{Statistics that mean what you think they mean}}{1135}\relax 
+\doTocEntry\tocsubsection{16.3.2}{\csname a:TocLink\endcsname{167}{x167-38100016.3.2}{QQ2-167-607}{Evidentiary standards you can believe}}{1136}\relax 
+\doTocEntry\tocsubsection{16.3.3}{\csname a:TocLink\endcsname{167}{x167-38200016.3.3}{QQ2-167-608}{The $p$-value is a lie.}}{1137}\relax 
+\doTocEntry\toclof{16.1}{\csname a:TocLink\endcsname{167}{x167-3820121}{}{\ignorespaces How badly can things go wrong if you re-run your tests every time new data arrive? If you are a frequentist, the answer is ``very wrong''.}}{figure}\relax 
+\doTocEntry\tocsubsection{16.3.4}{\csname a:TocLink\endcsname{167}{x167-38300016.3.4}{QQ2-167-610}{Is it really this bad?}}{1144}\relax 
+\doTocEntry\tocsection{16.4}{\csname a:TocLink\endcsname{167}{x167-38400016.4}{QQ2-167-611}{Bayesian $t$-tests}}{1146}\relax 
+\doTocEntry\tocsubsection{16.4.1}{\csname a:TocLink\endcsname{167}{x167-38500016.4.1}{QQ2-167-612}{Independent samples $t$-test}}{1146}\relax 
+\doTocEntry\toclof{16.2}{\csname a:TocLink\endcsname{167}{x167-3850012}{}{\ignorespaces Independent Samples $t$-test result in jamovi}}{figure}\relax 
+\doTocEntry\toclof{16.3}{\csname a:TocLink\endcsname{167}{x167-3850023}{}{\ignorespaces Bayes factors analysis alongside Independent Samples $t$-Test}}{figure}\relax 
+\doTocEntry\tocsubsection{16.4.2}{\csname a:TocLink\endcsname{167}{x167-38600016.4.2}{QQ2-167-615}{Paired samples $t$-test}}{1153}\relax 
+\doTocEntry\toclof{16.4}{\csname a:TocLink\endcsname{167}{x167-3860014}{}{\ignorespaces Paired samples T-Test and Bayes Factor result in jamovi}}{figure}\relax 
+\doTocEntry\tocsection{16.5}{\csname a:TocLink\endcsname{167}{x167-38700016.5}{QQ2-167-617}{Summary}}{1157}\relax 
+\doTocEntry\tocchapter{17}{\csname a:TocLink\endcsname{184}{x184-38800017}{QQ2-184-618}{Epilogue}}{1160}\relax 
+\doTocEntry\tocsection{17.1}{\csname a:TocLink\endcsname{184}{x184-38900017.1}{QQ2-184-619}{The undiscovered statistics}}{1160}\relax 
+\doTocEntry\tocsubsection{17.1.1}{\csname a:TocLink\endcsname{184}{x184-39000017.1.1}{QQ2-184-620}{Omissions within the topics covered}}{1160}\relax 
+\doTocEntry\tocsubsection{17.1.2}{\csname a:TocLink\endcsname{184}{x184-39100017.1.2}{QQ2-184-621}{Statistical models missing from the book}}{1162}\relax 
+\doTocEntry\tocsubsection{17.1.3}{\csname a:TocLink\endcsname{184}{x184-39200017.1.3}{QQ2-184-622}{Other ways of doing inference}}{1166}\relax 
+\doTocEntry\tocsubsection{17.1.4}{\csname a:TocLink\endcsname{184}{x184-39300017.1.4}{QQ2-184-623}{Miscellaneous topics}}{1168}\relax 
+\doTocEntry\tocsection{17.2}{\csname a:TocLink\endcsname{184}{x184-39400017.2}{QQ2-184-624}{Learning the basics, and learning them in jamovi}}{1171}\relax 
+\doTocEntry\tocchapter{18}{\csname a:TocLink\endcsname{185}{x185-39500018}{QQ2-185-625}{References}}{1175}\relax 
+\par 

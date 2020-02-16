@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding=""utf-8"" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title>6 Pragmatic matters </title> 
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8"" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- 2,html,xhtml,NoFonts,ext=htm,charset="utf-8" --> 
+<meta name="src" content="lsj.tex" /> 
+<link rel="stylesheet" type="text/css" href="lsj.css" /> 
+</head><body 
+>
+   <!--l. 8--><div class="crosslinks"><p class="noindent">[<a 
+href="lsjch5.html" >prev</a>] [<a 
+href="lsjch5.html#taillsjch5.html" >prev-tail</a>] [<a 
+href="#taillsjch6.html">tail</a>] [<a 
+href="lsjpa3.html#lsjch6.html" >up</a>] </p></div>
+   <h2 class="chapterHead"><span class="titlemark">Chapter 6</span><br /><a 
+ id="x40-960006"></a>Pragmatic matters </h2>
+      <div class="quote">
+      <!--l. 11--><p class="noindent" >The garden of life never seems to conﬁne itself to the plots philosophers have laid
+      out for its convenience. Maybe a few more tractors would do the trick. <br 
+class="newline" />                   – Roger Zelazny<span class="footnote-mark"><a 
+href="lsj41.html#fn1x7"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x40-96001f1"></a> </p></div>
+<!--l. 18--><p class="noindent" >This is a somewhat strange chapter, even by my standards. My goal in this chapter is to talk a bit
+more honestly about the realities of working with data than you’ll see anywhere else in the book.
+The problem with real world data sets is that they are messy. Very often the data ﬁle
+that you start out with doesn’t have the variables stored in the right format for the
+analysis you want to do. Sometimes there might be a lot of missing values in your data set.
+Sometimes you only want to analyse a subset of the data. Et cetera. In other words,
+there’s a lot of <span id="textcolor118">data manipulation</span> that you need to do just to get the variables in your
+data set into the format that you need it. The purpose of this chapter is to provide
+a basic introduction to these pragmatic topics. Although the chapter is motivated by
+the kinds of practical issues that arise when manipulating real data, I’ll stick with the
+practice that I’ve adopted through most of the book and rely on very small, toy data sets
+that illustrate the underlying issue. Because this chapter is essentially a collection of
+techniques and doesn’t tell a single coherent story, it may be useful to start with a list of
+topics:
+</p>
+      <ul class="itemize1">
+      <li class="itemize">Section <a 
+href="#x40-970006.1">6.1<!--tex4ht:ref: sec:freqtables --></a>. Tabulating data.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1000006.2">6.2<!--tex4ht:ref: sec:logicals --></a>. Using logical expressions.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1040006.3">6.3<!--tex4ht:ref: sec:transform --></a>. Transforming or recoding a variable.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1080006.4">6.4<!--tex4ht:ref: sec:mathfunc --></a>. Some useful mathematical functions.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1100006.5">6.5<!--tex4ht:ref: sec:subset --></a>. Extracting a subset of a data set.</li></ul>
+                                                                                          
+
+                                                                                          
+<!--l. 29--><p class="indent" >   As you can see, the list of topics that the chapter covers is pretty broad, and there’s a lot of
+content there. Even though this is one of the longest and hardest chapters in the book, I’m really
+only scratching the surface of several fairly diﬀerent and important topics. My advice, as
+usual, is to read through the chapter once and try to follow as much of it as you can.
+Don’t worry too much if you can’t grasp it all at once, especially the later sections. The
+rest of the book is only lightly reliant on this chapter so you can get away with just
+understanding the basics. However, what you’ll probably ﬁnd is that later on you’ll need to
+ﬂick back to this chapter in order to understand some of the concepts that I refer to
+here.
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6.1   </span> <a 
+ id="x40-970006.1"></a>Tabulating and cross-tabulating data</h3>
+<!--l. 34--><p class="noindent" >A very common task when analysing data is the construction of frequency tables, or
+cross-tabulation of one variable against another. These tasks can be achieved in jamovi and I’ll
+show you how in this section.
+</p><!--l. 36--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.1.1   </span> <a 
+ id="x40-980006.1.1"></a>Creating tables for single variables</h4>
+<!--l. 38--><p class="noindent" >Let’s start with a simple example. As the father of a small child I naturally spend a lot of time
+watching TV shows like In the Night Garden. In the nightgarden.csv ﬁle, I’ve transcribed a short
+section of the dialogue. The ﬁle contains two variables of interest, speaker and utterance. Open
+up this data set in jamovi and take a look at the data in the ‘spreadsheet’ view. You will see that
+the data looks something like this:
+</p><!--l. 40--><p class="noindent" >‘speaker’ variable: <br 
+class="newline" />upsy-daisy upsy-daisy upsy-daisy upsy-daisy tombliboo tombliboo makka-pakka
+<br 
+class="newline" />makka-pakka makka-pakka makka-pakka
+</p><!--l. 44--><p class="noindent" >‘utterance’ variable: <br 
+class="newline" />pip pip onk onk ee oo pip pip onk onk
+</p><!--l. 48--><p class="noindent" >Looking at this it becomes very clear what happened to my sanity! With these as my data, one task
+I might ﬁnd myself needing to do is construct a frequency count of the number of words each
+character speaks during the show. The jamovi ‘Descriptives’ screen has a check box called
+‘Frequency tables’ which does just this, see Figure <a 
+href="#x40-980011">6.1<!--tex4ht:ref: fig:freqtable --></a>.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-980011"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 53--><p class="noindent" >
+
+</p><!--l. 54--><p class="noindent" ><img 
+src="../img/mechanics/freqtable.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.1: </span><span  
+class="content">Frequency table for the speaker variable</span></div><!--tex4ht:label?: x40-980011 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 61--><p class="indent" >   The output here tells us on the ﬁrst line that what we’re looking at is a tabulation of the
+speaker variable. In the ‘Levels’ column it lists all the diﬀerent speakers that exist in the data, and
+in the ‘Counts’ column it tells you how many times that speaker appears in the data. In other
+words, it’s a frequency table.
+</p><!--l. 63--><p class="indent" >   In jamovi, the ‘Frequency tables’ check box will only produce a table for single variables. For a
+table of two variables, for example combining speaker and utterance so that we can see how
+many times each speaker said a particular utterance, we need a cross-tabulation or contingency
+table. In jamovi you can do this by selecting the ‘Frequencies’ - ‘Contingency Tables’ -
+‘Independent Samples’ analysis, and moving the speaker variable into the ‘Rows’ box, and the
+utterances variable into the ‘Columns’ box. You then should have a contingency table like the one
+shown in Figure <a 
+href="#x40-980022">6.2<!--tex4ht:ref: fig:contingencytable --></a>.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-980022"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 67--><p class="noindent" >
+
+</p><!--l. 68--><p class="noindent" ><img 
+src="../img/mechanics/contingencytable.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.2: </span><span  
+class="content">Contingency table for the speaker and utterances variables</span></div><!--tex4ht:label?: x40-980022 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 75--><p class="indent" >   Don’t worry about the “χ<sup>2</sup> Tests” table that is produced. We are going to cover this later
+on in chapter <a 
+href="lsjch10.html#x83-17800010">10<!--tex4ht:ref: ch:chisquare --></a>. When interpreting the contingency table remember that these are
+counts, so the fact that the ﬁrst row and second column of numbers corresponds to a
+value of 2 indicates that Makka-Pakka (row 1) says “onk” (column 2) twice in this data
+set.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.1.2   </span> <a 
+ id="x40-990006.1.2"></a>Adding percentages to a contingency table</h4>
+<!--l. 79--><p class="noindent" >The contingency table shown in Figure <a 
+href="#x40-980022">6.2<!--tex4ht:ref: fig:contingencytable --></a> shows a table of raw frequencies. That is, a count of the
+total number of cases for diﬀerent combinations of levels of the speciﬁed variables. However, often
+you want your data to be organised in terms of percentages as well as counts. You can ﬁnd the
+check boxes for diﬀerent percentages under the ‘Cells’ option in the ‘Contingency Tables’ window.
+First, click on the ‘Row’ check box and the Contingency Table in the output window will change to
+the one in Figure <a 
+href="#x40-990013">6.3<!--tex4ht:ref: fig:contingencyrow --></a>.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-990013"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 83--><p class="noindent" >
+
+</p><!--l. 84--><p class="noindent" ><img 
+src="../img/mechanics/contingencyrow.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.3:  </span><span  
+class="content">Contingency  table  for  the  speaker and  utterances variables,  with  row
+percentages</span></div><!--tex4ht:label?: x40-990013 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-990024"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 92--><p class="noindent" >
+
+</p><!--l. 93--><p class="noindent" ><img 
+src="../img/mechanics/contingencycol.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.4: </span><span  
+class="content">Contingency table for the speaker and utterances variables, with column
+percentages</span></div><!--tex4ht:label?: x40-990024 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 100--><p class="indent" >   What we’re looking at here is the percentage of utterances made by each character. In other
+words, 50% of Makka-Pakka’s utterances are “pip”, and the other 50% are “onk”. Let’s contrast
+this with the table we get when we calculate column percentages (uncheck ‘Row’ and check
+‘Column’ in the Cells options window), see Figure <a 
+href="#x40-990024">6.4<!--tex4ht:ref: fig:contingencycol --></a>. In this version, what we’re seeing is the
+percentage of characters associated with each utterance. For instance, whenever the
+utterance “ee” is made (in this data set), 100% of the time it’s a Tombliboo saying
+it.
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6.2   </span> <a 
+ id="x40-1000006.2"></a>Logical expressions in jamovi</h3>
+<!--l. 105--><p class="noindent" >A key concept that a lot of data transformations in jamovi rely on is the idea of a <span id="textcolor119">logical value</span>. A
+logical value is an assertion about whether something is true or false. This is implemented in
+jamovi in a pretty straightforward way. There are two logical values, namely TRUE and
+FALSE. Despite the simplicity, logical values are very useful things. Let’s see how they
+work.
+</p><!--l. 107--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.1   </span> <a 
+ id="x40-1010006.2.1"></a>Assessing mathematical truths</h4>
+<!--l. 109--><p class="noindent" >In George Orwell’s classic book 1984 one of the slogans used by the totalitarian Party was “two
+plus two equals ﬁve”. The idea being that the political domination of human freedom becomes
+complete when it is possible to subvert even the most basic of truths. It’s a terrifying thought,
+especially when the protagonist Winston Smith ﬁnally breaks down under torture and agrees to the
+proposition. “Man is inﬁnitely malleable”, the book says. I’m pretty sure that this isn’t true of
+humans<span class="footnote-mark"><a 
+href="lsj42.html#fn2x7"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x40-101001f2"></a> 
+and it’s deﬁnitely not true of jamovi. jamovi is not inﬁnitely malleable, it has rather ﬁrm opinions
+on the topic of what is and isn’t true, at least as regards basic mathematics. If I ask it to calculate
+2 + 2<span class="footnote-mark"><a 
+href="lsj43.html#fn3x7"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x40-101002f3"></a> ,
+it always gives the same answer, and it’s not bloody 5!
+                                                                                          
+
+                                                                                          
+</p><!--l. 111--><p class="indent" >   Of course, so far jamovi is just doing the calculations. I haven’t asked it to explicitly assert that
+2   2   4 is a true statement. If I want jamovi to make an explicit judgement, I can use a command
+like this: 2 + 2 == 4
+</p><!--l. 113--><p class="indent" >   What I’ve done here is use the <span id="textcolor122">equality operator</span>, ==, to force jamovi to make a “true or false”
+judgement.<span class="footnote-mark"><a 
+href="lsj44.html#fn4x7"><sup class="textsuperscript">4</sup></a></span><a 
+ id="x40-101003f4"></a> 
+Okay, let’s see what jamovi thinks of the Party slogan, so type this into the compute new variable
+‘formula’ box:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-1">
+<span 
+class="cmtt-12">2</span><span 
+class="cmtt-12"> +</span><span 
+class="cmtt-12"> 2</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 5</span>
+</div>
+<!--l. 117--><p class="nopar" >
+</p><!--l. 119--><p class="noindent" >And what do you get? It should be a whole set of ‘false’ values in the spreadsheet column for your
+newly computed variable. Booyah! Freedom and ponies for all! Or something like that. Anyway, it
+was worth having a look at what happens if I try to force jamovi to believe that two plus two is ﬁve
+by making a statement like 2 + 2 = 5. I know that if I do this in another program, say R,
+then it throws up an error message. But wait, if you do this in jamovi you get a whole
+set of ‘false’ values. So what is going on? Well, it seems that jamovi is being pretty
+smart and realises that you are testing whether it is TRUE or FALSE that 2 + 2 = 5,
+regardless of whether you use the correct <span id="textcolor129">equality operator</span>, ==, or the equals sign
+“=”.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.2   </span> <a 
+ id="x40-1020006.2.2"></a>Logical operations</h4>
+<!--l. 124--><p class="noindent" >So now we’ve seen logical operations at work. But so far we’ve only seen the simplest
+possible example. You probably won’t be surprised to discover that we can combine
+logical operations with other operations and functions in a more complicated way, like
+this:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-2">
+<span 
+class="cmtt-12">3*3</span><span 
+class="cmtt-12"> +</span><span 
+class="cmtt-12"> 4*4</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 5*5</span>
+</div>
+<!--l. 127--><p class="nopar" >or this
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-3">
+<span 
+class="cmtt-12">SQRT(25)</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 5</span>
+</div>
+<!--l. 131--><p class="nopar" >Not only that, but as Table <a 
+href="#x40-1020011">6.1<!--tex4ht:ref: tab:logicals --></a> illustrates, there are several other logical operators that you can
+use corresponding to some basic mathematical concepts. Hopefully these are all pretty
+self-explanatory. For example, the <span id="textcolor130">less than</span> operator &#x003C; checks to see if the number on the left is
+less than the number on the right. If it’s less, then jamovi returns an answer of <span id="textcolor131">TRUE</span>, but if the two
+numbers are equal, or if the one on the right is larger, then jamovi returns an answer of
+<span id="textcolor132">FALSE</span>.
+</p><!--l. 134--><p class="indent" >   In contrast, the <span id="textcolor133">less than or equal to</span> operator <span class="obeylines-h"><span class="verb">&#x003C;=</span></span> will do exactly what it says. It returns a
+value of <span id="textcolor134">TRUE</span> if the number of the left hand side is less than or equal to the number on the right
+hand side. At this point I hope it’s pretty obvious what the <span id="textcolor135">greater than</span> operator &#x003E; and the
+<span id="textcolor136">greater than or equal to</span> operator <span class="obeylines-h"><span class="verb">&#x003E;=</span></span> do!
+</p><!--l. 136--><p class="indent" >   Next on the list of logical operators is the <span id="textcolor137">not equal to</span> operator <span class="obeylines-h"><span class="verb">!=</span></span> which, as with all the
+others, does what it says it does. It returns a value of TRUE when things on either side are not
+identical to each other. Therefore, since 2   2 isn’t equal to 5, we would get ‘true’ as the value for
+our newly computed variable. Try it and see:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-4">
+<span 
+class="cmtt-12">2</span><span 
+class="cmtt-12"> +</span><span 
+class="cmtt-12"> 2</span><span 
+class="cmtt-12"> !=</span><span 
+class="cmtt-12"> 5</span>
+</div>
+<!--l. 139--><p class="nopar" >
+</p>
+   <div class="table">
+                                                                                          
+
+                                                                                          
+<!--l. 142--><p class="indent" >   <a 
+ id="x40-1020011"></a></p><hr class="float" /><div class="float" 
+>
+                                                                                          
+
+                                                                                          
+ <div class="caption" 
+><span class="id">Table 6.1: </span><span  
+class="content">Some logical operators. Technically I should be calling these “binary relational
+operators”, but quite frankly I don’t want to. It’s my book so no-one can make me.</span></div><!--tex4ht:label?: x40-1020011 -->
+<div class="center" 
+>
+<!--l. 144--><p class="noindent" >
+</p>
+<div class="tabular"> <table id="TBL-17" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-17-1g"><col 
+id="TBL-17-1" /><col 
+id="TBL-17-2" /><col 
+id="TBL-17-3" /><col 
+id="TBL-17-4" /></colgroup><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-1-1"  
+class="td11">operation                  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-1-2"  
+class="td11">operator</td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-1-3"  
+class="td11">example input</td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-1-4"  
+class="td11">answer</td>
+</tr><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-2-1"  
+class="td11">less than                    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-2-2"  
+class="td11">   <span class="obeylines-h"><span class="verb">&#x003C;</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-2-3"  
+class="td11">   <span class="obeylines-h"><span class="verb">2 &#x003C;  3</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-2-4"  
+class="td11"> <span id="textcolor138">TRUE</span> </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-3-1"  
+class="td11">less than or equal to     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-3-2"  
+class="td11">   <span class="obeylines-h"><span class="verb">&#x003C;=</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-3-3"  
+class="td11">   <span class="obeylines-h"><span class="verb">2 &#x003C;= 2</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-3-4"  
+class="td11"> <span id="textcolor139">TRUE</span> </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-4-1"  
+class="td11">greater than               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-4-2"  
+class="td11">   <span class="obeylines-h"><span class="verb">&#x003E;</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-4-3"  
+class="td11">   <span class="obeylines-h"><span class="verb">2 &#x003E;  3</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-4-4"  
+class="td11"> <span id="textcolor140">FALSE</span> </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-5-1"  
+class="td11">greater than or equal to</td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-5-2"  
+class="td11">   <span class="obeylines-h"><span class="verb">&#x003E;=</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-5-3"  
+class="td11">   <span class="obeylines-h"><span class="verb">2 &#x003E;= 2</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-5-4"  
+class="td11"> <span id="textcolor141">TRUE</span> </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-6-1"  
+class="td11">equal to                     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-6-2"  
+class="td11">   <span class="obeylines-h"><span class="verb">==</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-6-3"  
+class="td11">   <span class="obeylines-h"><span class="verb">2 == 3</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-6-4"  
+class="td11"> <span id="textcolor142">FALSE</span> </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-7-1"  
+class="td11">not equal to                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-7-2"  
+class="td11">   <span class="obeylines-h"><span class="verb">!=</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-7-3"  
+class="td11">   <span class="obeylines-h"><span class="verb">2 != 3</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-7-4"  
+class="td11"> <span id="textcolor143">TRUE</span> </td>
+</tr><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-17-8-1"  
+class="td11">                    </td></tr></table></div></div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfloat" />
+   </div>
+   <div class="table">
+                                                                                          
+
+                                                                                          
+<!--l. 162--><p class="indent" >   <a 
+ id="x40-1020022"></a></p><hr class="float" /><div class="float" 
+>
+                                                                                          
+
+                                                                                          
+ <div class="caption" 
+><span class="id">Table 6.2: </span><span  
+class="content">Some more logical operators.</span></div><!--tex4ht:label?: x40-1020022 -->
+<div class="center" 
+>
+<!--l. 164--><p class="noindent" >
+</p>
+<div class="tabular"> <table id="TBL-18" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-18-1g"><col 
+id="TBL-18-1" /><col 
+id="TBL-18-2" /><col 
+id="TBL-18-3" /><col 
+id="TBL-18-4" /></colgroup><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-18-1-1"  
+class="td11">operation</td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-1-2"  
+class="td11">operator</td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-1-3"  
+class="td11">   example input    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-1-4"  
+class="td11">answer</td>
+</tr><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-18-2-1"  
+class="td11">not         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-2-2"  
+class="td11">  <span class="obeylines-h"><span class="verb">NOT</span></span>  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-2-3"  
+class="td11">    <span class="obeylines-h"><span class="verb">NOT(1==1)</span></span>    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-2-4"  
+class="td11"> <span id="textcolor144">FALSE</span> </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-18-3-1"  
+class="td11">or           </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-3-2"  
+class="td11">   <span class="obeylines-h"><span class="verb">or</span></span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-3-3"  
+class="td11"> <span class="obeylines-h"><span class="verb">(1==1) or (2==3)</span></span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-3-4"  
+class="td11"> <span id="textcolor145">TRUE</span> </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-18-4-1"  
+class="td11">and         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-4-2"  
+class="td11">  <span class="obeylines-h"><span class="verb">and</span></span>  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-4-3"  
+class="td11"><span class="obeylines-h"><span class="verb">(1==1) and (2==3)</span></span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-4-4"  
+class="td11"> <span id="textcolor146">FALSE</span> </td>
+</tr><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-18-5-1"  
+class="td11">         </td></tr></table></div></div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfloat" />
+   </div>
+<!--l. 178--><p class="indent" >   We’re not quite done yet. There are three more logical operations that are worth knowing
+about, listed in Table <a 
+href="#x40-1020022">6.2<!--tex4ht:ref: tab:logicals2 --></a>. These are the <span id="textcolor147">not</span> operator <span class="obeylines-h"><span class="verb">!</span></span>, the <span id="textcolor148">and</span> operator <span class="obeylines-h"><span class="verb">and</span></span>, and the <span id="textcolor149">or</span>
+operator <span class="obeylines-h"><span class="verb">or</span></span>. Like the other logical operators, their behaviour is more or less exactly what you’d
+expect given their names. For instance, if I ask you to assess the claim that “either
+2   2   4 or 2   2   5” you’d say that it’s true. Since it’s an “either-or” statement,
+all we need is for one of the two parts to be true. That’s what the or operator does:
+<span class="footnote-mark"><a 
+href="lsj45.html#fn5x7"><sup class="textsuperscript">5</sup></a></span><a 
+ id="x40-102003f5"></a>
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-5">
+<span 
+class="cmtt-12">(2+2</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 4)</span><span 
+class="cmtt-12"> or</span><span 
+class="cmtt-12"> (2+2</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 5)</span>
+</div>
+<!--l. 181--><p class="nopar" >On the other hand, if I ask you to assess the claim that “both 2   2   4 and 2   2   5” you’d say
+that it’s false. Since this is an and statement we need both parts to be true. And that’s what the
+<span class="obeylines-h"><span class="verb">and</span></span> operator does:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-6">
+<span 
+class="cmtt-12">(2+2</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 4)</span><span 
+class="cmtt-12"> and</span><span 
+class="cmtt-12"> (2+2</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 5)</span>
+</div>
+<!--l. 185--><p class="nopar" >Finally, there’s the not operator, which is simple but annoying to describe in English. If I ask you
+to assess my claim that “it is not true that 2   2   5” then you would say that my claim is true,
+because actually my claim is that “2   2   5 is false”. And I’m right. If we write this in jamovi we
+use this:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-7">
+<span 
+class="cmtt-12">NOT(2+2</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> 5)</span>
+</div>
+<!--l. 189--><p class="nopar" >In other words, since 2+2 == 5 is a FALSE statement, it must be the case that NOT(2+2 == 5) is a
+TRUE one. Essentially, what we’ve really done is claim that “not false” is the same thing as
+“true”. Obviously, this isn’t really quite right in real life. But jamovi lives in a much more
+black or white world. For jamovi everything is either true or false. No shades of grey are
+allowed.
+</p><!--l. 192--><p class="indent" >   Of course, in our 2   2   5 example, we didn’t really need to use the “not” operator NOT and
+the “equals to” operator == as two separate operators. We could have just used the “not equals to”
+operator != like this:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-8">
+<span 
+class="cmtt-12">{2+2</span><span 
+class="cmtt-12"> !=</span><span 
+class="cmtt-12"> 5}</span>
+</div>
+<!--l. 195--><p class="nopar" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.3   </span> <a 
+ id="x40-1030006.2.3"></a>Applying logical operation to text </h4>
+<!--l. 199--><p class="noindent" >I also want to brieﬂy point out that you can apply these logical operators to text as well as to
+logical data. It’s just that we need to be a bit more careful in understanding how jamovi interprets
+the diﬀerent operations. In this section I’ll talk about how the equal to operator == applies to text,
+since this is the most important one. Obviously, the not equal to operator != gives the exact
+opposite answers to == so I’m implicitly talking about that one too, but I won’t give speciﬁc
+commands showing the use of !=.
+</p><!--l. 201--><p class="indent" >   Okay, let’s see how it works. In one sense, it’s very simple. For instance, I can ask jamovi if the
+word &#x0022;cat&#x0022; is the same as the word &#x0022;dog&#x0022;, like this:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-9">
+<span 
+class="cmtt-12">&#x0022;cat&#x0022;</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> &#x0022;dog&#x0022;</span>
+</div>
+<!--l. 204--><p class="nopar" >That’s pretty obvious, and it’s good to know that even jamovi can ﬁgure that out. Similarly, jamovi
+does recognise that a &#x0022;cat&#x0022; is a &#x0022;cat&#x0022;:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-10">
+<span 
+class="cmtt-12">&#x0022;cat&#x0022;</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> &#x0022;cat&#x0022;</span>
+</div>
+<!--l. 208--><p class="nopar" >Again, that’s exactly what we’d expect. However, what you need to keep in mind is that jamovi
+is not at all tolerant when it comes to grammar and spacing. If two strings diﬀer in
+any way whatsoever, jamovi will say that they’re not equal to each other, as with the
+following:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-11">
+<span 
+class="cmtt-12">&#x0022;</span><span 
+class="cmtt-12"> cat&#x0022;</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> &#x0022;cat&#x0022;</span>
+<span 
+class="cmtt-12"> </span><br /><span 
+class="cmtt-12">&#x0022;cat&#x0022;</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> &#x0022;CAT&#x0022;</span>
+<span 
+class="cmtt-12"> </span><br /><span 
+class="cmtt-12">&#x0022;cat&#x0022;</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> &#x0022;c</span><span 
+class="cmtt-12"> a</span><span 
+class="cmtt-12"> t&#x0022;</span>
+</div>
+<!--l. 214--><p class="nopar" >You can also use other logical operators too. For instance jamovi also allows you to use the &#x003C; and &#x003E;
+operators to determine which of two text ‘strings’ comes ﬁrst, alphabetically speaking.
+Sort of. Actually, it’s a bit more complicated than that, but let’s start with a simple
+example:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-12">
+<span 
+class="cmtt-12">&#x0022;cat&#x0022;</span><span 
+class="cmtt-12"> &#x003C;</span><span 
+class="cmtt-12"> &#x0022;dog&#x0022;</span>
+</div>
+<!--l. 218--><p class="nopar" >In jamovi, this example evaluates to ‘true’. This is because &#x0022;cat&#x0022; does does come before
+&#x0022;dog&#x0022; alphabetically, so jamovi judges the statement to be true. However, if we ask
+jamovi to tell us if &#x0022;cat&#x0022; comes before &#x0022;anteater&#x0022; then it will evaluate the expression
+as false. So far, so good. But text data is a bit more complicated than the dictionary
+suggests. What about &#x0022;cat&#x0022; and &#x0022;CAT&#x0022;? Which of these comes ﬁrst? Try it and ﬁnd
+out:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-13">
+<span 
+class="cmtt-12">&#x0022;CAT&#x0022;</span><span 
+class="cmtt-12"> &#x003C;</span><span 
+class="cmtt-12"> &#x0022;cat&#x0022;</span>
+</div>
+<!--l. 222--><p class="nopar" >This in fact evaluates to ‘true’. In other words, jamovi assumes that uppercase letters come before
+lowercase ones. Fair enough. No-one is likely to be surprised by that. What you might ﬁnd
+surprising is that jamovi assumes that all uppercase letters come before all lowercase ones. That is,
+while &#x0022;anteater&#x0022; &#x003C; &#x0022;zebra&#x0022; is a true statement, and the uppercase equivalent &#x0022;ANTEATER&#x0022; &#x003C;
+&#x0022;ZEBRA&#x0022; is also true, it is not true to say that &#x0022;anteater&#x0022; &#x003C; &#x0022;ZEBRA&#x0022;, as the following extract
+illustrates. Try this:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-14">
+<span 
+class="cmtt-12">&#x0022;anteater&#x0022;</span><span 
+class="cmtt-12"> &#x003C;</span><span 
+class="cmtt-12"> &#x0022;ZEBRA&#x0022;</span>
+</div>
+<!--l. 226--><p class="nopar" >This evaluates to ‘false’, and this may seem slightly counterintuitive. With that in mind, it may
+help to have a quick look at Table <a 
+href="#x40-1030013">6.3<!--tex4ht:ref: tab:asciiorder --></a> which lists various text characters in the order that jamovi
+processes them.
+</p>
+   <div class="table">
+                                                                                          
+
+                                                                                          
+<!--l. 230--><p class="indent" >   <a 
+ id="x40-1030013"></a></p><hr class="float" /><div class="float" 
+>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 230--><p class="noindent" >
+<br /> </p><div class="caption" 
+><span class="id">Table 6.3: </span><span  
+class="content">The ordering of various text characters used by the &#x003C; and &#x003E; operators. Not shown
+is the “space” character, which actually comes ﬁrst on the list.</span></div><!--tex4ht:label?: x40-1030013 -->
+                                                                                          
+
+                                                                                          
+<div class="verbatim" id="verbatim-15">
+<span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> !</span><span 
+class="cmtt-12"> &#x0022;</span><span 
+class="cmtt-12"> #</span><span 
+class="cmtt-12"> $</span><span 
+class="cmtt-12"> %</span><span 
+class="cmtt-12"> &#x0026;</span><span 
+class="cmtt-12"> ’</span><span 
+class="cmtt-12"> (</span><span 
+class="cmtt-12"> )</span><span 
+class="cmtt-12"> *</span><span 
+class="cmtt-12"> +</span><span 
+class="cmtt-12"> ,</span><span 
+class="cmtt-12"> -</span><span 
+class="cmtt-12"> .</span><span 
+class="cmtt-12"> /</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 0</span><span 
+class="cmtt-12"> 1</span><span 
+class="cmtt-12"> 2</span><span 
+class="cmtt-12"> 3</span><span 
+class="cmtt-12"> 4</span><span 
+class="cmtt-12"> 5</span><span 
+class="cmtt-12"> 6</span><span 
+class="cmtt-12"> 7</span><span 
+class="cmtt-12"> 8</span><span 
+class="cmtt-12"> 9</span><span 
+class="cmtt-12"> :</span><span 
+class="cmtt-12"> ;</span><span 
+class="cmtt-12"> &#x003C;</span><span 
+class="cmtt-12"> =</span><span 
+class="cmtt-12"> &#x003E;</span><span 
+class="cmtt-12"> ?</span><span 
+class="cmtt-12"> @</span>
+<span 
+class="cmtt-12"> </span><br /><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> A</span><span 
+class="cmtt-12"> B</span><span 
+class="cmtt-12"> C</span><span 
+class="cmtt-12"> D</span><span 
+class="cmtt-12"> E</span><span 
+class="cmtt-12"> F</span><span 
+class="cmtt-12"> G</span><span 
+class="cmtt-12"> H</span><span 
+class="cmtt-12"> I</span><span 
+class="cmtt-12"> J</span><span 
+class="cmtt-12"> K</span><span 
+class="cmtt-12"> L</span><span 
+class="cmtt-12"> M</span><span 
+class="cmtt-12"> N</span><span 
+class="cmtt-12"> O</span><span 
+class="cmtt-12"> P</span><span 
+class="cmtt-12"> Q</span><span 
+class="cmtt-12"> R</span><span 
+class="cmtt-12"> S</span><span 
+class="cmtt-12"> T</span><span 
+class="cmtt-12"> U</span><span 
+class="cmtt-12"> V</span><span 
+class="cmtt-12"> W</span><span 
+class="cmtt-12"> X</span><span 
+class="cmtt-12"> Y</span><span 
+class="cmtt-12"> Z</span><span 
+class="cmtt-12"> [</span><span 
+class="cmtt-12"> \</span><span 
+class="cmtt-12"> ]</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> ^</span><span 
+class="cmtt-12"> _</span><span 
+class="cmtt-12"> ‘</span>
+<span 
+class="cmtt-12"> </span><br /><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> a</span><span 
+class="cmtt-12"> b</span><span 
+class="cmtt-12"> c</span><span 
+class="cmtt-12"> d</span><span 
+class="cmtt-12"> e</span><span 
+class="cmtt-12"> f</span><span 
+class="cmtt-12"> g</span><span 
+class="cmtt-12"> h</span><span 
+class="cmtt-12"> i</span><span 
+class="cmtt-12"> j</span><span 
+class="cmtt-12"> k</span><span 
+class="cmtt-12"> l</span><span 
+class="cmtt-12"> m</span><span 
+class="cmtt-12"> n</span><span 
+class="cmtt-12"> o</span><span 
+class="cmtt-12"> p</span><span 
+class="cmtt-12"> q</span><span 
+class="cmtt-12"> r</span><span 
+class="cmtt-12"> s</span><span 
+class="cmtt-12"> t</span><span 
+class="cmtt-12"> u</span><span 
+class="cmtt-12"> v</span><span 
+class="cmtt-12"> w</span><span 
+class="cmtt-12"> x</span><span 
+class="cmtt-12"> y</span><span 
+class="cmtt-12"> z</span><span 
+class="cmtt-12"> }</span><span 
+class="cmtt-12"> |</span><span 
+class="cmtt-12"> {</span>
+</div>
+<!--l. 237--><p class="nopar" ></p></div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfloat" />
+   </div>
+   <h3 class="sectionHead"><span class="titlemark">6.3   </span> <a 
+ id="x40-1040006.3"></a>Transforming and recoding a variable </h3>
+<!--l. 245--><p class="noindent" >It’s not uncommon in real world data analysis to ﬁnd that one of your variables isn’t quite
+equivalent to the variable that you really want. For instance, it’s often convenient to take a
+continuous-valued variable (e.g., age) and break it up into a smallish number of categories (e.g.,
+younger, middle, older). At other times, you may need to convert a numeric variable into a
+diﬀerent numeric variable (e.g., you may want to analyse at the absolute value of the
+original variable). In this section I’ll describe a few key ways you can do these things in
+jamovi.
+</p><!--l. 247--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.1   </span> <a 
+ id="x40-1050006.3.1"></a>Creating a transformed variable</h4>
+<!--l. 249--><p class="noindent" >The ﬁrst trick to discuss is the idea of <span id="textcolor151">transforming</span> a variable. Taken literally, anything you do to
+a variable is a transformation, but in practice what it usually means is that you apply a relatively
+simple mathematical function to the original variable in order to create a new variable that either
+(a) provides a better way of describing the thing you’re actually interested in, or (b) is more closely
+in agreement with the assumptions of the statistical tests you want to do. Since, at this stage, I
+haven’t talked about statistical tests or their assumptions, I’ll show you an example based on the
+ﬁrst case.
+</p><!--l. 251--><p class="indent" >   Suppose I’ve run a short study in which I ask 10 people a single question:
+      </p><div class="quote">
+      <!--l. 253--><p class="noindent" >On a scale of 1 (strongly disagree) to 7 (strongly agree), to what extent do you
+      agree with the proposition that “Dinosaurs are awesome”?</p></div>
+<!--l. 255--><p class="noindent" >Now let’s load and look at the data. The data ﬁle likert.omv contains a single variable that contains
+raw Likert-scale responses for these 10 people. However, if you think about it, this isn’t the best
+way to represent these responses. Because of the fairly symmetric way that we set up the response
+scale, there’s a sense in which the midpoint of the scale should have been coded as 0
+(no opinion), and the two endpoints should be  3 (strongly agree) and  3 (strongly
+disagree). By recoding the data in this way it’s a bit more reﬂective of how we really think
+about the responses. The recoding here is pretty straightforward, we just subtract 4
+                                                                                          
+
+                                                                                          
+from the raw scores. In jamovi you can do this by computing a new variable: click on
+the ‘Data’ - ‘Compute’ button and you will see that a new variable has been added to
+the spreadsheet. Let’s call this new variable likert.centred (go ahead and type that
+in) and then add the following in the formula box, like in Figure <a 
+href="#x40-1050015">6.5<!--tex4ht:ref: fig:likertraw --></a>: ‘likert.raw -
+4’
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-1050015"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 259--><p class="noindent" >
+
+</p><!--l. 260--><p class="noindent" ><img 
+src="../img/mechanics/likertraw.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.5: </span><span  
+class="content">Creating a new computed variable in jamovi</span></div><!--tex4ht:label?: x40-1050015 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 266--><p class="indent" >
+                                                                                          
+
+                                                                                          
+</p><!--l. 268--><p class="indent" >   One reason why it might be useful to have the data in this format is that there are a lot of
+situations where you might prefer to analyse the strength of the opinion separately from the
+direction of the opinion. We can do two diﬀerent transformations on this likert.centred
+variable in order to distinguish between these two diﬀerent concepts. First, to compute an
+opinion.strength variable, we want to take the absolute value of the centred data (using the ‘ABS’
+function).<span class="footnote-mark"><a 
+href="lsj46.html#fn6x7"><sup class="textsuperscript">6</sup></a></span><a 
+ id="x40-105002f6"></a> 
+In jamovi, create another new variable using the ‘Compute’ button. Name the variable
+opinion.strength and this time click on the f<sub class="textsubscript">x</sub> button next to the ‘Formula’ box. This shows the
+diﬀerent ‘Functions’ and ‘Variables’ that you can add to the ‘Formula’ box, so double click on
+‘ABS’ and then double click on “likert.centred’ and you will see that the ‘Formula’ box is populated
+with ABS(likert.centred) and a new variable has been created in the spreadsheet view, as in Figure
+<a 
+href="#x40-1050036">6.6<!--tex4ht:ref: fig:opinionstrength --></a>
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-1050036"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 272--><p class="noindent" >
+
+</p><!--l. 273--><p class="noindent" ><img 
+src="../img/mechanics/opinionstrength.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.6: </span><span  
+class="content">Using the f<sub class="textsubscript">x</sub> button to select functions and variables</span></div><!--tex4ht:label?: x40-1050036 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 281--><p class="noindent" >Second, to compute a variable that contains only the direction of the opinion and ignores the
+strength, we want to calculate the ‘sign’ of the variable. In jamovi we can use the IF function to do
+this. Create another new variable using the ‘Compute’ button, name this one opinion.sign, and
+then type the following into the function box:
+</p><!--l. 284--><p class="indent" >   IF(likert.centred == 0, 0, likert.centred / opinion.strength)
+</p><!--l. 286--><p class="indent" >   When done, you’ll see that all negative numbers from the likert.centred variable
+are converted to  1, all positive numbers are converted to 1 and zero stays as 0, like
+so:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-16">
+<span 
+class="cmtt-12">-1</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 1</span><span 
+class="cmtt-12"> -1</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 0</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 0</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 0</span><span 
+class="cmtt-12"> -1</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 1</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 1</span><span 
+class="cmtt-12"> </span><span 
+class="cmtt-12"> 1</span>
+</div>
+<!--l. 290--><p class="nopar" >
+</p><!--l. 292--><p class="indent" >   Let’s break down what this ‘IF’ command is doing. In jamovi there are three parts to an ‘IF’
+statement, written as ’IF(expression, value, else)’. The ﬁrst part, ‘expression’ can be a logical or
+mathematical statement. In our example, we have speciﬁed ‘likert.centred == 0’, which is TRUE
+for values where likert.centred is zero. The next part, ‘value’, is the new value where
+the expression in part one is TRUE. In our example, we have said that for all those
+values where likert.centred is zero, keep them zero. In the next part, ‘else’, we can enter
+another logical or mathematical statement to be used if part one evaluates to FALSE,
+i.e. where likert.centred is not zero. In our example we have divided likert.centred
+by opinion.strength to give ‘-1’ or ‘+1’ depending of the sign of the original value in
+likert.centred.<span class="footnote-mark"><a 
+href="lsj47.html#fn7x7"><sup class="textsuperscript">7</sup></a></span><a 
+ id="x40-105004f7"></a> 
+</p><!--l. 294--><p class="indent" >   And we’re done. We now have three shiny new variables, all of which are useful transformations
+of the original likert.raw data.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.2   </span> <a 
+ id="x40-1060006.3.2"></a>Collapsing a variable into a smaller number of discrete levels or categories</h4>
+<!--l. 298--><p class="noindent" >One pragmatic task that comes up quite often is the problem of collapsing a variable into a smaller
+number of discrete levels or categories. For instance, suppose I’m interested in looking at the age
+distribution of people at a social gathering:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-17">
+<span 
+class="cmtt-12">60,58,24,26,34,42,31,30,33,2,9</span>
+</div>
+<!--l. 301--><p class="nopar" >In some situations it can be quite helpful to group these into a smallish number of categories. For
+example, we could group the data into three broad categories: young (0-20), adult (21-40) and older
+(41-60). This is a quite coarse-grained classiﬁcation, and the labels that I’ve attached only make
+sense in the context of this data set (e.g., viewed more generally, a 42 year old wouldn’t
+consider themselves as “older”). We can slice this variable up quite easily using the
+jamovi ‘IF’ function that we have already used. This time we have to specify nested
+‘IF’ statements, meaning simply that IF the ﬁrst logical expression is TRUE, insert
+a ﬁrst value, but IF a second logical expression is TRUE, insert a second value, but
+IF a third logical expression is TRUE, then insert a third value. This can be written
+as:
+</p><!--l. 304--><p class="noindent" > IF(Age &#x003E;= 0 and Age &#x003C;= 20, 1, <br 
+class="newline" />IF(Age &#x003E;= 21 and Age &#x003C;= 40, 2, <br 
+class="newline" />IF(Age &#x003E;= 41 and Age &#x003C;= 60, 3 )))
+</p><!--l. 311--><p class="indent" >   Note that there are three left parentheses used during the nesting, so the whole statement has
+to end with three right parentheses otherwise you will get an error message. The jamovi screen shot
+for this data manipulation, along with an accompanying frequency table, is shown in Figure
+<a 
+href="#x40-1060017">6.7<!--tex4ht:ref: fig:agecats --></a>
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-1060017"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 314--><p class="noindent" >
+
+</p><!--l. 315--><p class="noindent" ><img 
+src="../img/mechanics/agecats.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.7: </span><span  
+class="content">Collapsing a variable into a smaller number of discrete levels using the jamovi
+‘IF’ function</span></div><!--tex4ht:label?: x40-1060017 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 322--><p class="indent" >   It’s important to take the time to ﬁgure out whether or not the resulting categories
+make any sense at all in terms of your research project. If they don’t make any sense to
+you as meaningful categories, then any data analysis that uses those categories is likely
+to be just as meaningless. More generally, in practice I’ve noticed that people have a
+very strong desire to carve their (continuous and messy) data into a few (discrete and
+simple) categories, and then run analyses using the categorised data instead of the original
+data.<span class="footnote-mark"><a 
+href="lsj48.html#fn8x7"><sup class="textsuperscript">8</sup></a></span><a 
+ id="x40-106002f8"></a>  I
+wouldn’t go so far as to say that this is an inherently bad idea, but it does have some fairly serious
+drawbacks at times, so I would advise some caution if you are thinking about doing
+it.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.3   </span> <a 
+ id="x40-1070006.3.3"></a>Creating a transformation that can be applied to multiple variables</h4>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-1070018"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 328--><p class="noindent" >
+
+</p><!--l. 329--><p class="noindent" ><img 
+src="../img/mechanics/transform1.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.8: </span><span  
+class="content">Creating a new variable transformation using the jamovi ‘Transform’ command</span></div><!--tex4ht:label?: x40-1070018 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 336--><p class="indent" >   Sometimes you want to apply the same transformation to more than one variable, for example
+when you have multiple questionnaire items that all need to be recalculated or recoded in the same
+way. And one of the neat features in jamovi is that you can create a transformation, using the
+‘Data’ - ‘Transform’ button, that can then be saved and applied to multiple variables. Let’s go back
+to the ﬁrst example above, using the data ﬁle likert.omv that contains a single variable with raw
+Likert-scale responses for 10 people. To create a transformation that you can save and then
+apply across multiple variables (assuming you had more variables like this in your data
+ﬁle), ﬁrst in the spreadsheet editor select (i.e., click) the variable you want to use to
+initially create the transformation. In our example this is likert.raw. Next click the
+‘Transform’ button in the jamovi ‘Data’ ribbon, and you’ll see something like Figure
+<a 
+href="#x40-1070018">6.8<!--tex4ht:ref: fig:transform1 --></a>.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-1070029"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 339--><p class="noindent" >
+
+</p><!--l. 340--><p class="noindent" ><img 
+src="../img/mechanics/transform2.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.9: </span><span  
+class="content">Specifying a transformation in jamovi, to be saved as the imaginatively named
+‘Transform 1’</span></div><!--tex4ht:label?: x40-1070029 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 347--><p class="indent" >   Give your new variable a name, let’s call it opinion.strength and then click on the ‘using
+transform’ selection box and select ‘Create New Transform...’. This is where you will create, and
+name, the transformation that can be re-applied to as many variables as you like. The
+transformation is automatically named for us as ‘Transform 1’ (imaginative, huh. You can change
+this if you like). Then type the expression “ABS($source - 4)” into the function text box,
+as in Figure <a 
+href="#x40-1070029">6.9<!--tex4ht:ref: fig:transform2 --></a>, press Enter or Return on your keyboard and, hey presto, you have
+created a new transformation and applied it to the likert.raw variable! Good, eh.
+Note that instead of using the variable label in the expression, we have instead used
+‘$source’. This is so that we can then use the same transformation with as many diﬀerent
+variables as we like - jamovi requires you to use ‘$source’ to refer to the source variable
+you are transforming. Your transformation has also been saved and can be re-used any
+time you like (providing you save the dataset as an ‘.omv’ ﬁle, otherwise you’ll lose
+it!).
+</p><!--l. 349--><p class="indent" >   You can also create a transformation with the second example we looked at, the age distribution
+of people at a social gathering. Go on, you know you want to! Remember that we collapsed this
+variable into three groups: younger, adult and older. This time we will achieve the same thing, but
+using the jamovi ‘Transform’ - ‘Add condition’ button. With this data set (go back to it or create it
+again if you didn’t save it) set up a new variable transformation. Call the transformed variable
+AgeCats and the transformation you will create Agegroupings. Then click on the big
+“+” sign next to the function box. This is the ‘Add condition’ button and I’ve stuck
+a big red arrow onto Figure <a 
+href="#x40-10700310">6.10<!--tex4ht:ref: fig:transform3 --></a> so you can see exactly where this is. Re-create the
+transformation shown in Figure <a 
+href="#x40-10700310">6.10<!--tex4ht:ref: fig:transform3 --></a> and when you have done, you will see the new values
+appear in the spreadsheet window. What’s more, the Agegroupings transformation has
+been saved and can be re-applied any time you like. Ok, so I know that it’s unlikely
+you will have more than one ‘Age’ variable, but you get the idea now of how to set up
+transformations in jamovi, so you can follow this idea with other sorts of variables. A typical
+scenario for this is when you have a questionnaire scale with, say, 20 items (variables)
+and each item was originally scored from 1 to 6 but, for some reason or quirk of the
+data you decide to recode all the items as 1 to 3. You can easily do this in jamovi by
+creating and then re-applying your transformation for each variable that you want to
+recode.
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-10700310"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 352--><p class="noindent" >
+
+</p><!--l. 353--><p class="noindent" ><img 
+src="../img/mechanics/transform3.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.10: </span><span  
+class="content">jamovi transformation into three age categories, using the ‘Add condition’
+button</span></div><!--tex4ht:label?: x40-10700310 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 360--><p class="indent" >
+                                                                                          
+
+                                                                                          
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6.4   </span> <a 
+ id="x40-1080006.4"></a>A few more mathematical functions and operations </h3>
+<!--l. 364--><p class="noindent" >In Section <a 
+href="#x40-1040006.3">6.3<!--tex4ht:ref: sec:transform --></a> I discussed the ideas behind variable transformations and showed that
+a lot of the transformations that you might want to apply to your data are based on
+fairly simple mathematical functions and operations. In this section I want to return
+to that discussion and mention several other mathematical functions and arithmetic
+operations that are actually quite useful for a lot of real world data analysis. Table <a 
+href="#x40-1080024">6.4<!--tex4ht:ref: tab:mathfunc --></a> gives
+a brief overview of the various mathematical functions I want to talk about here, or
+later.<span class="footnote-mark"><a 
+href="lsj49.html#fn9x7"><sup class="textsuperscript">9</sup></a></span><a 
+ id="x40-108001f9"></a> 
+Obviously this doesn’t even come close to cataloguing the range of possibilities available, but it
+does cover a range of functions that are used regularly in data analysis and that are available in
+jamovi.
+</p>
+   <div class="table">
+                                                                                          
+
+                                                                                          
+<!--l. 367--><p class="indent" >   <a 
+ id="x40-1080024"></a></p><hr class="float" /><div class="float" 
+>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 367--><p class="noindent" >
+<br /> </p><div class="caption" 
+><span class="id">Table 6.4: </span><span  
+class="content">Some of the mathematical functions available in jamovi</span></div><!--tex4ht:label?: x40-1080024 -->
+<div class="tabular"> <table id="TBL-19" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-19-1g"><col 
+id="TBL-19-1" /><col 
+id="TBL-19-2" /><col 
+id="TBL-19-3" /><col 
+id="TBL-19-4" /></colgroup><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-1-1"  
+class="td11">                        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-1-2"  
+class="td11">function              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-1-3"  
+class="td11">example input      </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-1-4"  
+class="td11">(answer)</td>
+</tr><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-2-1"  
+class="td11">square root           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-2-2"  
+class="td11">SQRT(x)         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-2-3"  
+class="td11">SQRT(25)        </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-2-4"  
+class="td11">       <span id="textcolor159">5</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-3-1"  
+class="td11">absolute value       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-3-2"  
+class="td11">ABS(x)          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-3-3"  
+class="td11">ABS(-23)        </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-3-4"  
+class="td11">      <span id="textcolor160">23</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-4-1"  
+class="td11">logarithm (base 10)</td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-4-2"  
+class="td11">LOG10(x)        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-4-3"  
+class="td11">LOG10(1000)     </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-4-4"  
+class="td11">       <span id="textcolor161">3</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-5-1"  
+class="td11">logarithm (base e)  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-5-2"  
+class="td11">LN(x)           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-5-3"  
+class="td11">LN(1000)        </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-5-4"  
+class="td11">   <span id="textcolor162">6.908</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-6-1"  
+class="td11">exponentiation      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-6-2"  
+class="td11">EXP(x)          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-6-3"  
+class="td11">EXP(6.908)      </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-6-4"  
+class="td11"><span id="textcolor163">1000.245</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-7-1"  
+class="td11">box-cox                </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-7-2"  
+class="td11">BOXCOX(x, lamda)</td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-7-3"  
+class="td11">BOXCOX(6.908, 3)</td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-7-4"  
+class="td11"> <span id="textcolor164">109.551</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-8-1"  
+class="td11">rounding to nearest</td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-8-2"  
+class="td11">round()         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-8-3"  
+class="td11">round(1.32)     </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-8-4"  
+class="td11">       <span id="textcolor165">1</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-9-1"  
+class="td11">rounding down      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-9-2"  
+class="td11">floor()         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-9-3"  
+class="td11">floor(1.32)     </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-9-4"  
+class="td11">       <span id="textcolor166">1</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-10-1"  
+class="td11">rounding up          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-10-2"  
+class="td11">ceiling()       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-19-10-3"  
+class="td11">ceiling(1.32)   </td><td  style="white-space:nowrap; text-align:right;" id="TBL-19-10-4"  
+class="td11">       <span id="textcolor167">2</span></td>
+</tr><tr 
+class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-19-11-1"  
+class="td11">                </td></tr></table></div></div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfloat" />
+   </div>
+   <h4 class="subsectionHead"><span class="titlemark">6.4.1   </span> <a 
+ id="x40-1090006.4.1"></a>Logarithms and exponentials</h4>
+<!--l. 390--><p class="noindent" >As I’ve mentioned earlier, jamovi has an useful range of mathematical functions built into it and
+there really wouldn’t be much point in trying to describe or even list all of them. For the most part,
+I’ve focused only on those functions that are strictly necessary for this book. However I do want to
+make an exception for logarithms and exponentials. Although they aren’t needed anywhere else in
+this book, they are everywhere in statistics more broadly. And not only that, there are a lot of
+situations in which it is convenient to analyse the logarithm of a variable (i.e., to take a
+“log-transform” of the variable). I suspect that many (maybe most) readers of this book will
+have encountered logarithms and exponentials before, but from past experience I know
+that there’s a substantial proportion of students who take a social science statistics
+class who haven’t touched logarithms since high school, and would appreciate a bit of a
+refresher.
+</p><!--l. 392--><p class="indent" >   In order to understand logarithms and exponentials, the easiest thing to do is to actually
+calculate them and see how they relate to other simple calculations. There are three jamovi
+functions in particular that I want to talk about, namely LN(), LOG10() and EXP(). To start
+with, let’s consider LOG10(), which is known as the “logarithm in base 10”. The trick
+to understanding a <span id="textcolor168">logarithm</span> is to understand that it’s basically the “opposite” of
+taking a power. Speciﬁcally, the logarithm in base 10 is closely related to the powers
+of 10. So let’s start by noting that 10-cubed is 1000. Mathematically, we would write
+this:
+</p>
+   <center class="math-display" >
+<img 
+src="lsj30x.png" alt="103    1000  " class="math-display"  /></center> The
+trick to understanding a logarithm is to recognise that the statement that “10 to the power of 3 is
+equal to 1000” is equivalent to the statement that “the logarithm (in base 10) of 1000 is equal to
+3”. Mathematically, we write this as follows,
+                                                                                          
+
+                                                                                          
+   <center class="math-display" >
+<img 
+src="lsj31x.png" alt="log10p1000q    3
+" class="math-display"  /></center>
+<!--l. 401--><p class="indent" >   Okay, since the LOG10() function is related to the powers of 10, you might expect that there are
+other logarithms (in bases other than 10) that are related to other powers too. And of course that’s
+true: there’s not really anything mathematically special about the number 10. You and I happen to
+ﬁnd it useful because decimal numbers are built around the number 10, but the big bad world of
+mathematics scoﬀs at our decimal numbers. Sadly, the universe doesn’t actually care how we write
+down numbers. Anyway, the consequence of this cosmic indiﬀerence is that there’s nothing
+particularly special about calculating logarithms in base 10. You could, for instance,
+calculate your logarithms in base 2. Alternatively, a third type of logarithm, and one
+we see a lot more of in statistics than either base 10 or base 2, is called the <span id="textcolor169">natural
+logarithm</span>, and corresponds to the logarithm in base e. Since you might one day run into
+it, I’d better explain what e is. The number e, known as <span id="textcolor170">Euler’s number</span>, is one of
+those annoying “irrational” numbers whose decimal expansion is inﬁnitely long, and is
+considered one of the most important numbers in mathematics. The ﬁrst few digits of e
+are:
+</p>
+   <center class="math-display" >
+<img 
+src="lsj32x.png" alt="e    2.718282  " class="math-display"  /></center>
+There are quite a few situation in statistics that require us to calculate powers of e, though none of
+them appear in this book. Raising e to the power x is called the <span id="textcolor171">exponential</span> of x, and so it’s very
+common to see e<sup>x</sup> written as exppxq. And so it’s no surprise that jamovi has a function that
+calculates exponentials, called EXP(). Because the number e crops up so often in statistics, the
+natural logarithm (i.e., logarithm in base e) also tends to turn up. Mathematicians often write it as
+log <sub>e</sub>pxq or lnpxq. In fact, jamovi works the same way: the LN() function corresponds to the natural
+logarithm.
+                                                                                          
+
+                                                                                          
+<!--l. 407--><p class="indent" >   And with that, I think we’ve had quite enough exponentials and logarithms for this
+book!
+</p><!--l. 414--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6.5   </span> <a 
+ id="x40-1100006.5"></a>Extracting a subset of the data </h3>
+<!--l. 416--><p class="noindent" >One very important kind of data handling is being able to extract a particular subset of the data.
+For instance, you might be interested only in analysing the data from one experimental condition,
+or you may want to look closely at the data from people over 50 years in age. To do this, the ﬁrst
+step is getting jamovi to ﬁlter the subset of the data corresponding to the observations that you’re
+interested in.
+</p><!--l. 418--><p class="indent" >   This section returns to the nightgarden.csv data set. If you’re reading this whole chapter in
+one sitting, then you should already have this data set loaded into a jamovi window. For this
+section, let’s focus on the two variables speaker and utterance (see Section <a 
+href="#x40-970006.1">6.1<!--tex4ht:ref: sec:freqtables --></a> if you’ve
+forgotten what those variables look like). Suppose that what I want to do is pull out
+only those utterances that were made by Makka-Pakka. To that end, we need to specify
+a ﬁlter in jamovi. First open up a ﬁlter window by clicking on ‘Filters’ on the main
+jamovi ‘Data’ toolbar. Then, in the ‘Filter 1’ text box, next to the ‘=’ sign, type the
+following:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-18">
+<span 
+class="cmtt-12">speaker</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> ’makka-pakka’</span>
+</div>
+<!--l. 421--><p class="nopar" >
+</p>
+   <hr class="figure" /><div class="figure" 
+>
+                                                                                          
+
+                                                                                          
+<a 
+ id="x40-11000111"></a>
+                                                                                          
+
+                                                                                          
+<div class="center" 
+>
+<!--l. 425--><p class="noindent" >
+
+</p><!--l. 426--><p class="noindent" ><img 
+src="../img/mechanics/subset1.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 6.11: </span><span  
+class="content">Creating a subset of the nightgarden data using the jamovi ‘Filters’ option</span></div><!--tex4ht:label?: x40-11000111 -->
+</div>
+                                                                                          
+
+                                                                                          
+   </div><hr class="endfigure" />
+<!--l. 433--><p class="indent" >   When you have done this, you will see that a new column has been added to the spreadsheet
+window (see Figure <a 
+href="#x40-11000111">6.11<!--tex4ht:ref: fig:subset1 --></a>), labelled ‘Filter 1’, with the cases where speaker <span class="underline">is not</span> ‘makka-pakka’
+greyed-out (i.e., ﬁltered out) and, conversely, the cases where speaker <span class="underline">is</span> ‘makka-pakka’ have a
+green check mark indicating they are ﬁltered in. You can test this by running ‘Exploration’ -
+‘Descriptives’ - ‘Frequency tables’ for the speaker variable and seeing what that shows. Go on, try
+it!
+</p><!--l. 436--><p class="indent" >   Following on from this simple example, you can also build up more complex ﬁlters using logical
+expressions in jamovi. For instance, suppose I wanted to keep only those cases when the utterance
+is either “pip” or “oo”. In this case in the ‘Filter 1’ text box, next to the ‘=’ sign, you would type
+the following:
+                                                                                          
+
+                                                                                          
+</p>
+   <div class="verbatim" id="verbatim-19">
+<span 
+class="cmtt-12">utterance</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> ’pip’</span><span 
+class="cmtt-12"> or</span><span 
+class="cmtt-12"> utterance</span><span 
+class="cmtt-12"> ==</span><span 
+class="cmtt-12"> ’oo’</span>
+</div>
+<!--l. 439--><p class="nopar" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6.6   </span> <a 
+ id="x40-1110006.6"></a>Summary</h3>
+<!--l. 625--><p class="noindent" >Obviously, there’s no real coherence to this chapter. It’s just a grab bag of topics and tricks that
+can be handy to know about, so the best wrap up I can give here is just to repeat this
+list:
+</p>
+      <ul class="itemize1">
+      <li class="itemize">Section <a 
+href="#x40-970006.1">6.1<!--tex4ht:ref: sec:freqtables --></a>. Tabulating data.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1000006.2">6.2<!--tex4ht:ref: sec:logicals --></a>. Using logical expressions.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1040006.3">6.3<!--tex4ht:ref: sec:transform --></a>. Transforming or recoding a variable.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1080006.4">6.4<!--tex4ht:ref: sec:mathfunc --></a>. Some useful mathematical functions.
+      </li>
+      <li class="itemize">Section <a 
+href="#x40-1100006.5">6.5<!--tex4ht:ref: sec:subset --></a>. Extracting a subset of a data set.</li></ul>
+                                                                                          
+
+                                                                                          
+   <!--l. 43--><div class="crosslinks"><p class="noindent">[<a 
+href="lsjch5.html" >prev</a>] [<a 
+href="lsjch5.html#taillsjch5.html" >prev-tail</a>] [<a 
+href="lsjch6.html" >front</a>] [<a 
+href="lsjpa3.html#lsjch6.html" >up</a>] </p></div>
+<!--l. 43--><p class="indent" >   <a 
+ id="taillsjch6.html"></a>  </p> 
+</body></html> 

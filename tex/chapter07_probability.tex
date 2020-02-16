@@ -6,8 +6,7 @@
 \chapter{Introduction to probability\label{ch:probability}}
 
 \begin{quote}
-{\it [God] has afforded us only the twilight \ldots of Probability.} 
-
+{\it [God] has afforded us only the twilight \ldots of Probability.} \\
 \hspace*{2cm} -- John Locke
 \end{quote}
 
@@ -17,12 +16,10 @@ Up to this point in the book we've discussed some of the key ideas in experiment
 
 Once you start thinking about statistics in these terms, that statistics is there to help us draw inferences from data, you start seeing examples of it everywhere. For instance, here's a tiny extract from a newspaper article in the Sydney Morning Herald (30 Oct 2010):
 
-\small
 \begin{quote}
 ``I have a tough job,'' the Premier said in response to a poll which found her government is now the most unpopular Labor administration in polling history, with a primary vote of just 23 per cent.
 \end{quote}
 
-\normalsize
 This kind of remark is entirely unremarkable in the papers or in everyday life, but let's have a think about what it entails. A polling company has conducted a survey, usually a pretty big one because they can afford it. I'm too lazy to track down the original survey so let's just imagine that they called 1000 New South Wales (NSW) voters at random, and 230 (23\%) of those claimed that they intended to vote for the Australian Labor Party (ALP). For the 2010 Federal election the Australian Electoral Commission reported 4,610,795 enrolled voters in NSW, so the opinions of the remaining 4,609,795 voters (about 99.98\% of voters) remain unknown to us. Even assuming that no-one lied to the polling company the only thing we can say with 100\% confidence is that the true ALP primary vote is somewhere between 230/4610795 (about 0.005\%) and 4610025/4610795 (about 99.83\%). So, on what basis is it legitimate for the polling company, the newspaper, and the readership to conclude that the ALP primary vote is only about 23\%?
 
 The answer to the question is pretty obvious. If I call 1000 people at random, and 230 of them say they intend to vote for the ALP, then it seems very unlikely that these are the {\it only} 230 people out of the entire voting public who actually intend to vote ALP. In other words, we assume that the data collected by the polling company is pretty representative of the population at large. But how representative? Would we be surprised to discover that the true ALP primary vote is actually 24\%? 29\%? 37\%? At this point everyday intuition starts to break down a bit. No-one would be surprised by 24\%, and everybody would be surprised by 37\%, but it's a bit hard to say whether 29\% is plausible. We need some more powerful tools than just looking at the numbers and guessing.
@@ -75,7 +72,7 @@ So I'll have a go at it. Let's suppose I want to bet on a soccer game between tw
 \end{itemize}
 Each of these seems sensible. However, they're not identical and not every statistician would endorse all of them. The reason is that there are different statistical ideologies (yes, really!) and depending on which one you subscribe to, you might say that some of those statements are meaningless or irrelevant. In this section I give a brief introduction the two main approaches that exist in the literature. These are by no means the only approaches, but they're the two big ones. 
 
-\SUBSECTION{The frequentist view}
+\subsection{The frequentist view}
 
 The first of the two major approaches to probability, and the more dominant one in statistics, is referred to as the \keyterm{frequentist view} and it defines probability as a \keyterm{long-run frequency}. Suppose we were to try flipping a fair coin over and over again. By definition this is a coin that has $P(H) = 0.5$. What might we observe? One possibility is that the first 20 flips might look like this:
 \begin{verbatim}
@@ -84,16 +81,22 @@ T,H,H,H,H,T,T,H,H,H,H,T,H,H,T,T,T,T,T,H
 In this case 11 of these 20 coin flips (55\%) came up heads. Now suppose that I'd been keeping a running tally of the number of heads (which I'll call $N_H$) that I've seen, across the first $N$ flips, and calculate the proportion of heads $N_H / N$ every time. Here's what I'd get (I did literally flip coins to produce this!):
 \begin{center}
 \begin{tabular}{l}
-\begin{tabular}{l|cccccccccc}
-number of flips &1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
-number of heads & 0 & 1 & 2 & 3 & 4 & 4 & 4 & 5 & 6 & 7  \\ \hline
-proportion    & .00 & .50 & .67 & .75 & .80 & .67 & .57 & .63 & .67 & .70 \\
+\begin{tabular}{lrrrrrrrrrrr}
+\hline
+number of flips &   1 &   2 &   3 &   4 &   5 &   6 &   7 &   8 &   9 &  10 \\
+number of heads &   0 &   1 &   2 &   3 &   4 &   4 &   4 &   5 &   6 &   7 \\
+\hline
+proportion      & .00 & .50 & .67 & .75 & .80 & .67 & .57 & .63 & .67 & .70 \\
+\hline
 \end{tabular} \\ \vspace*{12pt}
 \\
-\begin{tabular}{l|cccccccccc}
-number of flips & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
-number of heads & 8  &  8 &  9 & 10 & 10 & 10 & 10 & 10 & 10 & 11 \\ \hline
-proportion & .73 & .67 & .69 & .71 & .67 &  .63 & .59 & .56 & .53 & .55\\
+\begin{tabular}{lrrrrrrrrrrr}
+\hline
+number of flips &  11 &  12 &  13 &  14 &  15 &  16 &  17 &  18 &  19 &  20 \\
+number of heads &   8 &   8 &   9 &  10 &  10 &  10 &  10 &  10 &  10 &  11 \\
+\hline
+proportion      & .73 & .67 & .69 & .71 & .67 & .63 & .59 & .56 & .53 & .55 \\
+\hline
 \end{tabular}
 \end{tabular}
 \end{center}
@@ -105,7 +108,7 @@ Notice that at the start of the sequence the {\it proportion} of heads fluctuate
 \epsfig{file=../img/probability/frequentistProb.eps,clip=true,width=14cm}
 \caption{An illustration of how frequentist probability works. If you flip a fair coin over and over again the proportion of heads that you've seen eventually settles down and converges to the true probability of 0.5. Each panel shows four different simulated experiments. In each case we pretend we flipped a coin 1000 times and kept track of the proportion of flips that were heads as we went along. Although none of these sequences actually ended up with an exact value of .5, if we'd extended the experiment for an infinite number of coin flips they would have.}
 \label{fig:frequentistprobability}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -113,7 +116,7 @@ The frequentist definition of probability has some desirable characteristics. Fi
 
 However, it also has undesirable characteristics. First, infinite sequences don't exist in the physical world. Suppose you picked up a coin from your pocket and started to flip it. Every time it lands it impacts on the ground. Each impact wears the coin down a bit. Eventually the coin will be destroyed. So, one might ask whether it really makes sense to pretend that an ``infinite'' sequence of coin flips is even a meaningful concept, or an objective one. We can't say that an ``infinite sequence'' of events is a real thing in the physical universe, because the physical universe doesn't allow infinite anything.  More seriously, the frequentist definition has a narrow scope. There are lots of things out there that human beings are happy to assign probability to in everyday language, but cannot (even in theory) be mapped onto a hypothetical sequence of events. For instance, if a meteorologist comes on TV and says ``the probability of rain in Adelaide on 2 November 2048 is 60\%'' we humans are happy to accept this. But it's not clear how to define this in frequentist terms. There's only one city of Adelaide, and only one 2 November 2048. There's no infinite sequence of events here, just a one-off thing. Frequentist probability genuinely {\it forbids} us from making probability statements about a single event. From the frequentist perspective it will either rain tomorrow or it will not. There is no ``probability'' that attaches to a single non-repeatable event. Now, it should be said that there are some very clever tricks that frequentists can use to get around this. One possibility is that what the meteorologist means is something like ``There is a category of days for which I predict a 60\% chance of rain, and if we look only across those days for which I make this prediction, then on 60\% of those days it will actually rain''. It's very weird and counterintuitive to think of it this way, but you do see frequentists do this sometimes. And it {\it will} come up later in this book (see Section~\ref{sec:ci}).
 
-\SUBSECTION{The Bayesian view}
+\subsection{The Bayesian view}
 
 The \keyterm{Bayesian view} of probability is often called the subjectivist view, and although it has been a minority view among statisticians it has been steadily gaining traction for the last several decades. There are many flavours of Bayesianism, making it hard to say exactly what ``the'' Bayesian view is. The most common way of thinking about subjective probability is to define the probability of an event as the \keyterm{degree of belief} that an intelligent and rational agent assigns to that truth of that event. From that perspective, probabilities don't exist in the world but rather in the thoughts and assumptions of people and other intelligent beings.
 
@@ -121,7 +124,7 @@ However, in order for this approach to work we need some way of operationalising
 
 What are the advantages and disadvantages to the Bayesian approach? The main advantage is that it allows you to assign probabilities to any event you want to. You don't need to be limited to those events that are repeatable. The main disadvantage (to many people) is that we can't be purely objective. Specifying a probability requires us to specify an entity that has the relevant degree of belief. This entity might be a human, an alien, a robot, or even a statistician. But there has to be an intelligent agent out there that believes in things. To many people this is uncomfortable, it seems to make probability arbitrary. Whilst the Bayesian approach requires that the agent in question be rational (i.e., obey the rules of probability), it does allow everyone to have their own beliefs. I can believe the coin is fair and you don't have to, even though we're both rational. The frequentist view doesn't allow any two observers to attribute different probabilities to the same event. When that happens then at least one of them must be wrong. The Bayesian view does not prevent this from occurring. Two observers with different background knowledge can legitimately hold different beliefs about the same event. In short, where the frequentist view is sometimes considered to be too narrow (forbids lots of things that that we want to assign probabilities to), the Bayesian view is sometimes thought to be too broad (allows too many differences between observers). 
 
-\SUBSECTION{What's the difference? And who is right?}
+\subsection{What's the difference? And who is right?}
 
 Now that you've seen each of these two views independently it's useful to make sure you can compare the two. Go back to the hypothetical robot soccer game at the start of the section. What do you think a frequentist and a Bayesian would say about these three statements? Which statement would a frequentist say is the correct definition of probability? Which one would a Bayesian opt for? Would some of these statements be meaningless to a frequentist or a Bayesian? If you've understood the two perspectives you should have some sense of how to answer those questions.
 
@@ -136,7 +139,7 @@ In any case, whilst I personally prefer the Bayesian view, the majority of stati
 
 Ideological arguments between Bayesians and frequentists notwithstanding, it turns out that people mostly agree on the rules that probabilities should obey. There are lots of different ways of arriving at these rules. The most commonly used approach is based on the work of Andrey Kolmogorov, one of the great Soviet mathematicians of the 20th century. I won't go into a lot of detail, but I'll try to give you a bit of a sense of how it works. And in order to do so I'm going to have to talk about my trousers.
 
-\SUBSECTION{Introducing probability distributions}
+\subsection{Introducing probability distributions}
 
 One of the disturbing truths about my life is that I only own 5 pairs of trousers. Three pairs of jeans, the bottom half of a suit, and a pair of tracksuit pants. Even sadder, I've given them names: I call them $X_1$, $X_2$, $X_3$, $X_4$ and $X_5$. I really have, that's why they call me Mister Imaginative. Now, on any given day, I pick out exactly one of pair of trousers to wear. Not even I'm so stupid as to try to wear two pairs of trousers, and thanks to years of training I never go outside without wearing trousers anymore. If I were to describe this situation using the language of probability theory, I would refer to each pair of trousers (i.e., each $X$) as an \keyterm{elementary event}. The key characteristic of elementary events is that every time we make an observation (e.g., every time I put on a pair of trousers) then the outcome will be one and only one of these events. Like I said, these days I always wear exactly one pair of trousers so my trousers satisfy this constraint. Similarly, the set of all possible events is called a \keyterm{sample space}. Granted, some people would call it a ``wardrobe'', but that's because they're refusing to think about my trousers in probabilistic terms. Sad.  
 
@@ -144,13 +147,16 @@ Okay, now that we have a sample space (a wardrobe), which is built from lots of 
 
 At this point, we're almost done. The last thing we need to recognise is that ``something always happens''. Every time I put on trousers, I really do end up wearing trousers (crazy, right?). What this somewhat trite statement means, in probabilistic terms, is that the probabilities of the elementary events need to add up to 1. This is known as the \keyterm{law of total probability}, not that any of us really care. More importantly, if these requirements are satisfied then what we have is a \keyterm{probability distribution}. For example, this is an example of a probability distribution:
 \begin{center}
-\begin{tabular}{lcc} 
-Which trousers?     &  Label & Probability \\ \hline
-Blue jeans &  $X_1$ & $P(X_1) = .5 $ \\
-Grey jeans  &  $X_2$ & $P(X_2) = .3 $ \\
-Black jeans      &  $X_3$ & $P(X_3) = .1 $ \\
-Black suit       &  $X_4$ & $P(X_4) = 0  $ \\
-Blue tracksuit  &  $X_5$ & $P(X_5) = .1 $ \\
+\begin{tabular}{lcl}
+\hline
+Which trousers? & Label & Probability    \\
+\hline
+Blue jeans      & $X_1$ & $P(X_1) = .5 $ \\
+Grey jeans      & $X_2$ & $P(X_2) = .3 $ \\
+Black jeans     & $X_3$ & $P(X_3) = .1 $ \\
+Black suit      & $X_4$ & $P(X_4) =  0 $ \\
+Blue tracksuit  & $X_5$ & $P(X_5) = .1 $ \\
+\hline
 \end{tabular}
 \end{center}
 Each of the events has a probability that lies between 0 and 1, and if we add up the probability of all events they sum to 1. Awesome. We can even draw a nice bar graph (see Section~\ref{sec:bargraph}) to visualise this distribution, as shown in Figure~\ref{fig:pantsprob}. And, at this point, we've all achieved something. You've learned what a probability distribution is, and I've finally managed to find a way to create a graph that focuses entirely on my trousers. Everyone wins!
@@ -160,7 +166,7 @@ Each of the events has a probability that lies between 0 and 1, and if we add up
 \epsfig{file=../img/probability/pantsDistribution.eps,clip=true,width=12cm}
 \caption{A visual depiction of the ``trousers'' probability distribution. There are five ``elementary events'', corresponding to the five pairs of trousers that I own. Each event has some probability of occurring: this probability is a number between 0 to 1. The sum of these probabilities is 1.}
 \label{fig:pantsprob}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -177,17 +183,18 @@ At this point you might be thinking that this is all terribly obvious and simple
 \label{tab:probrules}
 \begin{center}
 \begin{tabular}{lrcl}
-English & Notation & & Formula \\ \hline
-not $A$ & $P(\neg A)$ &$=$& $1-P(A)$ \\
-$A$ or $B$ & $P(A \cup B)$ &$=$& $P(A) + P(B) - P(A \cap B)$ \\
-$A$ and $B$ & $P(A \cap B)$ &$=$& $P(A|B) P(B)$ \\
-%$A$ given $B$ & $P(A \given B)$ &$=$& $P(A \cap B) / P(B)$ \\
+\hline
+English        & Notation        & ~   & Formula                     \\
+\hline
+not $A$        & $P(\neg A)$     & $=$ & $1-P(A)$                    \\
+$A$ or $B$     & $P(A \cup B)$   & $=$ & $P(A) + P(B) - P(A \cap B)$ \\
+$A$ and $B$    & $P(A \cap B)$   & $=$ & $P(A|B) P(B)$               \\
+%$A$ given $B$ & $P(A \given B)$ & $=$ & $P(A \cap B) / P(B)$        \\
+\hline
 \end{tabular}
-\tabcapsep \HR
+\tabcapsep %\HR
 \end{center}
 \end{table}
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -252,10 +259,13 @@ Excellent. It all seems to work.
 Wow, I can hear you saying. That's a lot of $x$s to tell me the freaking obvious. And you're right: this {\it is} freaking obvious. The whole {\it point} of probability theory to to formalise and mathematise a few very basic common sense intuitions. So let's carry this line of thought forward a bit further. In the last section I defined an event corresponding to {\bf not} A, which I denoted $\neg A$. Let's now define two new events that correspond to important everyday concepts: $A$ {\bf and} $B$, and $A$ {\bf or} $B$. To be precise:
 
 \begin{center}
-\begin{tabular}{l|c}
-English statement: & Mathematical notation: \\ \hline
-``$A$ and $B$'' both happen & $A \cap B$ \\
-at least one of ``$A$ or $B$'' happens & $A \cup B$
+\begin{tabular}{lc}
+\hline
+English statement:                     & Mathematical notation: \\
+\hline
+``$A$ and $B$'' both happen            & $A \cap B$ \\
+at least one of ``$A$ or $B$'' happens & $A \cup B$ \\
+\hline
 \end{tabular}
 \end{center}
 
@@ -324,13 +334,16 @@ The next concept we need to define is the notion of ``$B$ given $A$'', which is 
 \end{itemize}
 There's only one way to satisfy these constraints: set the impossible events to have zero probability (i.e., $P(x | A) = 0$ if $x$ is not in $A$), and then divide the probabilities of all the others by $P(A)$. In this case, since $P(A) = 0.9$, we divide by 0.9. This gives: 
 \begin{center}
-\begin{tabular}{llcc}
-which pants? & elementary event & old prob, $P(x)$ & new prob, $P(x | A)$ \\ \hline
-blue jeans &  $x_1$ &  0.5  & 0.556 \\
-grey jeans &  $x_2$ & 0.3  & 0.333 \\
-black jeans & $x_3$ & 0.1  &  0.111 \\
-black suit & $x_4$ & 0     &  0  \\
-blue tracksuit & $x_5$ & 0.1  & 0 \\
+\begin{tabular}{llrr}
+\hline
+which pants?   & elementary event & old prob, $P(x)$ & new prob, $P(x | A)$ \\
+\hline
+blue jeans     & $x_1$            &             0.5  & 0.556 \\
+grey jeans     & $x_2$            &             0.3  & 0.333 \\
+black jeans    & $x_3$            &             0.1  & 0.111 \\
+black suit     & $x_4$            &               0  & 0     \\
+blue tracksuit & $x_5$            &             0.1  & 0     \\
+\hline
 \end{tabular}
 \end{center}
 In mathematical terms, we say that 
@@ -364,23 +377,22 @@ which is the third rule that we had listed in Table~\ref{tab:probrules}.
 
 As you might imagine, probability distributions vary enormously and there's an enormous range of distributions out there. However, they aren't all equally important. In fact, the vast majority of the content in this book relies on one of five distributions: the binomial distribution, the normal distribution, the $t$ distribution, the $\chi^2$ (``chi-square'') distribution and the $F$ distribution. Given this, what I'll do over the next few sections is provide a brief introduction to all five of these, paying special attention to the binomial and the normal. I'll start with the binomial distribution since it's the simplest of the five.
 
-\SUBSECTION{Introducing the binomial}
+\subsection{Introducing the binomial}
 
 The theory of probability originated in the attempt to describe how games of chance work, so it seems fitting that our discussion of the \keyterm{binomial distribution} should involve a discussion of rolling dice and flipping coins. Let's imagine a simple ``experiment''. In my hot little hand I'm holding 20 identical six-sided dice. On one face of each die there's a picture of a skull, the other five faces are all blank. If I proceed to roll all 20 dice, what's the probability that I'll get exactly 4 skulls? Assuming that the dice are fair, we know that the chance of any one die coming up skulls is 1 in 6. To say this another way, the skull probability for a single die is approximately $.167$. This is enough information to answer our question, so let's have a look at how it's done. 
 
 \vspace*{0.5cm}
 \begin{table}[htb]
 \begin{center}
-\begin{mdframed}[style=MyFrame,nobreak=true]
+%\begin{mdframed}[style=MyFrame,nobreak=true]
 \caption{Formulas for the binomial and normal distributions. We don't really use these formulas for anything in this book, but they're pretty important for more advanced work, so I thought it might be best to put them here in a table, where they can't get in the way of the text. In the equation for the binomial, $X!$ is the factorial function (i.e., multiply all whole numbers from 1 to $X$), and for the normal distribution ``exp'' refers to the exponential function, which we discussed in Chapter~\ref{ch:datahandling}. If these equations don't make a lot of sense to you, don't worry too much about them. } 
 \label{tab:distformulas}
 \tabcapsep
 \begin{tabular}{ccc}
-\underline{Binomial} &\hspace*{.5cm}& \underline{Normal} \\ 
-$P(X \ | \ \theta, N) = \displaystyle\frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}$ & &
-$p(X \ | \ \mu, \sigma) = \displaystyle\frac{1}{\sqrt{2\pi}\sigma} \exp \left( -\frac{(X - \mu)^2}{2\sigma^2} \right)$ 
+\underline{Binomial}                                                                  &\hspace*{.5cm} & \underline{Normal} \\ 
+$P(X \ | \ \theta, N) = \displaystyle\frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}$ &               & $p(X \ | \ \mu, \sigma) = \displaystyle\frac{1}{\sqrt{2\pi}\sigma} \exp \left( -\frac{(X - \mu)^2}{2\sigma^2} \right)$ \\
 \end{tabular}
-\end{mdframed}
+%\end{mdframed}
 \end{center}
 \end{table}
 
@@ -399,7 +411,7 @@ Yeah, yeah. I know what you're thinking: notation, notation, notation. Really, w
 \begin{center}
 \epsfig{file=../img/probability/binomSkulls20.eps,clip=true,width=12cm}
 \caption{The binomial distribution with size parameter of $N=20$ and an underlying success probability of $\theta = 1/6$. Each vertical bar depicts the probability of one specific outcome (i.e., one possible value of $X$). Because this is a probability distribution, each of the probabilities must be a number between 0 and 1, and the heights of the bars must sum to 1 as well.}
-\HR
+%\HR
 \label{fig:binomial1}
 \end{center}
 \end{figure}
@@ -409,7 +421,7 @@ To that end, Figure~\ref{fig:binomial1} plots the binomial probabilities for all
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\SUBSECTION{Working with the binomial distribution in \R}
+%\subsection{Working with the binomial distribution in \R}
 
 To give you a feel for how the binomial distribution changes when we alter the values of $\theta$ and $N$, let's suppose that instead of rolling dice I'm actually flipping coins. This time around, my experiment involves flipping a fair coin repeatedly and the outcome that I'm interested in is the number of heads that I observe. In this scenario, the success probability is now $\theta = 1/2$. Suppose I were to flip the coin $N=20$ times. In this example, I've changed the success probability but kept the size of the experiment the same. What does this do to our binomial distribution? Well, as Figure~\ref{fig:binomial2}a shows, the main effect of this is to shift the whole distribution, as you'd expect. Okay, what if we flipped a coin $N=100$ times? Well, in that case we get Figure~\ref{fig:binomial2}b. The distribution stays roughly in the middle but there's a bit more variability in the possible outcomes. 
 
@@ -421,7 +433,7 @@ To give you a feel for how the binomial distribution changes when we alter the v
 \end{tabular}
 \caption{Two binomial distributions, involving a scenario in which I'm flipping a fair coin, so the underlying success probability is $\theta = 1/2$. In panel (a), we assume I'm flipping the coin $N=20$ times. In panel (b) we assume that the coin is flipped $N=100$ times.}
 \label{fig:binomial2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -432,7 +444,7 @@ To give you a feel for how the binomial distribution changes when we alter the v
 \begin{center}
 \epsfig{file=../img/probability/standardNormal.eps,clip=true,width=12cm}
 \caption{The normal distribution with mean $\mu = 0$ and standard deviation $\sigma = 1$. The $x$-axis corresponds to the value of some variable, and the $y$-axis tells us something about how likely we are to observe that value. However, notice that the $y$-axis is labelled ``Probability Density'' and not ``Probability''. There is a subtle and somewhat frustrating characteristic of continuous distributions that makes the $y$ axis behave a bit oddly: the height of the curve here isn't actually the probability of observing a particular $x$ value. On the other hand, it {\it is} true that the heights of the curve tells you which $x$ values are more likely (the higher ones!). (see Section~\ref{sec:density} for all the annoying details)}
-\HR
+%\HR
 \label{fig:normdist}
 \end{center}
 \end{figure}
@@ -451,7 +463,7 @@ Of course, that's just notation. It doesn't tell us anything interesting about t
 \epsfig{file=../img/probability/meanShiftNormal.eps,clip=true,width=12cm}
 \caption{An illustration of what happens when you change the mean of a normal distribution. The solid line depicts a normal distribution with a mean of $\mu=4$. The dashed line shows a normal distribution with a mean of $\mu=7$. In both cases, the standard deviation is $\sigma=1$. Not surprisingly, the two distributions have the same shape, but the dashed line is shifted to the right.}
 \label{fig:normmean}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -460,7 +472,7 @@ Of course, that's just notation. It doesn't tell us anything interesting about t
 \epsfig{file=../img/probability/scaleShiftNormal.eps,clip=true,width=12cm}
 \caption{An illustration of what happens when you change the the standard deviation of a normal distribution. Both distributions plotted in this figure have a mean of $\mu = 5$, but they have different standard deviations. The solid line plots a distribution with standard deviation $\sigma=1$, and the dashed line shows a distribution with standard deviation $\sigma = 2$. As a consequence, both distributions are ``centred'' on the same spot, but the dashed line is wider than the solid one.}
 \label{fig:normsd}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -476,7 +488,7 @@ With this in mind, let's see if we can't get an intuition for how the normal dis
 \epsfig{file=../img/probability/normArea2SD.eps,clip=true,width=7cm}\vspace*{-6pt} \\ (a) & (b) 
 \end{tabular}
 \caption{The area under the curve tells you the probability that an observation falls within a particular range. The solid lines plot normal distributions with mean $\mu=0$ and standard deviation $\sigma=1$. The shaded areas illustrate ``areas under the curve'' for two important cases. In panel a, we can see that there is a 68.3\% chance that an observation will fall within one standard deviation of the mean. In panel b, we see that there is a 95.4\% chance that an observation will fall within two standard deviations of the mean.}
-\HR
+%\HR
 \label{fig:sdnorm}
 \end{center}
 \end{figure}
@@ -489,13 +501,13 @@ With this in mind, let's see if we can't get an intuition for how the normal dis
 \epsfig{file=../img/probability/normAreaOther2.eps,clip=true,width=7cm}\vspace*{-6pt} \\ (a) & (b) 
 \end{tabular}
 \caption{Two more examples of the ``area under the curve idea''. There is a 15.9\% chance that an observation is one standard deviation below the mean or smaller (panel a), and a 34.1\% chance that the observation is somewhere between one standard deviation below the mean and the mean (panel b). Notice that if you add these two numbers together you get $15.9\% + 34.1\% = 50\%$. For normally distributed data, there is a 50\% chance that an observation falls below the mean. And of course that also implies that there is a 50\% chance that it falls above the mean.}
-\HR
+%\HR
 \label{fig:sdnorm2}
 \end{center}
 \end{figure}
 
 
-\SUBSECTION{Probability density~\label{sec:density} \advanced}
+\subsection{Probability density~\label{sec:density} \advanced}
 
 There's something I've been trying to hide throughout my discussion of the normal distribution, something that some introductory textbooks omit completely. They might be right to do so. This ``thing'' that I'm hiding is weird and counter-intuitive even by the admittedly distorted standards that apply in statistics. Fortunately, it's not something that you need to understand at a deep level in order to do basic statistics. Rather, it's something that starts to become important later on when you move beyond the basics. So, if it doesn't make complete sense, don't worry too much, but try to make sure that you follow the gist of it.
 
@@ -519,7 +531,7 @@ The normal distribution is the distribution that statistics makes most use of (f
 \epsfig{file=../img/probability/tDist.eps,clip=true,width=11cm,height=7cm}
 \caption{A $t$ distribution with 3 degrees of freedom (solid line). It looks similar to a normal distribution, but it's not quite the same. For comparison purposes I've plotted a standard normal distribution as the dashed line.}
 \label{fig:tdist}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -528,7 +540,7 @@ The normal distribution is the distribution that statistics makes most use of (f
 \epsfig{file=../img/probability/chiSqDist.eps,clip=true,width=10cm}
 \caption{A $\chi^2$ distribution with 3 degrees of freedom. Notice that the observed values must always be greater than zero, and that the distribution is pretty skewed. These are the key features of a chi-square distribution.}
 \label{fig:chisqdist}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -537,7 +549,7 @@ The normal distribution is the distribution that statistics makes most use of (f
 \epsfig{file=../img/probability/FDist.eps,clip=true,width=10cm}
 \caption{An $F$ distribution with 3 and 5 degrees of freedom. Qualitatively speaking, it looks pretty similar to a chi-square distribution, but they're not quite the same in general.}
 \label{fig:Fdist}
-\HR
+%\HR
 \end{center}
 \end{figure}
 

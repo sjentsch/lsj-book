@@ -1,0 +1,1552 @@
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmitt font-family: monospace; font-style: italic;
+htfcss: cmtt font-family: monospace;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: cmtt font-family: monospace;
+htfcss: cmtt font-family: monospace;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmti  font-style: italic;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmtt font-family: monospace;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmtt font-family: monospace;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmtt font-family: monospace;
+File: lsj.html
+File: lsj.css
+File: lsj.tmp
+File: lsjli1.html
+File: lsjpa1.html
+File: lsjch1.html
+File: lsj5.html
+File: lsj6.html
+File: lsj7.html
+File: lsj8.html
+File: lsj.tmp
+File: lsj9.html
+File: lsjch2.html
+File: lsj11.html
+File: lsj12.html
+File: lsj13.html
+File: lsj14.html
+File: lsj15.html
+File: lsj16.html
+File: lsj17.html
+File: lsj18.html
+File: lsjpa2.html
+File: lsjch3.html
+File: lsj21.html
+File: lsj22.html
+File: lsj23.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj24.html
+File: lsj25.html
+File: lsjpa3.html
+File: lsjch4.html
+File: lsj28.html
+File: lsj.tmp
+File: lsj29.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj30.html
+File: lsj31.html
+File: lsj32.html
+File: lsj33.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj34.html
+File: lsj35.html
+File: lsj36.html
+File: lsjch5.html
+File: lsj38.html
+File: lsj.tmp
+File: lsj39.html
+File: lsjch6.html
+File: lsj41.html
+File: lsj42.html
+File: lsj43.html
+File: lsj44.html
+File: lsj45.html
+File: lsj46.html
+File: lsj47.html
+File: lsj48.html
+File: lsj49.html
+File: lsjpa4.html
+File: lsjli2.html
+File: lsj52.html
+Font_Class(4,"4"): <span  class="small-caps"></span>
+File: lsjch7.html
+File: lsj.tmp
+File: lsj54.html
+File: lsj.tmp
+File: lsj55.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj56.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj57.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsjch8.html
+File: lsj.tmp
+File: lsj59.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj60.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj61.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj62.html
+File: lsj63.html
+File: lsj.tmp
+File: lsj64.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj65.html
+File: lsj66.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsjch9.html
+File: lsj68.html
+File: lsj69.html
+File: lsj70.html
+File: lsj71.html
+File: lsj72.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj73.html
+File: lsj74.html
+File: lsj.tmp
+File: lsj75.html
+File: lsj76.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj77.html
+File: lsj78.html
+File: lsj.tmp
+File: lsj79.html
+File: lsj80.html
+File: lsj81.html
+File: lsjpa5.html
+File: lsjch10.html
+File: lsj84.html
+File: lsj85.html
+File: lsj86.html
+File: lsj.tmp
+File: lsj87.html
+File: lsj88.html
+File: lsj89.html
+File: lsj90.html
+File: lsj91.html
+File: lsj92.html
+File: lsj93.html
+File: lsj94.html
+File: lsj95.html
+File: lsj96.html
+File: lsjch11.html
+File: lsj98.html
+File: lsj99.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj100.html
+File: lsj.tmp
+File: lsj101.html
+File: lsj.tmp
+File: lsj102.html
+File: lsj103.html
+File: lsj104.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj105.html
+File: lsj.tmp
+File: lsj106.html
+File: lsj.tmp
+File: lsj107.html
+File: lsj108.html
+File: lsj109.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj110.html
+File: lsj111.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj112.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj113.html
+File: lsjch12.html
+File: lsj115.html
+File: lsj116.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj117.html
+File: lsj118.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj119.html
+File: lsj120.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj121.html
+File: lsj.tmp
+File: lsj122.html
+File: lsj123.html
+File: lsj124.html
+File: lsj125.html
+File: lsj126.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj127.html
+File: lsj128.html
+File: lsj129.html
+File: lsj130.html
+File: lsjch13.html
+File: lsj132.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj133.html
+File: lsj134.html
+File: lsj135.html
+File: lsj136.html
+File: lsj137.html
+File: lsj138.html
+File: lsj139.html
+File: lsj140.html
+File: lsj141.html
+File: lsj142.html
+File: lsjch14.html
+File: lsj144.html
+File: lsj145.html
+File: lsj146.html
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj.tmp
+File: lsj147.html
+File: lsj148.html
+File: lsj149.html
+File: lsj150.html
+File: lsj151.html
+File: lsj152.html
+File: lsj153.html
+File: lsj154.html
+File: lsj155.html
+File: lsj156.html
+File: lsj157.html
+File: lsjch15.html
+File: lsj159.html
+File: lsj160.html
+File: lsj161.html
+File: lsj162.html
+File: lsj163.html
+File: lsj164.html
+File: lsj165.html
+File: lsjpa6.html
+File: lsjch16.html
+File: lsj168.html
+File: lsj169.html
+File: lsj170.html
+File: lsj171.html
+File: lsj172.html
+File: lsj173.html
+File: lsj174.html
+File: lsj175.html
+File: lsj176.html
+File: lsj177.html
+File: lsj178.html
+File: lsj179.html
+File: lsj180.html
+File: lsj.tmp
+File: lsj181.html
+File: lsj182.html
+File: lsj183.html
+File: lsjch17.html
+File: lsjch18.html
+Css: p.noindent { text-indent: 0em }
+Css: td p.noindent { text-indent: 0em; margin-top:0em; }
+Css: p.nopar { text-indent: 0em; }
+Css: p.indent{ text-indent: 1.5em }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: .tabbing-right {text-align:right;}
+Css: span.TEX {letter-spacing: -0.125em; }
+Css: span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+Css: a span.TEX span.E {text-decoration: none; }
+Css: span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+Css: span.LATEX span.TEX{ position:relative; left: -0.4em; }
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.bar-css {text-decoration:overline;}
+Css: img.cdots{vertical-align:middle;}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+Css: .index-item, .index-subitem, .index-subsubitem {display:block}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Font_Size: 12
+Css: .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
+Css: h1.partHead{text-align: center}
+Css: .abstract p {margin-left:5%; margin-right:5%;}
+Css: div.abstract {width:100%;}
+Css: .figure img.graphics {margin-left:10%;}
+Css: div.verbatiminput {font-family: monospace; white-space: nowrap; }
+Css: dt.printshorthands{float:left; clear:left; margin-right:1em;}
+Css: dd.thebibliography { text-indent: -2em; margin-left: 2em;}
+Css: dd.thebibliography p:first-child{ text-indent: -2em; }
+Css: dt.thebibliography{float:left; clear:left; margin-right:1em;}
+Css: span#textcolor1{color:rgb(50,50,50)}
+Css: span#textcolor2{color:rgb(50,50,50)}
+Css: span#textcolor3{color:rgb(153,0,204)}
+Css: span#textcolor4{color:rgb(50,50,50)}
+Css: span#textcolor5{color:rgb(153,0,204)}
+--- needs --- lsj.idv[2] ==> lsj0x.png ---
+Css: span#textcolor6{color:rgb(50,50,50)}
+Css: span#textcolor7{color:rgb(50,50,50)}
+Css: span#textcolor8{color:rgb(153,0,204)}
+Css: span#textcolor9{color:rgb(153,0,204)}
+Css: span#textcolor10{color:rgb(153,0,204)}
+Css: span#textcolor11{color:rgb(153,0,204)}
+Css: span#textcolor12{color:rgb(153,0,204)}
+Css: span#textcolor13{color:rgb(153,0,204)}
+Css: span#textcolor14{color:rgb(153,0,204)}
+Css: span#textcolor15{color:rgb(153,0,204)}
+Css: span#textcolor16{color:rgb(153,0,204)}
+Css: span#textcolor17{color:rgb(153,0,204)}
+Css: span#textcolor18{color:rgb(153,0,204)}
+Css: span#textcolor19{color:rgb(50,50,50)}
+Css: span#textcolor20{color:rgb(153,0,204)}
+Css: span#textcolor21{color:rgb(153,0,204)}
+Css: span#textcolor22{color:rgb(153,0,204)}
+Css: span#textcolor23{color:rgb(153,0,204)}
+Css: span#textcolor24{color:rgb(50,50,50)}
+Css: span#textcolor25{color:rgb(153,0,204)}
+Css: span#textcolor26{color:rgb(153,0,204)}
+Css: span#textcolor27{color:rgb(153,0,204)}
+Css: span#textcolor28{color:rgb(153,0,204)}
+Css: span#textcolor29{color:rgb(153,0,204)}
+Css: span#textcolor30{color:rgb(153,0,204)}
+Css: span#textcolor31{color:rgb(153,0,204)}
+Css: span#textcolor32{color:rgb(153,0,204)}
+Css: span#textcolor33{color:rgb(153,0,204)}
+Css: span#textcolor34{color:rgb(153,0,204)}
+Css: span#textcolor35{color:rgb(50,50,50)}
+Css: span#textcolor36{color:rgb(153,0,204)}
+Css: span#textcolor37{color:rgb(153,0,204)}
+Css: span#textcolor38{color:rgb(153,0,204)}
+Css: span#textcolor39{color:rgb(153,0,204)}
+Css: span#textcolor40{color:rgb(153,0,204)}
+Css: span#textcolor41{color:rgb(153,0,204)}
+Css: span#textcolor42{color:rgb(153,0,204)}
+Css: span#textcolor43{color:rgb(153,0,204)}
+Css: span#textcolor44{color:rgb(153,0,204)}
+Css: span#textcolor45{color:rgb(153,0,204)}
+Css: span#textcolor46{color:rgb(153,0,204)}
+Css: span#textcolor47{color:rgb(153,0,204)}
+Css: span#textcolor48{color:rgb(153,0,204)}
+Css: span#textcolor49{color:rgb(153,0,204)}
+Css: span#textcolor50{color:rgb(50,50,50)}
+Css: span#textcolor51{color:rgb(153,0,204)}
+Css: span#textcolor52{color:rgb(153,0,204)}
+Css: span#textcolor53{color:rgb(153,0,204)}
+Css: span#textcolor54{color:rgb(153,0,204)}
+Css: span#textcolor55{color:rgb(153,0,204)}
+Css: span#textcolor56{color:rgb(153,0,204)}
+Css: span#textcolor57{color:rgb(153,0,204)}
+Css: span#textcolor58{color:rgb(153,0,204)}
+Css: span#textcolor59{color:rgb(153,0,204)}
+Css: span#textcolor60{color:rgb(153,0,204)}
+Css: span#textcolor61{color:rgb(153,0,204)}
+Css: span#textcolor62{color:rgb(153,0,204)}
+Css: span#textcolor63{color:rgb(153,0,204)}
+Css: span#textcolor64{color:rgb(153,0,204)}
+Css: span#textcolor65{color:rgb(153,0,204)}
+Css: span#textcolor66{color:rgb(50,50,50)}
+Css: span#textcolor67{color:rgb(153,0,204)}
+Css: span#textcolor68{color:rgb(153,0,204)}
+Css: span#textcolor69{color:rgb(153,0,204)}
+Css: span#textcolor70{color:rgb(153,0,204)}
+Css: span#textcolor71{color:rgb(153,0,204)}
+Css: span#textcolor72{color:rgb(153,0,204)}
+Css: span#textcolor73{color:rgb(50,50,50)}
+Css: span#textcolor74{color:rgb(50,50,50)}
+Css: span#textcolor75{color:rgb(50,50,50)}
+Css: span#textcolor76{color:rgb(50,50,50)}
+File: ../img/introj/startingjamovi.png
+File: ../img/introj/measurementlevels.png
+File: ../img/introj/computedvariable.png
+--- needs --- lsj.idv[4] ==> lsj1x.png ---
+--- needs --- lsj.idv[6] ==> lsj2x.png ---
+Css: span#textcolor77{color:rgb(50,50,50)}
+Css: span#textcolor78{color:rgb(50,50,50)}
+Css: span#textcolor79{color:rgb(153,0,204)}
+File: ../img/graphics/modules.png
+Css: span#textcolor80{color:rgb(153,0,204)}
+File: ../img/descriptives/aflsmall_margins.png
+Css: span#textcolor81{color:rgb(50,50,50)}
+--- needs --- lsj.idv[8] ==> lsj3x.png ---
+Css: span#textcolor82{color:rgb(153,0,204)}
+Css: span#textcolor83{color:rgb(153,0,204)}
+--- needs --- lsj.idv[10] ==> lsj4x.png ---
+--- needs --- lsj.idv[12] ==> lsj5x.png ---
+Css: span#textcolor84{color:rgb(153,0,204)}
+Css: span#textcolor85{color:rgb(50,50,50)}
+--- needs --- lsj.idv[14] ==> lsj6x.png ---
+--- needs --- lsj.idv[16] ==> lsj7x.png ---
+File: ../img/descriptives/descriptives_default.png
+Css: span#textcolor86{color:rgb(153,0,204)}
+--- needs --- lsj.idv[18] ==> lsj8x.png ---
+--- needs --- lsj.idv[20] ==> lsj9x.png ---
+--- needs --- lsj.idv[22] ==> lsj10x.png ---
+--- needs --- lsj.idv[23] ==> lsj11x.png ---
+Css: span#textcolor87{color:rgb(50,50,50)}
+File: ../img/descriptives/aflsmall_finalists.png
+Css: span#textcolor88{color:rgb(153,0,204)}
+File: ../img/descriptives/aflsmall_finalists_mode.png
+File: ../img/descriptives/aflsmall_margins_mode.png
+Css: span#textcolor89{color:rgb(153,0,204)}
+Css: span#textcolor90{color:rgb(153,0,204)}
+--- needs --- lsj.idv[25] ==> lsj12x.png ---
+Css: span#textcolor91{color:rgb(153,0,204)}
+Css: span#textcolor92{color:rgb(153,0,204)}
+File: ../img/descriptives/aflsmall_margins_iqr.png
+Css: span#textcolor93{color:rgb(153,0,204)}
+--- needs --- lsj.idv[27] ==> lsj13x.png ---
+--- needs --- lsj.idv[29] ==> lsj14x.png ---
+Css: span#textcolor94{color:rgb(153,0,204)}
+Css: span#textcolor95{color:rgb(50,50,50)}
+--- needs --- lsj.idv[31] ==> lsj15x.png ---
+File: ../img/descriptives/aflsmall_margins_variance1.png
+Css: span#textcolor96{color:rgb(50,50,50)}
+--- needs --- lsj.idv[33] ==> lsj16x.png ---
+Css: span#textcolor97{color:rgb(153,0,204)}
+--- needs --- lsj.idv[35] ==> lsj17x.png ---
+--- needs --- lsj.idv[36] ==> lsj18x.png ---
+--- needs --- lsj.idv[37] ==> lsj19x.png ---
+Css: span#textcolor98{color:rgb(50,50,50)}
+--- needs --- lsj.idv[39] ==> lsj20x.png ---
+--- needs --- lsj.idv[41] ==> lsj21x.png ---
+Css: span#textcolor99{color:rgb(153,0,204)}
+--- needs --- lsj.idv[43] ==> lsj22x.png ---
+--- needs --- lsj.idv[44] ==> lsj23x.png ---
+Css: span#textcolor100{color:rgb(153,0,204)}
+--- needs --- lsj.idv[46] ==> lsj24x.png ---
+Css: span#textcolor101{color:rgb(50,50,50)}
+--- needs --- lsj.idv[48] ==> lsj25x.png ---
+File: ../img/descriptives/clinicaltrial.png
+File: ../img/descriptives/clinicaltrial_grouping.png
+Css: span#textcolor102{color:rgb(50,50,50)}
+Css: span#textcolor103{color:rgb(153,0,204)}
+--- needs --- lsj.idv[50] ==> lsj26x.png ---
+--- needs --- lsj.idv[51] ==> lsj27x.png ---
+--- needs --- lsj.idv[53] ==> lsj28x.png ---
+Css: span#textcolor104{color:rgb(50,50,50)}
+Css: span#textcolor105{color:rgb(50,50,50)}
+--- needs --- lsj.idv[55] ==> lsj29x.png ---
+Css: span#textcolor106{color:rgb(153,0,204)}
+Css: span#textcolor107{color:rgb(153,0,204)}
+Css: span#textcolor108{color:rgb(153,0,204)}
+Css: span#textcolor109{color:rgb(153,0,204)}
+File: ../img/graphics/jamovi_histogram.png
+Css: span#textcolor110{color:rgb(153,0,204)}
+l. 47 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/graphics/histogram2-.png' ../img/graphics/histogram2.pdf" ---
+File: ../img/graphics/histogram2-.png
+Css: span#textcolor111{color:rgb(153,0,204)}
+File: ../img/graphics/boxplot1.png
+Css: span#textcolor112{color:rgb(153,0,204)}
+l. 76 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/graphics/boxplot2-.png' ../img/graphics/boxplot2.pdf" ---
+File: ../img/graphics/boxplot2-.png
+File: ../img/graphics/splitfile1.png
+l. 102 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/graphics/boxplot3-.png' ../img/graphics/boxplot3.pdf" ---
+File: ../img/graphics/boxplot3-.png
+l. 113 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/graphics/boxplot4-.png' ../img/graphics/boxplot4.pdf" ---
+File: ../img/graphics/boxplot4-.png
+Css: span#textcolor113{color:rgb(153,0,204)}
+File: ../img/graphics/filter1.png
+File: ../img/graphics/filter2.png
+Css: span#textcolor114{color:rgb(153,0,204)}
+Css: span#textcolor115{color:rgb(153,0,204)}
+Css: span#textcolor116{color:rgb(50,50,50)}
+File: ../img/graphics/bar1.png
+Css: span#textcolor117{color:rgb(50,50,50)}
+Css: span#textcolor118{color:rgb(153,0,204)}
+File: ../img/mechanics/freqtable.png
+File: ../img/mechanics/contingencytable.png
+File: ../img/mechanics/contingencyrow.png
+File: ../img/mechanics/contingencycol.png
+Css: span#textcolor119{color:rgb(153,0,204)}
+Css: span#textcolor120{color:rgb(50,50,50)}
+Css: span#textcolor121{color:rgb(50,50,50)}
+Css: span#textcolor122{color:rgb(153,0,204)}
+Css: span#textcolor123{color:rgb(50,50,50)}
+Css: span#textcolor124{color:rgb(101,101,101)}
+Css: span#textcolor125{color:rgb(101,101,101)}
+Css: span#textcolor126{color:rgb(101,101,101)}
+Css: span#textcolor127{color:rgb(101,101,101)}
+Css: span#textcolor128{color:rgb(101,101,101)}
+Css: span#textcolor129{color:rgb(153,0,204)}
+Css: span#textcolor130{color:rgb(153,0,204)}
+Css: span#textcolor131{color:rgb(101,101,127)}
+Css: span#textcolor132{color:rgb(101,101,127)}
+Css: span#textcolor133{color:rgb(153,0,204)}
+Css: span#textcolor134{color:rgb(101,101,127)}
+Css: span#textcolor135{color:rgb(153,0,204)}
+Css: span#textcolor136{color:rgb(153,0,204)}
+Css: span#textcolor137{color:rgb(153,0,204)}
+Css: span#textcolor138{color:rgb(101,101,127)}
+Css: span#textcolor139{color:rgb(101,101,127)}
+Css: span#textcolor140{color:rgb(101,101,127)}
+Css: span#textcolor141{color:rgb(101,101,127)}
+Css: span#textcolor142{color:rgb(101,101,127)}
+Css: span#textcolor143{color:rgb(101,101,127)}
+Css: span#textcolor144{color:rgb(101,101,127)}
+Css: span#textcolor145{color:rgb(101,101,127)}
+Css: span#textcolor146{color:rgb(101,101,127)}
+Css: span#textcolor147{color:rgb(153,0,204)}
+Css: span#textcolor148{color:rgb(153,0,204)}
+Css: span#textcolor149{color:rgb(153,0,204)}
+Css: span#textcolor150{color:rgb(50,50,50)}
+Css: span#textcolor151{color:rgb(153,0,204)}
+File: ../img/mechanics/likertraw.png
+Css: span#textcolor152{color:rgb(50,50,50)}
+File: ../img/mechanics/opinionstrength.png
+Css: span#textcolor153{color:rgb(50,50,50)}
+File: ../img/mechanics/agecats.png
+Css: span#textcolor154{color:rgb(50,50,50)}
+Css: span#textcolor155{color:rgb(101,101,101)}
+Css: span#textcolor156{color:rgb(101,101,101)}
+Css: span#textcolor157{color:rgb(101,101,101)}
+File: ../img/mechanics/transform1.png
+File: ../img/mechanics/transform2.png
+File: ../img/mechanics/transform3.png
+Css: span#textcolor158{color:rgb(50,50,50)}
+Css: span#textcolor159{color:rgb(101,101,127)}
+Css: span#textcolor160{color:rgb(101,101,127)}
+Css: span#textcolor161{color:rgb(101,101,127)}
+Css: span#textcolor162{color:rgb(101,101,127)}
+Css: span#textcolor163{color:rgb(101,101,127)}
+Css: span#textcolor164{color:rgb(101,101,127)}
+Css: span#textcolor165{color:rgb(101,101,127)}
+Css: span#textcolor166{color:rgb(101,101,127)}
+Css: span#textcolor167{color:rgb(101,101,127)}
+Css: span#textcolor168{color:rgb(153,0,204)}
+--- needs --- lsj.idv[57] ==> lsj30x.png ---
+--- needs --- lsj.idv[59] ==> lsj31x.png ---
+Css: span#textcolor169{color:rgb(153,0,204)}
+Css: span#textcolor170{color:rgb(153,0,204)}
+--- needs --- lsj.idv[61] ==> lsj32x.png ---
+Css: span#textcolor171{color:rgb(153,0,204)}
+File: ../img/mechanics/subset1.png
+Css: span#textcolor172{color:rgb(50,50,50)}
+Css: span#textcolor173{color:rgb(153,0,204)}
+Css: span#textcolor174{color:rgb(153,0,204)}
+Css: span#textcolor175{color:rgb(153,0,204)}
+--- needs --- lsj.idv[63] ==> lsj33x.png ---
+Css: span#textcolor176{color:rgb(153,0,204)}
+Css: span#textcolor177{color:rgb(153,0,204)}
+Css: span#textcolor178{color:rgb(153,0,204)}
+--- needs --- lsj.idv[65] ==> lsj34x.png ---
+Css: span#textcolor179{color:rgb(50,50,50)}
+Css: span#textcolor180{color:rgb(153,0,204)}
+Css: span#textcolor181{color:rgb(153,0,204)}
+Css: span#textcolor182{color:rgb(153,0,204)}
+Css: span#textcolor183{color:rgb(153,0,204)}
+Css: span#textcolor184{color:rgb(153,0,204)}
+Css: span#textcolor185{color:rgb(153,0,204)}
+Css: span#textcolor186{color:rgb(153,0,204)}
+--- needs --- lsj.idv[67] ==> lsj35x.png ---
+Css: span#textcolor187{color:rgb(153,0,204)}
+--- needs --- lsj.idv[69] ==> lsj36x.png ---
+Css: span#textcolor188{color:rgb(153,0,204)}
+--- needs --- lsj.idv[71] ==> lsj37x.png ---
+--- needs --- lsj.idv[72] ==> lsj38x.png ---
+--- needs --- lsj.idv[73] ==> lsj39x.png ---
+Css: span#textcolor189{color:rgb(153,0,204)}
+Css: span#textcolor190{color:rgb(153,0,204)}
+Css: span#textcolor191{color:rgb(50,50,50)}
+Css: span#textcolor192{color:rgb(153,0,204)}
+--- needs --- lsj.idv[75] ==> lsj40x.png ---
+--- needs --- lsj.idv[77] ==> lsj41x.png ---
+--- needs --- lsj.idv[79] ==> lsj42x.png ---
+--- needs --- lsj.idv[81] ==> lsj43x.png ---
+--- needs --- lsj.idv[82] ==> lsj44x.png ---
+--- needs --- lsj.idv[84] ==> lsj45x.png ---
+Css: span#textcolor193{color:rgb(153,0,204)}
+--- needs --- lsj.idv[86] ==> lsj46x.png ---
+--- needs --- lsj.idv[88] ==> lsj47x.png ---
+--- needs --- lsj.idv[90] ==> lsj48x.png ---
+Css: span#textcolor194{color:rgb(50,50,50)}
+--- needs --- lsj.idv[92] ==> lsj49x.png ---
+--- needs --- lsj.idv[93] ==> lsj50x.png ---
+--- needs --- lsj.idv[95] ==> lsj51x.png ---
+--- needs --- lsj.idv[96] ==> lsj52x.png ---
+Css: span#textcolor195{color:rgb(153,0,204)}
+Css: span#textcolor196{color:rgb(50,50,50)}
+--- needs --- lsj.idv[98] ==> lsj53x.png ---
+--- needs --- lsj.idv[100] ==> lsj54x.png ---
+--- needs --- lsj.idv[102] ==> lsj55x.png ---
+Css: span#textcolor197{color:rgb(153,0,204)}
+Css: span#textcolor198{color:rgb(153,0,204)}
+Css: span#textcolor199{color:rgb(153,0,204)}
+Css: span#textcolor200{color:rgb(153,0,204)}
+Css: span#textcolor201{color:rgb(153,0,204)}
+Css: span#textcolor202{color:rgb(153,0,204)}
+--- needs --- lsj.idv[104] ==> lsj56x.png ---
+Css: span#textcolor203{color:rgb(153,0,204)}
+Css: span#textcolor204{color:rgb(50,50,50)}
+Css: span#textcolor205{color:rgb(153,0,204)}
+Css: span#textcolor206{color:rgb(153,0,204)}
+--- needs --- lsj.idv[106] ==> lsj57x.png ---
+--- needs --- lsj.idv[108] ==> lsj58x.png ---
+Css: span#textcolor207{color:rgb(153,0,204)}
+Css: span#textcolor208{color:rgb(50,50,50)}
+Css: span#textcolor209{color:rgb(153,0,204)}
+--- needs --- lsj.idv[110] ==> lsj59x.png ---
+--- needs --- lsj.idv[111] ==> lsj60x.png ---
+--- needs --- lsj.idv[112] ==> lsj61x.png ---
+Css: span#textcolor210{color:rgb(153,0,204)}
+File: ../img/estimation/IQsim.png
+Css: span#textcolor211{color:rgb(153,0,204)}
+Css: span#textcolor212{color:rgb(50,50,50)}
+Css: span#textcolor213{color:rgb(153,0,204)}
+Css: span#textcolor214{color:rgb(153,0,204)}
+File: ../img/estimation/samplingDist4.png
+File: ../img/estimation/samplingDistMax.png
+--- needs --- lsj.idv[114] ==> lsj62x.png ---
+--- needs --- lsj.idv[115] ==> lsj63x.png ---
+--- needs --- lsj.idv[116] ==> lsj64x.png ---
+Css: span#textcolor215{color:rgb(153,0,204)}
+--- needs --- lsj.idv[118] ==> lsj65x.png ---
+--- needs --- lsj.idv[119] ==> lsj66x.png ---
+--- needs --- lsj.idv[120] ==> lsj67x.png ---
+--- needs --- lsj.idv[121] ==> lsj68x.png ---
+Css: span#textcolor216{color:rgb(153,0,204)}
+--- needs --- lsj.idv[123] ==> lsj69x.png ---
+Css: span#textcolor217{color:rgb(50,50,50)}
+Css: span#textcolor218{color:rgb(50,50,50)}
+Css: span#textcolor219{color:rgb(153,0,204)}
+Css: span#textcolor220{color:rgb(153,0,204)}
+--- needs --- lsj.idv[125] ==> lsj70x.png ---
+--- needs --- lsj.idv[126] ==> lsj71x.png ---
+--- needs --- lsj.idv[127] ==> lsj72x.png ---
+--- needs --- lsj.idv[128] ==> lsj73x.png ---
+Css: span#textcolor221{color:rgb(153,0,204)}
+--- needs --- lsj.idv[130] ==> lsj74x.png ---
+--- needs --- lsj.idv[132] ==> lsj75x.png ---
+Css: span#textcolor222{color:rgb(153,0,204)}
+Css: span#textcolor223{color:rgb(50,50,50)}
+Css: span#textcolor224{color:rgb(153,0,204)}
+--- needs --- lsj.idv[134] ==> lsj76x.png ---
+--- needs --- lsj.idv[136] ==> lsj77x.png ---
+--- needs --- lsj.idv[137] ==> lsj78x.png ---
+--- needs --- lsj.idv[139] ==> lsj79x.png ---
+--- needs --- lsj.idv[140] ==> lsj80x.png ---
+--- needs --- lsj.idv[141] ==> lsj81x.png ---
+--- needs --- lsj.idv[143] ==> lsj82x.png ---
+--- needs --- lsj.idv[144] ==> lsj83x.png ---
+Css: span#textcolor225{color:rgb(50,50,50)}
+--- needs --- lsj.idv[146] ==> lsj84x.png ---
+--- needs --- lsj.idv[147] ==> lsj85x.png ---
+--- needs --- lsj.idv[148] ==> lsj86x.png ---
+--- needs --- lsj.idv[149] ==> lsj87x.png ---
+--- needs --- lsj.idv[150] ==> lsj88x.png ---
+--- needs --- lsj.idv[151] ==> lsj89x.png ---
+--- needs --- lsj.idv[152] ==> lsj90x.png ---
+--- needs --- lsj.idv[154] ==> lsj91x.png ---
+--- needs --- lsj.idv[155] ==> lsj92x.png ---
+--- needs --- lsj.idv[156] ==> lsj93x.png ---
+--- needs --- lsj.idv[158] ==> lsj94x.png ---
+--- needs --- lsj.idv[159] ==> lsj95x.png ---
+Css: span#textcolor226{color:rgb(50,50,50)}
+Css: span#textcolor227{color:rgb(153,0,204)}
+--- needs --- lsj.idv[161] ==> lsj96x.png ---
+--- needs --- lsj.idv[163] ==> lsj97x.png ---
+--- needs --- lsj.idv[164] ==> lsj98x.png ---
+Css: span#textcolor228{color:rgb(153,0,204)}
+--- needs --- lsj.idv[166] ==> lsj99x.png ---
+--- needs --- lsj.idv[168] ==> lsj100x.png ---
+--- needs --- lsj.idv[169] ==> lsj101x.png ---
+--- needs --- lsj.idv[171] ==> lsj102x.png ---
+--- needs --- lsj.idv[172] ==> lsj103x.png ---
+Css: span#textcolor229{color:rgb(50,50,50)}
+Css: span#textcolor230{color:rgb(50,50,50)}
+Css: span#textcolor231{color:rgb(50,50,50)}
+Css: span#textcolor232{color:rgb(153,0,204)}
+Css: span#textcolor233{color:rgb(153,0,204)}
+Css: span#textcolor234{color:rgb(50,50,50)}
+Css: span#textcolor235{color:rgb(50,50,50)}
+Css: span#textcolor236{color:rgb(153,0,204)}
+Css: span#textcolor237{color:rgb(153,0,204)}
+Css: span#textcolor238{color:rgb(153,0,204)}
+Css: span#textcolor239{color:rgb(153,0,204)}
+Css: span#textcolor240{color:rgb(153,0,204)}
+Css: span#textcolor241{color:rgb(153,0,204)}
+--- needs --- lsj.idv[174] ==> lsj104x.png ---
+--- needs --- lsj.idv[176] ==> lsj105x.png ---
+Css: span#textcolor242{color:rgb(153,0,204)}
+--- needs --- lsj.idv[178] ==> lsj106x.png ---
+Css: span#textcolor243{color:rgb(153,0,204)}
+Css: span#textcolor244{color:rgb(50,50,50)}
+Css: span#textcolor245{color:rgb(153,0,204)}
+Css: span#textcolor246{color:rgb(153,0,204)}
+Css: span#textcolor247{color:rgb(50,50,50)}
+--- needs --- lsj.idv[180] ==> lsj107x.png ---
+Css: span#textcolor248{color:rgb(153,0,204)}
+--- needs --- lsj.idv[182] ==> lsj108x.png ---
+Css: span#textcolor249{color:rgb(153,0,204)}
+--- needs --- lsj.idv[184] ==> lsj109x.png ---
+Css: span#textcolor250{color:rgb(153,0,204)}
+Css: span#textcolor251{color:rgb(50,50,50)}
+Css: span#textcolor252{color:rgb(50,50,50)}
+Css: span#textcolor253{color:rgb(101,101,101)}
+Css: span#textcolor254{color:rgb(101,101,101)}
+File: ../img/nhst/binomialtest.png
+--- needs --- lsj.idv[186] ==> lsj110x.png ---
+--- needs --- lsj.idv[188] ==> lsj111x.png ---
+--- needs --- lsj.idv[190] ==> lsj112x.png ---
+Css: span#textcolor255{color:rgb(153,0,204)}
+Css: span#textcolor256{color:rgb(153,0,204)}
+Css: span#textcolor257{color:rgb(50,50,50)}
+Css: span#textcolor258{color:rgb(50,50,50)}
+--- needs --- lsj.idv[192] ==> lsj113x.png ---
+Css: span#textcolor259{color:rgb(153,0,204)}
+Css: span#textcolor260{color:rgb(50,50,50)}
+Css: span#textcolor261{color:rgb(50,50,50)}
+Css: span#textcolor262{color:rgb(50,50,50)}
+Css: span#textcolor263{color:rgb(50,50,50)}
+Css: span#textcolor264{color:rgb(153,0,204)}
+Css: span#textcolor265{color:rgb(50,50,50)}
+--- needs --- lsj.idv[194] ==> lsj114x.png ---
+Css: span#textcolor266{color:rgb(153,0,204)}
+Css: span#textcolor267{color:rgb(153,0,204)}
+--- needs --- lsj.idv[196] ==> lsj115x.png ---
+--- needs --- lsj.idv[198] ==> lsj116x.png ---
+Css: span#textcolor268{color:rgb(153,0,204)}
+--- needs --- lsj.idv[200] ==> lsj117x.png ---
+Css: span#textcolor269{color:rgb(153,0,204)}
+--- needs --- lsj.idv[202] ==> lsj118x.png ---
+--- needs --- lsj.idv[203] ==> lsj119x.png ---
+--- needs --- lsj.idv[204] ==> lsj120x.png ---
+Css: span#textcolor270{color:rgb(50,50,50)}
+--- needs --- lsj.idv[206] ==> lsj121x.png ---
+Css: span#textcolor271{color:rgb(153,0,204)}
+Css: span#textcolor272{color:rgb(50,50,50)}
+Css: span#textcolor273{color:rgb(50,50,50)}
+l. 183 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/chisquare/chiSqTest-.png' ../img/chisquare/chiSqTest.pdf" ---
+File: ../img/chisquare/chiSqTest-.png
+Css: span#textcolor274{color:rgb(153,0,204)}
+File: ../img/chisquare/chisquared_critvalues.png
+File: ../img/chisquare/chisquared_analysis1.png
+File: ../img/chisquare/chisquared_analysis2.png
+Css: span#textcolor275{color:rgb(50,50,50)}
+Css: span#textcolor276{color:rgb(50,50,50)}
+Css: span#textcolor277{color:rgb(50,50,50)}
+Css: span#textcolor278{color:rgb(50,50,50)}
+--- needs --- lsj.idv[208] ==> lsj122x.png ---
+--- needs --- lsj.idv[209] ==> lsj123x.png ---
+Css: span#textcolor279{color:rgb(50,50,50)}
+--- needs --- lsj.idv[211] ==> lsj124x.png ---
+--- needs --- lsj.idv[212] ==> lsj125x.png ---
+--- needs --- lsj.idv[214] ==> lsj126x.png ---
+--- needs --- lsj.idv[216] ==> lsj127x.png ---
+Css: span#textcolor280{color:rgb(50,50,50)}
+--- needs --- lsj.idv[218] ==> lsj128x.png ---
+Css: span#textcolor281{color:rgb(153,0,204)}
+--- needs --- lsj.idv[220] ==> lsj129x.png ---
+--- needs --- lsj.idv[222] ==> lsj130x.png ---
+Css: span#textcolor282{color:rgb(153,0,204)}
+--- needs --- lsj.idv[224] ==> lsj131x.png ---
+Css: span#textcolor283{color:rgb(50,50,50)}
+Css: span#textcolor284{color:rgb(153,0,204)}
+--- needs --- lsj.idv[226] ==> lsj132x.png ---
+Css: span#textcolor285{color:rgb(50,50,50)}
+File: ../img/chisquare/Fisher.png
+Css: span#textcolor286{color:rgb(153,0,204)}
+--- needs --- lsj.idv[228] ==> lsj133x.png ---
+--- needs --- lsj.idv[229] ==> lsj134x.png ---
+File: ../img/chisquare/McNemar.png
+File: ../img/chisquare/ind_paired.png
+Css: span#textcolor287{color:rgb(50,50,50)}
+Css: span#textcolor288{color:rgb(153,0,204)}
+Css: span#textcolor289{color:rgb(50,50,50)}
+--- needs --- lsj.idv[231] ==> lsj135x.png ---
+--- needs --- lsj.idv[233] ==> lsj136x.png ---
+--- needs --- lsj.idv[235] ==> lsj137x.png ---
+--- needs --- lsj.idv[237] ==> lsj138x.png ---
+--- needs --- lsj.idv[239] ==> lsj139x.png ---
+--- needs --- lsj.idv[240] ==> lsj140x.png ---
+--- needs --- lsj.idv[241] ==> lsj141x.png ---
+--- needs --- lsj.idv[243] ==> lsj142x.png ---
+--- needs --- lsj.idv[244] ==> lsj143x.png ---
+--- needs --- lsj.idv[245] ==> lsj144x.png ---
+--- needs --- lsj.idv[247] ==> lsj145x.png ---
+--- needs --- lsj.idv[248] ==> lsj146x.png ---
+Css: span#textcolor290{color:rgb(50,50,50)}
+--- needs --- lsj.idv[250] ==> lsj147x.png ---
+--- needs --- lsj.idv[252] ==> lsj148x.png ---
+Css: span#textcolor291{color:rgb(153,0,204)}
+Css: span#textcolor292{color:rgb(50,50,50)}
+--- needs --- lsj.idv[254] ==> lsj149x.png ---
+--- needs --- lsj.idv[255] ==> lsj150x.png ---
+--- needs --- lsj.idv[256] ==> lsj151x.png ---
+Css: span#textcolor293{color:rgb(153,0,204)}
+--- needs --- lsj.idv[258] ==> lsj152x.png ---
+File: ../img/ttest/ttest_one.png
+Css: span#textcolor294{color:rgb(50,50,50)}
+Css: span#textcolor295{color:rgb(50,50,50)}
+--- needs --- lsj.idv[260] ==> lsj153x.png ---
+Css: span#textcolor296{color:rgb(50,50,50)}
+--- needs --- lsj.idv[262] ==> lsj154x.png ---
+--- needs --- lsj.idv[263] ==> lsj155x.png ---
+File: ../img/ttest2/ttestci.png
+Css: span#textcolor297{color:rgb(153,0,204)}
+Css: span#textcolor298{color:rgb(50,50,50)}
+--- needs --- lsj.idv[265] ==> lsj156x.png ---
+--- needs --- lsj.idv[267] ==> lsj157x.png ---
+Css: span#textcolor299{color:rgb(153,0,204)}
+--- needs --- lsj.idv[269] ==> lsj158x.png ---
+Css: span#textcolor300{color:rgb(153,0,204)}
+--- needs --- lsj.idv[271] ==> lsj159x.png ---
+--- needs --- lsj.idv[272] ==> lsj160x.png ---
+--- needs --- lsj.idv[273] ==> lsj161x.png ---
+--- needs --- lsj.idv[274] ==> lsj162x.png ---
+--- needs --- lsj.idv[275] ==> lsj163x.png ---
+--- needs --- lsj.idv[277] ==> lsj164x.png ---
+--- needs --- lsj.idv[278] ==> lsj165x.png ---
+Css: span#textcolor301{color:rgb(50,50,50)}
+--- needs --- lsj.idv[280] ==> lsj166x.png ---
+--- needs --- lsj.idv[281] ==> lsj167x.png ---
+--- needs --- lsj.idv[282] ==> lsj168x.png ---
+--- needs --- lsj.idv[283] ==> lsj169x.png ---
+Css: span#textcolor302{color:rgb(153,0,204)}
+--- needs --- lsj.idv[285] ==> lsj170x.png ---
+--- needs --- lsj.idv[286] ==> lsj171x.png ---
+File: ../img/ttest/ttest_ind.png
+--- needs --- lsj.idv[288] ==> lsj172x.png ---
+Css: span#textcolor303{color:rgb(153,0,204)}
+--- needs --- lsj.idv[290] ==> lsj173x.png ---
+--- needs --- lsj.idv[292] ==> lsj174x.png ---
+Css: span#textcolor304{color:rgb(50,50,50)}
+--- needs --- lsj.idv[294] ==> lsj175x.png ---
+--- needs --- lsj.idv[296] ==> lsj176x.png ---
+File: ../img/ttest/ttest_welch.png
+Css: span#textcolor305{color:rgb(50,50,50)}
+Css: span#textcolor306{color:rgb(153,0,204)}
+Css: span#textcolor307{color:rgb(50,50,50)}
+File: ../img/ttest/ttest_paired1.png
+--- needs --- lsj.idv[298] ==> lsj177x.png ---
+--- needs --- lsj.idv[299] ==> lsj178x.png ---
+--- needs --- lsj.idv[300] ==> lsj179x.png ---
+Css: span#textcolor308{color:rgb(153,0,204)}
+Css: span#textcolor309{color:rgb(153,0,204)}
+--- needs --- lsj.idv[302] ==> lsj180x.png ---
+--- needs --- lsj.idv[303] ==> lsj181x.png ---
+--- needs --- lsj.idv[305] ==> lsj182x.png ---
+--- needs --- lsj.idv[306] ==> lsj183x.png ---
+--- needs --- lsj.idv[307] ==> lsj184x.png ---
+File: ../img/ttest/ttest_paired2.png
+File: ../img/ttest/ttest_paired3.png
+File: ../img/ttest/ttest_onesided1.png
+File: ../img/ttest/ttest_onesided2.png
+File: ../img/ttest/ttest_onesided3.png
+Css: span#textcolor310{color:rgb(153,0,204)}
+--- needs --- lsj.idv[309] ==> lsj185x.png ---
+--- needs --- lsj.idv[311] ==> lsj186x.png ---
+--- needs --- lsj.idv[312] ==> lsj187x.png ---
+--- needs --- lsj.idv[314] ==> lsj188x.png ---
+--- needs --- lsj.idv[315] ==> lsj189x.png ---
+--- needs --- lsj.idv[316] ==> lsj190x.png ---
+--- needs --- lsj.idv[318] ==> lsj191x.png ---
+--- needs --- lsj.idv[319] ==> lsj192x.png ---
+Css: span#textcolor311{color:rgb(50,50,50)}
+Css: span#textcolor312{color:rgb(50,50,50)}
+--- needs --- lsj.idv[321] ==> lsj193x.png ---
+--- needs --- lsj.idv[322] ==> lsj194x.png ---
+--- needs --- lsj.idv[324] ==> lsj195x.png ---
+--- needs --- lsj.idv[325] ==> lsj196x.png ---
+--- needs --- lsj.idv[326] ==> lsj197x.png ---
+--- needs --- lsj.idv[327] ==> lsj198x.png ---
+Css: span#textcolor313{color:rgb(153,0,204)}
+Css: span#textcolor314{color:rgb(153,0,204)}
+Css: span#textcolor315{color:rgb(50,50,50)}
+--- needs --- lsj.idv[329] ==> lsj199x.png ---
+--- needs --- lsj.idv[331] ==> lsj200x.png ---
+--- needs --- lsj.idv[333] ==> lsj201x.png ---
+Css: span#textcolor316{color:rgb(153,0,204)}
+Css: span#textcolor317{color:rgb(153,0,204)}
+Css: span#textcolor318{color:rgb(50,50,50)}
+Css: span#textcolor319{color:rgb(153,0,204)}
+File: ../img/ttest/ttest_nonparametric.png
+Css: span#textcolor320{color:rgb(153,0,204)}
+Css: span#textcolor321{color:rgb(153,0,204)}
+Css: span#textcolor322{color:rgb(153,0,204)}
+Css: span#textcolor323{color:rgb(50,50,50)}
+Css: span#textcolor324{color:rgb(50,50,50)}
+--- needs --- lsj.idv[335] ==> lsj202x.png ---
+--- needs --- lsj.idv[336] ==> lsj203x.png ---
+--- needs --- lsj.idv[337] ==> lsj204x.png ---
+--- needs --- lsj.idv[339] ==> lsj205x.png ---
+--- needs --- lsj.idv[340] ==> lsj206x.png ---
+--- needs --- lsj.idv[342] ==> lsj207x.png ---
+--- needs --- lsj.idv[343] ==> lsj208x.png ---
+Css: span#textcolor325{color:rgb(153,0,204)}
+--- needs --- lsj.idv[345] ==> lsj209x.png ---
+--- needs --- lsj.idv[346] ==> lsj210x.png ---
+--- needs --- lsj.idv[347] ==> lsj211x.png ---
+--- needs --- lsj.idv[348] ==> lsj212x.png ---
+--- needs --- lsj.idv[349] ==> lsj213x.png ---
+--- needs --- lsj.idv[350] ==> lsj214x.png ---
+--- needs --- lsj.idv[351] ==> lsj215x.png ---
+--- needs --- lsj.idv[352] ==> lsj216x.png ---
+Css: span#textcolor326{color:rgb(153,0,204)}
+--- needs --- lsj.idv[354] ==> lsj217x.png ---
+Css: span#textcolor327{color:rgb(50,50,50)}
+Css: span#textcolor328{color:rgb(50,50,50)}
+--- needs --- lsj.idv[356] ==> lsj218x.png ---
+File: ../img/descriptives/correlations.png
+--- needs --- lsj.idv[358] ==> lsj219x.png ---
+--- needs --- lsj.idv[359] ==> lsj220x.png ---
+--- needs --- lsj.idv[360] ==> lsj221x.png ---
+--- needs --- lsj.idv[361] ==> lsj222x.png ---
+--- needs --- lsj.idv[363] ==> lsj223x.png ---
+Css: span#textcolor329{color:rgb(153,0,204)}
+Css: span#textcolor330{color:rgb(153,0,204)}
+Css: span#textcolor331{color:rgb(153,0,204)}
+File: ../img/graphics/scatterplot1.png
+l. 264 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/graphics/scatterplot2-.png' ../img/graphics/scatterplot2.pdf" ---
+File: ../img/graphics/scatterplot2-.png
+Css: span#textcolor332{color:rgb(153,0,204)}
+l. 277 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/graphics/scatterplot3-.png' ../img/graphics/scatterplot3.pdf" ---
+File: ../img/graphics/scatterplot3-.png
+Css: span#textcolor333{color:rgb(153,0,204)}
+--- needs --- lsj.idv[365] ==> lsj224x.png ---
+--- needs --- lsj.idv[366] ==> lsj225x.png ---
+--- needs --- lsj.idv[368] ==> lsj226x.png ---
+Css: span#textcolor334{color:rgb(50,50,50)}
+--- needs --- lsj.idv[370] ==> lsj227x.png ---
+--- needs --- lsj.idv[371] ==> lsj228x.png ---
+Css: span#textcolor335{color:rgb(50,50,50)}
+--- needs --- lsj.idv[373] ==> lsj229x.png ---
+--- needs --- lsj.idv[375] ==> lsj230x.png ---
+--- needs --- lsj.idv[377] ==> lsj231x.png ---
+--- needs --- lsj.idv[378] ==> lsj232x.png ---
+--- needs --- lsj.idv[380] ==> lsj233x.png ---
+--- needs --- lsj.idv[381] ==> lsj234x.png ---
+--- needs --- lsj.idv[382] ==> lsj235x.png ---
+--- needs --- lsj.idv[383] ==> lsj236x.png ---
+--- needs --- lsj.idv[384] ==> lsj237x.png ---
+--- needs --- lsj.idv[385] ==> lsj238x.png ---
+Css: span#textcolor336{color:rgb(153,0,204)}
+--- needs --- lsj.idv[387] ==> lsj239x.png ---
+--- needs --- lsj.idv[388] ==> lsj240x.png ---
+Css: span#textcolor337{color:rgb(50,50,50)}
+--- needs --- lsj.idv[390] ==> lsj241x.png ---
+--- needs --- lsj.idv[391] ==> lsj242x.png ---
+File: ../img/regression/reg1.png
+--- needs --- lsj.idv[393] ==> lsj243x.png ---
+--- needs --- lsj.idv[394] ==> lsj244x.png ---
+--- needs --- lsj.idv[395] ==> lsj245x.png ---
+--- needs --- lsj.idv[396] ==> lsj246x.png ---
+--- needs --- lsj.idv[397] ==> lsj247x.png ---
+--- needs --- lsj.idv[398] ==> lsj248x.png ---
+Css: span#textcolor338{color:rgb(153,0,204)}
+--- needs --- lsj.idv[400] ==> lsj249x.png ---
+--- needs --- lsj.idv[401] ==> lsj250x.png ---
+--- needs --- lsj.idv[402] ==> lsj251x.png ---
+--- needs --- lsj.idv[403] ==> lsj252x.png ---
+--- needs --- lsj.idv[405] ==> lsj253x.png ---
+--- needs --- lsj.idv[407] ==> lsj254x.png ---
+--- needs --- lsj.idv[409] ==> lsj255x.png ---
+--- needs --- lsj.idv[411] ==> lsj256x.png ---
+--- needs --- lsj.idv[413] ==> lsj257x.png ---
+Css: span#textcolor339{color:rgb(153,0,204)}
+Css: span#textcolor340{color:rgb(50,50,50)}
+--- needs --- lsj.idv[415] ==> lsj258x.png ---
+--- needs --- lsj.idv[417] ==> lsj259x.png ---
+--- needs --- lsj.idv[418] ==> lsj260x.png ---
+--- needs --- lsj.idv[419] ==> lsj261x.png ---
+--- needs --- lsj.idv[421] ==> lsj262x.png ---
+--- needs --- lsj.idv[422] ==> lsj263x.png ---
+--- needs --- lsj.idv[424] ==> lsj264x.png ---
+--- needs --- lsj.idv[425] ==> lsj265x.png ---
+--- needs --- lsj.idv[426] ==> lsj266x.png ---
+--- needs --- lsj.idv[427] ==> lsj267x.png ---
+--- needs --- lsj.idv[429] ==> lsj268x.png ---
+--- needs --- lsj.idv[430] ==> lsj269x.png ---
+Css: span#textcolor341{color:rgb(50,50,50)}
+--- needs --- lsj.idv[432] ==> lsj270x.png ---
+--- needs --- lsj.idv[433] ==> lsj271x.png ---
+--- needs --- lsj.idv[434] ==> lsj272x.png ---
+--- needs --- lsj.idv[435] ==> lsj273x.png ---
+File: ../img/regression/reg2.png
+--- needs --- lsj.idv[437] ==> lsj274x.png ---
+--- needs --- lsj.idv[438] ==> lsj275x.png ---
+--- needs --- lsj.idv[439] ==> lsj276x.png ---
+Css: span#textcolor342{color:rgb(50,50,50)}
+--- needs --- lsj.idv[441] ==> lsj277x.png ---
+--- needs --- lsj.idv[442] ==> lsj278x.png ---
+Css: span#textcolor343{color:rgb(153,0,204)}
+Css: span#textcolor344{color:rgb(50,50,50)}
+--- needs --- lsj.idv[444] ==> lsj279x.png ---
+l. 694 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/regression/reg3-.png' ../img/regression/reg3.pdf" ---
+File: ../img/regression/reg3-.png
+Css: span#textcolor345{color:rgb(153,0,204)}
+Css: span#textcolor346{color:rgb(153,0,204)}
+--- needs --- lsj.idv[446] ==> lsj280x.png ---
+Css: span#textcolor347{color:rgb(153,0,204)}
+--- needs --- lsj.idv[448] ==> lsj281x.png ---
+--- needs --- lsj.idv[449] ==> lsj282x.png ---
+Css: span#textcolor348{color:rgb(50,50,50)}
+Css: span#textcolor349{color:rgb(153,0,204)}
+--- needs --- lsj.idv[451] ==> lsj283x.png ---
+--- needs --- lsj.idv[452] ==> lsj284x.png ---
+--- needs --- lsj.idv[453] ==> lsj285x.png ---
+--- needs --- lsj.idv[455] ==> lsj286x.png ---
+--- needs --- lsj.idv[457] ==> lsj287x.png ---
+--- needs --- lsj.idv[459] ==> lsj288x.png ---
+Css: span#textcolor350{color:rgb(153,0,204)}
+Css: span#textcolor351{color:rgb(153,0,204)}
+Css: span#textcolor352{color:rgb(50,50,50)}
+Css: span#textcolor353{color:rgb(153,0,204)}
+Css: span#textcolor354{color:rgb(153,0,204)}
+--- needs --- lsj.idv[461] ==> lsj289x.png ---
+File: ../img/regression/reg4.png
+Css: span#textcolor355{color:rgb(50,50,50)}
+l. 832 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/regression/reg5-.png' ../img/regression/reg5.pdf" ---
+File: ../img/regression/reg5-.png
+l. 844 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/regression/reg6a-.png' ../img/regression/reg6a.pdf" ---
+File: ../img/regression/reg6a-.png
+l. 845 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/regression/reg6b-.png' ../img/regression/reg6b.pdf" ---
+File: ../img/regression/reg6b-.png
+l. 847 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/regression/reg6c-.png' ../img/regression/reg6c.pdf" ---
+File: ../img/regression/reg6c-.png
+l. 848 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/regression/reg6d-.png' ../img/regression/reg6d.pdf" ---
+File: ../img/regression/reg6d-.png
+--- needs --- lsj.idv[463] ==> lsj290x.png ---
+Css: span#textcolor356{color:rgb(153,0,204)}
+--- needs --- lsj.idv[465] ==> lsj291x.png ---
+File: ../img/regression/reg7.png
+Css: span#textcolor357{color:rgb(153,0,204)}
+Css: span#textcolor358{color:rgb(153,0,204)}
+Css: span#textcolor359{color:rgb(153,0,204)}
+--- needs --- lsj.idv[467] ==> lsj292x.png ---
+Css: span#textcolor360{color:rgb(153,0,204)}
+Css: span#textcolor361{color:rgb(153,0,204)}
+Css: span#textcolor362{color:rgb(50,50,50)}
+Css: span#textcolor363{color:rgb(153,0,204)}
+Css: span#textcolor364{color:rgb(153,0,204)}
+--- needs --- lsj.idv[469] ==> lsj293x.png ---
+Css: span#textcolor365{color:rgb(50,50,50)}
+--- needs --- lsj.idv[471] ==> lsj294x.png ---
+--- needs --- lsj.idv[472] ==> lsj295x.png ---
+File: ../img/regression/reg8.png
+Css: span#textcolor366{color:rgb(153,0,204)}
+Css: span#textcolor367{color:rgb(153,0,204)}
+File: ../img/anova/anova1.png
+--- needs --- lsj.idv[474] ==> lsj296x.png ---
+--- needs --- lsj.idv[476] ==> lsj297x.png ---
+Css: span#textcolor368{color:rgb(50,50,50)}
+--- needs --- lsj.idv[478] ==> lsj298x.png ---
+--- needs --- lsj.idv[480] ==> lsj299x.png ---
+Css: span#textcolor369{color:rgb(153,0,204)}
+--- needs --- lsj.idv[482] ==> lsj300x.png ---
+Css: span#textcolor370{color:rgb(153,0,204)}
+--- needs --- lsj.idv[484] ==> lsj301x.png ---
+Css: span#textcolor371{color:rgb(153,0,204)}
+--- needs --- lsj.idv[486] ==> lsj302x.png ---
+--- needs --- lsj.idv[487] ==> lsj303x.png ---
+--- needs --- lsj.idv[489] ==> lsj304x.png ---
+--- needs --- lsj.idv[490] ==> lsj305x.png ---
+Css: span#textcolor372{color:rgb(50,50,50)}
+Css: span#textcolor373{color:rgb(153,0,204)}
+Css: span#textcolor374{color:rgb(153,0,204)}
+--- needs --- lsj.idv[492] ==> lsj306x.png ---
+--- needs --- lsj.idv[493] ==> lsj307x.png ---
+--- needs --- lsj.idv[494] ==> lsj308x.png ---
+--- needs --- lsj.idv[496] ==> lsj309x.png ---
+--- needs --- lsj.idv[497] ==> lsj310x.png ---
+--- needs --- lsj.idv[498] ==> lsj311x.png ---
+Css: span#textcolor375{color:rgb(153,0,204)}
+--- needs --- lsj.idv[500] ==> lsj312x.png ---
+--- needs --- lsj.idv[502] ==> lsj313x.png ---
+--- needs --- lsj.idv[503] ==> lsj314x.png ---
+Css: span#textcolor376{color:rgb(50,50,50)}
+--- needs --- lsj.idv[505] ==> lsj315x.png ---
+Css: span#textcolor377{color:rgb(50,50,50)}
+--- needs --- lsj.idv[507] ==> lsj316x.png ---
+Css: span#textcolor378{color:rgb(50,50,50)}
+--- needs --- lsj.idv[509] ==> lsj317x.png ---
+--- needs --- lsj.idv[511] ==> lsj318x.png ---
+Css: span#textcolor379{color:rgb(50,50,50)}
+--- needs --- lsj.idv[513] ==> lsj319x.png ---
+--- needs --- lsj.idv[515] ==> lsj320x.png ---
+--- needs --- lsj.idv[516] ==> lsj321x.png ---
+Css: span#textcolor380{color:rgb(50,50,50)}
+File: ../img/anova/anova2.png
+Css: span#textcolor381{color:rgb(153,0,204)}
+--- needs --- lsj.idv[518] ==> lsj322x.png ---
+--- needs --- lsj.idv[520] ==> lsj323x.png ---
+File: ../img/anova/anova3.png
+Css: span#textcolor382{color:rgb(153,0,204)}
+Css: span#textcolor383{color:rgb(50,50,50)}
+Css: span#textcolor384{color:rgb(153,0,204)}
+Css: span#textcolor385{color:rgb(153,0,204)}
+Css: span#textcolor386{color:rgb(50,50,50)}
+--- needs --- lsj.idv[522] ==> lsj324x.png ---
+Css: span#textcolor387{color:rgb(153,0,204)}
+--- needs --- lsj.idv[524] ==> lsj325x.png ---
+--- needs --- lsj.idv[525] ==> lsj326x.png ---
+--- needs --- lsj.idv[527] ==> lsj327x.png ---
+--- needs --- lsj.idv[529] ==> lsj328x.png ---
+Css: span#textcolor388{color:rgb(153,0,204)}
+Css: span#textcolor389{color:rgb(153,0,204)}
+Css: span#textcolor390{color:rgb(153,0,204)}
+Css: span#textcolor391{color:rgb(153,0,204)}
+Css: span#textcolor392{color:rgb(153,0,204)}
+--- needs --- lsj.idv[531] ==> lsj329x.png ---
+--- needs --- lsj.idv[533] ==> lsj330x.png ---
+File: ../img/anova/anova4.png
+Css: span#textcolor393{color:rgb(153,0,204)}
+File: ../img/anova/anova4a.png
+l. 639 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/anova/anova5-.png' ../img/anova/anova5.pdf" ---
+File: ../img/anova/anova5-.png
+Css: span#textcolor394{color:rgb(153,0,204)}
+--- needs --- lsj.idv[535] ==> lsj331x.png ---
+--- needs --- lsj.idv[537] ==> lsj332x.png ---
+--- needs --- lsj.idv[538] ==> lsj333x.png ---
+--- needs --- lsj.idv[539] ==> lsj334x.png ---
+--- needs --- lsj.idv[541] ==> lsj335x.png ---
+Css: span#textcolor395{color:rgb(50,50,50)}
+--- needs --- lsj.idv[543] ==> lsj336x.png ---
+--- needs --- lsj.idv[545] ==> lsj337x.png ---
+File: ../img/anova/anova6.png
+--- needs --- lsj.idv[547] ==> lsj338x.png ---
+Css: span#textcolor396{color:rgb(50,50,50)}
+File: ../img/anova/RManova1.png
+File: ../img/anova/RManova2.png
+File: ../img/anova/RManova3.png
+File: ../img/anova/RManova4.png
+File: ../img/anova/RManova5.png
+File: ../img/anova/RManova6.png
+Css: span#textcolor397{color:rgb(153,0,204)}
+Css: span#textcolor398{color:rgb(153,0,204)}
+File: ../img/factorialanova/factorialanova1.png
+Css: span#textcolor399{color:rgb(153,0,204)}
+Css: span#textcolor400{color:rgb(153,0,204)}
+Css: span#textcolor401{color:rgb(50,50,50)}
+Css: span#textcolor402{color:rgb(153,0,204)}
+Css: span#textcolor403{color:rgb(50,50,50)}
+l. 117 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova2-.png' ../img/factorialanova/factorialanova2.pdf" ---
+File: ../img/factorialanova/factorialanova2-.png
+l. 128 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova3-.png' ../img/factorialanova/factorialanova3.pdf" ---
+File: ../img/factorialanova/factorialanova3-.png
+--- needs --- lsj.idv[549] ==> lsj339x.png ---
+--- needs --- lsj.idv[551] ==> lsj340x.png ---
+Css: span#textcolor404{color:rgb(153,0,204)}
+--- needs --- lsj.idv[553] ==> lsj341x.png ---
+Css: span#textcolor405{color:rgb(50,50,50)}
+--- needs --- lsj.idv[555] ==> lsj342x.png ---
+--- needs --- lsj.idv[557] ==> lsj343x.png ---
+--- needs --- lsj.idv[559] ==> lsj344x.png ---
+--- needs --- lsj.idv[560] ==> lsj345x.png ---
+--- needs --- lsj.idv[562] ==> lsj346x.png ---
+--- needs --- lsj.idv[563] ==> lsj347x.png ---
+--- needs --- lsj.idv[564] ==> lsj348x.png ---
+--- needs --- lsj.idv[565] ==> lsj349x.png ---
+--- needs --- lsj.idv[567] ==> lsj350x.png ---
+--- needs --- lsj.idv[568] ==> lsj351x.png ---
+--- needs --- lsj.idv[569] ==> lsj352x.png ---
+--- needs --- lsj.idv[570] ==> lsj353x.png ---
+Css: span#textcolor406{color:rgb(153,0,204)}
+File: ../img/factorialanova/interaction.png
+--- needs --- lsj.idv[572] ==> lsj354x.png ---
+--- needs --- lsj.idv[574] ==> lsj355x.png ---
+--- needs --- lsj.idv[575] ==> lsj356x.png ---
+--- needs --- lsj.idv[576] ==> lsj357x.png ---
+--- needs --- lsj.idv[578] ==> lsj358x.png ---
+--- needs --- lsj.idv[580] ==> lsj359x.png ---
+--- needs --- lsj.idv[581] ==> lsj360x.png ---
+--- needs --- lsj.idv[582] ==> lsj361x.png ---
+--- needs --- lsj.idv[584] ==> lsj362x.png ---
+--- needs --- lsj.idv[585] ==> lsj363x.png ---
+--- needs --- lsj.idv[586] ==> lsj364x.png ---
+--- needs --- lsj.idv[588] ==> lsj365x.png ---
+Css: span#textcolor407{color:rgb(50,50,50)}
+l. 351 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova4-.png' ../img/factorialanova/factorialanova4.pdf" ---
+File: ../img/factorialanova/factorialanova4-.png
+--- needs --- lsj.idv[590] ==> lsj366x.png ---
+Css: span#textcolor408{color:rgb(50,50,50)}
+--- needs --- lsj.idv[592] ==> lsj367x.png ---
+Css: span#textcolor409{color:rgb(50,50,50)}
+Css: span#textcolor410{color:rgb(153,0,204)}
+File: ../img/factorialanova/margmean1.png
+File: ../img/factorialanova/margmean2.png
+l. 450 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova5-.png' ../img/factorialanova/factorialanova5.pdf" ---
+File: ../img/factorialanova/factorialanova5-.png
+File: ../img/factorialanova/ancova_groups.png
+File: ../img/factorialanova/ancova1.png
+File: ../img/factorialanova/ancova2.png
+File: ../img/factorialanova/ancova3.png
+File: ../img/factorialanova/ancova4.png
+Css: span#textcolor411{color:rgb(153,0,204)}
+--- needs --- lsj.idv[594] ==> lsj368x.png ---
+--- needs --- lsj.idv[595] ==> lsj369x.png ---
+File: ../img/factorialanova/rtfmdescriptives.png
+--- needs --- lsj.idv[597] ==> lsj370x.png ---
+l. 687 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova6-.png' ../img/factorialanova/factorialanova6.pdf" ---
+File: ../img/factorialanova/factorialanova6-.png
+--- needs --- lsj.idv[599] ==> lsj371x.png ---
+--- needs --- lsj.idv[601] ==> lsj372x.png ---
+--- needs --- lsj.idv[602] ==> lsj373x.png ---
+l. 737 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova7-.png' ../img/factorialanova/factorialanova7.pdf" ---
+File: ../img/factorialanova/factorialanova7-.png
+l. 752 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova8-.png' ../img/factorialanova/factorialanova8.pdf" ---
+File: ../img/factorialanova/factorialanova8-.png
+Css: span#textcolor412{color:rgb(153,0,204)}
+l. 788 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova9-.png' ../img/factorialanova/factorialanova9.pdf" ---
+File: ../img/factorialanova/factorialanova9-.png
+l. 799 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova10-.png' ../img/factorialanova/factorialanova10.pdf" ---
+File: ../img/factorialanova/factorialanova10-.png
+File: ../img/factorialanova/factorialanova11.png
+File: ../img/factorialanova/regfactors.png
+Css: span#textcolor413{color:rgb(153,0,204)}
+Css: span#textcolor414{color:rgb(153,0,204)}
+Css: span#textcolor415{color:rgb(153,0,204)}
+Css: span#textcolor416{color:rgb(50,50,50)}
+Css: span#textcolor417{color:rgb(153,0,204)}
+Css: span#textcolor418{color:rgb(50,50,50)}
+Css: span#textcolor419{color:rgb(153,0,204)}
+File: ../img/factorialanova/factorialanova13.png
+l. 959 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova14-.png' ../img/factorialanova/factorialanova14.pdf" ---
+File: ../img/factorialanova/factorialanova14-.png
+Css: span#textcolor420{color:rgb(153,0,204)}
+Css: span#textcolor421{color:rgb(153,0,204)}
+File: ../img/factorialanova/factorialanova15.png
+Css: span#textcolor422{color:rgb(50,50,50)}
+Css: span#textcolor423{color:rgb(50,50,50)}
+Css: span#textcolor424{color:rgb(153,0,204)}
+l. 1034 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova16-.png' ../img/factorialanova/factorialanova16.pdf" ---
+File: ../img/factorialanova/factorialanova16-.png
+l. 1045 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova17-.png' ../img/factorialanova/factorialanova17.pdf" ---
+File: ../img/factorialanova/factorialanova17-.png
+Css: span#textcolor425{color:rgb(50,50,50)}
+l. 1112 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova18-.png' ../img/factorialanova/factorialanova18.pdf" ---
+File: ../img/factorialanova/factorialanova18-.png
+Css: span#textcolor426{color:rgb(50,50,50)}
+Css: span#textcolor427{color:rgb(153,0,204)}
+Css: span#textcolor428{color:rgb(50,50,50)}
+Css: span#textcolor429{color:rgb(101,101,101)}
+l. 1189 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/factorialanova/factorialanova19-.png' ../img/factorialanova/factorialanova19.pdf" ---
+File: ../img/factorialanova/factorialanova19-.png
+Css: span#textcolor430{color:rgb(50,50,50)}
+Css: span#textcolor431{color:rgb(153,0,204)}
+Css: span#textcolor432{color:rgb(153,0,204)}
+File: ../img/factoranalysis/fa1.png
+Css: span#textcolor433{color:rgb(50,50,50)}
+Css: span#textcolor434{color:rgb(153,0,204)}
+Css: span#textcolor435{color:rgb(153,0,204)}
+File: ../img/factoranalysis/fa2.png
+File: ../img/factoranalysis/fa3.png
+File: ../img/factoranalysis/fa4.png
+Css: span#textcolor436{color:rgb(50,50,50)}
+File: ../img/factoranalysis/fa5.png
+File: ../img/factoranalysis/fa6.png
+Css: span#textcolor437{color:rgb(50,50,50)}
+File: ../img/factoranalysis/fa7.png
+Css: span#textcolor438{color:rgb(50,50,50)}
+Css: span#textcolor439{color:rgb(50,50,50)}
+File: ../img/factoranalysis/fa8.png
+File: ../img/factoranalysis/fa9.png
+File: ../img/factoranalysis/fa10.png
+File: ../img/factoranalysis/fa11.png
+File: ../img/factoranalysis/fa12.png
+Css: span#textcolor440{color:rgb(153,0,204)}
+Css: span#textcolor441{color:rgb(50,50,50)}
+File: ../img/factoranalysis/pca1.png
+File: ../img/factoranalysis/pca2.png
+File: ../img/factoranalysis/pca3.png
+File: ../img/factoranalysis/pca4.png
+File: ../img/factoranalysis/pca5.png
+File: ../img/factoranalysis/pca6.png
+Css: span#textcolor442{color:rgb(153,0,204)}
+Css: span#textcolor443{color:rgb(50,50,50)}
+Css: span#textcolor444{color:rgb(153,0,204)}
+File: ../img/factoranalysis/cfa1.png
+Css: span#textcolor445{color:rgb(153,0,204)}
+File: ../img/factoranalysis/cfa2.png
+Css: span#textcolor446{color:rgb(153,0,204)}
+File: ../img/factoranalysis/cfa3.png
+File: ../img/factoranalysis/cfa4.png
+File: ../img/factoranalysis/cfa5.png
+File: ../img/factoranalysis/cfa6.png
+File: ../img/factoranalysis/cfa7.png
+Css: span#textcolor447{color:rgb(153,0,204)}
+Css: span#textcolor448{color:rgb(153,0,204)}
+File: ../img/factoranalysis/MTMM1.png
+File: ../img/factoranalysis/MTMM2.png
+File: ../img/factoranalysis/MTMM3.png
+Css: span#textcolor449{color:rgb(153,0,204)}
+File: ../img/factoranalysis/MTMM4.png
+File: ../img/factoranalysis/MTMM5.png
+File: ../img/factoranalysis/MTMM6.png
+File: ../img/factoranalysis/MTMM7.png
+File: ../img/factoranalysis/MTMM8.png
+File: ../img/factoranalysis/MTMM9.png
+Css: span#textcolor450{color:rgb(153,0,204)}
+Css: span#textcolor451{color:rgb(153,0,204)}
+Css: span#textcolor452{color:rgb(153,0,204)}
+File: ../img/factoranalysis/rel1.png
+File: ../img/factoranalysis/rel2.png
+Css: span#textcolor453{color:rgb(50,50,50)}
+Css: span#textcolor454{color:rgb(50,50,50)}
+Css: span#textcolor455{color:rgb(153,0,204)}
+Css: span#textcolor456{color:rgb(50,50,50)}
+Css: span#textcolor457{color:rgb(153,0,204)}
+Css: span#textcolor458{color:rgb(50,50,50)}
+Css: span#textcolor459{color:rgb(153,0,204)}
+--- needs --- lsj.idv[604] ==> lsj374x.png ---
+--- needs --- lsj.idv[605] ==> lsj375x.png ---
+Css: span#textcolor460{color:rgb(50,50,50)}
+Css: span#textcolor461{color:rgb(50,50,50)}
+Css: span#textcolor462{color:rgb(153,0,204)}
+Css: span#textcolor463{color:rgb(153,0,204)}
+Css: span#textcolor464{color:rgb(50,50,50)}
+--- needs --- lsj.idv[607] ==> lsj376x.png ---
+--- needs --- lsj.idv[608] ==> lsj377x.png ---
+Css: span#textcolor465{color:rgb(153,0,204)}
+Css: span#textcolor466{color:rgb(153,0,204)}
+--- needs --- lsj.idv[610] ==> lsj378x.png ---
+--- needs --- lsj.idv[611] ==> lsj379x.png ---
+Css: span#textcolor467{color:rgb(50,50,50)}
+Css: span#textcolor468{color:rgb(153,0,204)}
+--- needs --- lsj.idv[613] ==> lsj380x.png ---
+--- needs --- lsj.idv[615] ==> lsj381x.png ---
+Css: span#textcolor469{color:rgb(153,0,204)}
+Css: span#textcolor470{color:rgb(153,0,204)}
+--- needs --- lsj.idv[617] ==> lsj382x.png ---
+Css: span#textcolor471{color:rgb(153,0,204)}
+--- needs --- lsj.idv[619] ==> lsj383x.png ---
+--- needs --- lsj.idv[620] ==> lsj384x.png ---
+Css: span#textcolor472{color:rgb(50,50,50)}
+Css: span#textcolor473{color:rgb(50,50,50)}
+Css: span#textcolor474{color:rgb(50,50,50)}
+Css: span#textcolor475{color:rgb(50,50,50)}
+Css: span#textcolor476{color:rgb(50,50,50)}
+--- needs --- lsj.idv[622] ==> lsj385x.png ---
+Css: span#textcolor477{color:rgb(50,50,50)}
+Css: span#textcolor478{color:rgb(50,50,50)}
+Css: span#textcolor479{color:rgb(50,50,50)}
+File: ../img/bayes/bayes1.png
+File: ../img/bayes/bayes2.png
+l. 603 --- needs --- "gs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../img/bayes/bayes3-.png' ../img/bayes/bayes3.pdf" ---
+File: ../img/bayes/bayes3-.png
+tex4ht.c error: 21
+--- characters ---
+Font("cmr","5","5","100")
+Font("cmr","7","7","100")
+Font("cmr","10","10","100")
+Font("cmmi","7","7","100")
+Font("cmmi","10","10","100")
+Font("cmsy","10","10","100")
+Font("cmr","12","12","100")
+Font("cmr","17","17","120")
+Font("cmr","12","12","120")
+Font("cmmi","12","12","120")
+Font("matha","12","12","120")
+Font("matha","10","10","100")
+Font("matha","7","7","100")
+Font("mathx","10","10","144")
+Font("mathx","10","10","100")
+Font("cmtt","12","12","120")
+Font("cmbx","12","12","100")
+Font("cmti","12","12","100")
+Font("cmr","8","8","100")
+Font("cmr","6","6","100")
+Font("cmmi","12","12","100")
+Font("cmmi","8","8","100")
+Font("cmmi","6","6","100")
+Font("cmsy","10","10","120")
+Font("msam","10","10","120")
+Font("matha","12","12","100")
+Font("matha","8","8","100")
+Font("mathx","10","10","120")
+Font("cmtt","12","12","100")
+Font("cmti","12","12","120")
+Font("cmbx","12","12","144")
+Font("cmss","12","12","100")
+Font("cmr","10","10","109")
+Font("cmti","10","10","100")
+Font("cmtt","10","10","100")
+Font("cmbx","12","12","120")
+Font("cmti","10","10","109")
+Font("cmss","12","12","120")
+Font("cmbx","10","10","100")
+Font("cmcsc","10","10","120")
+Font("cmtt","8","8","100")
+Font("cmtt","10","10","109")
+Font("cmmi","10","10","109")
+Font("cmbx","10","10","109")
+Font("matha","10","10","109")
+Font("mathx","10","10","109")
+Font("cmitt","10","10","120")
+Font("cmcsc","10","10","100")
+Font("cmss","10","10","100")

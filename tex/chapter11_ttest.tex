@@ -10,17 +10,17 @@ In Chapter~\ref{ch:chisquare} we covered the situation when your outcome variabl
 The standard answer to the problem of comparing means is to use a $t$-test, of which there are several varieties depending on exactly what question you want to solve. As a consequence, the majority of this chapter focuses on different types of $t$-test: one sample $t$-tests are discussed in Section~\ref{sec:onesamplettest}, independent samples $t$-tests are discussed in Sections~\ref{sec:studentttest} and~\ref{sec:welchttest}, and paired samples $t$-tests are discussed in Section~\ref{sec:pairedsamplesttest}. We'll then talk about one sided tests (Section~\ref{sec:onesidedttest}) and, after that, we'll talk a bit about Cohen's $d$, which is the standard measure of effect size for a $t$-test (Section~\ref{sec:cohensd}). The later sections of the chapter focus on the assumptions of the $t$-tests, and possible remedies if they are violated. However, before discussing any of these useful things, we'll start with a discussion of the $z$-test. 
 
 
-\section{The one-sample \texorpdfstring{\boldm{$z$}}{}-test}~\label{sec:onesampleztest}
+\section{The one-sample $z$-test}~\label{sec:onesampleztest}
 
 In this section I'll describe one of the most useless tests in all of statistics: the \keyterm{$z$-test}. Seriously -- this test is almost never used in real life. Its only real purpose is that, when teaching statistics, it's a very convenient stepping stone along the way towards the $t$-test, which is probably the most (over)used tool in all statistics.
 
-\SUBSECTION{The inference problem that the test addresses}
+\subsection{The inference problem that the test addresses}
 
-To introduce the idea behind the $z$-test, let's use a simple example. A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let's suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of his many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering if the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower? He emails me the \filename{zeppo.csv} file, which I use to look at the \rtext{grades} of those students, in the jamovi spreadsheet view, 
-\begin{rblock1}
+To introduce the idea behind the $z$-test, let's use a simple example. A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let's suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of his many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering if the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower? He emails me the \filename{zeppo.csv} file, which I use to look at the \texttt{grades} of those students, in the jamovi spreadsheet view, 
+\begin{verbatim}
 50 60 60 64 66 66 67 69 70 74 76 76 77 79 79 79 81 82 82 89
-\end{rblock1} 
-and then calculate the mean in `Exploration' - `Descriptives' \FOOTNOTE{In order to do this I had to change the measurement level for \rtext{X} to `Continuous', as during the opening / import of the csv file jamovi made this a nominal level variable, which isn't right for my analysis}. The mean value is 72.3.
+\end{verbatim} 
+and then calculate the mean in `Exploration' - `Descriptives' \FOOTNOTE{In order to do this I had to change the measurement level for \texttt{X} to `Continuous', as during the opening / import of the csv file jamovi made this a nominal level variable, which isn't right for my analysis}. The mean value is 72.3.
 
 Hmm. It {\it might} be that the psychology students are scoring a bit higher than normal. That sample mean of $\bar{X} = 72.3$ is a fair bit higher than the hypothesised population mean of $\mu = 67.5$ but, on the other hand, a sample size of $N = 20$ isn't all that big. Maybe it's pure chance. 
 
@@ -32,12 +32,12 @@ Next, it helps to be clear about what I want to learn from the data. In this cas
 \begin{center}
 \epsfig{file = ../img/ttest/Zeppo.eps, clip=true,width = 10cm}
 \caption{The theoretical distribution (solid line) from which the psychology student grades (bars) are supposed to have been generated.}
-\HR
+%\HR
 \label{fig:zeppo}
 \end{center}
 \end{figure}
 
-\SUBSECTION{Constructing the hypothesis test}
+\subsection{Constructing the hypothesis test}
 
 The first step in constructing a hypothesis test is to be clear about what the null and alternative hypotheses are. This isn't too hard to do. Our null hypothesis, $H_0$, is that the true population mean $\mu$ for psychology student grades is 67.5\%, and our alternative hypothesis is that the population mean {\it isn't} 67.5\%. If we write this in mathematical notation, these hypotheses become:
 $$
@@ -58,7 +58,7 @@ For the moment, we'll act as if these are absolutely trustworthy facts. In real 
 \begin{center}
 \epsfig{file = ../img/ttest/oneSampleZTestHyp,clip=true, width = 12cm}
 \caption{Graphical illustration of the null and alternative hypotheses assumed by the one sample $z$-test (the two sided version, that is). The null and alternative hypotheses both assume that the population distribution is normal, and additionally assumes that the population standard deviation is known (fixed at some value $\sigma_0$). The null hypothesis (left) is that the population mean $\mu$ is equal to some specified value $\mu_0$. The alternative hypothesis is that the population mean differs from this value, $\mu \neq \mu_0$.}
-\HR
+%\HR
 \label{fig:ztesthyp}
 \end{center}
 \end{figure}
@@ -95,13 +95,17 @@ z_{\bar{X}} \sim \mbox{Normal}(0,1)
 $$
 (again, see Section~\ref{sec:zscore} if you've forgotten why this is true). In other words, regardless of what scale the original data are on, the $z$-statistic itself always has the same interpretation: it's equal to the number of standard errors that separate the observed sample mean $\bar{X}$ from the population mean $\mu_0$ predicted by the null hypothesis. Better yet, regardless of what the population parameters for the raw scores actually are, the 5\% critical regions for the $z$-test are always the same, as illustrated in Figure~\ref{fig:ztest}. And what this meant, way back in the days where people did all their statistics by hand, is that someone could publish a table like this:
 \begin{center}
-\begin{tabular}{c|cc}
-& \multicolumn{2}{|c}{critical $z$ value} \\
-desired $\alpha$ level & two-sided test & one-sided test \\ \hline
-.1  &  1.644854 & 1.281552 \\
-.05 &  1.959964 & 1.644854 \\
-.01 &  2.575829 & 2.326348 \\
-.001&  3.290527 & 3.090232 \\
+\begin{tabular}{lrr}
+\hline
+~                      & \multicolumn{2}{c}{critical $z$ value} \\
+\cline{2-3}
+desired $\alpha$ level & two-sided test & one-sided test        \\
+\hline
+.1                     &       1.644854 &       1.281552        \\
+.05                    &       1.959964 &       1.644854        \\
+.01                    &       2.575829 &       2.326348        \\
+.001                   &       3.290527 &       3.090232        \\
+\hline
 \end{tabular}
 \end{center}
 This, in turn, meant that researchers could calculate their $z$-statistic by hand and then look up the critical value in a text book. 
@@ -114,35 +118,35 @@ This, in turn, meant that researchers could calculate their $z$-statistic by han
 \\ (a) & (b) 
 \end{tabular}
 \caption{Rejection regions for the two-sided $z$-test (panel a) and the one-sided $z$-test (panel b).}
-\HR
+%\HR
 \label{fig:ztest}
 \end{center}
 \end{figure}
 
-\SUBSECTION{A worked example, by hand}
+\subsection{A worked example, by hand}
 
-Now, as I mentioned earlier, the $z$-test is almost never used in practice. It's so rarely used in real life that the basic installation of jamovi doesn't have a built in function for it. However, the test is so incredibly simple that it's really easy to do one manually. Let's go back to the data from Dr Zeppo's class. Having loaded the \rtext{grades} data, the first thing I need to do is calculate the sample mean, which I've already done (72.3). We already have the known population standard deviation ($\sigma = 9.5$), and the value of the population mean that the null hypothesis specifies ($\mu_0 = 67.5$), and we know the sample size (N=20). 
+Now, as I mentioned earlier, the $z$-test is almost never used in practice. It's so rarely used in real life that the basic installation of jamovi doesn't have a built in function for it. However, the test is so incredibly simple that it's really easy to do one manually. Let's go back to the data from Dr Zeppo's class. Having loaded the \texttt{grades} data, the first thing I need to do is calculate the sample mean, which I've already done (72.3). We already have the known population standard deviation ($\sigma = 9.5$), and the value of the population mean that the null hypothesis specifies ($\mu_0 = 67.5$), and we know the sample size (N=20). 
 
 Next, let's calculate the (true) standard error of the mean (easily done with a calculator):
-\begin{rblock1}
+\begin{verbatim}
 	sem.true = sd.true / sqrt(N) 
 		 = 9.5 / sqrt(20) 
 		 = 2.124265
-\end{rblock1}
+\end{verbatim}
 
 And finally, we calculate our $z$-score:
-\begin{rblock1}
+\begin{verbatim}
 	z.score  = (sample.mean - mu.null) / sem.true 
 		 = (72.3 - 67.5) / 2.124265 
 		 = 2.259606
-\end{rblock1}
+\end{verbatim}
 
 At this point, we would traditionally look up the value 2.26 in our table of critical values. Our original hypothesis was two-sided (we didn't really have any theory about whether psych students would be better or worse at statistics than other students) so our hypothesis test is two-sided (or two-tailed) also. Looking at the little table that I showed earlier, we can see that 2.26 is bigger than the critical value of 1.96 that would be required to be significant at $\alpha = .05$, but smaller than the value of 2.58 that would be required to be significant at a level of $\alpha = .01$. Therefore, we can conclude that we have a significant effect, which we might write up by saying something like this:
 \begin{quote}
 With a mean grade of 73.2 in the sample of psychology students, and assuming a true population standard deviation of 9.5, we can conclude that the psychology students have significantly different statistics scores to the class average ($z = 2.26$, $N=20$, $p<.05$). 
 \end{quote}
  
-\SUBSECTION{Assumptions of the \texorpdfstring{$z$}{z}-test~\label{sec:zassumptions}}
+\subsection{Assumptions of the $z$-test~\label{sec:zassumptions}}
 
 As I've said before, all statistical tests make assumptions. Some tests make reasonable assumptions, while other tests do not. The test I've just described, the one sample $z$-test, makes three basic assumptions. These are:
 \begin{itemize}
@@ -153,7 +157,7 @@ As I've said before, all statistical tests make assumptions. Some tests make rea
 In view of the stupidity of assuming that $\sigma$ is known, let's see if we can live without it. This takes us out of the dreary domain of the $z$-test, and into the magical kingdom of the $t$-test, with unicorns and fairies and leprechauns!
 
 
-\section{The one-sample \texorpdfstring{\boldm{$t$}}{}-test~\label{sec:onesamplettest}}
+\section{The one-sample $t$-test~\label{sec:onesamplettest}}
 
 After some thought, I decided that it might not be safe to assume that the psychology student grades necessarily have the same standard deviation as the other students in Dr Zeppo's class. After all, if I'm entertaining the hypothesis that they don't have the same mean, then why should I believe that they absolutely have the same standard deviation? In view of this, I should really stop assuming that I know the true value of $\sigma$. This violates the assumptions of my $z$-test, so in one sense I'm back to square one. However, it's not like I'm completely bereft of options. After all, I've still got my raw data, and those raw data give me an {\it estimate} of the population standard deviation, which is 9.52. In other words, while I can't say that I know that $\sigma$ = 9.5, I {\it can} say that $\hat\sigma$ = 9.52. 
 
@@ -162,13 +166,13 @@ Okay, cool. The obvious thing that you might think to do is run a $z$-test, but 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/oneSampleTTestHyp, clip=true,width = 14cm}
-\caption{Graphical illustration of the null and alternative hypotheses assumed by the (two sided) one sample \texorpdfstring{$t$}{}-test. Note the similarity to the \texorpdfstring{$z$}{}-test (Figure~\ref{fig:ztesthyp}). The null hypothesis is that the population mean \texorpdfstring{$\mu$}{} is equal to some specified value \texorpdfstring{$\mu_0$}{}, and the alternative hypothesis is that it is not. Like the \texorpdfstring{$z$}{}-test, we assume that the data are normally distributed, but we do not assume that the population standard deviation \texorpdfstring{$\sigma$}{} is known in advance.}
-\HR
+\caption{Graphical illustration of the null and alternative hypotheses assumed by the (two sided) one sample $t$-test. Note the similarity to the $z$-test (Figure~\ref{fig:ztesthyp}). The null hypothesis is that the population mean $\mu$ is equal to some specified value $\mu_0$, and the alternative hypothesis is that it is not. Like the $z$-test, we assume that the data are normally distributed, but we do not assume that the population standard deviation $\sigma$ is known in advance.}
+%\HR
 \label{fig:ttesthyp_onesample}
 \end{center}
 \end{figure}
 
-\SUBSECTION{Introducing the \texorpdfstring{$t$}{t}-test}
+\subsection{Introducing the $t$-test}
 
 This ambiguity is annoying, and it was resolved in 1908 by a guy called William Sealy Gosset \parencite{Student1908}, who was working as a chemist for the Guinness brewery at the time \parencite[see][]{Box1987}. Because Guinness took a dim view of its employees publishing statistical analysis (apparently they felt it was a trade secret), he published the work under the pseudonym ``A Student'' and, to this day, the full name of the $t$-test is actually \keyterm{Student's $t$-test}. The key thing that Gosset figured out is how we should accommodate the fact that we aren't completely sure what the true standard deviation is.\FOOTNOTE{Well, sort of. As I understand the history, Gosset only provided a partial solution; the general solution to the problem was provided by Sir Ronald Fisher.} The answer is that it subtly changes the sampling distribution. In the $t$-test our test statistic, now called a $t$-statistic, is calculated in exactly the same way I mentioned above. If our null hypothesis is that the true mean is $\mu$, but our sample has mean $\bar{X}$ and our estimate of the population standard deviation is $\hat{\sigma}$, then our $t$ statistic is:
 $$
@@ -180,21 +184,21 @@ The only thing that has changed in the equation is that instead of using the kno
 \begin{center}
 \epsfig{file = ../img/ttest2/tdist_3.eps,clip=true,width = 13cm}
 \caption{The $t$ distribution with 2 degrees of freedom (left) and 10 degrees of freedom (right), with a standard normal distribution (i.e., mean 0 and std dev 1) plotted as dotted lines for comparison purposes. Notice that the $t$ distribution has heavier tails (leptokurtic: higher kurtosis) than the normal distribution; this effect is quite exaggerated when the degrees of freedom are very small, but negligible for larger values. In other words, for large $df$ the $t$ distribution is essentially identical to a normal distribution.}
-\HR
+%\HR
 \label{fig:ttestdist}
 \end{center}
 \end{figure}
 
-\SUBSECTION{Doing the test in jamovi}
+\subsection{Doing the test in jamovi}
 
-As you might expect, the mechanics of the $t$-test are almost identical to the mechanics of the $z$-test. So there's not much point in going through the tedious exercise of showing you how to do the calculations using low level commands. It's pretty much identical to the calculations that we did earlier, except that we use the estimated standard deviation and then we test our hypothesis using the $t$ distribution rather than the normal distribution. And so instead of going through the calculations in tedious detail for a second time, I'll jump straight to showing you how $t$-tests are actually done. jamovi comes with a dedicated analysis for $t$-tests that is very flexible (it can run lots of different kinds of $t$-tests). It's pretty straightforward to use; all you need to do is specify `Analyses' - `T-Tests' - `One Sample T-Test', move the variable you are interested in (\rtext{X}) across into the `Variables' box, and type in the mean value for the null hypothesis (`67.5') in the `Hypothesis' - `Test value' box. Easy enough. See Figure \ref{fig:ttest_one}, which, amongst other things that we will get to in a moment, gives you a $t$-test statistic = 2.25, with 19 degrees of freedom and an associated $p$-value of 0.036. 
+As you might expect, the mechanics of the $t$-test are almost identical to the mechanics of the $z$-test. So there's not much point in going through the tedious exercise of showing you how to do the calculations using low level commands. It's pretty much identical to the calculations that we did earlier, except that we use the estimated standard deviation and then we test our hypothesis using the $t$ distribution rather than the normal distribution. And so instead of going through the calculations in tedious detail for a second time, I'll jump straight to showing you how $t$-tests are actually done. jamovi comes with a dedicated analysis for $t$-tests that is very flexible (it can run lots of different kinds of $t$-tests). It's pretty straightforward to use; all you need to do is specify `Analyses' - `T-Tests' - `One Sample T-Test', move the variable you are interested in (\texttt{X}) across into the `Variables' box, and type in the mean value for the null hypothesis (`67.5') in the `Hypothesis' - `Test value' box. Easy enough. See Figure \ref{fig:ttest_one}, which, amongst other things that we will get to in a moment, gives you a $t$-test statistic = 2.25, with 19 degrees of freedom and an associated $p$-value of 0.036. 
 
 \vspace{0.5cm}
 \begin{figure}[ht]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_one.png, clip=true,width = 14cm}
 \caption{jamovi does the one-sample t-test.}
-\HR
+%\HR
 \label{fig:ttest_one}
 \end{center}
 \end{figure}
@@ -209,7 +213,7 @@ $t(19) = 2.25$, $p<.05$, CI$_{95} = [67.8, 76.8]$
 \end{quote}
 With that much jargon crammed into half a line, you know it must be really smart.\FOOTNOTE{More seriously, I tend to think the reverse is true. I get very suspicious of technical reports that fill their results sections with nothing except the numbers. It might just be that I'm an arrogant jerk, but I often feel like an author that makes no attempt to explain and interpret their analysis to the reader either doesn't understand it themselves, or is being a bit lazy. Your readers are smart, but not infinitely patient. Don't annoy them if you can help it.}
 
-\SUBSECTION{Assumptions of the one sample \texorpdfstring{\boldm{$t$}}{}-test~\label{sec:ttestoneassumptions}}
+\subsection{Assumptions of the one sample $t$-test~\label{sec:ttestoneassumptions}}
 
 Okay, so what assumptions does the one-sample $t$-test make? Well, since the $t$-test is basically a $z$-test with the assumption of known standard deviation removed, you shouldn't be surprised to see that it makes the same assumptions as the $z$-test, minus the one about the known standard deviation. That is
 \begin{itemize}
@@ -219,20 +223,23 @@ Okay, so what assumptions does the one-sample $t$-test make? Well, since the $t$
 Overall, these two assumptions aren't terribly unreasonable, and as a consequence the one-sample $t$-test is pretty widely used in practice as a way of comparing a sample mean against a hypothesised population mean.
 
 
-\section{The independent samples \texorpdfstring{\boldm{$t$}}{}-test (Student test)~\label{sec:studentttest}}
+\section{The independent samples $t$-test (Student test)~\label{sec:studentttest}}
 
 Although the one sample $t$-test has its uses, it's not the most typical example of a $t$-test\FOOTNOTE{Although it is the simplest, which is why I started with it.}. A much more common situation arises when you've got two different groups of observations. In psychology, this tends to correspond to two different groups of participants, where each group corresponds to a different condition in your study. For each person in the study you measure some outcome variable of interest, and the research question that you're asking is whether or not the two groups have the same population mean. This is the situation that the independent samples $t$-test is designed for. 
 
-\SUBSECTION{The data}
+\subsection{The data}
 
-Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades, in the \filename{harpo.csv} file. As usual, I'll load the file into jamovi and have a look at what variables it contains - there are three variables, \rtext{ID}, \rtext{grade} and \rtext{tutor}. The \rtext{grade} variable contains each student's grade, but it is not imported into jamovi with the correct measurement level attribute, so I need to change this so it is regarded as a continuous variable (see section \ref{sec:coercion}). The \rtext{tutor} variable is a factor that indicates who each student's tutor was - either Anastasia or Bernadette. 
+Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades, in the \filename{harpo.csv} file. As usual, I'll load the file into jamovi and have a look at what variables it contains - there are three variables, \texttt{ID}, \texttt{grade} and \texttt{tutor}. The \texttt{grade} variable contains each student's grade, but it is not imported into jamovi with the correct measurement level attribute, so I need to change this so it is regarded as a continuous variable (see section \ref{sec:coercion}). The \texttt{tutor} variable is a factor that indicates who each student's tutor was - either Anastasia or Bernadette. 
 
 We can calculate means and standard deviations, using the `Exploration' - `descriptives' analysis, and here's a nice little summary table:
 \begin{center}
-\begin{tabular}{c|ccc}
-& mean & std dev & N \\ \hline
-Anastasia's students  & 74.53 & 9.00 & 15 \\
-Bernadette's students & 69.06 & 5.77 & 18
+\begin{tabular}{lrrr}
+\hline
+~                     &  mean & std dev &  N \\
+\hline
+Anastasia's students  & 74.53 &    9.00 & 15 \\
+Bernadette's students & 69.06 &    5.77 & 18 \\
+\hline
 \end{tabular}
 \end{center}
 To give you a more detailed sense of what's going on here, I've plotted histograms (not in jamovi, but using \R) showing the distribution of grades for both tutors (Figure~\ref{fig:harpohist}), as well as a simpler plot showing the means and corresponding confidence intervals for both groups of students (Figure~\ref{fig:ttestci}). 
@@ -245,7 +252,7 @@ To give you a more detailed sense of what's going on here, I've plotted histogra
 (a) & (b)
 \end{tabular}
 \caption{Histograms showing the distribution of grades for students in Anastasia's (panel a) and in Bernadette's (panel b) classes. Visually, these suggest that students in Anastasia's class may be getting slightly better grades on average, though they also seem a bit more variable.}
-\HR
+%\HR
 \label{fig:harpohist}
 \end{center}
 \end{figure}
@@ -254,12 +261,12 @@ To give you a more detailed sense of what's going on here, I've plotted histogra
 \begin{center}
 \epsfig{file = ../img/ttest2/ttestci.png,clip=true, width = 9cm}
 \caption{The plots show the mean grade for students in Anastasia’s and Bernadette’s tutorials. Error bars depict 95\% confidence intervals around the mean. Visually, it does look like there's a real difference between the groups, though it's hard to say for sure.}
-\HR
+%\HR
 \label{fig:ttestci}
 \end{center}
 \end{figure}
 
-\SUBSECTION{Introducing the test}
+\subsection{Introducing the test}
 
 The \keyterm{independent samples $t$-test} comes in two different forms, Student's and Welch's. The original Student $t$-test, which is the one I'll describe in this section, is the simpler of the two but relies on much more restrictive assumptions than the Welch $t$-test. Assuming for the moment that you want to run a two-sided test, the goal is to determine whether two ``independent samples'' of data are drawn from populations with the same mean (the null hypothesis) or different means (the alternative hypothesis). When we say ``independent'' samples, what we really mean here is that there's no special relationship between observations in the two samples. This probably doesn't make a lot of sense right now, but it will be clearer when we come to talk about the paired samples $t$-test later on. For now, let's just point out that if we have an experimental design where participants are randomly allocated to one of two groups, and we want to compare the two groups' mean performance on some outcome measure, then an independent samples $t$-test (rather than a paired samples $t$-test) is what we're after.
 
@@ -276,7 +283,7 @@ $$
 \begin{center}
 \epsfig{file = ../img/ttest/studentTestHyp.eps,clip=true, width = 14cm}
 \caption{Graphical illustration of the null and alternative hypotheses assumed by the Student $t$-test. The null hypothesis assumes that both groups have the same mean $\mu$, whereas the alternative assumes that they have different means $\mu_1$ and $\mu_2$. Notice that it is assumed that the population distributions are normal, and that, although the alternative hypothesis allows the group to have different means, it assumes they have the same standard deviation.}
-\HR
+%\HR
 \label{fig:ttesthyp}
 \end{center}
 \end{figure}
@@ -289,12 +296,12 @@ t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{SE}}
 $$
 We just need to figure out what this standard error estimate actually is. This is a bit trickier than was the case for either of the two tests we've looked at so far, so we need to go through it a lot more carefully to understand how it works.
 
-\SUBSECTION{A ``pooled estimate'' of the standard deviation}
+\subsection{A ``pooled estimate'' of the standard deviation}
 
 In the original ``Student $t$-test'', we make the assumption that the two groups have the same population standard deviation. That is, regardless of whether the population means are the same, we assume that the population standard deviations are identical, $\sigma_1 = \sigma_2$. Since we're assuming that the two standard deviations are the same, we drop the subscripts and refer to both of them as $\sigma$. How should we estimate this? How should we construct a single estimate of a standard deviation when we have two samples? The answer is, basically, we average them. Well, sort of. Actually, what we do is take a {\it weighed} average of the {\it variance} estimates, which we use as our \keyterm{pooled estimate of the variance}. The weight assigned to each sample is equal to the number of observations in that sample, minus 1. 
 
 \vspace{0.7cm}
-\begin{mdframed}[style=MyFrame,nobreak=false]
+%\begin{mdframed}[style=MyFrame,nobreak=false]
 Mathematically, we can write this as
 $$
 \begin{array}{rcl}
@@ -323,14 +330,14 @@ $$
 \hat\sigma^2_p = \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N -2}
 $$
 Oh, and if you take the square root of this then you get $\hat{\sigma}_p$, the pooled standard deviation estimate. In other words, the pooled standard deviation calculation is nothing special. It's not terribly different to the regular standard deviation calculation. 
-\end{mdframed}
+%\end{mdframed}
 
-\SUBSECTION{Completing the test}
+\subsection{Completing the test}
 
 Regardless of which way you want to think about it, we now have our pooled estimate of the standard deviation. From now on, I'll drop the silly $p$ subscript, and just refer to this estimate as $\hat\sigma$. Great. Let's now go back to thinking about the bloody hypothesis test, shall we? Our whole reason for calculating this pooled estimate was that we knew it would be helpful when calculating our {\it standard error} estimate. But standard error of {\it what}? In the one-sample $t$-test it was the standard error of the sample mean, $\SE{\bar{X}}$, and since $\SE{\bar{X}} = \sigma / \sqrt{N}$ that's what the denominator of our $t$-statistic looked like. This time around, however, we have {\it two} sample means. And what we're interested in, specifically, is the the difference between the two $\bar{X}_1 - \bar{X}_2$. As a consequence, the standard error that we need to divide by is in fact the \keyterm{standard error of the difference} between means. 
 
 \vspace{0.5cm}
-\begin{mdframed}[style=MyFrame,nobreak=true]
+%\begin{mdframed}[style=MyFrame,nobreak=true]
 As long as the two variables really do have the same standard deviation, then our estimate for the standard error is
 $$
 \SE{\bar{X}_1 - \bar{X}_2} = \hat\sigma \sqrt{\frac{1}{N_1} + \frac{1}{N_2}}
@@ -339,19 +346,19 @@ and our $t$-statistic is therefore
 $$
 t = \frac{\bar{X}_1 - \bar{X}_2}{\SE{\bar{X}_1 - \bar{X}_2}}
 $$
-\end{mdframed}
+%\end{mdframed}
 
 Just as we saw with our one-sample test, the sampling distribution of this $t$-statistic is a $t$-distribution (shocking, isn't it?) as long as the null hypothesis is true and all of the assumptions of the test are met. The degrees of freedom, however, is slightly different. As usual, we can think of the degrees of freedom to be equal to the number of data points minus the number of constraints. In this case, we have $N$ observations ($N_1$ in sample 1, and $N_2$ in sample 2), and 2 constraints (the sample means). So the total degrees of freedom for this test are $N-2$. 
 
-\SUBSECTION{Doing the test in jamovi}
+\subsection{Doing the test in jamovi}
 
-Not surprisingly, you can run an independent samples $t$-test easily in jamovi. The outcome variable for our test is the student \rtext{grade}, and the groups are defined in terms of the \rtext{tutor} for each class. So you probably won't be too surprised that all you have to do in jamovi is go to the relevant analysis (`Analyses' - `T-Tests' - `Independent Samples T-Test') and move the \rtext{grade} variable across to the `Dependent Variables' box, and the \rtext{tutor} variable across into the `Grouping Variable' box, as shown in Figure \ref{fig:ttest_ind}.
+Not surprisingly, you can run an independent samples $t$-test easily in jamovi. The outcome variable for our test is the student \texttt{grade}, and the groups are defined in terms of the \texttt{tutor} for each class. So you probably won't be too surprised that all you have to do in jamovi is go to the relevant analysis (`Analyses' - `T-Tests' - `Independent Samples T-Test') and move the \texttt{grade} variable across to the `Dependent Variables' box, and the \texttt{tutor} variable across into the `Grouping Variable' box, as shown in Figure \ref{fig:ttest_ind}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_ind.png,clip=true, width = 14cm}
 \caption{Independent t-test in jamovi, with options checked for useful results}
-\HR
+%\HR
 \label{fig:ttest_ind}
 \end{center}
 \end{figure}
@@ -366,7 +373,7 @@ The mean grade in Anastasia's class was 74.5\% (std dev = 9.0), whereas the mean
 \end{quote}
 Notice that I've included the confidence interval and the effect size in the stat block. People don't always do this. At a bare minimum, you'd expect to see the $t$-statistic, the degrees of freedom and the $p$ value. So you should include something like this at a minimum: $t(31) = 2.1$, $p<.05$. If statisticians had their way, everyone would also report the confidence interval and probably the effect size measure too, because they are useful things to know. But real life doesn't always work the way statisticians want it to so you should make a judgment based on whether you think it will help your readers and, if you’re writing a scientific paper, the editorial standard for the journal in question. Some journals expect you to report effect sizes, others don't. Within some scientific communities it is standard practice to report confidence intervals, in others it is not. You'll need to figure out what your audience expects. But, just for the sake of clarity, if you're taking my class, my default position is that it's usually worth including both the effect size and the confidence interval.
  
-\SUBSECTION{Positive and negative \texorpdfstring{$t$}{t} values}
+\subsection{Positive and negative $t$ values}
 
 Before moving on to talk about the assumptions of the $t$-test, there's one additional point I want to make about the use of $t$-tests in practice. The first one relates to the sign of the $t$-statistic (that is, whether it is a positive number or a negative one).  One very common worry that students have when they start running their first $t$-test is that they often end up with negative values for the $t$-statistic and don't know how to interpret it. In fact, it's not at all uncommon for two  people working independently to end up with results that are almost identical, except that one person has a negative $t$ values and the other one has a positive $t$ value. Assuming that you're running a two-sided test then the $p$-values will be identical. On closer inspection, the students will notice that the confidence intervals also have the opposite signs. This is perfectly okay. Whenever this happens, what you'll find is that the two versions of the results arise from slightly different ways of running the $t$-test. What's happening here is very simple. The $t$-statistic that we calculate here is always of the form 
 $$
@@ -388,7 +395,7 @@ Because I'm talking about one group having ``lower'' scores this time around, it
 
 One last thing: please note that you {\it can't} do this for other types of test statistics. It works for $t$-tests, but it wouldn't be meaningful for chi-square tests, $F$-tests or indeed for most of the tests I talk about in this book. So don't over-generalise this advice! I'm really just talking about $t$-tests here and nothing else!
  
-\SUBSECTION{Assumptions of the test~\label{sec:studentassumptions}}
+\subsection{Assumptions of the test~\label{sec:studentassumptions}}
 
 As always, our hypothesis test relies on some assumptions. So what are they? For the Student t-test there are three assumptions, some of which we saw previously in the context of the one sample $t$-test (see Section~\ref{sec:ttestoneassumptions}):
 \begin{itemize}
@@ -398,7 +405,7 @@ As always, our hypothesis test relies on some assumptions. So what are they? For
 \end{itemize}
 
 
-\section{The independent samples \texorpdfstring{\boldm{$t$}}{}-test (Welch test)~\label{sec:welchttest}}
+\section{The independent samples $t$-test (Welch test)~\label{sec:welchttest}}
 
 The biggest problem with using the Student test in practice is the third assumption listed in the previous section. It assumes that both groups have the same standard deviation. This is rarely true in real life. If two samples don't have the same means, why should we expect them to have the same standard deviation? There's really no reason to expect this assumption to be true. We'll talk a little bit about how you can check this assumption later on because it does crop up in a few different places, not just the $t$-test. But right now I'll talk about a different form of the $t$-test \parencite{Welch1947} that does not rely on this assumption. A graphical illustration of what the \keyterm{Welch $t$ test} assumes about the data is shown in Figure~\ref{fig:ttesthyp2}, to provide a contrast with the Student test version in Figure~\ref{fig:ttesthyp}. I'll admit it's a bit odd to talk about the cure before talking about the diagnosis, but as it happens the Welch test can be specified as one of the `Independent Samples T-Test' options in jamovi, so this is probably the best place to discuss it. 
 
@@ -406,7 +413,7 @@ The biggest problem with using the Student test in practice is the third assumpt
 \begin{center}
 \epsfig{file = ../img/ttest/welchTestHyp.eps,clip=true, width = 12cm}
 \caption{Graphical illustration of the null and alternative hypotheses assumed by the Welch $t$-test. Like the Student test (Figure~\ref{fig:ttesthyp}) we assume that both samples are drawn from a normal population; but the alternative hypothesis no longer requires the two populations to have equal variance.}
-\HR
+%\HR
 \label{fig:ttesthyp2}
 \end{center}
 \end{figure}
@@ -418,26 +425,26 @@ $$
 The main difference is that the standard error calculations are different. If the two populations have different standard deviations, then it's a complete nonsense to try to calculate a pooled standard deviation estimate, because you're averaging apples and oranges.\FOOTNOTE{Well, I guess you can average apples and oranges, and what you end up with is a delicious fruit smoothie. But no one really thinks that a fruit smoothie is a very good way to describe the original fruits, do they?} 
 
 \vspace{0.5cm}
-\begin{mdframed}[style=MyFrame,nobreak=true]
+%\begin{mdframed}[style=MyFrame,nobreak=true]
 But you can still estimate the standard error of the difference between sample means, it just ends up looking different
 $$
 \SE{\bar{X}_1 - \bar{X}_2} = \sqrt{ \frac{{\hat{\sigma}_1}^2}{N_1} + \frac{{\hat{\sigma}_2}^2}{N_2} }
 $$
 The reason why it's calculated this way is beyond the scope of this book. What matters for our purposes is that the $t$-statistic that comes out of the Welch $t$-test is actually somewhat different to the one that comes from the Student $t$-test. 
-\end{mdframed}
+%\end{mdframed}
 
 The second difference between Welch and Student is that the degrees of freedom are calculated in a very different way. In the Welch test, the ``degrees of freedom '' doesn't have to be a whole number any more, and it doesn't correspond all that closely to the ``number of data points minus the number of constraints'' heuristic that I've been using up to this point. 
 
 \vspace{0.5cm}
-\begin{mdframed}[style=MyFrame,nobreak=true]
+%\begin{mdframed}[style=MyFrame,nobreak=true]
 The degrees of freedom are, in fact
 $$
 \mbox{df} = \frac{ ({\hat{\sigma}_1}^2 / N_1 + {\hat{\sigma}_2}^2 / N_2)^2 }{  ({\hat{\sigma}_1}^2 / N_1)^2 / (N_1 -1 )  + ({\hat{\sigma}_2}^2 / N_2)^2 / (N_2 -1 ) } 
 $$
 which is all pretty straightforward and obvious, right? Well, perhaps not. It doesn't really matter for our purposes. What matters is that you'll see that the ``df'' value that pops out of a Welch test tends to be a little bit smaller than the one used for the Student test, and it doesn't have to be a whole number. 
-\end{mdframed}
+%\end{mdframed}
 
-\SUBSECTION{Doing the Welch test in jamovi}
+\subsection{Doing the Welch test in jamovi}
 
 If you tick the check box for the Welch test in the analysis we did above, then this is what it gives you (Figure \ref{fig:ttest_welch}):
 
@@ -445,7 +452,7 @@ If you tick the check box for the Welch test in the analysis we did above, then 
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_welch.png,clip=true, width = 14cm}
 \caption{Results showing the Welch test alongside the default Student's t-test in jamovi}
-\HR
+%\HR
 \label{fig:ttest_welch}
 \end{center}
 \end{figure}
@@ -454,20 +461,20 @@ The interpretation of this output should be fairly obvious. You read the output 
 
 Except, except...our result isn't significant anymore. When we ran the Student test we did get a significant effect, but the Welch test on the same data set is not ($t(23.02) = 2.03$, $p = .054$). What does this mean? Should we panic? Is the sky burning? Probably not. The fact that one test is significant and the other isn't doesn't itself mean very much, especially since I kind of rigged the data so that this would happen. As a general rule, it's not a good idea to go out of your way to try to interpret or explain the difference between a $p$-value of .049 and a $p$-value of .051. If this sort of thing happens in real life, the {\it difference} in these $p$-values is almost certainly due to chance. What does matter is that you take a little bit of care in thinking about what test you use. The Student test and the Welch test have different strengths and weaknesses. If the two populations really do have equal variances, then the Student test is slightly more powerful (lower Type II error rate) than the Welch test. However, if they {\it don't} have the same variances, then the assumptions of the Student test are violated and you may not be able to trust it; you might end up with a higher Type I error rate. So it's a trade off. However, in real life I tend to prefer the Welch test, because almost no-one {\it actually} believes that the population variances are identical.
 
-\SUBSECTION{Assumptions of the test}
+\subsection{Assumptions of the test}
 
 The assumptions of the Welch test are very similar to those made by the Student $t$-test (see Section~\ref{sec:studentassumptions}), except that the Welch test does not assume homogeneity of variance. This leaves only the assumption of normality and the assumption of independence. The specifics of these assumptions are the same for the Welch test as for the Student test. 
 
 \vspace*{12pt}
 
 
-\section{The paired-samples \texorpdfstring{\boldm{$t$}}{}-test~\label{sec:pairedsamplesttest}}
+\section{The paired-samples $t$-test~\label{sec:pairedsamplesttest}}
 
 Regardless of whether we're talking about the Student test or the Welch test, an independent samples $t$-test is intended to be used in a situation where you have two samples that are, well, independent of one another. This situation arises naturally when participants are assigned randomly to one of two experimental conditions, but it provides a very poor approximation to other sorts of research designs. In particular, a repeated measures design, in which each participant is measured (with respect to the same outcome variable) in both experimental conditions, is not suited for analysis using independent samples $t$-tests. For example, we might be interested in whether listening to music reduces people's working memory capacity. To that end, we could measure each person's working memory capacity in two conditions: with music, and without music. In an experimental design such as this one,\FOOTNOTE{This design is very similar to the one in Section~\ref{sec:mcnemar} that motivated the McNemar test. This should be no surprise. Both are standard repeated measures designs involving two measurements. The only difference is that this time our outcome variable is interval scale (working memory capacity) rather than a binary, nominal scale variable (a yes-or-no question).} each participant appears in {\it both} groups. This requires us to approach the problem in a different way, by using the \keyterm{paired samples $t$-test}. 
 
-\SUBSECTION{The data}
+\subsection{The data}
 
-The data set that we'll use this time comes from Dr Chico's class.\FOOTNOTE{At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who Dr Groucho is.} In her class students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging. But she argues that by setting hard assessments students are encouraged to work harder. Her theory is that the first test is a bit of a ``wake up call'' for students. When they realise how hard her class really is, they'll work harder for the second test and get a better mark. Is she right? To test this, let's import the \filename{chico.csv} file into jamovi. This time jamovi does a good job during the import of attributing measurement levels correctly. The chico data set contains three variables: an \rtext{id} variable that identifies each student in the class, the \rtextverb#grade\_test1# variable that records the student grade for the first test, and the \rtextverb#grade\_test2# variable that has the grades for the second test. 
+The data set that we'll use this time comes from Dr Chico's class.\FOOTNOTE{At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who Dr Groucho is.} In her class students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging. But she argues that by setting hard assessments students are encouraged to work harder. Her theory is that the first test is a bit of a ``wake up call'' for students. When they realise how hard her class really is, they'll work harder for the second test and get a better mark. Is she right? To test this, let's import the \filename{chico.csv} file into jamovi. This time jamovi does a good job during the import of attributing measurement levels correctly. The chico data set contains three variables: an \texttt{id} variable that identifies each student in the class, the \verb#grade\_test1# variable that records the student grade for the first test, and the \verb#grade\_test2# variable that has the grades for the second test. 
 
 If we look at the jamovi spreadsheet it does seem like the class is a hard one (most grades are between 50\% and 60\%), but it does look like there's an improvement from the first test to the second one. 
 
@@ -475,8 +482,8 @@ If we look at the jamovi spreadsheet it does seem like the class is a hard one (
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_paired1.png,clip=true, width = 14cm}
-\caption{Descriptives for the two grade\_test variables in the \rtext{chico} data set}
-\HR
+\caption{Descriptives for the two grade\_test variables in the \texttt{chico} data set}
+%\HR
 \label{fig:ttest_paired1}
 \end{center}
 \end{figure}
@@ -488,24 +495,24 @@ If we take a quick look at the descriptive statistics, in Figure~\ref{fig:ttest_
 \begin{tabular}{ccc}
 \epsfig{file = ../img/ttest/pairedMeans.eps,clip=true, width = 4.5cm} & 
 \epsfig{file = ../img/ttest/pairedScatterplot.eps,clip=true, width = 4.5cm} &
-\epsfig{file = ../img/ttest/pairedHist.eps,clip=true, width = 4.5cm} 
- \\ (a) & (b) & (c)
+\epsfig{file = ../img/ttest/pairedHist.eps,clip=true, width = 4.5cm} \\ 
+(a) & (b) & (c) \\
 \end{tabular}
 \caption{Mean grade for test 1 and test 2, with associated 95\% confidence intervals (panel a). Scatterplot showing the individual grades for test 1 and test 2 (panel b). Histogram showing the improvement made by each student in Dr Chico's class (panel c). In panel c, notice that almost the entire distribution is above zero: the vast majority of students did improve their performance from the first test to the second one}
-\HR
+%\HR
 \label{fig:pairedt}
 \end{center}
 \end{figure}
 
-Nevertheless, this impression is wrong. To see why, take a look at the scatterplot of the grades for test 1 against the grades for test 2,  shown in Figure~\ref{fig:pairedt}b. In this plot each dot corresponds to the two grades for a given student. If their grade for test 1 ($x$ co-ordinate) equals their grade for test 2 ($y$ co-ordinate), then the dot falls on the line. Points falling above the line are the students that performed better on the second test. Critically, almost all of the data points fall above the diagonal line: almost all of the students {\it do} seem to have improved their grade, if only by a small amount. This suggests that we should be looking at the {\it improvement} made by each student from one test to the next and treating that as our raw data. To do this, we'll need to create a new variable for the \rtext{improvement} that each student makes, and add it to the \rtext{chico} data set. The easiest way to do this is to compute a new variable, with the expression \rtext{grade\_test2 - grade\_test1}.
+Nevertheless, this impression is wrong. To see why, take a look at the scatterplot of the grades for test 1 against the grades for test 2,  shown in Figure~\ref{fig:pairedt}b. In this plot each dot corresponds to the two grades for a given student. If their grade for test 1 ($x$ co-ordinate) equals their grade for test 2 ($y$ co-ordinate), then the dot falls on the line. Points falling above the line are the students that performed better on the second test. Critically, almost all of the data points fall above the diagonal line: almost all of the students {\it do} seem to have improved their grade, if only by a small amount. This suggests that we should be looking at the {\it improvement} made by each student from one test to the next and treating that as our raw data. To do this, we'll need to create a new variable for the \texttt{improvement} that each student makes, and add it to the \texttt{chico} data set. The easiest way to do this is to compute a new variable, with the expression \texttt{grade\_test2 - grade\_test1}.
 
-Once we have computed this new \rtext{improvement} variable we can draw a histogram showing the distribution of these improvement scores, shown in Figure~\ref{fig:pairedt}c. When we look at the  histogram, it's very clear that there {\it is} a real improvement here. The vast majority of the students scored higher on test 2 than on test 1, reflected in the fact that almost the entire histogram is above zero. 
+Once we have computed this new \texttt{improvement} variable we can draw a histogram showing the distribution of these improvement scores, shown in Figure~\ref{fig:pairedt}c. When we look at the  histogram, it's very clear that there {\it is} a real improvement here. The vast majority of the students scored higher on test 2 than on test 1, reflected in the fact that almost the entire histogram is above zero. 
 
-\SUBSECTION{What is the paired samples \texorpdfstring{$t$}{t}-test?}
+\subsection{What is the paired samples $t$-test?}
 
-In light of the previous exploration, let's think about how to construct an appropriate $t$ test. One possibility would be to try to run an independent samples $t$-test using \rtextverb#grade_test1# and \rtextverb#grade_test2# as the variables of interest. However, this is clearly the wrong thing to do as the independent samples $t$-test assumes that there is no particular relationship between the two samples. Yet clearly that's not true in this case because of the repeated measures structure in the data. To use the language that I introduced in the last section, if we were to try to do an independent samples $t$-test, we would be conflating the \keyterm{within subject} differences (which is what we're interested in testing) with the \keyterm{between subject} variability (which we are not). 
+In light of the previous exploration, let's think about how to construct an appropriate $t$ test. One possibility would be to try to run an independent samples $t$-test using \verb#grade_test1# and \verb#grade_test2# as the variables of interest. However, this is clearly the wrong thing to do as the independent samples $t$-test assumes that there is no particular relationship between the two samples. Yet clearly that's not true in this case because of the repeated measures structure in the data. To use the language that I introduced in the last section, if we were to try to do an independent samples $t$-test, we would be conflating the \keyterm{within subject} differences (which is what we're interested in testing) with the \keyterm{between subject} variability (which we are not). 
 
-The solution to the problem is obvious, I hope, since we already did all the hard work in the previous section. Instead of running an independent samples $t$-test on \rtextverb#grade_test1# and \rtextverb#grade_test2#, we run a {\it one-sample} $t$-test on the within-subject difference variable, \rtext{improvement}. To formalise this slightly, if $X_{i1}$ is the score that the $i$-th participant obtained on the first variable, and $X_{i2}$ is the score that the same person obtained on the second one, then the difference score is:
+The solution to the problem is obvious, I hope, since we already did all the hard work in the previous section. Instead of running an independent samples $t$-test on \verb#grade_test1# and \verb#grade_test2#, we run a {\it one-sample} $t$-test on the within-subject difference variable, \texttt{improvement}. To formalise this slightly, if $X_{i1}$ is the score that the $i$-th participant obtained on the first variable, and $X_{i2}$ is the score that the same person obtained on the second one, then the difference score is:
 $$
 D_{i} = X_{i1} - X_{i2} 
 $$
@@ -526,16 +533,16 @@ t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 $$
 where $\hat\sigma_D$ is the standard deviation of the difference scores. Since this is just an ordinary, one-sample $t$-test, with nothing special about it, the degrees of freedom are still $N-1$. And that’s it. The paired samples t-test really isn’t a new test at all. It’s a one-sample t-test, but applied to the difference between two variables. It's actually very simple. The only reason it merits a discussion as long as the one we've just gone through is that you need to be able to recognise {\it when} a paired samples test is appropriate, and to understand {\it why} it's better than an independent samples $t$ test. 
 
-\SUBSECTION{Doing the test in jamovi} 
+\subsection{Doing the test in jamovi} 
 
-How do you do a paired samples $t$-test in jamovi? One possibility is to follow the process I outlined above. That is, create a ``difference'' variable and then run a one sample $t$-test on that. Since we've already created a variable called \rtext{improvement}, let's do that and see what we get, Figure \ref{fig:ttest_paired2}.
+How do you do a paired samples $t$-test in jamovi? One possibility is to follow the process I outlined above. That is, create a ``difference'' variable and then run a one sample $t$-test on that. Since we've already created a variable called \texttt{improvement}, let's do that and see what we get, Figure \ref{fig:ttest_paired2}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_paired2.png,clip=true, width = 14cm}
 \caption{Results showing a one sample $t$-test on paired difference scores}
 \label{fig:ttest_paired2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -548,7 +555,7 @@ However, suppose you're lazy and you don't want to go to all the effort of creat
 \epsfig{file = ../img/ttest/ttest_paired3.png,clip=true, width = 14cm}
 \caption{Results showing a paired sample t-test. Compare with Figure \ref{fig:ttest_paired2}}
 \label{fig:ttest_paired3}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -564,7 +571,7 @@ When introducing the theory of null hypothesis tests, I mentioned that there are
 \epsfig{file = ../img/ttest/ttest_onesided1.png,clip=true, width = 14cm}
 \caption{jamovi results showing a `One Sample T-Test' where the actual hypothesis is one sided, i.e. that the true mean is greater than 67.5\%}
 \label{fig:ttest_onesided1}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -577,20 +584,20 @@ So that's how to do a one-sided one sample $t$-test. However, all versions of th
 \epsfig{file = ../img/ttest/ttest_onesided2.png,clip=true, width = 14cm}
 \caption{jamovi results showing an `Independent Samples T-Test' where the actual hypothesis is one sided, i.e. that Anastasia's students had higher grades than Bernadette's}
 \label{fig:ttest_onesided2}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
 Again, the output changes in a predictable way. The definition of the alternative hypothesis has changed, the $p$-value has changed, and it now reports a one-sided confidence interval rather than a two-sided one.
 
-What about the paired samples $t$-test? Suppose we wanted to test the hypothesis that grades go {\it up} from test 1 to test 2 in Dr Zeppo's class, and are not prepared to consider the idea that the grades go down. In jamovi you would do this by specifying, under the `Hypotheses' option, that \rtext{grade\_test2} (`Measure 1' in jamovi, because we copied this first into the paired variables box) $>$ \rtext{grade\_test1} (`Measure 2' in jamovi). You should get the results shown in Figure \ref{fig:ttest_onesided3}.
+What about the paired samples $t$-test? Suppose we wanted to test the hypothesis that grades go {\it up} from test 1 to test 2 in Dr Zeppo's class, and are not prepared to consider the idea that the grades go down. In jamovi you would do this by specifying, under the `Hypotheses' option, that \texttt{grade\_test2} (`Measure 1' in jamovi, because we copied this first into the paired variables box) $>$ \texttt{grade\_test1} (`Measure 2' in jamovi). You should get the results shown in Figure \ref{fig:ttest_onesided3}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_onesided3.png,clip=true, width = 14cm}
-\caption{jamovi results showing a `Paired Samples T-Test' where the actual hypothesis is one sided, i.e. that \rtext{grade\_test2} (`Measure 1') $>$ \rtext{grade\_test1} (`Measure 2')}
+\caption{jamovi results showing a `Paired Samples T-Test' where the actual hypothesis is one sided, i.e. that \texttt{grade\_test2} (`Measure 1') $>$ \texttt{grade\_test1} (`Measure 2')}
 \label{fig:ttest_onesided3}
-\HR
+%\HR
 \end{center}
 \end{figure}
 
@@ -612,17 +619,20 @@ My suspicion is that the only time that you would want Cohen's $d$ is when you'r
 \label{tab:cohensdinterpretation}
 \centering
 \vspace*{6pt}
-\begin{tabular}{l|l}
-$d$-value & rough interpretation \\ \hline
-about 0.2 & ``small'' effect  \\
-about 0.5 & ``moderate'' effect \\
-about 0.8 & ``large'' effect 
+\begin{tabular}{ll}
+\hline
+$d$-value & rough interpretation \\
+\hline
+about 0.2 & ``small'' effect     \\
+about 0.5 & ``moderate'' effect  \\
+about 0.8 & ``large'' effect     \\
+\hline
 \end{tabular}
 \vspace*{6pt}
-\HR
+%\HR
 \end{table}
 
-\SUBSECTION{Cohen's \texorpdfstring{$d$}{d} from one sample}
+\subsection{Cohen's $d$ from one sample}
 
 The simplest situation to consider is the one corresponding to a one-sample $t$-test. In this case, this is the one sample mean $\bar{X}$ and one (hypothesised) population mean $\mu_o$ to compare it to. Not only that, there's really only one sensible way to estimate the population standard deviation. We just use our usual estimate $\hat{\sigma}$. Therefore, we end up with the following as the only way to calculate $d$
 $$
@@ -631,7 +641,7 @@ $$
 When we look back at the results in Figure \ref{fig:ttest_one}, the effect size value is Cohen's d = 0.50. Overall, then, the psychology students in Dr Zeppo's class are achieving grades (mean = 72.3\%) that are about .5 standard deviations higher than the level that you'd expect (67.5\%) if they were performing at the same level as other students. Judged against Cohen's rough guide, this is a moderate effect size.
 
 
-\SUBSECTION{Cohen's \texorpdfstring{$d$}{d} from a Student's \texorpdfstring{$t$}{t} test}
+\subsection{Cohen's $d$ from a Student's $t$-test}
 
 The majority of discussions of Cohen's $d$ focus on a situation that is analogous to Student's independent samples $t$ test, and it's in this context that the story becomes messier, since there are several different versions of $d$ that you might want to use in this situation. To understand why there are multiple versions of $d$, it helps to take the time to write down a formula that corresponds to the true population effect size $\delta$. It's pretty straightforward, 
 $$
@@ -647,7 +657,7 @@ However, there are other possibilities which I'll briefly describe. Firstly, you
 
 In any case, ignoring all those variations that you could make use of if you wanted, let's have a look at the default version in jamovi. In Figure \ref{fig:ttest_ind} Cohen's d = 0.74, indicating that the grade scores for students in Anastasia's class are, on average, 0.74 standard deviations higher than the grade scores for students in Bernadette's class. For a Welch test, the estimated effect size is the same (Figure \ref{fig:ttest_welch}).
 
-\SUBSECTION{Cohen's \texorpdfstring{$d$}{d} from a paired-samples test}
+\subsection{Cohen's $d$ from a paired-samples test}
 
 Finally, what should we do for a paired samples $t$-test? In this case, the answer depends on what it is you're trying to do. jamovi assumes that you want to measure your effect sizes relative to the distribution of difference scores, and the measure of $d$ that you calculate is: 
 $$
@@ -655,24 +665,24 @@ d = \frac{\bar{D}}{\hat{\sigma}_D}
 $$
 where $\hat{\sigma}_D$ is the estimate of the standard deviation of the differences. In Figure \ref{fig:ttest_paired3} Cohen's d = 1.45, indicating that the time 2 grade scores are, on average, 1.45 standard deviations higher than the time 1 grade scores.
 
-This is the version of Cohen's $d$ that gets reported by the jamovi `Paired Samples T-Test' analysis. The only wrinkle is figuring out whether this is the measure you want or not. To the extent that you care about the practical consequences of your research, you often want to measure the effect size relative to the {\it original} variables, not the {\it difference} scores (e.g., the 1\% improvement in Dr Chico's class over time is pretty small when measured against the amount of between-student variation in grades), in which case you use the same versions of Cohen's $d$ that you would use for a Student or Welch test. It's not so straightforward to do this in jamovi; essentially you have to change the structure of the data in the spreadsheet view so I won't go into that here\FOOTNOTE{If you are interested, you can look at how this was done in the \rtext{chico2.omv} file}, but the Cohen's d for this perspective is quite different: it is 0.22 which is quite small when assessed on the scale of the original variables.
+This is the version of Cohen's $d$ that gets reported by the jamovi `Paired Samples T-Test' analysis. The only wrinkle is figuring out whether this is the measure you want or not. To the extent that you care about the practical consequences of your research, you often want to measure the effect size relative to the {\it original} variables, not the {\it difference} scores (e.g., the 1\% improvement in Dr Chico's class over time is pretty small when measured against the amount of between-student variation in grades), in which case you use the same versions of Cohen's $d$ that you would use for a Student or Welch test. It's not so straightforward to do this in jamovi; essentially you have to change the structure of the data in the spreadsheet view so I won't go into that here\FOOTNOTE{If you are interested, you can look at how this was done in the \texttt{chico2.omv} file}, but the Cohen's d for this perspective is quite different: it is 0.22 which is quite small when assessed on the scale of the original variables.
 
 
 \section{Checking the normality of a sample\label{sec:shapiro}}
 
 All of the tests that we have discussed so far in this chapter have assumed that the data are normally distributed. This assumption is often quite reasonable, because the central limit theorem (Section~\ref{sec:clt}) does tend to ensure that many real world quantities are normally distributed. Any time that you suspect that your variable is {\it actually} an average of lots of different things, there's a pretty good chance that it will be normally distributed, or at least close enough to normal that you can get away with using $t$-tests. However, life doesn't come with guarantees, and besides there are lots of ways in which you can end up with variables that are highly non-normal. For example, any time you think that your variable is actually the minimum of lots of different things, there's a very good chance it will end up quite skewed. In psychology, response time (RT) data is a good example of this. If you suppose that there are lots of things that could trigger a response from a human participant, then the actual response will occur the first time one of these trigger events occurs.\FOOTNOTE{This is a massive oversimplification.} This means that RT data are systematically non-normal.  Okay, so if normality is assumed by all the tests, and is mostly but not always satisfied (at least approximately) by real world data, how can we check the normality of a sample? In this section I discuss two methods: QQ plots and the Shapiro-Wilk test.
 
-\SUBSECTION{QQ plots}
+\subsection{QQ plots}
 
 \begin{figure}[!!htb]
 \begin{center}
 \begin{tabular}{cc}
 \epsfig{file = ../img/ttest/qqNormalHist.eps,clip=true, width = 6.5cm} &
-\epsfig{file = ../img/ttest/qqNormalPlot.eps, clip=true,width = 6.5cm}
-\\ (a) & (b)
+\epsfig{file = ../img/ttest/qqNormalPlot.eps, clip=true,width = 6.5cm} \\
+(a) & (b) \\
 \end{tabular}
-\caption{Histogram (panel a) and normal QQ plot (panel b) of \rtext{normal.data}, a normally distributed sample with 100 observations. The Shapiro-Wilk statistic associated with these data is $W = .99$, indicating that no significant departures from normality were detected ($p = .73$).}
-\HR
+\caption{Histogram (panel a) and normal QQ plot (panel b) of \texttt{normal.data}, a normally distributed sample with 100 observations. The Shapiro-Wilk statistic associated with these data is $W = .99$, indicating that no significant departures from normality were detected ($p = .73$).}
+%\HR
 \label{fig:qq1}
 \end{center}
 \end{figure}
@@ -681,32 +691,33 @@ All of the tests that we have discussed so far in this chapter have assumed that
 \begin{center}
 \begin{tabular}{cc}
 \epsfig{file = ../img/ttest/qqSkewedHist.eps,clip=true, width = 6.5cm} &
-\epsfig{file = ../img/ttest/qqSkewedPlot.eps,clip=true, width = 6.5cm}
-\\ (a) & (b) \vspace*{12pt} \\
+\epsfig{file = ../img/ttest/qqSkewedPlot.eps,clip=true, width = 6.5cm} \\ 
+(a) & (b) \\
+\vspace*{12pt}
 \epsfig{file = ../img/ttest/qqHeavyTailedHist.eps, clip=true,width = 6.5cm} &
-\epsfig{file = ../img/ttest/qqHeavyTailedPlot.eps,clip=true, width = 6.5cm}
-\\ (c) & (d)
+\epsfig{file = ../img/ttest/qqHeavyTailedPlot.eps,clip=true, width = 6.5cm} \\
+(c) & (d) \\
 \end{tabular}
-\caption{In the top row, a histogram (panel a) and normal QQ plot (panel b) of the 100 observations in a \rtext{skewed.data} set. The skewness of the data here is 1.94, and is reflected in a QQ plot that curves upwards. As a consequence, the Shapiro-Wilk statistic is $W=.80$, reflecting a significant departure from normality ($p<.001$). The bottom row shows the same plots for a heavy tailed data set, again consisting of 100 observations. In this case the heavy tails in the data produce a high kurtosis (2.80), and cause the QQ plot to flatten in the middle, and curve away sharply on either side. The resulting Shapiro-Wilk statistic is $W = .93$, again reflecting significant non-normality ($p < .001$).}
-\HR
+\caption{In the top row, a histogram (panel a) and normal QQ plot (panel b) of the 100 observations in a \texttt{skewed.data} set. The skewness of the data here is 1.94, and is reflected in a QQ plot that curves upwards. As a consequence, the Shapiro-Wilk statistic is $W=.80$, reflecting a significant departure from normality ($p<.001$). The bottom row shows the same plots for a heavy tailed data set, again consisting of 100 observations. In this case the heavy tails in the data produce a high kurtosis (2.80), and cause the QQ plot to flatten in the middle, and curve away sharply on either side. The resulting Shapiro-Wilk statistic is $W = .93$, again reflecting significant non-normality ($p < .001$).}
+%\HR
 \label{fig:qq2}
 \end{center}
 \end{figure}
 
 One way to check whether a sample violates the normality assumption is to draw a \keyterm{``QQ plot''} (Quantile-Quantile plot). This allows you to visually check whether you're seeing any systematic violations. In a QQ plot, each observation is plotted as a single dot. The x co-ordinate is the theoretical quantile that the observation should fall in if the data were normally distributed (with mean and variance estimated from the sample), and on the y co-ordinate is the actual quantile of the data within the sample. If the data are normal, the dots should form a straight line. For instance, lets see what happens if we generate data by sampling from a normal distribution, and then drawing a QQ plot. The results are shown in Figure~\ref{fig:qq1}. As you can see, these data form a pretty straight line; which is no surprise given that we sampled them from a normal distribution! In contrast, have a look at the two data sets shown in Figure~\ref{fig:qq2}. The top panels show the histogram and a QQ plot for a data set that is highly skewed: the QQ plot curves upwards. The lower panels show the same plots for a heavy tailed (i.e., high kurtosis) data set: in this case the QQ plot flattens in the middle and curves sharply at either end.
 
-\SUBSECTION{Shapiro-Wilk tests}
+\subsection{Shapiro-Wilk tests}
 
 QQ plots provide a nice way to informally check the normality of your data, but sometimes you'll want to do something a bit more formal and the \keyterm{Shapiro-Wilk test} \parencite{Shapiro1965} is probably what you're looking for.\FOOTNOTE{Either that, or the Kolmogorov-Smirnov test, which is probably more traditional than the Shapiro-Wilk. Although most things I’ve read seem to suggest Shapiro-Wilk is the better test of normality, the Kolomogorov- Smirnov is a general purpose test of distributional equivalence that can be adapted to handle other kinds of distribution tests. In jamovi the Shapiro-Wilk test is preferred.} As you'd expect, the null hypothesis being tested is that a set of $N$ observations is normally distributed. 
 
 \vspace{0.5cm}
-\begin{mdframed}[style=MyFrame,nobreak=true]
+%\begin{mdframed}[style=MyFrame,nobreak=true]
 The test statistic that it calculates is conventionally denoted as $W$, and it's calculated as follows. First, we sort the observations in order of increasing size, and let $X_1$ be the smallest value in the sample, $X_2$ be the second smallest and so on. Then the value of $W$ is given by
 $$
 W = \frac{ \left( \sum_{i = 1}^N a_i X_i \right)^2 }{ \sum_{i = 1}^N (X_i - \bar{X})^2}
 $$
 where $\bar{X}$ is the mean of the observations, and the $a_i$ values are ... mumble, mumble ... something complicated that is a bit beyond the scope of an introductory text. 
-\end{mdframed}
+%\end{mdframed}
 
 Because it's a little hard to explain the maths behind the $W$ statistic, a better idea is to give a broad brush description of how it behaves. Unlike most of the test statistics that we'll encounter in this book, it's actually {\it small} values of $W$ that indicate departure from normality. The $W$ statistic has a maximum value of 1, which occurs when the data look ``perfectly normal''. The smaller the value of $W$ the less normal the data are. However, the sampling distribution for $W$, which is not one of the standard ones that I discussed in Chapter~\ref{ch:probability} and is in fact a complete pain in the arse to work with, does depend on the sample size $N$. To give you a feel for what these sampling distributions look like, I've plotted three of them in Figure~\ref{fig:swdist}. Notice that, as the sample size starts to get large, the sampling distribution becomes very tightly clumped up near $W=1$, and as a consequence, for larger samples $W$ doesn't have to be very much smaller than 1 in order for the test to be significant. 
 
@@ -714,14 +725,14 @@ Because it's a little hard to explain the maths behind the $W$ statistic, a bett
 \begin{center}
 \epsfig{file = ../img/ttest2/shapirowilkdist.eps, clip=true,width = 12cm}
 \caption{Sampling distribution of the Shapiro-Wilk $W$ statistic, under the null hypothesis that the data are normally distributed, for samples of size 10, 20 and 50. Note that {\it small} values of $W$ indicate departure from normality.}
-\HR
+%\HR
 \label{fig:swdist}
 \end{center}
 \end{figure}
 
 To get the Shapiro-Wilk statistic in jamovi $t$-tests, check the option for `Normality' listed under `Assumptions'. In the randomly sampled data (N = 100) we used for the QQ plot, the value for the Shapiro-Wilk normality test statistic was W = 0.99 with a $p$-value of 0.69. So, not surprisingly, we have no evidence that these data depart from normality. When reporting the results for a Shapiro-Wilk test, you should (as usual) make sure to include the test statistic $W$ and the $p$ value, though given that the sampling distribution depends so heavily on $N$ it would probably be a politeness to include $N$ as well.
 
-\SUBSECTION{Example}
+\subsection{Example}
 
 In the meantime, it's probably worth showing you an example of what happens to the QQ plot and the Shapiro-Wilk test when the data turn out to be non-normal. For that, let's look at the distribution of our AFL winning margins data, which if you remember back to Chapter~\ref{ch:descriptives} didn't look like they came from a normal distribution at all. Here's what happens to the QQ plot:
 
@@ -738,22 +749,25 @@ Okay, suppose your data turn out to be pretty substantially non-normal, but you 
 
 Like the $t$-test, the Wilcoxon test comes in two forms, one-sample and two-sample, and they're used in more or less the exact same situations as the corresponding $t$-tests. Unlike the $t$-test, the Wilcoxon test doesn't assume normality, which is nice. In fact, they don't make any assumptions about what kind of distribution is involved. In statistical jargon, this makes them \keyterm{nonparametric tests}. While avoiding the normality assumption is nice, there's a drawback: the Wilcoxon test is usually less powerful than the $t$-test (i.e., higher Type II error rate). I won't discuss the Wilcoxon tests in as much detail as the $t$-tests, but I'll give you a brief overview.
 
-\SUBSECTION{Two sample Mann-Whitney U test}
+\subsection{Two sample Mann-Whitney U test}
 
-I'll start by describing the \keyterm{Mann-Whitney U test}, since it's actually simpler than the one sample version. Suppose we're looking at the scores of 10 people on some test. Since my imagination has now failed me completely, let's pretend it's a ``test of awesomeness'' and there are two groups of people, ``A'' and ``B''. I'm curious to know which group is more awesome. The data are included in the file \filename{awesome.csv}, and there are two variables apart from the usual \rtext{ID} variable: \rtext{scores} and \rtext{group}.
+I'll start by describing the \keyterm{Mann-Whitney U test}, since it's actually simpler than the one sample version. Suppose we're looking at the scores of 10 people on some test. Since my imagination has now failed me completely, let's pretend it's a ``test of awesomeness'' and there are two groups of people, ``A'' and ``B''. I'm curious to know which group is more awesome. The data are included in the file \filename{awesome.csv}, and there are two variables apart from the usual \texttt{ID} variable: \texttt{scores} and \texttt{group}.
 
 As long as there are no ties (i.e., people with the exact same awesomeness score) then the test that we want to do is surprisingly simple. All we have to do is construct a table that compares every observation in group $A$ against every observation in group $B$. Whenever the group $A$ datum is larger, we place a check mark in the table:
 
 
 \begin{center}
-\begin{tabular}{cr|rrrrr}
-&& \multicolumn{5}{c}{group B} \\
-&& 14.5 & 10.4 & 12.4 & 11.7 & 13.0 \\ \hline
-&6.4 &  .  &   . & .   &   . & .   \\
-&10.7 & .  &   \checkmark &  .  &   . &  . \\
-group A &11.9 & .   &   \checkmark & .   &  \checkmark &  . \\
-&7.3 &  .  &   . &   . &   . &  . \\
-&10.0 &  .  & .   &   . & .   &  . \\
+\begin{tabular}{lrrrrrr}
+\hline
+~       &    ~ & \multicolumn{5}{c}{group B}                  \\
+~       &    ~ & 14.5 &       10.4 & 12.4 &       11.7 & 13.0 \\
+\hline
+~       &  6.4 &    . &          . &    . &          . &    . \\
+~       & 10.7 &    . & \checkmark &    . &          . &    . \\
+group A & 11.9 &    . & \checkmark &    . & \checkmark &    . \\
+~       &  7.3 &    . &          . &    . &          . &    . \\
+~       & 10.0 &    . &          . &    . &          . &    . \\
+\hline
 \end{tabular}
 \end{center}
  
@@ -761,19 +775,22 @@ group A &11.9 & .   &   \checkmark & .   &  \checkmark &  . \\
 \noindent
 We then count up the number of checkmarks. This is our test statistic, $W$.\FOOTNOTE{Actually, there are two different versions of the test statistic that differ from each other by a constant value. The version that I've described is the one that jamovi calculates.} The actual sampling distribution for $W$ is somewhat complicated, and I'll skip the details. For our purposes, it's sufficient to note that the interpretation of $W$ is qualitatively the same as the interpretation of $t$ or $z$. That is, if we want a two-sided test then we reject the null hypothesis when $W$ is very large or very small, but if we have a directional (i.e., one-sided) hypothesis then we only use one or the other. 
 
-In jamovi, if we run an `Independent Samples T-Test' with \rtext{scores} as the dependent variable. and \rtext{group} as the grouping variable, and then under the options for `tests' check the option for `Mann-Whitney U', we will get results showing that U = 3 (i.e., the same number of checkmarks as shown above), and a p-value = 0.05556. 
+In jamovi, if we run an `Independent Samples T-Test' with \texttt{scores} as the dependent variable. and \texttt{group} as the grouping variable, and then under the options for `tests' check the option for `Mann-Whitney U', we will get results showing that U = 3 (i.e., the same number of checkmarks as shown above), and a p-value = 0.05556. 
 
-\SUBSECTION{One sample Wilcoxon test}
+\subsection{One sample Wilcoxon test}
 
-What about the \keyterm{one sample Wilcoxon test} (or equivalently, the paired samples Wilcoxon test)? Suppose I'm interested in finding out whether taking a statistics class has any effect on the happiness of students. My data is in the \rtext{happiness.csv} file. What I've measured here is the happiness of each student \rtext{before} taking the class and \rtext{after} taking the class, and the \rtext{change} score is the difference between the two. Just like we saw with the $t$-test, there's no fundamental difference between doing a paired-samples test using \rtext{before} and \rtext{after}, versus doing a one-sample test using the \rtext{change} scores. As before, the simplest way to think about the test is to construct a tabulation. The way to do it this time is to take those change scores that are positive differences, and tabulate them against all the complete sample. What you end up with is a table that looks like this:
+What about the \keyterm{one sample Wilcoxon test} (or equivalently, the paired samples Wilcoxon test)? Suppose I'm interested in finding out whether taking a statistics class has any effect on the happiness of students. My data is in the \texttt{happiness.csv} file. What I've measured here is the happiness of each student \texttt{before} taking the class and \texttt{after} taking the class, and the \texttt{change} score is the difference between the two. Just like we saw with the $t$-test, there's no fundamental difference between doing a paired-samples test using \texttt{before} and \texttt{after}, versus doing a one-sample test using the \texttt{change} scores. As before, the simplest way to think about the test is to construct a tabulation. The way to do it this time is to take those change scores that are positive differences, and tabulate them against all the complete sample. What you end up with is a table that looks like this:
 
 \begin{center}
-\begin{tabular}{cr|rrrrrrrrrr}
-&& \multicolumn{10}{|c}{all differences}\\
-& & -24& -14 &-10 & 7 & -6& -38& 2 &-35& -30 &5\\ \hline
-&7&  . &  .  & .  & \checkmark & \checkmark &  . & \checkmark & . & . & \checkmark  \\
-positive differences&2&  . &  .  & .  & . & . &  . & \checkmark & . & . & . \\
-&5&  . &  .  & .  & . & . &  . & \checkmark & . & . & \checkmark \\
+\begin{tabular}{lrrrrrrrrrrr}
+\hline
+~                    & ~ & \multicolumn{10}{c}{all differences} \\
+~                    &   & -24 & -14 & -10 &          7 &         -6 & -38 &          2 & -35 & -30 &5           \\
+\hline
+~                    & 7 &   . &   . &   . & \checkmark & \checkmark &   . & \checkmark &   . &   . & \checkmark \\
+positive differences & 2 &   . &   . &   . &          . &          . &   . & \checkmark &   . &   . & .          \\
+~                    & 5 &   . &   . &   . &          . &          . &   . & \checkmark &   . &   . & \checkmark \\
+\hline
 \end{tabular}
 \end{center}
 Counting up the tick marks this time we get a test statistic of $W = 7$. As before, if our test is two sided, then we reject the null hypothesis when $W$ is very large or very small. As far as running it in jamovi goes, it's pretty much what you'd expect. For the one-sample version, you specify the `Wilcoxon rank' option under `Tests' in the `One Sample T-Test' analysis window. This gives you Wilcoxon W = 7, $p$-value = 0.03711. As this shows, we have a significant effect. Evidently, taking a statistics class does have an effect on your happiness. Switching to a paired samples version of the test won't give us a different answer, of course; see Figure \ref{fig:ttest_nonparametric}.
@@ -783,7 +800,7 @@ Counting up the tick marks this time we get a test statistic of $W = 7$. As befo
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_nonparametric.png, clip=true,width = 14cm}
 \caption{jamovi screen showing results for one sample and paired sample Wilcoxon non-parametric tests}
-\HR
+%\HR
 \label{fig:ttest_nonparametric}
 \end{center}
 \end{figure}

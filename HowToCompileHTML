@@ -1,0 +1,109 @@
+CHANGES BEFORE COMPILING
+ls | grep -v tex | xargs rm
+latex lsj
+biber lsj
+
+sed -i 's/SUBSECTION/subsection/g' ../tex/chapter*.tex; sed -i 's/\\HR/%\\HR/g' ../tex/chapter*.tex; sed -i 's/PRELUDETITLE/chapter\*/g' ../tex/prelude4.tex; sed -i 's/PRELUDEHEADER/section\*/g' ../tex/prelude4.tex; sed -i 's/\\begin{mdframed}/%\\begin{mdframed}/g' ../tex/chapter*.tex; sed -i 's/\\end{mdframed}/%\\end{mdframed}/g' ../tex/chapter*.tex
+
+sed -i "s/rtext{/texttt{/g" ../tex/*.tex
+sed -i "s/rblock1/verbatim/g" ../tex/*.tex
+sed -i "s/rtextverb#/verb#/g" ../tex/*.tex
+
+htlatex lsj "htlatex4lsj, 2"
+
+? " -cunihtf -utf8"
+
+AFTER COMPILING
+sed -i 's/subsection/SUBSECTION/g' ../tex/chapter*.tex; sed -i 's/\%\\HR/\\HR/g' ../tex/chapter*.tex; sed -i 's/chapter\*/PRELUDETITLE/g' ../tex/prelude4.tex; sed -i 's/section\*/PRELUDEHEADER/g' ../tex/prelude4.tex; sed -i 's/\%\\begin{mdframed}/\\begin{mdframed}/g' ../tex/chapter*.tex; sed -i 's/%\\end{mdframed}/\\end{mdframed}/g' ../tex/chapter*.tex
+
+sed -i "s/texttt{/rtext{/g" ../tex/*.tex
+sed -i "s/verbatim/rblock1/g" ../tex/*.tex
+
+WARNINGS:
+LaTeX Warning: Reference `mdf@pagelabel-57' on page 374 undefined on input line 311.
+pdfTeX warning (ext4): destination with the same identifier (name{page.ix}) has been already used, duplicate ignored <to be read again> \relax l.44 ... {\bf Preface to Version 0.6}}\end{center}
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored <to be read again> \relax l.28 \part{Background}
+pdfTeX warning (ext4): destination with the same identifier (name{page.500}) has been already used, duplicate ignored <to be read again> \relax l.76 ...autoscale=false,pages=-]{../img/backcover}
+
+
+FIX WIDTH FOR GRAPHICS
+
+MOVE PNGs TO A SEPARATE DIRECTORY
+
+MOVE FOOTNOTES INTO ONE FILE
+
+
+INTEGRATE CLASSES INTO CSS
+- COLORS
+color:rgb(0,0,127) → Navy
+Rtextcol → Navy
+color:rgb(101,101,101) → DimGray
+color:rgb(101,101,127) → DimGray
+color:rgb(153,0,204) → DarkViolet
+color:rgb(50,50,50) → DarkSlateGray
+
+- FOOTNOTES
+<span class="footnote-mark">
+<sup class="textsuperscript">
+
+-FIGURES
+<div class="eqnarray">
+<center class="math-display" >
+
+<hr class="figure" />
+<hr class="endfigure" />
+<div class="figure">
+
+<div class="caption">
+<span class="id">Figure&#x00A0;13.2:</span>
+
+- TABLES
+<div class="tabular">
+<table id="TBL-80" class="tabular"
+<td style="white-space:nowrap; text-align:left;" id="TBL-80-1-1" class="td11">
+
+- HEADINGS
+<h2 class="chapterHead"> → DECREASE BY ONE LEVEL
+<h3 class="sectionHead">
+<h4 class="subsectionHead">
+
+<span class="titlemark"> → CHECK AND POSSIBLY COPY
+
+<tr class="hline">
+
+<div class="crosslinks">
+
+<div class="center">
+<span class="underline">
+<span class="bar-css">
+<p class="noindent">
+<p class="indent">
+<sup class="textsuperscript">
+
+&#8217; → '
+
+
+=====
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+<body>
+    <div id="header">
+    <div id="header-top-menu">
+        <a href="https://blog.jamovi.org" target="_blank">
+            <div class='header-top-menu-items'>blog</div>
+        </a>
+        <a href="https://forum.jamovi.org" target="_blank">
+            <div class='header-top-menu-items'>forum</div>
+        </a>
+        <a href="https://dev.jamovi.org" target="_blank">
+            <div class='header-top-menu-items'>developer's hub</div>
+        </a>
+    </div>
+    <div id="branding">
+        <a href="/">
+            <img id="header-logo" src="/assets/header-logo.svg">
+        </a>
+    </div>
+
